@@ -1,7 +1,7 @@
 import random
 import json
 from datetime import datetime
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Tuple
 import pickle
 import os
 
@@ -35,23 +35,29 @@ class StoryState:
 class D18StoryDie:
     def __init__(self):
         self.die_faces = {
-            range(1, 7): "character_action",
-            range(7, 10): "environmental_event",
-            range(10, 13): "object_appearance",
-            range(13, 16): "cosmic_intervention",
+            (1, 6): "character_action",
+            (7, 9): "environmental_event",
+            (10, 12): "object_appearance",
+            (13, 15): "cosmic_intervention",
             16: "plot_twist",
             17: "wildcard",
             18: "story_ending"
         }
     
-    def roll(self) -> tuple:
+    def roll(self) -> Tuple[int, str]:
         """Returns (roll_number, action_type)"""
         roll = random.randint(1, 18)
-        for face_range, action_type in self.die_faces.items():
-            if isinstance(face_range, range) and roll in face_range:
+        
+        # Check each die face range
+        for face_key, action_type in self.die_faces.items():
+            if isinstance(face_key, tuple):
+                start, end = face_key
+                if start <= roll <= end:
+                    return roll, action_type
+            elif roll == face_key:
                 return roll, action_type
-            elif roll == face_range:
-                return roll, action_type
+        
+        # Fallback (should never reach here)
         return roll, "error"
 
 class StoryEngine:
@@ -59,11 +65,11 @@ class StoryEngine:
         self.data_path = data_path
         self.die = D18StoryDie()
         self.elements = {
-            "wood": {"season": "spring", "direction": "east", "color": "green"},
-            "fire": {"season": "summer", "direction": "south", "color": "red"},
-            "earth": {"season": "late_summer", "direction": "center", "color": "yellow"},
-            "metal": {"season": "autumn", "direction": "west", "color": "white"},
-            "water": {"season": "winter", "direction": "north", "color": "black"}
+            "wood": {"season": "spring", "direction": "east", "color": "green", "virtue": "benevolence", "animal": "azure dragon"},
+            "fire": {"season": "summer", "direction": "south", "color": "red", "virtue": "propriety", "animal": "vermilion bird"},
+            "earth": {"season": "late_summer", "direction": "center", "color": "yellow", "virtue": "trustworthiness", "animal": "yellow dragon"},
+            "metal": {"season": "autumn", "direction": "west", "color": "white", "virtue": "righteousness", "animal": "white tiger"},
+            "water": {"season": "winter", "direction": "north", "color": "black", "virtue": "wisdom", "animal": "black turtle"}
         }
         
         # Load data files
@@ -95,11 +101,15 @@ class StoryEngine:
         import csv
         data = []
         filepath = os.path.join(self.data_path, filename)
-        with open(filepath, 'r', encoding='utf-8') as f:
-            reader = csv.reader(f)
-            for row in reader:
-                if row:  # Skip empty rows
-                    data.append(row[0])
+        try:
+            with open(filepath, 'r', encoding='utf-8') as f:
+                reader = csv.reader(f)
+                for row in reader:
+                    if row:  # Skip empty rows
+                        data.append(row[0].strip('"'))  # Remove quotes if present
+        except FileNotFoundError:
+            print(f"File not found: {filepath}")
+            raise
         return data
     
     def get_cosmic_position(self, state: StoryState) -> str:

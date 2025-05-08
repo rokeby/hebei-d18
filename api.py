@@ -33,41 +33,45 @@ def print_story_status(state: StoryState):
     print()
 
 def generate_narrative_with_llm(prompt: str, system_prompt: str = None) -> str:
-    """Generate narrative using OpenAI API"""
+    """Enhanced narrative generation with better Han dynasty context"""
     try:
         if system_prompt is None:
-            system_prompt = """You are a master storyteller of ancient Chinese folktales from the Han dynasty period. 
-            Your stories draw from classical Chinese mythology, cosmology, and folklore. 
-            Write in a style that evokes ancient tales but remains accessible to modern readers. 
-            Keep each narrative turn concise (1-2 paragraphs maximum) but evocative."""
+            system_prompt = """You are a master storyteller of ancient Chinese folktales from the Han dynasty period (206 BCE - 220 CE). 
+            Your stories draw from classical Chinese mythology, cosmology, and folklore including:
+            - Wu Xing (Five Elements) theory
+            - Yin-Yang cosmology  
+            - Celestial bureaucracy and immortals
+            - Mount Kunlun and the western paradise
+            - The Yellow Emperor and ancient sage kings
+            - Bronze age ritual vessels and jade objects
+            - Early Daoist and Confucian philosophy
+            
+            Write in a style that:
+            - Evokes ancient tales but remains accessible
+            - Uses classical Chinese narrative structures
+            - Incorporates cosmic and moral dimensions
+            - Maintains an air of mystery and timelessness
+            - References authentic Han dynasty culture and beliefs
+            
+            Keep each narrative turn concise (2-3 sentences) but evocative."""
         
-        print("🤖 CALLING OPENAI API...")
-        print(f"   Model: gpt-4")
-        print(f"   Temperature: 0.8")
-        print(f"   Max Tokens: 200")
-        print()
-        
+        # Add more context about the cosmic element in the prompt
         completion = client.chat.completions.create(
-            model="gpt-4",  # or "gpt-3.5-turbo" for faster/cheaper option
+            model="gpt-4",
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": prompt}
             ],
-            temperature=0.8,  # Higher temperature for more creative storytelling
-            max_tokens=200    # Keep narrative turns concise
+            temperature=0.8,
+            max_tokens=200
         )
         
-        narrative = completion.choices[0].message.content.strip()
-        print("✅ NARRATIVE GENERATED!")
-        print(f"   Length: {len(narrative)} characters")
-        print()
-        
-        return narrative
+        return completion.choices[0].message.content.strip()
     
     except Exception as e:
         print(f"❌ ERROR generating narrative: {e}")
         return f"[Error: Unable to generate narrative]"
-
+        
 @app.route('/')
 def home():
     """Show currently active story or latest completed story"""
