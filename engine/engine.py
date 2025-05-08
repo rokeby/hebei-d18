@@ -203,46 +203,46 @@ class StoryEngine:
         if lang == Language.CHINESE:
             return f"""以这个开头创作一个新的中国汉代民间故事: "{state.previous_sentence_zh}"
 
-故事结构: {state.story_arc.arc_data['description_zh']}
-当前阶段: {state.story_arc.get_current_stage(language)}
-阶段指导: {state.story_arc.get_stage_guidance(language)}
-{state.story_arc.get_related_literature(language)}
-{state.story_arc.get_motifs(language)}
+            故事结构: {state.story_arc.arc_data['description_zh']}
+            当前阶段: {state.story_arc.get_current_stage(lang)}
+            阶段指导: {state.story_arc.get_stage_guidance(lang)}
+            {state.story_arc.get_related_literature(lang)}
+            {state.story_arc.get_motifs(lang)}
 
-故事发生在汉代，应包含中国传统宇宙观的元素。
-从{self.wuxing.get_element_text(state.cosmic_position, Language.CHINESE)}元素开始。
-写一个引人入胜的开场段落，合理引入故事的第一阶段。"""
+            故事发生在汉代，应包含中国传统宇宙观的元素。
+            从{self.wuxing.get_element_text(state.cosmic_position, Language.CHINESE)}元素开始。
+            写一个引人入胜的开场段落，合理引入故事的第一阶段。"""
         elif lang == Language.ENGLISH:
             return f"""Begin a new Han dynasty Chinese folktale based on this opening: "{state.previous_sentence}"
 
-Story arc: {state.story_arc.arc_data['description']}
-Current stage: {state.story_arc.get_current_stage(language)}
-Stage guidance: {state.story_arc.get_stage_guidance(language)}
-{state.story_arc.get_related_literature(language)}
-{state.story_arc.get_motifs(language)}
+            Story arc: {state.story_arc.arc_data['description']}
+            Current stage: {state.story_arc.get_current_stage(lang)}
+            Stage guidance: {state.story_arc.get_stage_guidance(lang)}
+            {state.story_arc.get_related_literature(lang)}
+            {state.story_arc.get_motifs(lang)}
 
-The story takes place during the Han dynasty and should incorporate elements of traditional Chinese cosmology. 
-Start with the cosmic element of {state.cosmic_position}. 
-Write an engaging opening paragraph that appropriately introduces the first stage of the story."""
+            The story takes place during the Han dynasty and should incorporate elements of traditional Chinese cosmology. 
+            Start with the cosmic element of {state.cosmic_position}. 
+            Write an engaging opening paragraph that appropriately introduces the first stage of the story."""
         else:  # BILINGUAL
             return f"""Create a new Han dynasty Chinese folktale in BOTH Chinese and English. First write in Chinese, then provide its English translation.
 
-Chinese opening line: "{state.previous_sentence_zh}"
-English opening line: "{state.previous_sentence}"
+            Chinese opening line: "{state.previous_sentence_zh}"
+            English opening line: "{state.previous_sentence}"
 
-Story arc: {state.story_arc.arc_data['description']} / {state.story_arc.arc_data['description_zh']}
-Current stage: {state.story_arc.get_current_stage(language)}
-Stage guidance: 
-- Chinese: {state.story_arc.get_stage_guidance(Language.CHINESE)}
-- English: {state.story_arc.get_stage_guidance(Language.ENGLISH)}
-{state.story_arc.get_related_literature(language)}
-{state.story_arc.get_motifs(language)}
+            Story arc: {state.story_arc.arc_data['description']} / {state.story_arc.arc_data['description_zh']}
+            Current stage: {state.story_arc.get_current_stage(lang)}
+            Stage guidance: 
+            - Chinese: {state.story_arc.get_stage_guidance(Language.CHINESE)}
+            - English: {state.story_arc.get_stage_guidance(Language.ENGLISH)}
+            {state.story_arc.get_related_literature(lang)}
+            {state.story_arc.get_motifs(lang)}
 
-The story takes place during the Han dynasty (汉代) and should incorporate elements of traditional Chinese cosmology.
-Start with the cosmic element of {state.cosmic_position} ({self.wuxing.get_element_text(state.cosmic_position, Language.CHINESE)}).
-        
-Write an engaging opening paragraph in Chinese first, followed by its English translation. The opening should appropriately introduce the first stage of the story arc."""
-    
+            The story takes place during the Han dynasty (汉代) and should incorporate elements of traditional Chinese cosmology.
+            Start with the cosmic element of {state.cosmic_position} ({self.wuxing.get_element_text(state.cosmic_position, Language.CHINESE)}).
+                    
+            Write an engaging opening paragraph in Chinese first, followed by its English translation. The opening should appropriately introduce the first stage of the story arc."""
+
     def create_ending_prompt(self, state: StoryState, current_element: str) -> str:
         """Create a prompt for story ending.
         

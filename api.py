@@ -11,6 +11,7 @@ from openai import OpenAI
 from config import API_HOST, API_PORT, API_DEBUG
 from engine import StoryEngine, StoryState
 from utils.language import Language, parse_bilingual_response
+from utils.logging import print_story_status
 from narrative.arc import StoryArc
 
 load_dotenv()
@@ -19,7 +20,10 @@ app = Flask(__name__)
 
 # Initialize OpenAI client and story engine
 
-client = OpenAI(base_url="https://api.deepseek.com")
+client = OpenAI(
+    base_url="https://api.deepseek.com",
+    timeout=120.0  # Increase timeout to 120 seconds
+    )
 story_engine = StoryEngine()
 
 # Ensure required directories exist
@@ -122,7 +126,7 @@ def generate_narrative_with_llm(prompt: str, language=Language.ENGLISH, system_p
         
         # For bilingual responses, parse to separate Chinese and English
         if language == Language.BILINGUAL:
-            parsed = story_engine.parse_bilingual_response(narrative)
+            parsed = parse_bilingual_response(narrative)
             return {
                 "zh": parsed["zh"], 
                 "en": parsed["en"],
@@ -188,229 +192,154 @@ def start_story():
     print_separator()
     print("🚀 STARTING NEW STORY")
     
-    # Get language preference, story arc, and previous story ID
-    request_data = request.json if request.is_json else {}
-    language = request_data.get('language', Language.ENGLISH)
-    arc_type = request_data.get('arc_type')  # Optional arc type
-    previous_id = request_data.get('previous_story_id')
-    
-    print(f"   Language: {language}")
-    if arc_type:
-        print(f"   Story Arc: {arc_type}")
-    else:
-        print("   Story Arc: Random")
-    print(f"   Previous story ID: {previous_id or 'None (fresh start)'}")
-    
-    seed_data = story_engine.get_story_seed_from_previous(previous_id)
-    print(f"   Seed source: {'Previous story' if previous_id else 'Random seed'}")
-    
-    # Create new story state with language preference and story arc
-    state = StoryState(language=language)
-    
-    # NEW: Set story_engine reference
-    state.story_engine = story_engine  
-    
-    if arc_type:
-        # Verify arc_type is valid
-        if arc_type in StoryArc.ARC_TYPES:
-            state.story_arc = StoryArc(arc_type=arc_type, max_turns=state.max_turns)
-        else:
-            print(f"   Invalid arc type '{arc_type}'. Using random arc type.")
-            state.story_arc = StoryArc(max_turns=state.max_turns)
-    else:
-        state.story_arc = StoryArc(max_turns=state.max_turns)
-    
-    # Print selected arc information@app.route('/next_turn', methods=['POST'])
-def next_turn():
-    """Generate the next turn of the current story with token tracking"""
-    print_separator()
-    print("⏭️  NEXT TURN REQUESTED")
-    
-    # Load active story
     try:
-        with open('./cache/active_story.pkl', 'rb') as f:
-            state = pickle.load(f)
-            
-        # NEW: Ensure story_engine reference is set
-        if not hasattr(state, 'story_engine'):
-            state.story_engine = story_engine
-            
-        print("✅ Active story loaded")
-        print_story_status(state)
-    except FileNotFoundError:
-        print("❌ ERROR: No active story found")
-        return jsonify({"error": "No active story found. Please start a new story first."}), 404
-    
-    language = state.language
-    
-    # Check if story is already completed
-    if state.current_turn >= state.max_turns:
-        print("🏁 Story already completed")
-        return jsonify({"error": "Story is already completed", "story_id": state.story_id}), 400
-    
-    # Roll the die
-    roll, action_type = story_engine.die.roll()
-    print(f"🎲 DIE ROLLED: {roll} → {action_type}")
-    
-    # Get cosmic position
-    current_element = story_engine.get_cosmic_position(state)
-    state.cosmic_position = current_element
-    print(f"🌟 Cosmic position advanced to: {current_element}")
-    
-    # Check for story arc stage advancement
-    old_stage = state.story_arc.get_current_stage(language)
-    stage_advanced = state.story_arc.advance_stage_if_appropriate(state.current_turn, action_type)
-    new_stage = state.story_arc.get_current_stage(language)
-    
-    if stage_advanced:
-        print(f"📖 STORY ARC ADVANCED: {old_stage} → {new_stage}")
-        print(f"   New stage guidance: {state.story_arc.get_stage_guidance(language)}")
-    else:
-        print(f"📖 STORY ARC STAGE: {new_stage}")
-    
-    # Select elements for this turn based on language
-    selected_elements = story_engine.select_elements(action_type, current_element, language)
-    print(f"🎴 ELEMENTS SELECTED:")
-    for key, value in selected_elements.items():
-        if isinstance(value, dict) and 'zh' in value and 'en' in value:
-            if language == Language.BILINGUAL:
-                print(f"   {key}: {value['zh']} / {value['en']}")
+        # Get language preference, story arc, and previous story ID
+        request_data = request.json if request.is_json else {}
+        language = request_data.get('language', Language.ENGLISH)
+        arc_type = request_data.get('arc_type')  # Optional arc type
+        previous_id = request_data.get('previous_story_id')
+        
+        print(f"   Language: {language}")
+        if arc_type:
+            print(f"   Story Arc: {arc_type}")
+        else:
+            print("   Story Arc: Random")
+        print(f"   Previous story ID: {previous_id or 'None (fresh start)'}")
+        
+        seed_data = story_engine.get_story_seed_from_previous(previous_id)
+        print(f"   Seed source: {'Previous story' if previous_id else 'Random seed'}")
+        
+        # Create new story state with language preference and story arc
+        state = StoryState(language=language)
+        
+        # NEW: Set story_engine reference
+        state.story_engine = story_engine  
+        
+        if arc_type:
+            # Verify arc_type is valid
+            if arc_type in StoryArc.ARC_TYPES:
+                state.story_arc = StoryArc(arc_type=arc_type, max_turns=state.max_turns)
             else:
-                print(f"   {key}: {value['zh'] if language == Language.CHINESE else value['en']}")
+                print(f"   Invalid arc type '{arc_type}'. Using random arc type.")
+                state.story_arc = StoryArc(max_turns=state.max_turns)
         else:
-            print(f"   {key}: {value}")
-    print()
-    
-    # CHANGED: Use story_engine to build prompt
-    prompt = story_engine.build_prompt(state, selected_elements, action_type)
-    
-    print("📋 PROMPT CREATED")
-    print(f"   Action type: {action_type}")
-    print(f"   Cosmic element: {current_element}")
-    print()
-    
-    # Generate narrative using API
-    print("🖋️  GENERATING NARRATIVE...")
-    narrative_result = generate_narrative_with_llm(prompt, language)
-    
-    # Update state and narrative thread (no changes needed here)
-    
-    # CHANGED: Use story_engine to check if story should end
-    if story_engine.should_end_story(state, roll):
-        print("🏁 STORY ENDING TRIGGERED")
+            state.story_arc = StoryArc(max_turns=state.max_turns)
         
-        # Generate an ending if needed
-        if roll == 18:
-            print("   Reason: Die rolled 18 (forced ending)")
-            
-            # CHANGED: Use story_engine for ending prompt
-            ending_prompt = story_engine.create_ending_prompt(state, current_element)
-            
-            print("📜 GENERATING FINAL ENDING...")
-            ending_result = generate_narrative_with_llm(ending_prompt, language)
-    print(f"   Selected arc: {state.story_arc.arc_type}")
-    print(f"   Arc stages: {' → '.join(state.story_arc.stages)}")
-    print(f"   Thematic elements: {state.story_arc.theme_elements}")
-    print(f"   Motifs: {state.story_arc.motifs}")
-    
-    state.previous_sentence = seed_data.get("seed", "Long ago, in the time when dragons still walked among mortals...")
-    state.previous_sentence_zh = seed_data.get("seed_zh", "很久以前，当龙还行走在人间的时候...")
-    state.cosmic_position = seed_data.get("cosmic_position", "wood")
-    
-    print(f"   Initial cosmic position: {state.cosmic_position}")
-    if language == Language.CHINESE:
-        print(f"   种子文本: '{state.previous_sentence_zh[:100]}...'")
-    elif language == Language.ENGLISH:
-        print(f"   Seed text: '{state.previous_sentence[:100]}...'")
-    else:
-        print(f"   Seed text (ZH): '{state.previous_sentence_zh[:50]}...'")
-        print(f"   Seed text (EN): '{state.previous_sentence[:50]}...'")
-    print()
-    
-    # CHANGED: Use story_engine to create opening prompt
-    opening_prompt = story_engine.create_opening_prompt(state)
-    
-    print("📝 GENERATING OPENING NARRATIVE")
-    opening_result = generate_narrative_with_llm(opening_prompt, language)
-    
-    # Handle different response formats based on language
-    if language == Language.BILINGUAL and isinstance(opening_result, dict) and "zh" in opening_result:
-        opening_narrative_zh = opening_result["zh"]
-        opening_narrative_en = opening_result["en"]
-        token_usage = opening_result.get("token_usage", {})
+        # Print selected arc information
+        print(f"   Selected arc: {state.story_arc.arc_type}")
+        print(f"   Arc stages: {' → '.join(state.story_arc.stages)}")
+        print(f"   Thematic elements: {state.story_arc.theme_elements}")
+        print(f"   Motifs: {state.story_arc.motifs}")
         
-        # Record the opening as the first turn
-        state.narrative_thread.append({
-            "turn": 0,
-            "roll": None,
-            "action_type": "opening",
-            "elements": {"cosmic_element": state.cosmic_position},
-            "narrative": opening_narrative_en,
-            "narrative_zh": opening_narrative_zh,
-            "token_usage": token_usage
-        })
-        state.previous_sentence = opening_narrative_en
-        state.previous_sentence_zh = opening_narrative_zh
+        state.previous_sentence = seed_data.get("seed", "Long ago, in the time when dragons still walked among mortals...")
+        state.previous_sentence_zh = seed_data.get("seed_zh", "很久以前，当龙还行走在人间的时候...")
+        state.cosmic_position = seed_data.get("cosmic_position", "wood")
         
-        print("✨ NEW BILINGUAL STORY CREATED!")
-        print(f"   Story ID: {state.story_id}")
-        print(f"   Opening (ZH): '{opening_narrative_zh[:50]}...'")
-        print(f"   Opening (EN): '{opening_narrative_en[:50]}...'")
-    else:
-        # Handle the case where opening_result is now a dict with content and token_usage
-        if isinstance(opening_result, dict) and "content" in opening_result:
-            opening_narrative = opening_result["content"]
-            token_usage = opening_result.get("token_usage", {})
-        else:
-            opening_narrative = opening_result
-            token_usage = {}
-        
-        # Record with token usage
-        state.narrative_thread.append({
-            "turn": 0,
-            "roll": None,
-            "action_type": "opening",
-            "elements": {"cosmic_element": state.cosmic_position},
-            "narrative": opening_narrative,
-            "narrative_zh": opening_narrative if language == Language.CHINESE else "",
-            "token_usage": token_usage
-        })
-        
+        print(f"   Initial cosmic position: {state.cosmic_position}")
         if language == Language.CHINESE:
-            state.previous_sentence_zh = opening_narrative
+            print(f"   种子文本: '{state.previous_sentence_zh[:100]}...'")
+        elif language == Language.ENGLISH:
+            print(f"   Seed text: '{state.previous_sentence[:100]}...'")
         else:
-            state.previous_sentence = opening_narrative
+            print(f"   Seed text (ZH): '{state.previous_sentence_zh[:50]}...'")
+            print(f"   Seed text (EN): '{state.previous_sentence[:50]}...'")
+        print()
         
-        print("✨ NEW STORY CREATED!")
-        print(f"   Story ID: {state.story_id}")
-        print(f"   Opening narrative: '{opening_narrative[:100]}...'")
-    
-    # Save as active story
-    with open('./cache/active_story.pkl', 'wb') as f:
-        pickle.dump(state, f)
-    
-    print_separator()
-    
-    # Return response based on language
-    if language == Language.BILINGUAL and isinstance(opening_result, dict):
-        return jsonify({
-            "message": "New bilingual story started",
-            "story_id": state.story_id,
-            "opening_narrative_zh": opening_result["zh"],
-            "opening_narrative_en": opening_result["en"],
-            "cosmic_position": state.cosmic_position,
-            "seed_from": previous_id if previous_id else "random",
-            "language": language
-        })
-    else:
-        return jsonify({
-            "message": "New story started",
-            "story_id": state.story_id,
-            "opening_narrative": opening_narrative,
-            "cosmic_position": state.cosmic_position,
-            "seed_from": previous_id if previous_id else "random",
-            "language": language
-        })
+        # CHANGED: Use story_engine to create opening prompt
+        opening_prompt = story_engine.create_opening_prompt(state)
+        
+        print("📝 GENERATING OPENING NARRATIVE")
+        opening_result = generate_narrative_with_llm(opening_prompt, language)
+        
+        # Handle different response formats based on language
+        if language == Language.BILINGUAL and isinstance(opening_result, dict) and "zh" in opening_result:
+            opening_narrative_zh = opening_result["zh"]
+            opening_narrative_en = opening_result["en"]
+            token_usage = opening_result.get("token_usage", {})
+            
+            # Record the opening as the first turn
+            state.narrative_thread.append({
+                "turn": 0,
+                "roll": None,
+                "action_type": "opening",
+                "elements": {"cosmic_element": state.cosmic_position},
+                "narrative": opening_narrative_en,
+                "narrative_zh": opening_narrative_zh,
+                "token_usage": token_usage
+            })
+            state.previous_sentence = opening_narrative_en
+            state.previous_sentence_zh = opening_narrative_zh
+            
+            print("✨ NEW BILINGUAL STORY CREATED!")
+            print(f"   Story ID: {state.story_id}")
+            print(f"   Opening (ZH): '{opening_narrative_zh[:50]}...'")
+            print(f"   Opening (EN): '{opening_narrative_en[:50]}...'")
+            
+            # Save as active story
+            with open('./cache/active_story.pkl', 'wb') as f:
+                pickle.dump(state, f)
+            
+            print_separator()
+            
+            # Return bilingual response
+            return jsonify({
+                "message": "New bilingual story started",
+                "story_id": state.story_id,
+                "opening_narrative_zh": opening_result["zh"],
+                "opening_narrative_en": opening_result["en"],
+                "cosmic_position": state.cosmic_position,
+                "seed_from": previous_id if previous_id else "random",
+                "language": language
+            })
+        else:
+            # Handle the case where opening_result is now a dict with content and token_usage
+            if isinstance(opening_result, dict) and "content" in opening_result:
+                opening_narrative = opening_result["content"]
+                token_usage = opening_result.get("token_usage", {})
+            else:
+                opening_narrative = opening_result
+                token_usage = {}
+            
+            # Record with token usage
+            state.narrative_thread.append({
+                "turn": 0,
+                "roll": None,
+                "action_type": "opening",
+                "elements": {"cosmic_element": state.cosmic_position},
+                "narrative": opening_narrative,
+                "narrative_zh": opening_narrative if language == Language.CHINESE else "",
+                "token_usage": token_usage
+            })
+            
+            if language == Language.CHINESE:
+                state.previous_sentence_zh = opening_narrative
+            else:
+                state.previous_sentence = opening_narrative
+            
+            print("✨ NEW STORY CREATED!")
+            print(f"   Story ID: {state.story_id}")
+            print(f"   Opening narrative: '{opening_narrative[:100]}...'")
+            
+            # Save as active story
+            with open('./cache/active_story.pkl', 'wb') as f:
+                pickle.dump(state, f)
+            
+            print_separator()
+            
+            # Return non-bilingual response
+            return jsonify({
+                "message": "New story started",
+                "story_id": state.story_id,
+                "opening_narrative": opening_narrative,
+                "cosmic_position": state.cosmic_position,
+                "seed_from": previous_id if previous_id else "random",
+                "language": language
+            })
+    except Exception as e:
+        print(f"❌ ERROR in start_story: {str(e)}")
+        import traceback
+        traceback.print_exc()
+        return jsonify({"error": f"Failed to start story: {str(e)}"}), 500
 
 @app.route('/next_turn', methods=['POST'])
 def next_turn():
@@ -473,7 +402,7 @@ def next_turn():
             print(f"   {key}: {value}")
     print()
     
-    # CHANGED: Use story_engine to build prompt
+    # Build prompt
     prompt = story_engine.build_prompt(state, selected_elements, action_type)
     
     print("📋 PROMPT CREATED")
@@ -485,9 +414,57 @@ def next_turn():
     print("🖋️  GENERATING NARRATIVE...")
     narrative_result = generate_narrative_with_llm(prompt, language)
     
-    # Update state and narrative thread (no changes needed here)
+    # Handle different response formats based on language
+    if language == Language.BILINGUAL and isinstance(narrative_result, dict) and "zh" in narrative_result:
+        narrative_zh = narrative_result["zh"]
+        narrative_en = narrative_result["en"]
+        token_usage = narrative_result.get("token_usage", {})
+        
+        # Add to narrative thread
+        state.narrative_thread.append({
+            "turn": state.current_turn,
+            "roll": roll,
+            "action_type": action_type,
+            "elements": selected_elements,
+            "narrative": narrative_en,
+            "narrative_zh": narrative_zh,
+            "token_usage": token_usage
+        })
+        
+        # Update previous sentences
+        state.previous_sentence = narrative_en
+        state.previous_sentence_zh = narrative_zh
+    else:
+        # Handle single language or other format
+        if isinstance(narrative_result, dict) and "content" in narrative_result:
+            narrative = narrative_result["content"]
+            token_usage = narrative_result.get("token_usage", {})
+        else:
+            narrative = narrative_result
+            token_usage = {}
+        
+        # Add to narrative thread
+        state.narrative_thread.append({
+            "turn": state.current_turn,
+            "roll": roll,
+            "action_type": action_type,
+            "elements": selected_elements,
+            "narrative": narrative if language != Language.CHINESE else "",
+            "narrative_zh": narrative if language == Language.CHINESE else "",
+            "token_usage": token_usage
+        })
+        
+        # Update previous sentences
+        if language == Language.CHINESE:
+            state.previous_sentence_zh = narrative
+        else:
+            state.previous_sentence = narrative
     
-    # CHANGED: Use story_engine to check if story should end
+    # THIS IS THE CRITICAL FIX: Increment the turn counter after adding new narrative
+    state.current_turn += 1
+    print(f"📈 Turn counter incremented to {state.current_turn}/{state.max_turns}")
+    
+    # Check if the story should end
     if story_engine.should_end_story(state, roll):
         print("🏁 STORY ENDING TRIGGERED")
         
@@ -500,137 +477,78 @@ def next_turn():
             
             print("📜 GENERATING FINAL ENDING...")
             ending_result = generate_narrative_with_llm(ending_prompt, language)
-            
-            # Handle different response formats based on language
-            if language == Language.BILINGUAL and isinstance(ending_result, dict) and "zh" in ending_result:
-                ending_narrative_zh = ending_result["zh"]
-                ending_narrative_en = ending_result["en"]
-                ending_token_usage = ending_result.get("token_usage", {})
-                
-                state.narrative_thread.append({
-                    "turn": state.current_turn + 1,
-                    "roll": roll,
-                    "action_type": "ending",
-                    "elements": selected_elements,
-                    "narrative": ending_narrative_en,
-                    "narrative_zh": ending_narrative_zh,
-                    "token_usage": ending_token_usage
-                })
-                
-                print(f"   Ending (ZH): '{ending_narrative_zh[:50]}...'")
-                print(f"   Ending (EN): '{ending_narrative_en[:50]}...'")
-                print(f"   Tokens used: {ending_token_usage.get('total_tokens', 'unknown')}")
-            else:
-                # Handle the case where ending_result is now a dict with content and token_usage
-                if isinstance(ending_result, dict) and "content" in ending_result:
-                    ending_narrative = ending_result["content"]
-                    ending_token_usage = ending_result.get("token_usage", {})
-                else:
-                    ending_narrative = ending_result
-                    ending_token_usage = {}
-                
-                state.narrative_thread.append({
-                    "turn": state.current_turn + 1,
-                    "roll": roll,
-                    "action_type": "ending",
-                    "elements": selected_elements,
-                    "narrative": ending_narrative if language != Language.CHINESE else "",
-                    "narrative_zh": ending_narrative if language == Language.CHINESE else "",
-                    "token_usage": ending_token_usage
-                })
-                
-                print(f"   Ending: '{ending_narrative[:100]}...'")
-                print(f"   Tokens used: {ending_token_usage.get('total_tokens', 'unknown')}")
+    print(f"   Selected arc: {state.story_arc.arc_type}")
+    print(f"   Arc stages: {' → '.join(state.story_arc.stages)}")
+    print(f"   Thematic elements: {state.story_arc.theme_elements}")
+    print(f"   Motifs: {state.story_arc.motifs}")
+        
+    print(f"   Initial cosmic position: {state.cosmic_position}")
+    if language == Language.CHINESE:
+        print(f"   种子文本: '{state.previous_sentence_zh[:100]}...'")
+    elif language == Language.ENGLISH:
+        print(f"   Seed text: '{state.previous_sentence[:100]}...'")
+    else:
+        print(f"   Seed text (ZH): '{state.previous_sentence_zh[:50]}...'")
+        print(f"   Seed text (EN): '{state.previous_sentence[:50]}...'")
+    print()
+    
+    # CHANGED: Use story_engine to create opening prompt
+    opening_prompt = story_engine.create_opening_prompt(state)
+    
+    print("📝 GENERATING NEXT NARRATIVE SECTION")
+    opening_result = generate_narrative_with_llm(opening_prompt, language)
+    
+    # Handle different response formats based on language
+    if language == Language.BILINGUAL and isinstance(opening_result, dict) and "zh" in opening_result:
+        opening_narrative_zh = opening_result["zh"]
+        opening_narrative_en = opening_result["en"]
+        token_usage = opening_result.get("token_usage", {})
+        
+        # Record the opening as the first turn
+        state.narrative_thread.append({
+            "turn": 0,
+            "roll": None,
+            "action_type": "opening",
+            "elements": {"cosmic_element": state.cosmic_position},
+            "narrative": opening_narrative_en,
+            "narrative_zh": opening_narrative_zh,
+            "token_usage": token_usage
+        })
+        state.previous_sentence = opening_narrative_en
+        state.previous_sentence_zh = opening_narrative_zh
+        
+        print("✨ NEW BILINGUAL STORY CREATED!")
+        print(f"   Story ID: {state.story_id}")
+        print(f"   Opening (ZH): '{opening_narrative_zh[:50]}...'")
+        print(f"   Opening (EN): '{opening_narrative_en[:50]}...'")
+    else:
+        # Handle the case where opening_result is now a dict with content and token_usage
+        if isinstance(opening_result, dict) and "content" in opening_result:
+            opening_narrative = opening_result["content"]
+            token_usage = opening_result.get("token_usage", {})
         else:
-            print(f"   Reason: Reached max turns ({state.max_turns})")
+            opening_narrative = opening_result
+            token_usage = {}
         
-        # Calculate total token usage for the story
-        total_prompt_tokens = sum(turn.get('token_usage', {}).get('prompt_tokens', 0) for turn in state.narrative_thread)
-        total_completion_tokens = sum(turn.get('token_usage', {}).get('completion_tokens', 0) for turn in state.narrative_thread)
-        total_tokens = sum(turn.get('token_usage', {}).get('total_tokens', 0) for turn in state.narrative_thread)
+        # Record with token usage
+        state.narrative_thread.append({
+            "turn": 0,
+            "roll": None,
+            "action_type": "opening",
+            "elements": {"cosmic_element": state.cosmic_position},
+            "narrative": opening_narrative,
+            "narrative_zh": opening_narrative if language == Language.CHINESE else "",
+            "token_usage": token_usage
+        })
         
-        print(f"📊 TOTAL TOKEN USAGE FOR STORY:")
-        print(f"   Prompt tokens: {total_prompt_tokens}")
-        print(f"   Completion tokens: {total_completion_tokens}")
-        print(f"   Total tokens: {total_tokens}")
-        
-        # Save completed story with token usage
-        story_data = {
-            "id": state.story_id,
-            "completed_at": datetime.now().isoformat(),
-            "final_narrative": state.narrative_thread,
-            "cosmic_position": state.cosmic_position,
-            "total_turns": state.current_turn,
-            "max_turns": state.max_turns,
-            "language": state.language,
-            "token_usage": {
-                "prompt_tokens": total_prompt_tokens,
-                "completion_tokens": total_completion_tokens,
-                "total_tokens": total_tokens
-            }
-        }
-        
-        # Ensure stories directory exists
-        os.makedirs("./stories", exist_ok=True)
-        
-        filepath = f"./stories/{state.story_id}.json"
-        with open(filepath, 'w', encoding='utf-8') as f:
-            json.dump(story_data, f, ensure_ascii=False, indent=2)
-            
-        print(f"💾 STORY SAVED: {state.story_id}.json")
-        
-        # Clear active story
-        os.remove('./cache/active_story.pkl')
-        print("🗑️  Active story cache cleared")
-        
-        # Print final story
-        print("\n📚 COMPLETE STORY:")
-        print_separator()
-        
-        # Your existing code for printing the story...
-        
-        # Prepare response based on language with token usage
-        token_usage_data = {
-            "prompt_tokens": total_prompt_tokens,
-            "completion_tokens": total_completion_tokens,
-            "total_tokens": total_tokens
-        }
-        
-        if language == Language.BILINGUAL:
-            complete_narrative_zh = [turn.get("narrative_zh", "") for turn in state.narrative_thread if "narrative_zh" in turn]
-            complete_narrative_en = [turn.get("narrative", "") for turn in state.narrative_thread if "narrative" in turn]
-            
-            return jsonify({
-                "status": "completed",
-                "story_id": state.story_id,
-                "final_narrative_zh": state.narrative_thread[-1].get("narrative_zh", ""),
-                "final_narrative_en": state.narrative_thread[-1].get("narrative", ""),
-                "total_turns": state.current_turn,
-                "complete_story_zh": complete_narrative_zh,
-                "complete_story_en": complete_narrative_en,
-                "language": language,
-                "token_usage": token_usage_data
-            })
-        elif language == Language.CHINESE:
-            return jsonify({
-                "status": "completed",
-                "story_id": state.story_id,
-                "final_narrative": state.narrative_thread[-1].get("narrative_zh", ""),
-                "total_turns": state.current_turn,
-                "complete_story": [turn.get("narrative_zh", "") for turn in state.narrative_thread if "narrative_zh" in turn],
-                "language": language,
-                "token_usage": token_usage_data
-            })
+        if language == Language.CHINESE:
+            state.previous_sentence_zh = opening_narrative
         else:
-            return jsonify({
-                "status": "completed",
-                "story_id": state.story_id,
-                "final_narrative": state.narrative_thread[-1].get("narrative", ""),
-                "total_turns": state.current_turn,
-                "complete_story": [turn.get("narrative", "") for turn in state.narrative_thread if "narrative" in turn],
-                "language": language,
-                "token_usage": token_usage_data
-            })
+            state.previous_sentence = opening_narrative
+        
+        print("✨ NEW STORY CREATED!")
+        print(f"   Story ID: {state.story_id}")
+        print(f"   Opening narrative: '{opening_narrative[:100]}...'")
     
     # Save updated state
     with open('./cache/active_story.pkl', 'wb') as f:
@@ -639,43 +557,25 @@ def next_turn():
     
     print_separator()
     
-    # Prepare response based on language with token usage for this turn
-    current_token_usage = state.narrative_thread[-1].get("token_usage", {})
-    
-    # Prepare response based on language with token usage
-    if language == Language.BILINGUAL and isinstance(narrative_result, dict) and "zh" in narrative_result:
-        narrative_zh = narrative_result["zh"]
-        narrative_en = narrative_result["en"]
-        
+    # Return response based on language
+    if language == Language.BILINGUAL and isinstance(opening_result, dict):
         return jsonify({
-            "status": "continuing",
-            "turn": state.current_turn,
-            "roll": roll,
-            "action_type": action_type,
-            "elements": selected_elements,
-            "narrative_zh": narrative_zh,
-            "narrative_en": narrative_en,
+            "message": "New bilingual story started",
+            "story_id": state.story_id,
+            "opening_narrative_zh": opening_result["zh"],
+            "opening_narrative_en": opening_result["en"],
             "cosmic_position": state.cosmic_position,
-            "remaining_turns": state.max_turns - state.current_turn,
-            "language": language,
-            "token_usage": current_token_usage
+            "language": language
         })
     else:
-        # Get the content if narrative_result is a dict
-        narrative_content = narrative_result.get("content", narrative_result) if isinstance(narrative_result, dict) else narrative_result
-        
         return jsonify({
-            "status": "continuing",
-            "turn": state.current_turn,
-            "roll": roll,
-            "action_type": action_type,
-            "elements": selected_elements,
-            "narrative": narrative_content,
+            "message": "New story started",
+            "story_id": state.story_id,
+            "opening_narrative": opening_narrative,
             "cosmic_position": state.cosmic_position,
-            "remaining_turns": state.max_turns - state.current_turn,
-            "language": language,
-            "token_usage": current_token_usage
+            "language": language
         })
+
 
 @app.route('/get_story/<story_id>', methods=['GET'])
 def get_story(story_id):
@@ -747,6 +647,63 @@ def roll_die():
         "action_type": action_type
     })
 
+@app.route('/arc_types', methods=['GET'])
+def list_arc_types():
+    """List all available story arc types and their descriptions"""
+    print("\n📚 Listing available story arc types")
+    
+    arc_types = {}
+    for arc_id, arc_data in StoryArc.ARC_TYPES.items():
+        arc_types[arc_id] = {
+            "name": arc_id,
+            "description": arc_data.get("description", ""),
+            "stages": arc_data.get("stages", []),
+            "zh_stages": arc_data.get("zh_stages", []),
+            "related_text": arc_data.get("related_text", ""),
+            "typical_motifs": arc_data.get("typical_motifs", [])
+        }
+    
+    print(f"   Returning {len(arc_types)} arc types")
+    return jsonify({
+        "arc_types": arc_types,
+        "total": len(arc_types),
+        "usage": "Use arc_type parameter in /start_story with any of these names"
+    })
+
+@app.route('/arc_types/<arc_name>', methods=['GET'])
+def get_arc_type(arc_name):
+    """Get details about a specific story arc type"""
+    print(f"\n📖 Fetching details for arc type: {arc_name}")
+    
+    if arc_name not in StoryArc.ARC_TYPES:
+        print(f"❌ Arc type not found: {arc_name}")
+        return jsonify({
+            "error": f"Arc type '{arc_name}' not found", 
+            "available_types": list(StoryArc.ARC_TYPES.keys())
+        }), 404
+    
+    arc_data = StoryArc.ARC_TYPES[arc_name]
+    
+    # Create a sample arc to get more details
+    sample_arc = StoryArc(arc_type=arc_name, max_turns=10)
+    theme_examples = sample_arc.theme_elements
+    motif_examples = sample_arc.motifs
+    
+    result = {
+        "name": arc_name,
+        "description": arc_data.get("description", ""),
+        "description_zh": arc_data.get("description_zh", ""),
+        "stages": arc_data.get("stages", []),
+        "zh_stages": arc_data.get("zh_stages", []),
+        "related_text": arc_data.get("related_text", ""),
+        "typical_motifs": arc_data.get("typical_motifs", []),
+        "sample_theme_elements": theme_examples,
+        "sample_motifs": motif_examples
+    }
+    
+    print("✅ Arc details returned")
+    return jsonify(result)
+
 if __name__ == '__main__':
     # Make sure you have OpenAI API key set in .env file
     if not os.getenv("OPENAI_API_KEY"):
@@ -759,7 +716,8 @@ if __name__ == '__main__':
     print(f"   Host: {API_HOST}")
     print(f"   Port: {API_PORT}")
     print()
-    
+
+    app.config['TIMEOUT'] = 30  # secs timeout
     app.run(host=API_HOST, port=API_PORT, debug=API_DEBUG)
 
 @app.route('/language/<lang>', methods=['POST'])
@@ -788,3 +746,4 @@ def set_language(lang):
         print("❌ No active story found")
         return jsonify({"error": "No active story found. Please start a new story first."}), 404
 
+        

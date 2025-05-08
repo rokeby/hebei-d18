@@ -24,7 +24,14 @@ def create_prompt(state: StoryState, elements: Dict, action_type: str, wuxing: W
     # Get element properties in appropriate language
     element_props = wuxing.get_bilingual_properties(cosmic_element, lang)
     element_name = wuxing.get_element_text(cosmic_element, lang)
-    action_type_text = state.story_engine.die.get_action_type_bilingual(action_type, lang)
+
+
+    # Handle action_type_text safely
+    if hasattr(state, 'story_engine') and state.story_engine and hasattr(state.story_engine, 'die'):
+        action_type_text = state.story_engine.die.get_action_type_bilingual(action_type, lang)
+    else:
+        # Fallback to simple format when story_engine not available
+        action_type_text = action_type
     
     # Get current narrative stage and guidance
     current_stage = state.story_arc.get_current_stage(lang)

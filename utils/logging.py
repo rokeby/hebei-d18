@@ -1,3 +1,5 @@
+from engine.state import StoryState
+
 def print_story_status(state: StoryState):
     """Print current story status with language support"""
     print(f"📖 STORY STATUS:")
