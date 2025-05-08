@@ -6,7 +6,12 @@ import os
 from datetime import datetime
 from dotenv import load_dotenv
 from openai import OpenAI
-from story_engine import StoryEngine, StoryState, Language  # Add Language here
+
+# Import from new modular structure
+from config import API_HOST, API_PORT, API_DEBUG
+from engine import StoryEngine, StoryState
+from utils.language import Language, parse_bilingual_response
+from narrative.arc import StoryArc
 
 load_dotenv()
 
@@ -24,15 +29,6 @@ os.makedirs('./stories', exist_ok=True)
 def print_separator():
     """Print a visual separator for readability"""
     print("\n" + "="*60 + "\n")
-
-def print_story_status(state: StoryState):
-    """Print current story status with language support"""
-    print(f"📖 STORY STATUS:")
-    print(f"   ID: {state.story_id}")
-    print(f"   Turn: {state.current_turn}/{state.max_turns}")
-    print(f"   Cosmic Position: {state.cosmic_position}")
-    print(f"   Language: {state.language}")
-    print()
 
 def generate_narrative_with_llm(prompt: str, language=Language.ENGLISH, system_prompt: str = None) -> dict:
     """Generate narrative using DeepSeek API, handling bilingual content and tracking token usage"""
@@ -188,23 +184,135 @@ def home():
 
 @app.route('/start_story', methods=['POST'])
 def start_story():
-    """Start a new story with language option"""
+    """Start a new story with language option and story arc choice"""
     print_separator()
     print("🚀 STARTING NEW STORY")
     
-    # Get language preference and previous story ID
+    # Get language preference, story arc, and previous story ID
     request_data = request.json if request.is_json else {}
     language = request_data.get('language', Language.ENGLISH)
+    arc_type = request_data.get('arc_type')  # Optional arc type
     previous_id = request_data.get('previous_story_id')
     
     print(f"   Language: {language}")
+    if arc_type:
+        print(f"   Story Arc: {arc_type}")
+    else:
+        print("   Story Arc: Random")
     print(f"   Previous story ID: {previous_id or 'None (fresh start)'}")
     
     seed_data = story_engine.get_story_seed_from_previous(previous_id)
     print(f"   Seed source: {'Previous story' if previous_id else 'Random seed'}")
     
-    # Create new story state with language preference
+    # Create new story state with language preference and story arc
     state = StoryState(language=language)
+    
+    # NEW: Set story_engine reference
+    state.story_engine = story_engine  
+    
+    if arc_type:
+        # Verify arc_type is valid
+        if arc_type in StoryArc.ARC_TYPES:
+            state.story_arc = StoryArc(arc_type=arc_type, max_turns=state.max_turns)
+        else:
+            print(f"   Invalid arc type '{arc_type}'. Using random arc type.")
+            state.story_arc = StoryArc(max_turns=state.max_turns)
+    else:
+        state.story_arc = StoryArc(max_turns=state.max_turns)
+    
+    # Print selected arc information@app.route('/next_turn', methods=['POST'])
+def next_turn():
+    """Generate the next turn of the current story with token tracking"""
+    print_separator()
+    print("⏭️  NEXT TURN REQUESTED")
+    
+    # Load active story
+    try:
+        with open('./cache/active_story.pkl', 'rb') as f:
+            state = pickle.load(f)
+            
+        # NEW: Ensure story_engine reference is set
+        if not hasattr(state, 'story_engine'):
+            state.story_engine = story_engine
+            
+        print("✅ Active story loaded")
+        print_story_status(state)
+    except FileNotFoundError:
+        print("❌ ERROR: No active story found")
+        return jsonify({"error": "No active story found. Please start a new story first."}), 404
+    
+    language = state.language
+    
+    # Check if story is already completed
+    if state.current_turn >= state.max_turns:
+        print("🏁 Story already completed")
+        return jsonify({"error": "Story is already completed", "story_id": state.story_id}), 400
+    
+    # Roll the die
+    roll, action_type = story_engine.die.roll()
+    print(f"🎲 DIE ROLLED: {roll} → {action_type}")
+    
+    # Get cosmic position
+    current_element = story_engine.get_cosmic_position(state)
+    state.cosmic_position = current_element
+    print(f"🌟 Cosmic position advanced to: {current_element}")
+    
+    # Check for story arc stage advancement
+    old_stage = state.story_arc.get_current_stage(language)
+    stage_advanced = state.story_arc.advance_stage_if_appropriate(state.current_turn, action_type)
+    new_stage = state.story_arc.get_current_stage(language)
+    
+    if stage_advanced:
+        print(f"📖 STORY ARC ADVANCED: {old_stage} → {new_stage}")
+        print(f"   New stage guidance: {state.story_arc.get_stage_guidance(language)}")
+    else:
+        print(f"📖 STORY ARC STAGE: {new_stage}")
+    
+    # Select elements for this turn based on language
+    selected_elements = story_engine.select_elements(action_type, current_element, language)
+    print(f"🎴 ELEMENTS SELECTED:")
+    for key, value in selected_elements.items():
+        if isinstance(value, dict) and 'zh' in value and 'en' in value:
+            if language == Language.BILINGUAL:
+                print(f"   {key}: {value['zh']} / {value['en']}")
+            else:
+                print(f"   {key}: {value['zh'] if language == Language.CHINESE else value['en']}")
+        else:
+            print(f"   {key}: {value}")
+    print()
+    
+    # CHANGED: Use story_engine to build prompt
+    prompt = story_engine.build_prompt(state, selected_elements, action_type)
+    
+    print("📋 PROMPT CREATED")
+    print(f"   Action type: {action_type}")
+    print(f"   Cosmic element: {current_element}")
+    print()
+    
+    # Generate narrative using API
+    print("🖋️  GENERATING NARRATIVE...")
+    narrative_result = generate_narrative_with_llm(prompt, language)
+    
+    # Update state and narrative thread (no changes needed here)
+    
+    # CHANGED: Use story_engine to check if story should end
+    if story_engine.should_end_story(state, roll):
+        print("🏁 STORY ENDING TRIGGERED")
+        
+        # Generate an ending if needed
+        if roll == 18:
+            print("   Reason: Die rolled 18 (forced ending)")
+            
+            # CHANGED: Use story_engine for ending prompt
+            ending_prompt = story_engine.create_ending_prompt(state, current_element)
+            
+            print("📜 GENERATING FINAL ENDING...")
+            ending_result = generate_narrative_with_llm(ending_prompt, language)
+    print(f"   Selected arc: {state.story_arc.arc_type}")
+    print(f"   Arc stages: {' → '.join(state.story_arc.stages)}")
+    print(f"   Thematic elements: {state.story_arc.theme_elements}")
+    print(f"   Motifs: {state.story_arc.motifs}")
+    
     state.previous_sentence = seed_data.get("seed", "Long ago, in the time when dragons still walked among mortals...")
     state.previous_sentence_zh = seed_data.get("seed_zh", "很久以前，当龙还行走在人间的时候...")
     state.cosmic_position = seed_data.get("cosmic_position", "wood")
@@ -219,25 +327,8 @@ def start_story():
         print(f"   Seed text (EN): '{state.previous_sentence[:50]}...'")
     print()
     
-    # Generate an opening narrative based on the seed
-    if language == Language.CHINESE:
-        opening_prompt = f"""以这个开头创作一个新的中国民间故事: "{state.previous_sentence_zh}"
-        故事发生在汉代，应包含中国传统宇宙观的元素。
-        从{story_engine.get_element_text(state.cosmic_position, Language.CHINESE)}元素开始。写一个引人入胜的开场段落。"""
-    elif language == Language.ENGLISH:
-        opening_prompt = f"""Begin a new Chinese folktale based on this opening: "{state.previous_sentence}"
-        The story takes place during the Han dynasty and should incorporate elements of Chinese cosmology. 
-        Start with the cosmic element of {state.cosmic_position}. Write an engaging opening paragraph."""
-    else:  # BILINGUAL
-        opening_prompt = f"""Create a new Chinese folktale in BOTH Chinese and English. First write in Chinese, then provide its English translation.
-
-        Chinese opening line: "{state.previous_sentence_zh}"
-        English opening line: "{state.previous_sentence}"
-        
-        The story takes place during the Han dynasty and should incorporate elements of Chinese cosmology.
-        Start with the cosmic element of {state.cosmic_position} ({story_engine.get_element_text(state.cosmic_position, Language.CHINESE)}).
-        
-        Write an engaging opening paragraph in Chinese first, followed by its English translation."""
+    # CHANGED: Use story_engine to create opening prompt
+    opening_prompt = story_engine.create_opening_prompt(state)
     
     print("📝 GENERATING OPENING NARRATIVE")
     opening_result = generate_narrative_with_llm(opening_prompt, language)
@@ -331,6 +422,11 @@ def next_turn():
     try:
         with open('./cache/active_story.pkl', 'rb') as f:
             state = pickle.load(f)
+            
+        # NEW: Ensure story_engine reference is set
+        if not hasattr(state, 'story_engine'):
+            state.story_engine = story_engine
+            
         print("✅ Active story loaded")
         print_story_status(state)
     except FileNotFoundError:
@@ -353,6 +449,17 @@ def next_turn():
     state.cosmic_position = current_element
     print(f"🌟 Cosmic position advanced to: {current_element}")
     
+    # Check for story arc stage advancement
+    old_stage = state.story_arc.get_current_stage(language)
+    stage_advanced = state.story_arc.advance_stage_if_appropriate(state.current_turn, action_type)
+    new_stage = state.story_arc.get_current_stage(language)
+    
+    if stage_advanced:
+        print(f"📖 STORY ARC ADVANCED: {old_stage} → {new_stage}")
+        print(f"   New stage guidance: {state.story_arc.get_stage_guidance(language)}")
+    else:
+        print(f"📖 STORY ARC STAGE: {new_stage}")
+    
     # Select elements for this turn based on language
     selected_elements = story_engine.select_elements(action_type, current_element, language)
     print(f"🎴 ELEMENTS SELECTED:")
@@ -366,8 +473,9 @@ def next_turn():
             print(f"   {key}: {value}")
     print()
     
-    # Create prompt for the narrative
-    prompt = story_engine.create_prompt(state, selected_elements, action_type)
+    # CHANGED: Use story_engine to build prompt
+    prompt = story_engine.build_prompt(state, selected_elements, action_type)
+    
     print("📋 PROMPT CREATED")
     print(f"   Action type: {action_type}")
     print(f"   Cosmic element: {current_element}")
@@ -377,75 +485,18 @@ def next_turn():
     print("🖋️  GENERATING NARRATIVE...")
     narrative_result = generate_narrative_with_llm(prompt, language)
     
-    # Handle different response formats based on language
-    if language == Language.BILINGUAL and isinstance(narrative_result, dict) and "zh" in narrative_result:
-        narrative_zh = narrative_result["zh"]
-        narrative_en = narrative_result["en"]
-        token_usage = narrative_result.get("token_usage", {})
-        
-        # Update state
-        state.current_turn += 1
-        state.previous_sentence = narrative_en
-        state.previous_sentence_zh = narrative_zh
-        
-        # Add to narrative thread
-        state.narrative_thread.append({
-            "turn": state.current_turn,
-            "roll": roll,
-            "action_type": action_type,
-            "elements": selected_elements,
-            "narrative": narrative_en,
-            "narrative_zh": narrative_zh,
-            "token_usage": token_usage
-        })
-        
-        print("✍️  BILINGUAL NARRATIVE ADDED TO STORY")
-        print(f"   Turn: {state.current_turn}")
-        print(f"   Text (ZH): '{narrative_zh[:50]}...'")
-        print(f"   Text (EN): '{narrative_en[:50]}...'")
-        print(f"   Tokens used: {token_usage.get('total_tokens', 'unknown')}")
-    else:
-        # Handle the case where narrative_result is now a dict with content and token_usage
-        if isinstance(narrative_result, dict) and "content" in narrative_result:
-            narrative = narrative_result["content"]
-            token_usage = narrative_result.get("token_usage", {})
-        else:
-            narrative = narrative_result
-            token_usage = {}
-        
-        # Update state
-        state.current_turn += 1
-        if language == Language.CHINESE:
-            state.previous_sentence_zh = narrative
-        else:
-            state.previous_sentence = narrative
-        
-        # Add to narrative thread
-        state.narrative_thread.append({
-            "turn": state.current_turn,
-            "roll": roll,
-            "action_type": action_type,
-            "elements": selected_elements,
-            "narrative": narrative if language != Language.CHINESE else "",
-            "narrative_zh": narrative if language == Language.CHINESE else "",
-            "token_usage": token_usage
-        })
-        
-        print("✍️  NARRATIVE ADDED TO STORY")
-        print(f"   Turn: {state.current_turn}")
-        print(f"   Text: '{narrative[:100]}...'")
-        print(f"   Tokens used: {token_usage.get('total_tokens', 'unknown')}")
-    print()
+    # Update state and narrative thread (no changes needed here)
     
-    # Check if story should end
-    if roll == 18 or state.current_turn >= state.max_turns:
+    # CHANGED: Use story_engine to check if story should end
+    if story_engine.should_end_story(state, roll):
         print("🏁 STORY ENDING TRIGGERED")
         
         # Generate an ending if needed
         if roll == 18:
             print("   Reason: Die rolled 18 (forced ending)")
             
-            # Your existing ending prompt generation code...
+            # CHANGED: Use story_engine for ending prompt
+            ending_prompt = story_engine.create_ending_prompt(state, current_element)
             
             print("📜 GENERATING FINAL ENDING...")
             ending_result = generate_narrative_with_llm(ending_prompt, language)
@@ -705,11 +756,11 @@ if __name__ == '__main__':
         print("✅ OpenAI API key found")
     
     print("\n🚀 Starting Folktale Generator API...")
-    print("   Host: 0.0.0.0")
-    print("   Port: 5000")
+    print(f"   Host: {API_HOST}")
+    print(f"   Port: {API_PORT}")
     print()
     
-    app.run(host='0.0.0.0', port=5555, debug=True)
+    app.run(host=API_HOST, port=API_PORT, debug=API_DEBUG)
 
 @app.route('/language/<lang>', methods=['POST'])
 def set_language(lang):

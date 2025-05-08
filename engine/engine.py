@@ -1,0 +1,304 @@
+"""Main story engine for the folktale generator."""
+
+import random
+import json
+import os
+from datetime import datetime
+from typing import Dict, List, Optional, Tuple
+
+from utils.language import Language
+from engine.dice import D18StoryDie
+from engine.state import StoryState
+from engine.prompt import create_prompt
+from cosmology.wuxing import WuXing, Element
+from data.loader import load_all_data_files
+from narrative.arc import StoryArc
+
+class StoryEngine:
+    """Main engine for generating Han dynasty folktales."""
+    
+    def __init__(self, data_path="./data"):
+        """Initialize the story engine.
+        
+        Args:
+            data_path: Path to data files directory.
+        """
+        self.data_path = data_path
+        self.die = D18StoryDie()
+        self.wuxing = WuXing()
+        
+        # Load data files
+        self.data = load_all_data_files(data_path)
+        
+        # Extract data collections for easy access
+        self.places = self.data.get("places", [])
+        self.characters = self.data.get("characters", [])
+        self.objects = self.data.get("objects", [])
+        self.events = self.data.get("events", [])
+        self.interventions = self.data.get("interventions", [])
+        self.story_seeds = self.data.get("story_seeds", [])
+        self.endings = self.data.get("endings", [])
+    
+    def get_cosmic_position(self, state: StoryState) -> str:
+        """Calculate current cosmic position based on story state.
+        
+        Args:
+            state: Current story state.
+            
+        Returns:
+            Current cosmic element name.
+        """
+        return self.wuxing.calculate_next_position(state.cosmic_position, state.current_turn)
+    
+    def select_random_element(self, collection, lang=Language.ENGLISH):
+        """Select a random element from collection in specified language.
+        
+        Args:
+            collection: Collection of bilingual elements.
+            lang: Language to return the element in.
+            
+        Returns:
+            Selected element in the specified language.
+        """
+        if not collection:
+            return None
+        
+        item = random.choice(collection)
+        if lang == Language.CHINESE:
+            return item.get("zh", "")
+        elif lang == Language.ENGLISH:
+            return item.get("en", "")
+        else:  # BILINGUAL
+            return {"zh": item.get("zh", ""), "en": item.get("en", "")}
+    
+    def select_elements(self, action_type: str, current_element: str, lang=Language.ENGLISH) -> Dict:
+        """Select appropriate elements based on action type and cosmic position in specified language.
+        
+        Args:
+            action_type: The type of action for this turn.
+            current_element: The current cosmic element.
+            lang: Language to return elements in.
+            
+        Returns:
+            Dictionary of selected story elements.
+        """
+        selected = {"cosmic_element": current_element}
+        
+        if action_type == "character_action":
+            character = self.select_random_element(self.characters, lang)
+            selected["character"] = character or "a wandering scholar"
+        elif action_type == "environmental_event":
+            event = self.select_random_element(self.events, lang)
+            place = self.select_random_element(self.places, lang)
+            selected["event"] = event or "a sudden storm"
+            selected["place"] = place or "a misty mountain"
+        elif action_type == "object_appearance":
+            object_item = self.select_random_element(self.objects, lang)
+            selected["object"] = object_item or "an ancient bronze mirror"
+        elif action_type == "cosmic_intervention":
+            intervention = self.select_random_element(self.interventions, lang)
+            selected["intervention"] = intervention or "the heavens rumble"
+        elif action_type == "wildcard":
+            # Combine multiple elements for wildcard
+            character = self.select_random_element(self.characters, lang)
+            object_item = self.select_random_element(self.objects, lang)
+            place = self.select_random_element(self.places, lang)
+            selected["character"] = character or "a mysterious figure"
+            selected["object"] = object_item or "a glowing artifact"
+            selected["place"] = place or "a forgotten temple"
+        
+        return selected
+    
+    def build_prompt(self, state: StoryState, elements: Dict, action_type: str) -> str:
+        """Create a prompt for the story generation.
+        
+        Args:
+            state: Current story state.
+            elements: Elements to include in this turn.
+            action_type: The type of action for this turn.
+            
+        Returns:
+            Formatted prompt for the language model.
+        """
+        return create_prompt(state, elements, action_type, self.wuxing)
+    
+    def save_story(self, state: StoryState):
+        """Save completed story to archive.
+        
+        Args:
+            state: Story state to save.
+        """
+        story_data = {
+            "id": state.story_id,
+            "completed_at": datetime.now().isoformat(),
+            "final_narrative": state.narrative_thread,
+            "cosmic_position": state.cosmic_position,
+            "total_turns": state.current_turn,
+            "max_turns": state.max_turns,
+            "language": state.language,
+            "story_arc": {
+                "type": state.story_arc.arc_type,
+                "stages": state.story_arc.stages,
+                "theme_elements": state.story_arc.theme_elements,
+                "current_stage": state.story_arc.get_current_stage(Language.ENGLISH)
+            }
+        }
+        
+        # Ensure stories directory exists
+        os.makedirs("./stories", exist_ok=True)
+        
+        filepath = f"./stories/{state.story_id}.json"
+        with open(filepath, 'w', encoding='utf-8') as f:
+            json.dump(story_data, f, ensure_ascii=False, indent=2)
+    
+    def get_story_seed_from_previous(self, previous_story_id: str = None) -> Dict:
+        """Get seed elements from the most recent story for exquisite corpse.
+        
+        Args:
+            previous_story_id: ID of a previous story to build from.
+            
+        Returns:
+            Dictionary with seed text and cosmic position.
+        """
+        if previous_story_id is None:
+            # Find most recent story
+            story_files = [f for f in os.listdir("./stories") if f.endswith('.json')]
+            if not story_files:
+                seed = self.select_random_element(self.story_seeds) if self.story_seeds else "In ancient times..."
+                return {"seed": seed, "seed_zh": seed.get("zh", seed) if isinstance(seed, dict) else seed}
+            
+            story_files.sort()
+            previous_story_id = story_files[-1].replace('.json', '')
+        
+        try:
+            with open(f"./stories/{previous_story_id}.json", 'r', encoding='utf-8') as f:
+                previous_story = json.load(f)
+            
+            # Extract the last sentence and cosmic position
+            if previous_story.get('final_narrative'):
+                last_turn = previous_story['final_narrative'][-1]
+                return {
+                    "seed": last_turn.get('narrative', "Long ago..."),
+                    "seed_zh": last_turn.get('narrative_zh', "很久以前..."),
+                    "cosmic_position": previous_story.get('cosmic_position', "wood")
+                }
+        except Exception as e:
+            print(f"Error loading previous story: {e}")
+        
+        # Fallback to random seed
+        seed = self.select_random_element(self.story_seeds) if self.story_seeds else "Long ago..."
+        return {"seed": seed, "seed_zh": seed.get("zh", seed) if isinstance(seed, dict) else seed}
+    
+    def create_opening_prompt(self, state: StoryState) -> str:
+        """Create a prompt for story opening.
+        
+        Args:
+            state: Current story state.
+            
+        Returns:
+            Opening prompt for the language model.
+        """
+        lang = state.language
+        
+        if lang == Language.CHINESE:
+            return f"""以这个开头创作一个新的中国汉代民间故事: "{state.previous_sentence_zh}"
+
+故事结构: {state.story_arc.arc_data['description_zh']}
+当前阶段: {state.story_arc.get_current_stage(language)}
+阶段指导: {state.story_arc.get_stage_guidance(language)}
+{state.story_arc.get_related_literature(language)}
+{state.story_arc.get_motifs(language)}
+
+故事发生在汉代，应包含中国传统宇宙观的元素。
+从{self.wuxing.get_element_text(state.cosmic_position, Language.CHINESE)}元素开始。
+写一个引人入胜的开场段落，合理引入故事的第一阶段。"""
+        elif lang == Language.ENGLISH:
+            return f"""Begin a new Han dynasty Chinese folktale based on this opening: "{state.previous_sentence}"
+
+Story arc: {state.story_arc.arc_data['description']}
+Current stage: {state.story_arc.get_current_stage(language)}
+Stage guidance: {state.story_arc.get_stage_guidance(language)}
+{state.story_arc.get_related_literature(language)}
+{state.story_arc.get_motifs(language)}
+
+The story takes place during the Han dynasty and should incorporate elements of traditional Chinese cosmology. 
+Start with the cosmic element of {state.cosmic_position}. 
+Write an engaging opening paragraph that appropriately introduces the first stage of the story."""
+        else:  # BILINGUAL
+            return f"""Create a new Han dynasty Chinese folktale in BOTH Chinese and English. First write in Chinese, then provide its English translation.
+
+Chinese opening line: "{state.previous_sentence_zh}"
+English opening line: "{state.previous_sentence}"
+
+Story arc: {state.story_arc.arc_data['description']} / {state.story_arc.arc_data['description_zh']}
+Current stage: {state.story_arc.get_current_stage(language)}
+Stage guidance: 
+- Chinese: {state.story_arc.get_stage_guidance(Language.CHINESE)}
+- English: {state.story_arc.get_stage_guidance(Language.ENGLISH)}
+{state.story_arc.get_related_literature(language)}
+{state.story_arc.get_motifs(language)}
+
+The story takes place during the Han dynasty (汉代) and should incorporate elements of traditional Chinese cosmology.
+Start with the cosmic element of {state.cosmic_position} ({self.wuxing.get_element_text(state.cosmic_position, Language.CHINESE)}).
+        
+Write an engaging opening paragraph in Chinese first, followed by its English translation. The opening should appropriately introduce the first stage of the story arc."""
+    
+    def create_ending_prompt(self, state: StoryState, current_element: str) -> str:
+        """Create a prompt for story ending.
+        
+        Args:
+            state: Current story state.
+            current_element: Current cosmic element.
+            
+        Returns:
+            Ending prompt for the language model.
+        """
+        lang = state.language
+        
+        if lang == Language.CHINESE:
+            return f"""用一个恰当的结局完成这个中国民间故事。
+            故事一直围绕着{self.wuxing.get_element_text(current_element, Language.CHINESE)}元素展开。
+            前一段落: {state.previous_sentence_zh}
+            请写一个令人满意的结局，将引入的主题和元素联系起来。"""
+        elif lang == Language.ENGLISH:
+            return f"""Complete this Chinese folktale with a fitting conclusion. 
+            The story has taken place in the cosmic element of {current_element}. 
+            Previous narrative: {state.previous_sentence}
+            Write a satisfying ending that ties together the themes and elements introduced."""
+        else:  # BILINGUAL
+            return f"""Complete this Chinese folktale with a fitting conclusion in BOTH Chinese and English.
+            
+            The story has taken place in the cosmic element of {current_element} ({self.wuxing.get_element_text(current_element, Language.CHINESE)}).
+            
+            Previous Chinese narrative: {state.previous_sentence_zh}
+            Previous English narrative: {state.previous_sentence}
+            
+            Write a satisfying ending that ties together the themes and elements introduced.
+            First write the conclusion in Chinese, then provide its English translation."""
+    
+    def should_end_story(self, state: StoryState, roll: int) -> bool:
+        """Determine if the story should end.
+        
+        Args:
+            state: Current story state.
+            roll: Current die roll.
+            
+        Returns:
+            True if story should end, False otherwise.
+        """
+        # End on die roll of 18
+        if roll == 18:
+            return True
+        
+        # End when max turns reached
+        if state.current_turn >= state.max_turns:
+            return True
+            
+        # End if we've completed all stages of the arc
+        if state.story_arc.current_stage_index >= len(state.story_arc.stages) - 1:
+            # Only end if we've spent enough time in the final stage
+            final_stage_turns = state.current_turn - sum(state.story_arc.stage_turns[:-1])
+            if final_stage_turns >= state.story_arc.stage_turns[-1]:
+                return True
+        
+        return False
