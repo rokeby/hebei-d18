@@ -13,7 +13,8 @@ load_dotenv()
 app = Flask(__name__)
 
 # Initialize OpenAI client and story engine
-client = OpenAI()
+
+client = OpenAI(base_url="https://api.deepseek.com")
 story_engine = StoryEngine()
 
 # Ensure required directories exist
@@ -57,7 +58,7 @@ def generate_narrative_with_llm(prompt: str, system_prompt: str = None) -> str:
         
         # Add more context about the cosmic element in the prompt
         completion = client.chat.completions.create(
-            model="gpt-4",
+            model="deepseek-chat",
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": prompt}
@@ -71,7 +72,7 @@ def generate_narrative_with_llm(prompt: str, system_prompt: str = None) -> str:
     except Exception as e:
         print(f"❌ ERROR generating narrative: {e}")
         return f"[Error: Unable to generate narrative]"
-        
+
 @app.route('/')
 def home():
     """Show currently active story or latest completed story"""
