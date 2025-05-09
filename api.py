@@ -390,7 +390,7 @@ def start_story():
             return jsonify({
                 "message": "New story started",
                 "story_id": state.story_id,
-                "opening_narrative": opening_narrative,
+                "narrative": opening_narrative,  # Use the same key name as next_turn
                 "cosmic_position": state.cosmic_position,
                 "seed_from": previous_id if previous_id else "random",
                 "language": language
@@ -413,7 +413,7 @@ def next_turn():
         with open('./cache/active_story.pkl', 'rb') as f:
             state = pickle.load(f)
             
-        # NEW: Ensure story_engine reference is set
+        # Ensure story_engine reference is set
         if not hasattr(state, 'story_engine'):
             state.story_engine = story_engine
             
@@ -474,8 +474,11 @@ def next_turn():
     else:  # BILINGUAL
         prompt += "\n\n[SPECIAL NOTE / 特别提示]: Start directly with new narrative development in both languages. Do not repeat previous content."
 
+    # Generate narrative
+    print("📝 GENERATING NARRATIVE")
     narrative_result = generate_narrative_with_llm(prompt, language)
-
+    print(f"✅ Narrative generated successfully")
+    
     # Handle different response formats based on language
     if language == Language.BILINGUAL and isinstance(narrative_result, dict) and "zh" in narrative_result:
         narrative_zh = narrative_result["zh"]
@@ -506,7 +509,7 @@ def next_turn():
         state.previous_sentence = narrative_en
         state.previous_sentence_zh = narrative_zh
 
-    # Handle different response formats based on language
+    # Handle Chinese-only response format
     elif language == Language.CHINESE:
         # Handle the case where narrative_result is now a dict with content and token_usage
         if isinstance(narrative_result, dict) and "content" in narrative_result:
@@ -538,6 +541,7 @@ def next_turn():
         # Update previous sentences
         state.previous_sentence_zh = narrative
 
+    # Handle English-only response format
     else:
         # Handle single language or other format
         if isinstance(narrative_result, dict) and "content" in narrative_result:
@@ -564,42 +568,33 @@ def next_turn():
         else:
             state.previous_sentence = narrative
     
+    # Increment turn counter
     state.current_turn += 1
     print(f"📈 Turn counter incremented to {state.current_turn}/{state.max_turns}")
     
-    # # Check if the story should end
-    # if story_engine.should_end_story(state, roll):
-    #     print("🏁 STORY ENDING TRIGGERED")
+    # Check if the story should end (using correct variable names)
+    if story_engine.should_end_story(state, roll):
+        print("🏁 STORY ENDING TRIGGERED")
         
-    #     # Generate an ending if needed
-    #     if roll == 18:
-    #         print("   Reason: Die rolled 18 (forced ending)")
+        # Generate an ending if needed
+        if roll == 18:
+            print("   Reason: Die rolled 18 (forced ending)")
             
-    #         # CHANGED: Use story_engine for ending prompt
-    #         ending_prompt = story_engine.create_ending_prompt(state, current_element)
+            ending_prompt = story_engine.create_ending_prompt(state, current_element)
             
-    #         print("📜 GENERATING FINAL ENDING...")
-    #         ending_result = generate_narrative_with_llm(ending_prompt, language)
-    # print(f"   Selected arc: {state.story_arc.arc_type}")
-    # print(f"   Arc stages: {' → '.join(state.story_arc.stages)}")
-    # print(f"   Thematic elements: {state.story_arc.theme_elements}")
-    # print(f"   Motifs: {state.story_arc.motifs}")
-        
-    # print(f"   Initial cosmic position: {state.cosmic_position}")
-    # if language == Language.CHINESE:
-    #     print(f"   种子文本: '{state.previous_sentence_zh[:100]}...'")
-    # elif language == Language.ENGLISH:
-    #     print(f"   Seed text: '{state.previous_sentence[:100]}...'")
-    # else:
-    #     print(f"   Seed text (ZH): '{state.previous_sentence_zh[:50]}...'")
-    #     print(f"   Seed text (EN): '{state.previous_sentence[:50]}...'")
-    # print()
-    
-    # # CHANGED: Use story_engine to create opening prompt
-    # opening_prompt = story_engine.create_opening_prompt(state)
-    
-    print("📝 GENERATING NEXT NARRATIVE SECTION")
-    opening_result = generate_narrative_with_llm(opening_prompt, language)
+            print("📜 GENERATING FINAL ENDING...")
+            ending_result = generate_narrative_with_llm(ending_prompt, language)
+            
+            # Process the ending result (this would need to be implemented properly)
+            # ... process ending_result similar to narrative_result handling
+            
+            # Save the completed story to file
+            story_engine.save_story(state)
+            
+            # Remove the active story cache
+            os.remove('./cache/active_story.pkl')
+            
+            print("✨ Story completed and saved!")
     
     # Save updated state
     with open('./cache/active_story.pkl', 'wb') as f:

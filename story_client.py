@@ -32,6 +32,8 @@ def start_story(language="en", arc_type=None, previous_story_id=None):
     
     # Make the request
     try:
+        print(f"DEBUG: Sending data to server: {data}")
+        
         response = requests.post(f"{SERVER_URL}/start_story", 
                                  json=data, 
                                  headers={"Content-Type": "application/json"})
@@ -42,11 +44,22 @@ def start_story(language="en", arc_type=None, previous_story_id=None):
             return None
         
         story_data = response.json()
+        
+        print(f"DEBUG: API Response length: {len(str(story_data))} characters")
+        
         display_story_turn(story_data, is_opening=True)
         return story_data
     
+    except requests.exceptions.ConnectionError:
+        print(f"❌ Connection Error: Could not connect to the server at {SERVER_URL}")
+        print("   Make sure the API server is running.")
+        return None
+    except json.JSONDecodeError:
+        print("❌ Error: Server returned invalid JSON")
+        print(f"Raw response: {response.text[:200]}...")
+        return None
     except Exception as e:
-        print(f"❌ Error starting story: {e}")
+        print(f"❌ Error starting story: {str(e)}")
         return None
 
 def next_turn():
@@ -54,64 +67,112 @@ def next_turn():
     print("⏭️ GENERATING NEXT TURN")
     
     try:
+        # Make request to the API
         response = requests.post(f"{SERVER_URL}/next_turn")
         
+        # Check for error
         if response.status_code != 200:
             print(f"❌ Error: Server returned status code {response.status_code}")
             print(response.text)
             return None
         
+        # Parse the response
         story_data = response.json()
+        
+        # Log the raw response for debugging
+        print(f"DEBUG: API Response length: {len(str(story_data))} characters")
+        
+        # Display the story turn
         display_story_turn(story_data)
         return story_data
     
+    except requests.exceptions.ConnectionError:
+        print(f"❌ Connection Error: Could not connect to the server at {SERVER_URL}")
+        print("   Make sure the API server is running.")
+        return None
+    except json.JSONDecodeError:
+        print("❌ Error: Server returned invalid JSON")
+        print(f"Raw response: {response.text[:200]}...")
+        return None
     except Exception as e:
-        print(f"❌ Error generating next turn: {e}")
+        print(f"❌ Error generating next turn: {str(e)}")
+        return None
+
+def examine_api_response(endpoint, method="GET", data=None):
+    """Directly examine an API response for debugging"""
+    print(f"🔍 Examining API endpoint: {endpoint}")
+    
+    try:
+        url = f"{SERVER_URL}/{endpoint}"
+        
+        if method.upper() == "GET":
+            response = requests.get(url)
+        else:
+            response = requests.post(url, json=data)
+        
+        print(f"Status code: {response.status_code}")
+        
+        try:
+            json_data = response.json()
+            print("Response is valid JSON")
+            print(f"Keys: {list(json_data.keys())}")
+            print("Sample values:")
+            for key, value in json_data.items():
+                if isinstance(value, str):
+                    print(f"  {key}: {value[:50]}...")
+                else:
+                    print(f"  {key}: {type(value)}")
+        except:
+            print("Response is not valid JSON")
+            print(f"Raw response: {response.text[:500]}...")
+        
+        return response
+        
+    except Exception as e:
+        print(f"❌ Error examining API: {str(e)}")
         return None
 
 def display_story_turn(data, is_opening=False):
     """Display story content in a well-formatted way"""
     print_separator()
     
-    # For Chinese-only content
-    if "narrative_zh" in data and data.get("language") == "zh":
-        print("🇨🇳 CHINESE NARRATIVE:")
-        zh_content = data.get("narrative_zh") or ""
-        if zh_content:
-            print(zh_content)
-        else:
-            print("[No Chinese content available]")
-        # Don't display any other narrative sections
-        
-    # For bilingual content
-    elif "narrative_zh" in data and "narrative_en" in data:
-        print("🇨🇳 CHINESE NARRATIVE:")
-        zh_content = data.get("narrative_zh") or ""
-        if zh_content:
-            print(zh_content)
-        else:
-            print("[No Chinese content available]")
-            
-        print("\n🇬🇧 ENGLISH NARRATIVE:")
-        en_content = data.get("narrative_en") or ""
-        if en_content:
-            print(en_content)
-        else:
-            print("[No English content available]")
-            
-    # For English-only content
-    elif "narrative" in data:
-        print("📖 NARRATIVE:")
-        print(data["narrative"])
+    # Debug the structure of the data received
+    print("DEBUG: Response data structure:")
+    print(f"Keys: {list(data.keys())}")
     
+    # Extract narrative content from various possible keys
+    narrative_content = None
+    
+    # Check for opening narrative keys (used in start_story response)
+    if "opening_narrative" in data and data["opening_narrative"]:
+        narrative_content = data["opening_narrative"]
+    elif "opening_narrative_zh" in data and data["opening_narrative_zh"]:
+        narrative_content = data["opening_narrative_zh"]
+    elif "opening_narrative_en" in data and data["opening_narrative_en"]:
+        narrative_content = data["opening_narrative_en"]
+    
+    # Check for turn narrative keys (used in next_turn response)
+    elif "narrative" in data and data["narrative"]:
+        narrative_content = data["narrative"]
+    elif "narrative_zh" in data and data["narrative_zh"]:
+        narrative_content = data["narrative_zh"]
+    elif "narrative_en" in data and data["narrative_en"]:
+        narrative_content = data["narrative_en"]
+        
+    # Display the narrative content if we found it
+    if narrative_content:
+        print("📖 NARRATIVE:")
+        print(narrative_content)
+    else:
+        print("⚠️ NO NARRATIVE CONTENT FOUND")
+        
     print_separator()
     
     # Print story metadata
     if is_opening:
         print(f"Story ID: {data.get('story_id', 'unknown')}")
         print(f"Language: {data.get('language', 'unknown')}")
-        if "seed_from" in data:
-            print(f"Seed Source: {data.get('seed_from', 'unknown')}")
+        print(f"Seed Source: {data.get('seed_from', 'random')}")
     else:
         turn = data.get('turn', '?')
         remaining = data.get('remaining_turns', '?')
@@ -513,6 +574,21 @@ def guided_start_story():
     else:
         print("Story creation cancelled.")
         return None
+
+    # After the story is started, verify that we have content
+    if story_data:
+        has_content = False
+        if "opening_narrative" in story_data and story_data["opening_narrative"]:
+            has_content = True
+        elif "opening_narrative_zh" in story_data and story_data["opening_narrative_zh"]:
+            has_content = True
+        elif "opening_narrative_en" in story_data and story_data["opening_narrative_en"]:
+            has_content = True
+        
+        if not has_content:
+            print("\n⚠️ WARNING: Started story but received no narrative content!")
+            print("Running API diagnostics...")
+            examine_api_response("active_story")
 
 def guided_change_language():
     """Guide the user through changing the language"""
