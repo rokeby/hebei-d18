@@ -288,6 +288,18 @@ def start_story():
                 opening_narrative_zh = "[无法生成故事]"
             if not opening_narrative_en:
                 opening_narrative_en = "[Unable to generate narrative]"
+
+            elif language == Language.CHINESE:
+                # Add debugging
+                print(f"DEBUG: opening_result type: {type(opening_result)}")
+                print(f"DEBUG: opening_result content: {opening_result}")
+                
+                # This is where opening_narrative is likely being set incorrectly
+                if isinstance(opening_result, dict) and "content" in opening_result:
+                    opening_narrative = opening_result["content"]
+                else:
+                    # This path is probably being taken, resulting in None
+                    opening_narrative = str(opening_result) if opening_result is not None else "[Unable to generate narrative]"
                 
             else:
                 # Handle the case where opening_result is now a dict with content and token_usage
@@ -368,7 +380,7 @@ def start_story():
             
             print("✨ NEW STORY CREATED!")
             print(f"   Story ID: {state.story_id}")
-            print(f"   Opening narrative: '{opening_narrative[:100]}...'")
+            print(f"    Opening narrative: '{opening_narrative[:100] if opening_narrative is not None else '[None]'}...'")
             
             # Save as active story
             with open('./cache/active_story.pkl', 'wb') as f:
