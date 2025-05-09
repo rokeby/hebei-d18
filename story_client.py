@@ -9,6 +9,15 @@ import re
 from datetime import datetime
 
 SERVER_URL = "http://localhost:5555"
+AUTO_SAVE_TURNS = True  # Default value
+
+# Try to load from config file
+try:
+    with open('./config.json', 'r') as f:
+        config = json.load(f)
+        AUTO_SAVE_TURNS = config.get("auto_save_turns", False)
+except:
+    pass  # Use default if file doesn't exist
 
 def print_separator():
     """Print a visual separator"""
@@ -49,6 +58,55 @@ def start_story(language="en", arc_type=None, previous_story_id=None):
         print(f"DEBUG: API Response length: {len(str(story_data))} characters")
         
         display_story_turn(story_data, is_opening=True)
+        
+        # For Chinese stories, save the opening narrative to a continuous file
+        if language == "zh":
+            # Check for Chinese content in various fields
+            chinese_content = None
+            
+            # First check for opening_narrative_zh
+            if "opening_narrative_zh" in story_data and story_data["opening_narrative_zh"]:
+                chinese_content = story_data["opening_narrative_zh"]
+                print("Found Chinese content in opening_narrative_zh")
+            # Then check for narrative (which seems to be where it actually is)
+            elif "narrative" in story_data and story_data["narrative"]:
+                # Check if narrative contains Chinese
+                chinese_chars = sum(1 for char in story_data["narrative"] if '\u4e00' <= char <= '\u9fff')
+                if chinese_chars > 0:
+                    chinese_content = story_data["narrative"]
+                    print(f"Found Chinese content in narrative ({chinese_chars} Chinese chars)")
+            
+            # If we found Chinese content, save it
+            if chinese_content:
+                print("🔄 Chinese opening narrative detected - saving to continuous file...")
+                
+                # Create archive directory
+                archive_dir = "./archived_tales"
+                os.makedirs(archive_dir, exist_ok=True)
+                
+                # Get story ID 
+                story_id = story_data.get("story_id", "unknown")
+                
+                # Define continuous file name based on story ID
+                continuous_file = os.path.join(archive_dir, f"continuous_zh_{story_id}.txt")
+                
+                # Create or append to the continuous file
+                try:
+                    # Always create a new file for opening
+                    with open(continuous_file, 'w', encoding='utf-8') as f:
+                        # Add story header
+                        f.write(f"FOLKTALE STORY: {story_id}\n")
+                        f.write(f"Started: {datetime.now()}\n")
+                        f.write("-" * 40 + "\n\n")
+                        
+                        # Add opening content
+                        f.write("--- Opening ---\n\n")
+                        f.write(chinese_content + "\n")
+                    
+                    print(f"✅ Chinese opening narrative saved to: {continuous_file}")
+                except Exception as e:
+                    print(f"❌ Error saving Chinese opening: {str(e)}")
+        
         return story_data
     
     except requests.exceptions.ConnectionError:
@@ -61,62 +119,6 @@ def start_story(language="en", arc_type=None, previous_story_id=None):
         return None
     except Exception as e:
         print(f"❌ Error starting story: {str(e)}")
-        return None
-
-def next_turn():
-    """Generate the next turn of the story"""
-    print("⏭️ GENERATING NEXT TURN")
-    
-    try:
-        # Make request to the API
-        response = requests.post(f"{SERVER_URL}/next_turn")
-        
-        # Check for error
-        if response.status_code != 200:
-            print(f"❌ Error: Server returned status code {response.status_code}")
-            print(response.text)
-            return None
-        
-        # Parse the response
-        story_data = response.json()
-        
-        # Log the raw response for debugging
-        print(f"DEBUG: API Response length: {len(str(story_data))} characters")
-        
-        # Display the story turn
-        display_story_turn(story_data)
-        
-        # Check if the story has reached its conclusion
-        if story_data.get('remaining_turns', 1) <= 0:
-            print("🏁 Story has reached its conclusion!")
-            
-            # Check language and offer appropriate save option
-            is_bilingual = story_data.get('language') == "both"
-            
-            save_prompt = input("\nSave this story to file? (Y/n): ").strip().lower()
-            if save_prompt in ["", "y", "yes"]:
-                if is_bilingual:
-                    # For bilingual stories, offer the manual saving option
-                    bilingual_save_prompt = input("Would you like to use manual bilingual saving for better results? (Y/n): ").strip().lower()
-                    if bilingual_save_prompt in ["", "y", "yes"]:
-                        save_bilingual_story()
-                    else:
-                        guided_save_story()
-                else:
-                    guided_save_story()
-        
-        return story_data
-    
-    except requests.exceptions.ConnectionError:
-        print(f"❌ Connection Error: Could not connect to the server at {SERVER_URL}")
-        print("   Make sure the API server is running.")
-        return None
-    except json.JSONDecodeError:
-        print("❌ Error: Server returned invalid JSON")
-        print(f"Raw response: {response.text[:200]}...")
-        return None
-    except Exception as e:
-        print(f"❌ Error generating next turn: {str(e)}")
         return None
 
 def examine_api_response(endpoint, method="GET", data=None):
@@ -154,7 +156,7 @@ def examine_api_response(endpoint, method="GET", data=None):
         return None
 
 def display_story_turn(data, is_opening=False):
-    """Display story content in a well-formatted way"""
+    """Display story content in a well-formatted way with bilingual support"""
     print_separator()
     
     # Debug the structure of the data received
@@ -179,10 +181,29 @@ def display_story_turn(data, is_opening=False):
             has_single_narrative = True
             data["narrative"] = data["opening_narrative"]
     
+    # Check for narrative in narrative_thread for last turn
+    if "narrative_thread" in keys and data["narrative_thread"]:
+        thread = data["narrative_thread"]
+        if thread:
+            last_turn = thread[-1]
+            if "narrative_zh" in last_turn and last_turn["narrative_zh"]:
+                has_chinese = True
+                data["narrative_zh"] = last_turn["narrative_zh"]
+                print("DEBUG: Found Chinese in last turn of narrative_thread")
+            if "narrative" in last_turn and last_turn["narrative"]:
+                if not has_english:  # Only override if we don't already have English
+                    has_single_narrative = True
+                    data["narrative"] = last_turn["narrative"]
+                    print("DEBUG: Found narrative in last turn of narrative_thread")
+    
     # Display Chinese content if available
     if has_chinese:
         print("\n🇨🇳 CHINESE NARRATIVE:")
         print(data["narrative_zh"])
+        
+        # Additional debug
+        chinese_chars = sum(1 for char in data["narrative_zh"] if '\u4e00' <= char <= '\u9fff')
+        print(f"DEBUG: Chinese narrative has {len(data['narrative_zh'])} total chars, {chinese_chars} Chinese chars")
     
     # Display English content if available
     if has_english:
@@ -191,13 +212,31 @@ def display_story_turn(data, is_opening=False):
     elif has_single_narrative:
         print("\n📖 NARRATIVE:")
         print(data["narrative"])
+        
+        # Check if narrative might contain Chinese content
+        chinese_chars = sum(1 for char in data["narrative"] if '\u4e00' <= char <= '\u9fff')
+        if chinese_chars > 0 and not has_chinese:
+            print(f"\nDEBUG: The 'narrative' field contains {chinese_chars} Chinese characters!")
+            # Try to split it
+            parts = split_bilingual_text(data["narrative"])
+            if parts["zh"]:
+                print("\n🇨🇳 EXTRACTED CHINESE CONTENT:")
+                print(parts["zh"])
     
     # If no narrative content found, display a warning
     if not (has_chinese or has_english or has_single_narrative):
         print("\n⚠️ NO NARRATIVE CONTENT FOUND")
-        if "raw_response" in keys:
-            print("\nRaw LLM Response:")
-            print(data["raw_response"])
+        
+        # Try to extract from narrative_thread
+        if "narrative_thread" in keys and data["narrative_thread"]:
+            print("\nTrying to extract from narrative_thread...")
+            thread = data["narrative_thread"]
+            
+            for i, turn in enumerate(thread):
+                print(f"Turn {i} keys: {list(turn.keys())}")
+                for key in turn.keys():
+                    if "narrative" in key.lower() and turn[key]:
+                        print(f"Turn {i} {key}: {turn[key][:50]}...")
     
     print_separator()
     
@@ -212,7 +251,7 @@ def display_story_turn(data, is_opening=False):
         total = int(turn) + int(remaining) if isinstance(turn, int) and isinstance(remaining, int) else '?'
         
         print(f"Turn: {turn}/{total}")
-        print(f"Cosmic Element: {data.get('cosmic_position', 'unknown')}")
+        print(f"Cosmic Position: {data.get('cosmic_position', 'unknown')}")
         print(f"Action Type: {data.get('action_type', 'unknown')}")
         
         # Print selected story elements if available
@@ -224,7 +263,7 @@ def display_story_turn(data, is_opening=False):
                         print(f"  {key}: {value['zh']} / {value['en']}")
                     else:
                         print(f"  {key}: {value}")
-    
+
     # Print token usage if available
     if "token_usage" in data and data["token_usage"]:
         print(f"\nToken Usage: {data['token_usage'].get('total_tokens', '?')} tokens")
@@ -264,8 +303,76 @@ def list_story_arcs():
             print(f"   Motifs: {', '.join(arc_info.get('typical_motifs', []))}")
         print()
 
+
+def next_turn():
+    """Generate the next turn with continuous file saving for Chinese"""
+    print("⏭️ GENERATING NEXT TURN")
+    
+    try:
+        # Make request to the API
+        response = requests.post(f"{SERVER_URL}/next_turn")
+        
+        # Check for error
+        if response.status_code != 200:
+            print(f"❌ Error: Server returned status code {response.status_code}")
+            return None
+        
+        # Parse the response
+        story_data = response.json()
+        
+        # Display the story turn
+        display_story_turn(story_data)
+        
+        # Check if this is a Chinese story with content
+        if "narrative_zh" in story_data and story_data["narrative_zh"]:
+            print("🔄 Chinese content detected - saving to continuous file...")
+            
+            # Create archive directory
+            archive_dir = "./archived_tales"
+            os.makedirs(archive_dir, exist_ok=True)
+            
+            # Get story ID and turn number
+            story_id = story_data.get("story_id", "unknown")
+            turn_num = story_data.get("turn", 0)
+            
+            # Adjust turn number for display (API returns 0 for second turn)
+            display_turn_num = turn_num + 1
+            
+            # Define continuous file name based on story ID
+            continuous_file = os.path.join(archive_dir, f"continuous_zh_{story_id}.txt")
+            
+            # Append to the continuous file
+            try:
+                # Check if file exists
+                is_new_file = not os.path.exists(continuous_file)
+                
+                with open(continuous_file, 'a', encoding='utf-8') as f:
+                    # Add header if this is a new file (shouldn't happen normally since opening creates it)
+                    if is_new_file:
+                        f.write(f"FOLKTALE STORY: {story_id}\n")
+                        f.write(f"Started: {datetime.now()}\n")
+                        f.write("-" * 40 + "\n\n")
+                    
+                    # Add turn header and content
+                    f.write(f"\n--- Turn {display_turn_num} ---\n\n")
+                    f.write(story_data["narrative_zh"] + "\n")
+                
+                print(f"✅ Chinese content appended to: {continuous_file}")
+            except Exception as e:
+                print(f"❌ Error saving Chinese content: {str(e)}")
+        
+        # Continue with normal flow
+        if story_data.get('remaining_turns', 1) <= 0:
+            print("🏁 Story has reached its conclusion!")
+            
+        return story_data
+    
+    except Exception as e:
+        print(f"❌ Error generating next turn: {str(e)}")
+        return None
+
 def check_active_story():
-    """Check if there's an active story and display its status"""
+    """Check if there's an active story and display its status with improved bilingual support"""
     try:
         response = requests.get(f"{SERVER_URL}/active_story")
         
@@ -284,8 +391,40 @@ def check_active_story():
         print(f"Story ID: {story_data.get('story_id', 'unknown')}")
         print(f"Current Turn: {story_data.get('current_turn', '?')}/{story_data.get('max_turns', '?')}")
         print(f"Cosmic Position: {story_data.get('cosmic_position', 'unknown')}")
+        print(f"Language: {story_data.get('language', 'unknown')}")
         
-        if "narrative_so_far" in story_data and story_data["narrative_so_far"]:
+        # Check if this is a bilingual story
+        is_bilingual = story_data.get('language') == "both"
+        
+        # Get narrative content based on what's available
+        if "narrative_thread" in story_data and story_data["narrative_thread"]:
+            thread = story_data["narrative_thread"]
+            if thread:
+                last_turn = thread[-1]
+                
+                # Print keys in last turn for debugging
+                print(f"DEBUG: Last turn keys: {list(last_turn.keys())}")
+                
+                # For bilingual stories, show both Chinese and English
+                if is_bilingual:
+                    if "narrative_zh" in last_turn and last_turn["narrative_zh"]:
+                        print("\nLast Chinese Narrative:")
+                        print(last_turn["narrative_zh"])
+                    
+                    if "narrative" in last_turn and last_turn["narrative"]:
+                        print("\nLast English Narrative:")
+                        print(last_turn["narrative"])
+                else:
+                    # For non-bilingual stories, show the appropriate narrative
+                    if story_data.get('language') == "zh" and "narrative_zh" in last_turn:
+                        print("\nLast Narrative:")
+                        print(last_turn["narrative_zh"])
+                    elif "narrative" in last_turn:
+                        print("\nLast Narrative:")
+                        print(last_turn["narrative"])
+        
+        # If no narrative_thread, try narrative_so_far
+        elif "narrative_so_far" in story_data and story_data["narrative_so_far"]:
             print("\nLast Narrative:")
             print(story_data["narrative_so_far"][-1])
         
@@ -345,9 +484,8 @@ def save_story_to_file(story_data, filename=None):
     if language == "zh":
         final_filename = os.path.join(archive_dir, f"zh_{filename}.txt")
     elif language == "both":
-        # For bilingual stories, we'll save two files - just prepare the path for now
-        # This will be handled separately
-        final_filename = os.path.join(archive_dir, f"full_{filename}.txt")
+        # For bilingual stories, we'll call a separate function
+        return save_bilingual_story(story_data, filename)
     else:  # default to English
         final_filename = os.path.join(archive_dir, f"en_{filename}.txt")
     
@@ -357,73 +495,13 @@ def save_story_to_file(story_data, filename=None):
     header_content += f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
     header_content += f"{'=' * 80}\n\n"
     
-    # Debug what data we have available
+    # Print available keys in story_data for debugging
     print("\nDEBUG: Story Data Keys:")
     for key in story_data.keys():
-        if isinstance(story_data[key], str):
-            print(f"{key}: {len(story_data[key])} chars")
-        else:
-            print(f"{key}: {type(story_data[key])}")
+        print(f"  - {key}")
     
-    # Special handling for bilingual stories
-    if language == "both":
-        # Call our specialized bilingual saving function
-        return save_bilingual_story()
-    
-    # Get narrative content with better handling for Chinese-only stories
-    content = ""
-    if language == "zh":
-        # Check for Chinese content in various possible locations
-        if "narrative_zh" in story_data and story_data["narrative_zh"]:
-            content = story_data["narrative_zh"]
-            print(f"DEBUG: Found narrative_zh ({len(content)} chars)")
-        elif "narrative" in story_data and story_data["narrative"]:
-            # Some endpoints might put Chinese content in the narrative field
-            if any('\u4e00' <= char <= '\u9fff' for char in story_data["narrative"]):
-                content = story_data["narrative"]
-                print(f"DEBUG: Found Chinese in narrative ({len(content)} chars)")
-        elif "opening_narrative_zh" in story_data and story_data["opening_narrative_zh"]:
-            content = story_data["opening_narrative_zh"]
-            print(f"DEBUG: Found opening_narrative_zh ({len(content)} chars)")
-    else:  # English or other languages
-        if "narrative" in story_data and story_data["narrative"]:
-            content = story_data["narrative"]
-            print(f"DEBUG: Found narrative ({len(content)} chars)")
-        elif "opening_narrative" in story_data and story_data["opening_narrative"]:
-            content = story_data["opening_narrative"]
-            print(f"DEBUG: Found opening_narrative ({len(content)} chars)")
-    
-    # If we didn't find content in the expected fields, look for Last Narrative
-    if not content and "narrative_so_far" in story_data and story_data["narrative_so_far"]:
-        last_narrative = story_data["narrative_so_far"][-1]
-        content = last_narrative
-        print(f"DEBUG: Using last narrative from narrative_so_far ({len(content)} chars)")
-    
-    # Extract narrative_thread content if available
-    if not content and "narrative_thread" in story_data and story_data["narrative_thread"]:
-        thread = story_data["narrative_thread"]
-        assembled_content = []
-        for i, turn in enumerate(thread):
-            turn_content = ""
-            if language == "zh" and "narrative_zh" in turn and turn["narrative_zh"]:
-                turn_content = turn["narrative_zh"]
-            elif "narrative" in turn and turn["narrative"]:
-                turn_content = turn["narrative"]
-            
-            if turn_content:
-                assembled_content.append(f"--- Turn {i} ---\n\n{turn_content}")
-        
-        if assembled_content:
-            content = "\n\n".join(assembled_content)
-            print(f"DEBUG: Assembled content from narrative_thread ({len(content)} chars)")
-    
-    # Finally, check active_story fields if nothing else worked
-    if not content and "Last Narrative:" in str(story_data):
-        # This is a bit of a hack, but sometimes the narrative is in a formatted string
-        full_text = str(story_data)
-        narrative_section = full_text.split("Last Narrative:", 1)[1].split("\n")[0].strip()
-        content = narrative_section
-        print(f"DEBUG: Extracted from Last Narrative section ({len(content)} chars)")
+    # Extract narrative content
+    content = extract_narrative_content(story_data, language)
     
     # Save the content if we found any
     if content:
@@ -434,17 +512,6 @@ def save_story_to_file(story_data, filename=None):
                 f.write(f"{'-' * 40}\n")
                 f.write(f"Language: {language}\n")
                 f.write(f"Cosmic Position: {story_data.get('cosmic_position', 'unknown')}\n")
-                
-                # Add elements if available
-                if "elements" in story_data:
-                    f.write("Elements:\n")
-                    for key, value in story_data["elements"].items():
-                        if isinstance(value, dict) and "zh" in value and language == "zh":
-                            f.write(f"  {key}: {value['zh']}\n")
-                        elif isinstance(value, dict) and "en" in value and language != "zh":
-                            f.write(f"  {key}: {value['en']}\n")
-                        else:
-                            f.write(f"  {key}: {value}\n")
             
             print(f"✅ Story saved to: {final_filename}")
             return final_filename
@@ -455,8 +522,118 @@ def save_story_to_file(story_data, filename=None):
         print("❌ No content found to save")
         return None
 
+def save_generated_narrative(data, language="en", default_filename=None):
+    """Save narrative content directly from the API response data - improved version"""
+    if not data:
+        print("❌ No data to save")
+        return None
+    
+    # Print keys for debugging
+    print("\nDEBUG: Direct Save Analysis")
+    print(f"Available keys in response: {list(data.keys())}")
+    
+    # Check for narrative content
+    has_narrative = "narrative" in data and data["narrative"]
+    has_narrative_zh = "narrative_zh" in data and data["narrative_zh"]
+    
+    if has_narrative:
+        print(f"Has narrative: {len(data['narrative'])} chars")
+    if has_narrative_zh:
+        print(f"Has narrative_zh: {len(data['narrative_zh'])} chars")
+    
+    # Generate default filename if not provided
+    if not default_filename:
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        story_id = data.get("story_id", "unknown")
+        turn = data.get("turn", "0")
+        default_filename = f"tale_{story_id}_turn{turn}_{timestamp}"
+    
+    # Ask for filename
+    filename = input(f"Enter filename (without extension) [default: {default_filename}]: ").strip()
+    if not filename:
+        filename = default_filename
+    
+    # Create archived_tales directory if it doesn't exist
+    archive_dir = "./archived_tales"
+    os.makedirs(archive_dir, exist_ok=True)
+    
+    saved_files = []
+    
+    # Save the raw JSON data for reference
+    json_filename = os.path.join(archive_dir, f"raw_{filename}.json")
+    try:
+        with open(json_filename, 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+        saved_files.append(json_filename)
+        print(f"✅ Raw JSON data saved to: {json_filename}")
+    except Exception as e:
+        print(f"❌ Error saving raw data: {str(e)}")
+    
+    # Create a header for the text files
+    header_content = f"{'=' * 80}\n"
+    header_content += f"FOLKTALE STORY: {data.get('story_id', 'Unknown ID')} - Turn {data.get('turn', '0')}\n"
+    header_content += f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+    header_content += f"{'=' * 80}\n\n"
+    
+    # Save Chinese content if available
+    if has_narrative_zh:
+        zh_filename = os.path.join(archive_dir, f"zh_{filename}.txt")
+        try:
+            with open(zh_filename, 'w', encoding='utf-8') as f:
+                f.write(header_content)
+                f.write(data["narrative_zh"] + "\n\n")
+                f.write(f"{'-' * 40}\n")
+                f.write(f"Language: Chinese (zh)\n")
+                f.write(f"Cosmic Position: {data.get('cosmic_position', 'unknown')}\n")
+                f.write(f"Turn: {data.get('turn', '?')}/{data.get('max_turns', '?')}\n")
+                # Add elements if available
+                if "elements" in data:
+                    f.write("Elements:\n")
+                    for key, value in data["elements"].items():
+                        f.write(f"  {key}: {value}\n")
+            saved_files.append(zh_filename)
+            print(f"✅ Chinese content saved to: {zh_filename}")
+        except Exception as e:
+            print(f"❌ Error saving Chinese content: {str(e)}")
+    else:
+        print("⚠️ No Chinese content found in API response")
+    
+    # Save English content if available
+    if has_narrative:
+        en_filename = os.path.join(archive_dir, f"en_{filename}.txt")
+        try:
+            with open(en_filename, 'w', encoding='utf-8') as f:
+                f.write(header_content)
+                f.write(data["narrative"] + "\n\n")
+                f.write(f"{'-' * 40}\n")
+                f.write(f"Language: English (en)\n")
+                f.write(f"Cosmic Position: {data.get('cosmic_position', 'unknown')}\n")
+                f.write(f"Turn: {data.get('turn', '?')}/{data.get('max_turns', '?')}\n")
+                # Add elements if available
+                if "elements" in data:
+                    f.write("Elements:\n")
+                    for key, value in data["elements"].items():
+                        f.write(f"  {key}: {value}\n")
+            saved_files.append(en_filename)
+            print(f"✅ English content saved to: {en_filename}")
+        except Exception as e:
+            print(f"❌ Error saving English content: {str(e)}")
+    else:
+        print("⚠️ No English content found in API response")
+    
+    # Display the narratives we just saved
+    if has_narrative_zh:
+        print("\n🇨🇳 CHINESE NARRATIVE THAT WAS JUST SAVED:")
+        print(data["narrative_zh"])
+    
+    if has_narrative:
+        print("\n🇬🇧 ENGLISH NARRATIVE THAT WAS JUST SAVED:")
+        print(data["narrative"])
+    
+    return saved_files
+
 def save_bilingual_story(story_data=None, filename=None):
-    """Save current bilingual story with separate Chinese and English files"""
+    """Save current bilingual story with separate Chinese and English files - comprehensive fix"""
     print_header("SAVING BILINGUAL STORY")
     
     # If no story data provided, get from active story
@@ -479,7 +656,7 @@ def save_bilingual_story(story_data=None, filename=None):
     # Generate filename if not provided
     if not filename:
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        story_id = story_data.get("story_id", "unknown")
+        story_id = story_data.get('story_id', "unknown")
         filename = f"tale_{story_id}_{timestamp}"
     
     # Remove file extension if provided
@@ -492,113 +669,62 @@ def save_bilingual_story(story_data=None, filename=None):
     header_content += f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
     header_content += f"{'=' * 80}\n\n"
     
-    # Get narrative content
-    chinese_content = ""
-    english_content = ""
+    # Print detailed debug about the story data
+    print("\nDEBUG: Story Data Analysis")
+    print(f"Keys: {list(story_data.keys())}")
     
-    # Get raw output directly from the console if available
-    raw_output = None
+    # Initialize content collections
+    chinese_content = []
+    english_content = []
     
-    # Debug available keys
-    print("DEBUG: Available keys in story_data:")
-    for key in story_data.keys():
-        print(f"  - {key}")
-    
-    # Check for content in narrative_thread
+    # Extract content from narrative_thread if available
     if "narrative_thread" in story_data and story_data["narrative_thread"]:
         thread = story_data["narrative_thread"]
-        chinese_parts = []
-        english_parts = []
-        
-        print(f"DEBUG: Found narrative_thread with {len(thread)} entries")
+        print(f"DEBUG: Found narrative_thread with {len(thread)} turns")
         
         for i, turn in enumerate(thread):
-            turn_keys = list(turn.keys())
-            print(f"DEBUG: Turn {i} keys: {turn_keys}")
+            # Print keys in this turn for debugging
+            print(f"DEBUG: Turn {i} keys: {list(turn.keys())}")
             
+            # Extract Chinese content
             if "narrative_zh" in turn and turn["narrative_zh"]:
-                chinese_parts.append(f"--- Turn {i} ---\n\n{turn['narrative_zh']}")
-                print(f"DEBUG: Found Chinese in turn {i}: {len(turn['narrative_zh'])} chars")
+                chinese_chars = sum(1 for char in turn["narrative_zh"] if '\u4e00' <= char <= '\u9fff')
+                print(f"DEBUG: Turn {i} narrative_zh has {len(turn['narrative_zh'])} chars, {chinese_chars} Chinese chars")
+                chinese_content.append(f"--- Turn {i} ---\n\n{turn['narrative_zh']}")
             
+            # Extract English content
             if "narrative" in turn and turn["narrative"]:
-                english_parts.append(f"--- Turn {i} ---\n\n{turn['narrative']}")
-                print(f"DEBUG: Found English in turn {i}: {len(turn['narrative'])} chars")
-        
-        if chinese_parts:
-            chinese_content = "\n\n".join(chinese_parts)
-        
-        if english_parts:
-            english_content = "\n\n".join(english_parts)
+                english_content.append(f"--- Turn {i} ---\n\n{turn['narrative']}")
+                print(f"DEBUG: Turn {i} narrative has {len(turn['narrative'])} chars")
     
-    # Check for content in narrative_so_far
-    elif "narrative_so_far" in story_data and story_data["narrative_so_far"]:
-        narratives = story_data["narrative_so_far"]
-        print(f"DEBUG: Found narrative_so_far with {len(narratives)} entries")
-        
-        # For each narrative, try to split into Chinese and English
-        chinese_parts = []
-        english_parts = []
-        
-        for i, narrative in enumerate(narratives):
-            # Split the narrative based on Chinese characters
-            parts = split_bilingual_text(narrative)
-            
-            if parts["zh"]:
-                chinese_parts.append(f"--- Turn {i} ---\n\n{parts['zh']}")
-                print(f"DEBUG: Found Chinese in narrative {i}: {len(parts['zh'])} chars")
-            
-            if parts["en"]:
-                english_parts.append(f"--- Turn {i} ---\n\n{parts['en']}")
-                print(f"DEBUG: Found English in narrative {i}: {len(parts['en'])} chars")
-        
-        if chinese_parts:
-            chinese_content = "\n\n".join(chinese_parts)
-        
-        if english_parts:
-            english_content = "\n\n".join(english_parts)
+    # If we didn't find content in the thread, try direct fields
+    if not chinese_content and "narrative_zh" in story_data and story_data["narrative_zh"]:
+        chinese_content.append(story_data["narrative_zh"])
+        print(f"DEBUG: Found narrative_zh directly in story_data")
     
-    # Check for single-turn content (like next_turn responses)
-    else:
-        if "narrative_zh" in story_data and story_data["narrative_zh"]:
-            chinese_content = story_data["narrative_zh"]
-            print(f"DEBUG: Found narrative_zh: {len(chinese_content)} chars")
-        
-        if "narrative_en" in story_data and story_data["narrative_en"]:
-            english_content = story_data["narrative_en"]
-            print(f"DEBUG: Found narrative_en: {len(english_content)} chars")
-        elif "narrative" in story_data and story_data["narrative"]:
-            english_content = story_data["narrative"]
-            print(f"DEBUG: Found narrative: {len(english_content)} chars")
+    if not english_content and "narrative_en" in story_data and story_data["narrative_en"]:
+        english_content.append(story_data["narrative_en"])
+        print(f"DEBUG: Found narrative_en directly in story_data")
+    elif not english_content and "narrative" in story_data and story_data["narrative"]:
+        english_content.append(story_data["narrative"])
+        print(f"DEBUG: Found narrative directly in story_data")
     
-    # If we still don't have content, try to extract from Last Narrative
-    if (not chinese_content or not english_content) and "Last Narrative:" in str(story_data):
-        # Try to extract from the raw response data
-        full_text = str(story_data)
-        narrative_parts = full_text.split("Last Narrative:", 1)
-        if len(narrative_parts) > 1:
-            raw_narrative = narrative_parts[1].split("\n\n", 1)[0].strip()
-            print(f"DEBUG: Extracted raw narrative: {len(raw_narrative)} chars")
-            
-            # Split by Chinese/English
-            parts = split_bilingual_text(raw_narrative)
-            
-            if parts["zh"] and not chinese_content:
-                chinese_content = parts["zh"]
-                print(f"DEBUG: Extracted Chinese from raw: {len(chinese_content)} chars")
-            
-            if parts["en"] and not english_content:
-                english_content = parts["en"]
-                print(f"DEBUG: Extracted English from raw: {len(english_content)} chars")
+    # Combine content
+    combined_chinese = "\n\n".join(chinese_content)
+    combined_english = "\n\n".join(english_content)
+    
+    print(f"DEBUG: Final Chinese content length: {len(combined_chinese)} chars")
+    print(f"DEBUG: Final English content length: {len(combined_english)} chars")
     
     saved_files = []
     
     # Save Chinese content if available
-    if chinese_content:
+    if combined_chinese:
         zh_filename = os.path.join(archive_dir, f"zh_{filename}.txt")
         try:
             with open(zh_filename, 'w', encoding='utf-8') as f:
                 f.write(header_content)
-                f.write(chinese_content + "\n\n")
+                f.write(combined_chinese + "\n\n")
                 f.write(f"{'-' * 40}\n")
                 f.write(f"Language: Chinese (zh)\n")
                 f.write(f"Cosmic Position: {story_data.get('cosmic_position', 'unknown')}\n")
@@ -610,12 +736,12 @@ def save_bilingual_story(story_data=None, filename=None):
         print("⚠️ No Chinese content found to save")
     
     # Save English content if available
-    if english_content:
+    if combined_english:
         en_filename = os.path.join(archive_dir, f"en_{filename}.txt")
         try:
             with open(en_filename, 'w', encoding='utf-8') as f:
                 f.write(header_content)
-                f.write(english_content + "\n\n")
+                f.write(combined_english + "\n\n")
                 f.write(f"{'-' * 40}\n")
                 f.write(f"Language: English (en)\n")
                 f.write(f"Cosmic Position: {story_data.get('cosmic_position', 'unknown')}\n")
@@ -626,30 +752,32 @@ def save_bilingual_story(story_data=None, filename=None):
     else:
         print("⚠️ No English content found to save")
     
-    # If neither content was found, save the raw output as fallback
-    if not saved_files:
-        # Try to get the raw narrative from the active story
-        full_filename = os.path.join(archive_dir, f"full_{filename}.txt")
-        try:
-            with open(full_filename, 'w', encoding='utf-8') as f:
-                f.write(header_content)
+    # Also save a combined version
+    full_filename = os.path.join(archive_dir, f"full_{filename}.txt")
+    try:
+        with open(full_filename, 'w', encoding='utf-8') as f:
+            f.write(header_content)
+            
+            # Include both languages
+            if combined_chinese and combined_english:
+                f.write("--- CHINESE VERSION ---\n\n")
+                f.write(combined_chinese + "\n\n")
+                f.write("--- ENGLISH VERSION ---\n\n")
+                f.write(combined_english + "\n\n")
+            elif combined_chinese:
+                f.write(combined_chinese + "\n\n")
+            elif combined_english:
+                f.write(combined_english + "\n\n")
+            else:
+                f.write("[No narrative content could be extracted]\n\n")
                 
-                # Write whatever content we have
-                if "narrative_so_far" in story_data and story_data["narrative_so_far"]:
-                    for i, narrative in enumerate(story_data["narrative_so_far"]):
-                        f.write(f"--- Turn {i} ---\n\n{narrative}\n\n")
-                elif raw_output:
-                    f.write(raw_output + "\n\n")
-                else:
-                    f.write("[No narrative content could be extracted]\n\n")
-                    
-                f.write(f"{'-' * 40}\n")
-                f.write(f"Language: both\n")
-                f.write(f"Cosmic Position: {story_data.get('cosmic_position', 'unknown')}\n")
-            saved_files.append(full_filename)
-            print(f"⚠️ Could not separate languages. Full content saved to: {full_filename}")
-        except Exception as e:
-            print(f"❌ Error saving full version: {str(e)}")
+            f.write(f"{'-' * 40}\n")
+            f.write(f"Language: both\n")
+            f.write(f"Cosmic Position: {story_data.get('cosmic_position', 'unknown')}\n")
+        saved_files.append(full_filename)
+        print(f"✅ Full version saved to: {full_filename}")
+    except Exception as e:
+        print(f"❌ Error saving full version: {str(e)}")
     
     return saved_files
 
@@ -670,59 +798,87 @@ def split_bilingual_text(text):
     english_section = None
     
     # Check for common section markers
-    if "Chinese Version:" in text or "中文版:" in text:
-        parts = re.split(r"Chinese Version:|中文版:|English Translation:|英文版:", text, flags=re.IGNORECASE)
-        if len(parts) >= 3:  # We have both markers
-            chinese_section = parts[1].strip()
-            english_section = parts[2].strip()
+    if any(marker in text.lower() for marker in ["chinese version:", "中文版:", "chinese:", "中文:"]):
+        parts = re.split(r"chinese version:|中文版:|chinese:|中文:|english translation:|english version:|英文版:|english:|英文:", 
+                         text, flags=re.IGNORECASE)
+        
+        # Clean up the parts
+        parts = [p.strip() for p in parts if p.strip()]
+        
+        if len(parts) >= 2:  # We have at least two sections
+            # Determine which is which
+            for i, part in enumerate(parts):
+                # Count Chinese characters
+                chinese_char_count = sum(1 for char in part if '\u4e00' <= char <= '\u9fff')
+                is_mostly_chinese = chinese_char_count > len(part) * 0.2  # Lower threshold to catch mixed content
+                
+                if is_mostly_chinese and chinese_section is None:
+                    chinese_section = part
+                elif not is_mostly_chinese and english_section is None and chinese_section is not None:
+                    english_section = part
     
     # If no markers found, use character detection
     if chinese_section is None or english_section is None:
-        # Identify language by character content
-        lines = text.split("\n")
+        # Split the text into lines
+        lines = text.split('\n')
         
-        current_section = None
+        # Track separate sections
         chinese_lines = []
         english_lines = []
         
+        # First pass: identify language of each line
+        line_languages = []
         for line in lines:
             line = line.strip()
             if not line:
+                line_languages.append("empty")
                 continue
                 
             # Count Chinese characters
             chinese_char_count = sum(1 for char in line if '\u4e00' <= char <= '\u9fff')
-            is_mostly_chinese = chinese_char_count > len(line) * 0.15  # Lower threshold to catch mixed lines
+            is_chinese = chinese_char_count > len(line) * 0.15  # Lower threshold
             
-            if is_mostly_chinese:
-                # If we were in English section, assume we've switched to Chinese
-                if current_section == "en":
-                    # Only switch if we have a substantial Chinese content
-                    if chinese_char_count > 5:
-                        current_section = "zh"
-                else:
-                    current_section = "zh"
-                
-                if current_section == "zh":
-                    chinese_lines.append(line)
+            if is_chinese:
+                line_languages.append("zh")
             else:
-                # If we have almost no Chinese characters, it's probably English
-                if current_section == "zh":
-                    # Only switch if line has some content and very few Chinese characters
-                    if len(line) > 10 and chinese_char_count < 2:
-                        current_section = "en"
-                else:
-                    current_section = "en"
+                line_languages.append("en")
+        
+        # Second pass: identify sections based on language transitions
+        current_language = None
+        transition_points = []
+        
+        for i, lang in enumerate(line_languages):
+            if lang == "empty":
+                continue
+                
+            if current_language is None:
+                current_language = lang
+            elif lang != current_language and lang != "empty":
+                # Found a language transition
+                transition_points.append(i)
+                current_language = lang
+        
+        # If we found a transition, split the text
+        if transition_points:
+            # Find the main transition point (usually there's just one major transition)
+            main_transition = transition_points[0]
+            
+            # Chinese content is typically first
+            for i in range(main_transition):
+                if line_languages[i] != "empty":
+                    chinese_lines.append(lines[i])
+            
+            # English content is typically second
+            for i in range(main_transition, len(lines)):
+                if line_languages[i] != "empty":
+                    english_lines.append(lines[i])
                     
-                if current_section == "en":
-                    english_lines.append(line)
-        
-        # If we got consistent sections
-        if chinese_lines:
-            chinese_section = "\n".join(chinese_lines)
-        
-        if english_lines:
-            english_section = "\n".join(english_lines)
+            # Combine the lines
+            if chinese_lines:
+                chinese_section = "\n".join(chinese_lines)
+            
+            if english_lines:
+                english_section = "\n".join(english_lines)
     
     # Assign to result
     if chinese_section:
@@ -733,15 +889,42 @@ def split_bilingual_text(text):
     
     # Fallback if no sections detected
     if not result["zh"] and not result["en"]:
-        # If the text contains Chinese characters, assume it's Chinese
+        # If the text contains Chinese characters, try to split by paragraphs
         chinese_char_count = sum(1 for char in text if '\u4e00' <= char <= '\u9fff')
         if chinese_char_count > 0:
-            result["zh"] = text
+            # Try to find a natural split point between paragraphs
+            paragraphs = re.split(r'\n\s*\n', text)
+            
+            if len(paragraphs) >= 2:
+                chinese_paragraphs = []
+                english_paragraphs = []
+                
+                # Identify language of each paragraph
+                for para in paragraphs:
+                    chinese_char_count = sum(1 for char in para if '\u4e00' <= char <= '\u9fff')
+                    is_chinese = chinese_char_count > len(para) * 0.15
+                    
+                    if is_chinese:
+                        chinese_paragraphs.append(para)
+                    else:
+                        english_paragraphs.append(para)
+                
+                if chinese_paragraphs:
+                    result["zh"] = "\n\n".join(chinese_paragraphs)
+                
+                if english_paragraphs:
+                    result["en"] = "\n\n".join(english_paragraphs)
+            else:
+                # If we can't split by paragraphs, just assign the whole text to Chinese
+                result["zh"] = text
         else:
+            # If no Chinese characters, treat as English
             result["en"] = text
     
+    # Print debug info
+    print(f"DEBUG: Split bilingual text - Chinese: {len(result['zh'])} chars, English: {len(result['en'])} chars")
+    
     return result
-
 
 def roll_die():
     """Roll the D18 story die"""
@@ -760,20 +943,23 @@ def roll_die():
     except Exception as e:
         print(f"❌ Error rolling die: {e}")
 
-def display_help_menu():
-    """Display help menu with available commands"""
-    print_header("FOLKTALE GENERATOR HELP")
-    print("Available commands:")
-    print("  1. start - Start a new story")
-    print("  2. next - Generate the next turn")
-    print("  3. arcs - List available story arcs")
-    print("  4. status - Check active story status")
-    print("  5. language - Change story language")
-    print("  6. save - Save current story to file")
-    print("  7. roll - Roll the story die")
-    print("  8. help - Display this help menu")
-    print("  9. exit/quit - Exit the program")
-    print("\nFor more details on any command, type 'help <command>'")
+def display_main_menu():
+    """Display the main menu options with auto-save toggle"""
+    auto_save_status = "enabled" if AUTO_SAVE_TURNS else "disabled"
+    
+    print_header("FOLKTALE GENERATOR")
+    print("What would you like to do?\n")
+    print("  1. Start a new story")
+    print("  2. Continue active story (next turn)")
+    print("  3. Check story status")
+    print("  4. List available story arcs")
+    print("  5. Change story language")
+    print("  6. Toggle auto-save (currently: {})".format(auto_save_status))
+    print("  7. Save current turn directly")  
+    print("  8. Manual copy-paste save")
+    print("  9. Export all stories")
+    print("  0. Exit\n")
+    return input("Enter your choice (0-9): ").strip()
 
 def display_command_help(command):
     """Display detailed help for a specific command"""
@@ -995,6 +1181,131 @@ def guided_start_story():
             print("Running API diagnostics...")
             examine_api_response("active_story")
 
+def extract_narrative_content(story_data, language):
+    """Extract narrative content from story data based on language - enhanced version"""
+    content = ""
+    
+    # Debug what we're looking for
+    print(f"DEBUG: Extracting {language} content from story data")
+    
+    # CRITICAL: Check narrative_thread first since that's the most reliable source
+    if "narrative_thread" in story_data and story_data["narrative_thread"]:
+        thread = story_data["narrative_thread"]
+        print(f"DEBUG: Found narrative_thread with {len(thread)} entries")
+        
+        assembled_content = []
+        for i, turn in enumerate(thread):
+            turn_content = ""
+            
+            # For Chinese content
+            if language == "zh":
+                # First try narrative_zh
+                if "narrative_zh" in turn and turn["narrative_zh"]:
+                    turn_content = turn["narrative_zh"]
+                    print(f"DEBUG: Found narrative_zh in turn {i}: {len(turn_content)} chars")
+                # Then try checking if narrative contains Chinese
+                elif "narrative" in turn:
+                    chinese_chars = sum(1 for char in turn["narrative"] if '\u4e00' <= char <= '\u9fff')
+                    if chinese_chars > 0:
+                        # Try to extract only the Chinese part
+                        parts = split_bilingual_text(turn["narrative"])
+                        if parts["zh"]:
+                            turn_content = parts["zh"]
+                            print(f"DEBUG: Extracted Chinese from narrative in turn {i}: {len(turn_content)} chars")
+            # For English content
+            else:
+                if "narrative" in turn and turn["narrative"]:
+                    # For English, prioritize checking if the content doesn't have Chinese
+                    chinese_chars = sum(1 for char in turn["narrative"] if '\u4e00' <= char <= '\u9fff')
+                    if chinese_chars == 0 or language != "en":
+                        turn_content = turn["narrative"]
+                        print(f"DEBUG: Found narrative in turn {i}: {len(turn_content)} chars")
+                    else:
+                        # If it has Chinese characters, try to extract only the English part
+                        parts = split_bilingual_text(turn["narrative"])
+                        if parts["en"]:
+                            turn_content = parts["en"]
+                            print(f"DEBUG: Extracted English from mixed narrative in turn {i}: {len(turn_content)} chars")
+                elif "narrative_en" in turn and turn["narrative_en"]:
+                    turn_content = turn["narrative_en"]
+                    print(f"DEBUG: Found narrative_en in turn {i}: {len(turn_content)} chars")
+            
+            if turn_content:
+                assembled_content.append(f"--- Turn {i} ---\n\n{turn_content}")
+        
+        if assembled_content:
+            content = "\n\n".join(assembled_content)
+            print(f"DEBUG: Successfully assembled content from narrative_thread ({len(content)} chars)")
+            # Return immediately if we found content in the thread
+            return content
+    
+    # If we couldn't extract from narrative_thread, try direct fields
+    if language == "zh":
+        # First priority: narrative_zh field
+        if "narrative_zh" in story_data and story_data["narrative_zh"]:
+            content = story_data["narrative_zh"]
+            print(f"DEBUG: Found narrative_zh in direct field ({len(content)} chars)")
+        # Second priority: Chinese characters in narrative field
+        elif "narrative" in story_data and story_data["narrative"]:
+            chinese_chars = sum(1 for char in story_data["narrative"] if '\u4e00' <= char <= '\u9fff')
+            if chinese_chars > 0:
+                # Try to extract only the Chinese part
+                parts = split_bilingual_text(story_data["narrative"])
+                if parts["zh"]:
+                    content = parts["zh"]
+                    print(f"DEBUG: Extracted Chinese from narrative direct field ({len(content)} chars)")
+        # Third priority: opening_narrative_zh field
+        elif "opening_narrative_zh" in story_data and story_data["opening_narrative_zh"]:
+            content = story_data["opening_narrative_zh"]
+            print(f"DEBUG: Found opening_narrative_zh ({len(content)} chars)")
+    else:  # English or other languages
+        # First priority: narrative field
+        if "narrative" in story_data and story_data["narrative"]:
+            content = story_data["narrative"]
+            print(f"DEBUG: Found narrative direct field ({len(content)} chars)")
+        # Second priority: opening_narrative field
+        elif "opening_narrative" in story_data and story_data["opening_narrative"]:
+            content = story_data["opening_narrative"]
+            print(f"DEBUG: Found opening_narrative ({len(content)} chars)")
+        # Third priority: narrative_en field (sometimes used in bilingual)
+        elif "narrative_en" in story_data and story_data["narrative_en"]:
+            content = story_data["narrative_en"]
+            print(f"DEBUG: Found narrative_en ({len(content)} chars)")
+    
+    # Last resort: Try to find in narrative_so_far
+    if not content and "narrative_so_far" in story_data and story_data["narrative_so_far"]:
+        print(f"DEBUG: Searching for {language} content in narrative_so_far")
+        narratives = story_data["narrative_so_far"]
+        
+        # Check each narrative
+        for i, narrative in enumerate(narratives):
+            if language == "zh":
+                chinese_chars = sum(1 for char in narrative if '\u4e00' <= char <= '\u9fff')
+                if chinese_chars > 0:
+                    # Try to extract only the Chinese part if it has both languages
+                    if chinese_chars < len(narrative) / 2:  # If it's mixed content
+                        parts = split_bilingual_text(narrative)
+                        if parts["zh"]:
+                            content = parts["zh"]
+                            print(f"DEBUG: Extracted Chinese from narrative_so_far[{i}] ({len(content)} chars)")
+                            break
+                    else:
+                        content = narrative
+                        print(f"DEBUG: Found Chinese in narrative_so_far[{i}] ({len(content)} chars)")
+                        break
+            else:
+                # For English, prioritize content without Chinese
+                chinese_chars = sum(1 for char in narrative if '\u4e00' <= char <= '\u9fff')
+                if chinese_chars == 0:
+                    content = narrative
+                    print(f"DEBUG: Found English in narrative_so_far[{i}] ({len(content)} chars)")
+                    break
+    
+    # Extra debug info about what we found
+    print(f"DEBUG: Final {language} content extraction result: {len(content)} chars found")
+    
+    return content
+
 def guided_change_language():
     """Guide the user through changing the language"""
     print_header("CHANGE STORY LANGUAGE")
@@ -1020,31 +1331,51 @@ def guided_change_language():
             print("❌ Please enter a valid number.")
 
 def guided_save_story():
-    """Guide the user through saving the story"""
+    """Guide the user through saving the story with improved bilingual support"""
     story_data = check_active_story()
     if not story_data:
         return None
     
     print_header("SAVE STORY")
     
+    # Check if this is a bilingual story
+    is_bilingual = story_data.get('language') == "both"
+    
     # Generate default filename
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    story_id = story_data.get("story_id", "unknown")
+    story_id = story_data.get('story_id', "unknown")
     default_filename = f"tale_{story_id}_{timestamp}"
     
     filename = input(f"Enter filename (without extension) [default: {default_filename}]: ").strip()
     if not filename:
         filename = default_filename
     
-    # Check language and use appropriate saving method
-    language = story_data.get("language", "unknown")
-    if language == "both":
-        return save_bilingual_story(story_data, filename)
+    # For bilingual stories, use the specialized saving function
+    if is_bilingual:
+        print("Bilingual story detected. Using specialized saving function.")
+        
+        # Ensure we have the complete story data
+        try:
+            # First try to get the full story data from the server
+            response = requests.get(f"{SERVER_URL}/active_story")
+            if response.status_code == 200:
+                complete_story_data = response.json()
+                print("Retrieved complete story data from server.")
+                return save_bilingual_story(complete_story_data, filename)
+            else:
+                # If that fails, use the story_data we already have
+                print("Using cached story data for saving.")
+                return save_bilingual_story(story_data, filename)
+        except Exception as e:
+            print(f"❌ Error retrieving complete story data: {e}")
+            print("Using cached story data for saving.")
+            return save_bilingual_story(story_data, filename)
     else:
+        # For non-bilingual stories, use the regular save function
         return save_story_to_file(story_data, filename)
 
 def display_main_menu():
-    """Display the main menu options"""
+    """Display the main menu options with emergency saving options"""
     print_header("FOLKTALE GENERATOR")
     print("What would you like to do?\n")
     print("  1. Start a new story")
@@ -1052,15 +1383,15 @@ def display_main_menu():
     print("  3. Check story status")
     print("  4. List available story arcs")
     print("  5. Change story language")
-    print("  6. Save story to file")
-    print("  7. Save bilingual story (manual)")  # New option
-    print("  8. Roll the story die")
-    print("  9. Help")
+    print("  6. Save story to file (standard)")
+    print("  7. EMERGENCY: Generate and save directly")   # New option
+    print("  8. EMERGENCY: Save last turn")              # New option
+    print("  9. EMERGENCY: Manual copy-paste save")      # New option
     print("  0. Exit\n")
     return input("Enter your choice (0-9): ").strip()
 
 def interactive_mode():
-    """Run an interactive storytelling session with guided menus"""
+    """Run an interactive storytelling session with auto-save option"""
     os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen
     
     print("\n📚 FOLKTALE GENERATOR INTERACTIVE SESSION 📚")
@@ -1081,13 +1412,31 @@ def interactive_mode():
         elif choice == "5":
             guided_change_language()
         elif choice == "6":
-            guided_save_story()
+            # Toggle auto-save setting
+            auto_save_every_turn(not AUTO_SAVE_TURNS)
         elif choice == "7":
-            save_bilingual_story()  # New option
+            # Get current story data and save directly
+            try:
+                response = requests.get(f"{SERVER_URL}/active_story")
+                if response.status_code == 200:
+                    story_data = response.json()
+                    # Also try to get the last turn from API
+                    last_turn_response = requests.post(f"{SERVER_URL}/next_turn")
+                    if last_turn_response.status_code == 200:
+                        last_turn_data = last_turn_response.json()
+                        save_generated_narrative(last_turn_data, last_turn_data.get("language", "en"))
+                    else:
+                        # Fall back to active story data
+                        save_generated_narrative(story_data, story_data.get("language", "en"))
+                else:
+                    print("❌ No active story found or error connecting to server")
+            except Exception as e:
+                print(f"❌ Error: {str(e)}")
         elif choice == "8":
-            roll_die()
+            manual_copy_paste_save()
         elif choice == "9":
-            display_help_menu()
+            # Export all stories option
+            export_all_stories()
         elif choice == "0":
             print("\nGoodbye! 👋")
             break
@@ -1097,6 +1446,23 @@ def interactive_mode():
         # Pause before returning to the main menu
         input("\nPress Enter to continue...")
         os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen
+
+def auto_save_every_turn(enable=True):
+    """Enable or disable auto-saving of each turn as it's generated"""
+    global AUTO_SAVE_TURNS
+    AUTO_SAVE_TURNS = enable
+    status = "enabled" if enable else "disabled"
+    print(f"🔄 Auto-save for each turn is now {status}")
+    
+    # Save setting to a configuration file
+    try:
+        with open('./config.json', 'w') as f:
+            json.dump({"auto_save_turns": enable}, f)
+        print("✅ Setting saved")
+    except Exception as e:
+        print(f"❌ Error saving setting: {str(e)}")
+    
+    return enable
 
 def command_line_mode():
     """Process input as commands in a simpler interactive mode"""
@@ -1251,6 +1617,273 @@ def auto_mode():
             print("\n\n⏹️ Auto generation stopped by user")
     
     print("\nReturning to main menu...")
+
+def direct_save_current_turn_raw():
+    """Save the current turn directly from raw API response data with minimal processing"""
+    print_header("EMERGENCY DIRECT SAVE")
+    
+    try:
+        # Make a direct request to next_turn to get the raw response
+        response = requests.post(f"{SERVER_URL}/next_turn")
+        
+        # Check for error
+        if response.status_code != 200:
+            print(f"❌ Error: Server returned status code {response.status_code}")
+            return None
+        
+        # Get the raw JSON response
+        raw_data = response.json()
+        
+        # Print all keys for debugging
+        print("Available keys in raw response:")
+        for key in raw_data.keys():
+            print(f"  - {key}")
+        
+        # Check specifically for narrative content
+        has_narrative = "narrative" in raw_data and raw_data["narrative"]
+        has_narrative_zh = "narrative_zh" in raw_data and raw_data["narrative_zh"]
+        
+        print(f"Has narrative: {has_narrative}")
+        print(f"Has narrative_zh: {has_narrative_zh}")
+        
+        if has_narrative:
+            print(f"Narrative length: {len(raw_data['narrative'])} chars")
+        if has_narrative_zh:
+            print(f"Narrative_zh length: {len(raw_data['narrative_zh'])} chars")
+        
+        # Generate a filename
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        default_filename = f"emergency_save_{timestamp}"
+        filename = input(f"Enter filename (without extension) [default: {default_filename}]: ").strip()
+        if not filename:
+            filename = default_filename
+        
+        # Create archived_tales directory if it doesn't exist
+        archive_dir = "./archived_tales"
+        os.makedirs(archive_dir, exist_ok=True)
+        
+        saved_files = []
+        
+        # Save the raw JSON data for reference
+        json_filename = os.path.join(archive_dir, f"raw_{filename}.json")
+        try:
+            with open(json_filename, 'w', encoding='utf-8') as f:
+                json.dump(raw_data, f, ensure_ascii=False, indent=2)
+            saved_files.append(json_filename)
+            print(f"✅ Raw JSON data saved to: {json_filename}")
+        except Exception as e:
+            print(f"❌ Error saving raw data: {str(e)}")
+        
+        # Attempt to save Chinese content if available
+        if has_narrative_zh:
+            zh_filename = os.path.join(archive_dir, f"zh_{filename}.txt")
+            try:
+                chinese_content = raw_data["narrative_zh"]
+                with open(zh_filename, 'w', encoding='utf-8') as f:
+                    f.write(chinese_content)
+                saved_files.append(zh_filename)
+                print(f"✅ Chinese content saved to: {zh_filename}")
+            except Exception as e:
+                print(f"❌ Error saving Chinese content: {str(e)}")
+        else:
+            print("⚠️ No Chinese content found in API response")
+        
+        # Attempt to save English content if available
+        if has_narrative:
+            en_filename = os.path.join(archive_dir, f"en_{filename}.txt")
+            try:
+                english_content = raw_data["narrative"]
+                with open(en_filename, 'w', encoding='utf-8') as f:
+                    f.write(english_content)
+                saved_files.append(en_filename)
+                print(f"✅ English content saved to: {en_filename}")
+            except Exception as e:
+                print(f"❌ Error saving English content: {str(e)}")
+        else:
+            print("⚠️ No English content found in API response")
+        
+        # Display the narratives we just received
+        if has_narrative_zh:
+            print("\n🇨🇳 CHINESE NARRATIVE THAT WAS JUST SAVED:")
+            print(raw_data["narrative_zh"])
+        
+        if has_narrative:
+            print("\n🇬🇧 ENGLISH NARRATIVE THAT WAS JUST SAVED:")
+            print(raw_data["narrative"])
+        
+        return saved_files
+    
+    except Exception as e:
+        print(f"❌ Error in emergency direct save: {str(e)}")
+        return None
+
+def emergency_save_last_turn():
+    """Try to save the last turn by directly querying the active story"""
+    print_header("EMERGENCY SAVE LAST TURN")
+    
+    try:
+        # Get the active story
+        response = requests.get(f"{SERVER_URL}/active_story")
+        
+        # Check for error
+        if response.status_code != 200:
+            print(f"❌ Error: Server returned status code {response.status_code}")
+            return None
+        
+        # Parse the response
+        story_data = response.json()
+        
+        # Check for narrative_thread
+        if "narrative_thread" not in story_data or not story_data["narrative_thread"]:
+            print("❌ No narrative_thread found in active story")
+            return None
+        
+        # Get the last turn
+        thread = story_data["narrative_thread"]
+        if not thread:
+            print("❌ narrative_thread is empty")
+            return None
+        
+        last_turn = thread[-1]
+        print("Last turn keys:")
+        for key in last_turn.keys():
+            print(f"  - {key}")
+        
+        # Check for narrative content
+        has_narrative = "narrative" in last_turn and last_turn["narrative"]
+        has_narrative_zh = "narrative_zh" in last_turn and last_turn["narrative_zh"]
+        
+        print(f"Has narrative: {has_narrative}")
+        print(f"Has narrative_zh: {has_narrative_zh}")
+        
+        # Generate a filename
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        story_id = story_data.get("story_id", "unknown")
+        default_filename = f"last_turn_{story_id}_{timestamp}"
+        filename = input(f"Enter filename (without extension) [default: {default_filename}]: ").strip()
+        if not filename:
+            filename = default_filename
+        
+        # Create archived_tales directory if it doesn't exist
+        archive_dir = "./archived_tales"
+        os.makedirs(archive_dir, exist_ok=True)
+        
+        saved_files = []
+        
+        # Save Chinese content if available
+        if has_narrative_zh:
+            zh_filename = os.path.join(archive_dir, f"zh_{filename}.txt")
+            try:
+                with open(zh_filename, 'w', encoding='utf-8') as f:
+                    f.write(last_turn["narrative_zh"])
+                saved_files.append(zh_filename)
+                print(f"✅ Chinese content saved to: {zh_filename}")
+            except Exception as e:
+                print(f"❌ Error saving Chinese content: {str(e)}")
+        else:
+            print("⚠️ No Chinese content found in last turn")
+        
+        # Save English content if available
+        if has_narrative:
+            en_filename = os.path.join(archive_dir, f"en_{filename}.txt")
+            try:
+                with open(en_filename, 'w', encoding='utf-8') as f:
+                    f.write(last_turn["narrative"])
+                saved_files.append(en_filename)
+                print(f"✅ English content saved to: {en_filename}")
+            except Exception as e:
+                print(f"❌ Error saving English content: {str(e)}")
+        else:
+            print("⚠️ No English content found in last turn")
+        
+        return saved_files
+    
+    except Exception as e:
+        print(f"❌ Error in emergency save: {str(e)}")
+        return None
+
+def manual_copy_paste_save():
+    """Save content via manual copy-paste from the console"""
+    print_header("MANUAL COPY-PASTE SAVE")
+    
+    print("This function allows you to save content you can see on your screen.")
+    print("You'll need to copy and paste the text directly from the console display.")
+    
+    # Ask for the language
+    print("\nWhat language do you want to save?")
+    print("1. Chinese")
+    print("2. English")
+    print("3. Both")
+    
+    lang_choice = input("Enter choice (1-3): ").strip()
+    
+    save_chinese = lang_choice in ["1", "3"]
+    save_english = lang_choice in ["2", "3"]
+    
+    # Generate a filename
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    default_filename = f"manual_save_{timestamp}"
+    filename = input(f"Enter filename (without extension) [default: {default_filename}]: ").strip()
+    if not filename:
+        filename = default_filename
+    
+    # Create archived_tales directory if it doesn't exist
+    archive_dir = "./archived_tales"
+    os.makedirs(archive_dir, exist_ok=True)
+    
+    saved_files = []
+    
+    # Save Chinese content if requested
+    if save_chinese:
+        print("\nPlease copy and paste the Chinese content from the console:")
+        print("(Look for text under '🇨🇳 CHINESE NARRATIVE:' headings)")
+        chinese_content = input("Paste Chinese content here (then press Enter):\n")
+        
+        if chinese_content.strip():
+            zh_filename = os.path.join(archive_dir, f"zh_{filename}.txt")
+            try:
+                with open(zh_filename, 'w', encoding='utf-8') as f:
+                    f.write(chinese_content)
+                saved_files.append(zh_filename)
+                print(f"✅ Chinese content saved to: {zh_filename}")
+            except Exception as e:
+                print(f"❌ Error saving Chinese content: {str(e)}")
+        else:
+            print("⚠️ No Chinese content provided")
+    
+    # Save English content if requested
+    if save_english:
+        print("\nPlease copy and paste the English content from the console:")
+        print("(Look for text under '🇬🇧 ENGLISH NARRATIVE:' or '📖 NARRATIVE:' headings)")
+        english_content = input("Paste English content here (then press Enter):\n")
+        
+        if english_content.strip():
+            en_filename = os.path.join(archive_dir, f"en_{filename}.txt")
+            try:
+                with open(en_filename, 'w', encoding='utf-8') as f:
+                    f.write(english_content)
+                saved_files.append(en_filename)
+                print(f"✅ English content saved to: {en_filename}")
+            except Exception as e:
+                print(f"❌ Error saving English content: {str(e)}")
+        else:
+            print("⚠️ No English content provided")
+    
+    # Save combined version if both were requested
+    if save_chinese and save_english and chinese_content.strip() and english_content.strip():
+        full_filename = os.path.join(archive_dir, f"full_{filename}.txt")
+        try:
+            with open(full_filename, 'w', encoding='utf-8') as f:
+                f.write("--- CHINESE VERSION ---\n\n")
+                f.write(chinese_content + "\n\n")
+                f.write("--- ENGLISH VERSION ---\n\n")
+                f.write(english_content + "\n\n")
+            saved_files.append(full_filename)
+            print(f"✅ Combined content saved to: {full_filename}")
+        except Exception as e:
+            print(f"❌ Error saving combined content: {str(e)}")
+    
+    return saved_files
 
 def main():
     """Main function parsing command line arguments"""

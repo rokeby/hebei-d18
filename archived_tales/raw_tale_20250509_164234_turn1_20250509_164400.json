@@ -1,0 +1,19 @@
+{
+  "action_type": "cosmic_intervention",
+  "cosmic_position": "fire",
+  "elements": {
+    "cosmic_element": "fire",
+    "intervention": "青龙神将封印古井妖魔"
+  },
+  "message": "Turn generated successfully",
+  "narrative": "",
+  "narrative_zh": "张子房急取青玉圭向南而拜，忽见赤星之下云气翻涌，显出一条青龙虚影。《淮南子》有云：\"东方木精，其神青龙\"，那龙睛如炬，爪握雷纹铜镜，正是镇守东方的孟章神君显圣。  \n\n神龙长吟震彻九霄，尾扫过处现出一口千年古井，井沿刻着《周易》贲卦爻辞。井中黑气翻腾，隐约可见当年黄帝封印的疫鬼\"女魃\"残魂，因阴阳失衡而欲破封而出。孟章神君将铜镜投入井中，镜面阴阳鱼纹大放青光，照得井水化作碧玉琼浆。  \n\n霎时间，南风送来《乐纬》记载的\"蕤宾之音\"，井畔生出七茎赤蓍，排成北斗之形。隐士顿悟此乃天意示警：火德过盛则焚木，须以北方玄冥之水济之，方合《黄帝内经》\"水火既济\"之道。",
+  "remaining_turns": 9,
+  "story_id": "20250509_164234",
+  "token_usage": {
+    "completion_tokens": 239,
+    "prompt_tokens": 731,
+    "total_tokens": 970
+  },
+  "turn": 1
+}
