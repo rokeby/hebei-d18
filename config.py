@@ -21,5 +21,5 @@ API_DEBUG = True
 
 # Model settings
 MODEL_NAME = "deepseek-chat"  # or "gpt-4" for OpenAI
-DEFAULT_TEMPERATURE = 0.8
-MAX_TOKENS = 500
+DEFAULT_TEMPERATURE = 0.5
+MAX_TOKENS = 10000

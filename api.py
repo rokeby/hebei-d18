@@ -498,85 +498,41 @@ def next_turn():
     print("📝 GENERATING NEXT NARRATIVE SECTION")
     opening_result = generate_narrative_with_llm(opening_prompt, language)
     
-    # Handle different response formats based on language
-    if language == Language.BILINGUAL and isinstance(opening_result, dict) and "zh" in opening_result:
-        opening_narrative_zh = opening_result["zh"]
-        opening_narrative_en = opening_result["en"]
-        token_usage = opening_result.get("token_usage", {})
-        
-        # Record the opening as the first turn
-        state.narrative_thread.append({
-            "turn": 0,
-            "roll": None,
-            "action_type": "opening",
-            "elements": {"cosmic_element": state.cosmic_position},
-            "narrative": opening_narrative_en,
-            "narrative_zh": opening_narrative_zh,
-            "token_usage": token_usage
-        })
-        state.previous_sentence = opening_narrative_en
-        state.previous_sentence_zh = opening_narrative_zh
-        
-        print("✨ NEW BILINGUAL STORY CREATED!")
-        print(f"   Story ID: {state.story_id}")
-        print(f"   Opening (ZH): '{opening_narrative_zh[:50]}...'")
-        print(f"   Opening (EN): '{opening_narrative_en[:50]}...'")
-    else:
-        # Handle the case where opening_result is now a dict with content and token_usage
-        if isinstance(opening_result, dict) and "content" in opening_result:
-            opening_narrative = opening_result["content"]
-            token_usage = opening_result.get("token_usage", {})
-        else:
-            opening_narrative = opening_result
-            token_usage = {}
-        
-        # Record with token usage
-        state.narrative_thread.append({
-            "turn": 0,
-            "roll": None,
-            "action_type": "opening",
-            "elements": {"cosmic_element": state.cosmic_position},
-            "narrative": opening_narrative,
-            "narrative_zh": opening_narrative if language == Language.CHINESE else "",
-            "token_usage": token_usage
-        })
-        
-        if language == Language.CHINESE:
-            state.previous_sentence_zh = opening_narrative
-        else:
-            state.previous_sentence = opening_narrative
-        
-        print("✨ NEW STORY CREATED!")
-        print(f"   Story ID: {state.story_id}")
-        print(f"   Opening narrative: '{opening_narrative[:100]}...'")
-    
     # Save updated state
     with open('./cache/active_story.pkl', 'wb') as f:
         pickle.dump(state, f)
     print("💾 Story state saved")
-    
+
     print_separator()
-    
+
     # Return response based on language
-    if language == Language.BILINGUAL and isinstance(opening_result, dict):
+    if language == Language.BILINGUAL:
         return jsonify({
-            "message": "New bilingual story started",
+            "message": "Turn generated successfully",
             "story_id": state.story_id,
-            "opening_narrative_zh": opening_result["zh"],
-            "opening_narrative_en": opening_result["en"],
+            "turn": state.current_turn - 1,  # We've already incremented the counter
+            "remaining_turns": state.max_turns - state.current_turn,
+            "narrative_zh": state.narrative_thread[-1].get("narrative_zh", ""),
+            "narrative_en": state.narrative_thread[-1].get("narrative", ""),
             "cosmic_position": state.cosmic_position,
-            "language": language
+            "action_type": action_type,
+            "elements": selected_elements,
+            "token_usage": token_usage if 'token_usage' in locals() else {}
         })
     else:
         return jsonify({
-            "message": "New story started",
+            "message": "Turn generated successfully",
             "story_id": state.story_id,
-            "opening_narrative": opening_narrative,
+            "turn": state.current_turn - 1,  # We've already incremented
+            "remaining_turns": state.max_turns - state.current_turn,
+            "narrative": state.narrative_thread[-1].get("narrative", ""),
             "cosmic_position": state.cosmic_position,
-            "language": language
+            "action_type": action_type,
+            "elements": selected_elements,
+            "token_usage": token_usage if 'token_usage' in locals() else {}
         })
 
-
+        
 @app.route('/get_story/<story_id>', methods=['GET'])
 def get_story(story_id):
     """Retrieve a specific completed story"""
@@ -746,4 +702,3 @@ def set_language(lang):
         print("❌ No active story found")
         return jsonify({"error": "No active story found. Please start a new story first."}), 404
 
-        
