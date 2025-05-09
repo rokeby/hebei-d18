@@ -142,15 +142,10 @@ def generate_narrative_with_llm(prompt: str, language=Language.ENGLISH, system_p
         print(f"   Total tokens: {total_tokens}")
         print()
 
+        # For bilingual responses
         if language == Language.BILINGUAL:
             try:
                 parsed = parse_bilingual_response(narrative)
-                print("\n📊 PARSED BILINGUAL RESULT:")
-                print(f"Chinese content length: {len(parsed['zh'])} chars")
-                print(f"English content length: {len(parsed['en'])} chars")
-                print(f"Chinese sample: {parsed['zh'][:100]}")
-                print(f"English sample: {parsed['en'][:100]}")
-                # Make sure we have values for both languages, even if empty
                 return {
                     "zh": parsed.get("zh", ""), 
                     "en": parsed.get("en", ""),
@@ -162,7 +157,6 @@ def generate_narrative_with_llm(prompt: str, language=Language.ENGLISH, system_p
                 }
             except Exception as e:
                 print(f"❌ Error parsing bilingual response: {e}")
-                # Provide a fallback
                 return {
                     "zh": "[错误: 无法解析双语响应]",
                     "en": "[Error: Unable to parse bilingual response]",
@@ -173,12 +167,31 @@ def generate_narrative_with_llm(prompt: str, language=Language.ENGLISH, system_p
                     }
                 }
 
+        # For Chinese or English, always return a dict with "content" key
+        return {
+            "content": narrative,
+            "token_usage": {
+                "prompt_tokens": prompt_tokens,
+                "completion_tokens": completion_tokens,
+                "total_tokens": total_tokens
+            }
+        }
+
     except Exception as e:
         print(f"❌ ERROR generating narrative: {e}")
-        print(f"Exception details: {str(e)}")  # Add more detailed error output
+        print(f"Exception details: {str(e)}")
+        
+        # Return a safe fallback
         if language == Language.BILINGUAL:
-            return {"zh": f"[错误: 无法生成叙述]", "en": f"[Error: Unable to generate narrative]"}
-        return {"content": f"[Error: Unable to generate narrative]"}
+            return {
+                "zh": "[错误: 无法生成叙述]", 
+                "en": "[Error: Unable to generate narrative]",
+                "token_usage": {}
+            }
+        return {
+            "content": f"[Error: Unable to generate narrative - {str(e)}]",
+            "token_usage": {}
+        }
 
 @app.route('/')
 def home():
@@ -238,7 +251,7 @@ def start_story():
         # Create new story state with language preference and story arc
         state = StoryState(language=language)
         
-        # NEW: Set story_engine reference
+        # Set story_engine reference
         state.story_engine = story_engine  
         
         if arc_type:
@@ -271,16 +284,24 @@ def start_story():
             print(f"   Seed text (EN): '{state.previous_sentence[:50]}...'")
         print()
         
-        # CHANGED: Use story_engine to create opening prompt
+        # Use story_engine to create opening prompt
         opening_prompt = story_engine.create_opening_prompt(state)
         
         print("📝 GENERATING OPENING NARRATIVE")
         opening_result = generate_narrative_with_llm(opening_prompt, language)
+
+        # Log what we got back for debugging
+        print(f"DEBUG: opening_result type: {type(opening_result)}")
+        if isinstance(opening_result, dict):
+            print(f"DEBUG: opening_result keys: {opening_result.keys()}")
+        else:
+            print("DEBUG: opening_result is not a dict")
         
-        # Handle different response formats based on language
+        # Handle bilingual mode
         if language == Language.BILINGUAL and isinstance(opening_result, dict) and "zh" in opening_result:
-            opening_narrative_zh = opening_result.get("zh", "")
-            opening_narrative_en = opening_result.get("en", "")
+            # Extract content with safety
+            opening_narrative_zh = opening_result.get("zh", "[无法生成叙述]")
+            opening_narrative_en = opening_result.get("en", "[Unable to generate narrative]")
             token_usage = opening_result.get("token_usage", {})
             
             # Add fallbacks for empty content
@@ -288,45 +309,17 @@ def start_story():
                 opening_narrative_zh = "[无法生成故事]"
             if not opening_narrative_en:
                 opening_narrative_en = "[Unable to generate narrative]"
-
-            elif language == Language.CHINESE:
-                # Add debugging
-                print(f"DEBUG: opening_result type: {type(opening_result)}")
-                print(f"DEBUG: opening_result content: {opening_result}")
-                
-                # This is where opening_narrative is likely being set incorrectly
-                if isinstance(opening_result, dict) and "content" in opening_result:
-                    opening_narrative = opening_result["content"]
-                else:
-                    # This path is probably being taken, resulting in None
-                    opening_narrative = str(opening_result) if opening_result is not None else "[Unable to generate narrative]"
-                
-            else:
-                # Handle the case where opening_result is now a dict with content and token_usage
-                if isinstance(opening_result, dict) and "content" in opening_result:
-                    opening_narrative = opening_result["content"]
-                    token_usage = opening_result.get("token_usage", {})
-                else:
-                    # Add explicit fallback for None or unexpected format
-                    opening_narrative = str(opening_result) if opening_result is not None else "[Error: Unable to generate narrative]"
-                    token_usage = {}
-                
-                # Record with token usage - with safety checks
-                state.narrative_thread.append({
-                    "turn": 0,
-                    "roll": None,
-                    "action_type": "opening",
-                    "elements": {"cosmic_element": state.cosmic_position},
-                    "narrative": opening_narrative,
-                    "narrative_zh": opening_narrative if language == Language.CHINESE else "",
-                    "token_usage": token_usage
-                })
-                
-                # Safe printing with None check
-                if opening_narrative is not None:
-                    print(f"   Opening narrative: '{opening_narrative[:100]}...'")
-                else:
-                    print("   Opening narrative: [None]")
+            
+            # Record the opening as the first turn
+            state.narrative_thread.append({
+                "turn": 0,
+                "roll": None,
+                "action_type": "opening",
+                "elements": {"cosmic_element": state.cosmic_position},
+                "narrative": opening_narrative_en,
+                "narrative_zh": opening_narrative_zh,
+                "token_usage": token_usage
+            })
             
             # Update previous sentences
             state.previous_sentence = opening_narrative_en
@@ -347,19 +340,23 @@ def start_story():
             return jsonify({
                 "message": "New bilingual story started",
                 "story_id": state.story_id,
-                "opening_narrative_zh": opening_result["zh"],
-                "opening_narrative_en": opening_result["en"],
+                "opening_narrative_zh": opening_narrative_zh,
+                "opening_narrative_en": opening_narrative_en,
                 "cosmic_position": state.cosmic_position,
                 "seed_from": previous_id if previous_id else "random",
                 "language": language
             })
+        
+        # Handle Chinese or English mode
         else:
-            # Handle the case where opening_result is now a dict with content and token_usage
+            # Extract content with safety
             if isinstance(opening_result, dict) and "content" in opening_result:
                 opening_narrative = opening_result["content"]
                 token_usage = opening_result.get("token_usage", {})
             else:
-                opening_narrative = opening_result
+                # Provide a fallback
+                print(f"⚠️ Unexpected opening_result format: {opening_result}")
+                opening_narrative = str(opening_result) if opening_result is not None else "[Unable to generate narrative]"
                 token_usage = {}
             
             # Record with token usage
@@ -368,11 +365,12 @@ def start_story():
                 "roll": None,
                 "action_type": "opening",
                 "elements": {"cosmic_element": state.cosmic_position},
-                "narrative": opening_narrative,
+                "narrative": opening_narrative if language != Language.CHINESE else "",
                 "narrative_zh": opening_narrative if language == Language.CHINESE else "",
                 "token_usage": token_usage
             })
             
+            # Update previous sentences
             if language == Language.CHINESE:
                 state.previous_sentence_zh = opening_narrative
             else:
@@ -380,7 +378,7 @@ def start_story():
             
             print("✨ NEW STORY CREATED!")
             print(f"   Story ID: {state.story_id}")
-            print(f"    Opening narrative: '{opening_narrative[:100] if opening_narrative is not None else '[None]'}...'")
+            print(f"   Opening narrative: '{opening_narrative[:100] if opening_narrative is not None else '[None]'}...'")
             
             # Save as active story
             with open('./cache/active_story.pkl', 'wb') as f:
@@ -397,6 +395,7 @@ def start_story():
                 "seed_from": previous_id if previous_id else "random",
                 "language": language
             })
+            
     except Exception as e:
         print(f"❌ ERROR in start_story: {str(e)}")
         import traceback
