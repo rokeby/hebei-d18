@@ -70,23 +70,24 @@ def create_prompt(state: StoryState, elements: Dict, action_type: str, wuxing: W
 def _create_chinese_prompt(state, element_name, element_props, action_type_text, 
                           current_stage, stage_guidance, related_texts, motifs):
     """Create the base prompt in Chinese."""
-    return f"""你是一位精通汉代传统的故事大师。
-请继续以下故事，用一个简短的段落。
+    return f"""
+        你是一位精通汉代传统的故事大师。
+        请继续以下故事，添加新的情节发展。不要重复前面的内容，只需继续故事。
 
-故事结构: {state.story_arc.arc_data['description_zh']}
-当前阶段: {current_stage}
-阶段指导: {stage_guidance}
-{related_texts}
-{motifs}
+        故事结构: {state.story_arc.arc_data['description_zh']}
+        当前阶段: {current_stage}
+        阶段指导: {stage_guidance}
+        {related_texts}
+        {motifs}
 
-当前五行元素: {element_name} (季节: {element_props['season']}, 方向: {element_props['direction']}, 颜色: {element_props['color']})
-动作类型: {action_type_text}
-当前回合: {state.current_turn + 1}/{state.max_turns}
+        当前五行元素: {element_name} (季节: {element_props['season']}, 方向: {element_props['direction']}, 颜色: {element_props['color']})
+        动作类型: {action_type_text}
+        当前回合: {state.current_turn + 1}/{state.max_turns}
 
-前一段落: {state.previous_sentence_zh}
+        前一段落: {state.previous_sentence_zh}
 
-请在你的叙述中包含以下元素:
-"""
+        请在你的新叙述中包含以下元素:
+        """
 
 def _create_english_prompt(state, element_name, element_props, action_type_text, 
                           current_stage, stage_guidance, related_texts, motifs):
@@ -173,7 +174,15 @@ def _add_story_elements(elements, lang):
 def _add_style_instructions(lang, current_stage):
     """Add style instructions to the prompt."""
     if lang == Language.CHINESE:
-        return f"\n\n请以汉代民间故事的风格写作，可以引用汉代文化元素如《淮南子》《搜神记》《史记》中的典故。应体现五行元素的特质和对应季节。确保你的叙述符合当前故事阶段（{current_stage}）的发展需要。文风应富有神秘感、道德寓意和汉代特有的宇宙观。请保持叙事自然流畅。"
+        return f"""
+            \n\n请以汉代民间故事的风格写作，可以引用汉代文化元素如《淮南子》《搜神记》《史记》中的典故。应体现五行元素的特质和对应季节。确保你的叙述符合当前故事阶段（{current_stage}）的发展需要。文风应富有神秘感、道德寓意和汉代特有的宇宙观。
+
+            重要提示：
+            1. 不要重复前面段落的内容
+            2. 你的叙述应该是全新的，推动故事情节向前发展
+            3. 直接从新的情节开始，而不是重述已经发生的事件
+            4. 保持叙事自然流畅，衔接前文内容
+                """
     elif lang == Language.ENGLISH:
         return f"\n\nWrite in a style authentic to Han dynasty folklore, referencing elements from classical texts like Huainanzi, Records of the Seeking of Spirits, or Records of the Grand Historian. Incorporate the qualities and seasonal aspects of the current cosmic element. Ensure your narrative advances the current story stage ({current_stage}) appropriately. Your style should evoke the mystery, moral dimensions, and cosmological worldview characteristic of Han dynasty stories."
     else:  # BILINGUAL

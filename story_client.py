@@ -73,20 +73,36 @@ def display_story_turn(data, is_opening=False):
     """Display story content in a well-formatted way"""
     print_separator()
     
-    # Handle bilingual stories
-    if "narrative_zh" in data and "narrative_en" in data:
+    # For Chinese-only content
+    if "narrative_zh" in data and data.get("language") == "zh":
         print("🇨🇳 CHINESE NARRATIVE:")
-        print(data.get("narrative_zh") or data.get("opening_narrative_zh", ""))
+        zh_content = data.get("narrative_zh") or ""
+        if zh_content:
+            print(zh_content)
+        else:
+            print("[No Chinese content available]")
+        # Don't display any other narrative sections
+        
+    # For bilingual content
+    elif "narrative_zh" in data and "narrative_en" in data:
+        print("🇨🇳 CHINESE NARRATIVE:")
+        zh_content = data.get("narrative_zh") or ""
+        if zh_content:
+            print(zh_content)
+        else:
+            print("[No Chinese content available]")
+            
         print("\n🇬🇧 ENGLISH NARRATIVE:")
-        print(data.get("narrative_en") or data.get("opening_narrative_en", ""))
-    
-    # Handle single-language stories
+        en_content = data.get("narrative_en") or ""
+        if en_content:
+            print(en_content)
+        else:
+            print("[No English content available]")
+            
+    # For English-only content
     elif "narrative" in data:
         print("📖 NARRATIVE:")
         print(data["narrative"])
-    elif "opening_narrative" in data:
-        print("📖 OPENING NARRATIVE:")
-        print(data["opening_narrative"])
     
     print_separator()
     
@@ -211,7 +227,7 @@ def change_language(language):
     except Exception as e:
         print(f"❌ Error changing language: {e}")
         return False
-        
+
 def save_story_to_file(story_data, filename=None):
     """Save the current story narrative to a file"""
     if not filename:

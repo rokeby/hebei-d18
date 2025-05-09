@@ -6,6 +6,7 @@ import os
 from datetime import datetime
 from dotenv import load_dotenv
 from openai import OpenAI
+import re
 
 # Import from new modular structure
 from config import API_HOST, API_PORT, API_DEBUG
@@ -39,7 +40,9 @@ def generate_narrative_with_llm(prompt: str, language=Language.ENGLISH, system_p
     try:
         if system_prompt is None:
             if language == Language.CHINESE:
-                system_prompt = """你是一位精通汉代历史和文化的故事大师。
+                system_prompt = """
+
+                你是一位精通汉代历史和文化的故事大师。
                 你的故事融合了中国古代神话、宇宙观和民间传说元素，包括:
                 - 五行相生相克理论
                 - 阴阳宇宙观
@@ -56,7 +59,9 @@ def generate_narrative_with_llm(prompt: str, language=Language.ENGLISH, system_p
                 - 保持神秘感和永恒性
                 - 引用真实的汉代文化和信仰
                 
-                请保持故事段落简洁(2-3句)但生动。"""
+                请保持故事段落简洁(2-3句)但生动。
+
+                """
             elif language == Language.ENGLISH:
                 system_prompt = """You are a master storyteller of ancient Chinese folktales from the Han dynasty period (206 BCE - 220 CE). 
                 Your stories draw from classical Chinese mythology, cosmology, and folklore including:
@@ -75,25 +80,29 @@ def generate_narrative_with_llm(prompt: str, language=Language.ENGLISH, system_p
                 - Maintains an air of mystery and timelessness
                 - References authentic Han dynasty culture and beliefs
                 
-                Keep each narrative turn concise (2-3 sentences) but evocative."""
-            else:  # BILINGUAL
+                Keep each narrative turn concise (2-3 sentences) but evocative.]
+                """
+            elif language == Language.BILINGUAL:
                 system_prompt = """You are a master storyteller specializing in Han dynasty Chinese folktales. You are fully bilingual in Chinese and English.
 
-                For this task, you will generate narrative content in BOTH Chinese and English. First write a paragraph in Chinese, then provide its English translation.
+                IMPORTANT FORMAT INSTRUCTIONS:
+                1. First write your narrative in Chinese under a "Chinese Version:" heading
+                2. Then provide the English translation under an "English Translation:" heading
+                
+                Do NOT include the headings in the actual narrative content. Keep each version separate and clearly marked.
                 
                 Your stories should incorporate authentic elements:
                 - Wu Xing (Five Elements) theory (五行)
                 - Classical Chinese mythology and cosmology (中国古代神话和宇宙观)
                 - Han dynasty cultural references (汉代文化元素)
-                - References to historical artifacts and places (历史文物和地点)
                 
                 Write in a style that:
                 - Captures the essence of ancient Chinese storytelling
                 - Remains culturally appropriate in both languages
                 - Maintains consistency between versions
                 
-                First provide your narrative in Chinese (2-3 sentences), followed by its English translation.
-                VERY IMPORTANT: You must provide BOTH the Chinese and English versions."""
+                Keep your narrative concise (2-3 sentences in each language).
+                """
         
         # Fix the message format for DeepSeek API
         messages = [
@@ -111,7 +120,16 @@ def generate_narrative_with_llm(prompt: str, language=Language.ENGLISH, system_p
         
         # Extract narrative content
         narrative = completion.choices[0].message.content.strip()
+
+        # Use regex to check for Chinese characters
+        has_chinese = bool(re.search(r'[\u4e00-\u9fff]', narrative))
         
+        # Log the details
+        print("\n📄 RAW RESPONSE FROM LLM:")
+        print(f"First 200 chars: {narrative[:200]}")
+        print(f"Length: {len(narrative)} characters")
+        print(f"Contains Chinese characters: {has_chinese}")   
+
         # Extract token usage information
         prompt_tokens = completion.usage.prompt_tokens
         completion_tokens = completion.usage.completion_tokens
@@ -123,30 +141,38 @@ def generate_narrative_with_llm(prompt: str, language=Language.ENGLISH, system_p
         print(f"   Completion tokens: {completion_tokens}")
         print(f"   Total tokens: {total_tokens}")
         print()
-        
-        # For bilingual responses, parse to separate Chinese and English
+
         if language == Language.BILINGUAL:
-            parsed = parse_bilingual_response(narrative)
-            return {
-                "zh": parsed["zh"], 
-                "en": parsed["en"],
-                "token_usage": {
-                    "prompt_tokens": prompt_tokens,
-                    "completion_tokens": completion_tokens,
-                    "total_tokens": total_tokens
+            try:
+                parsed = parse_bilingual_response(narrative)
+                print("\n📊 PARSED BILINGUAL RESULT:")
+                print(f"Chinese content length: {len(parsed['zh'])} chars")
+                print(f"English content length: {len(parsed['en'])} chars")
+                print(f"Chinese sample: {parsed['zh'][:100]}")
+                print(f"English sample: {parsed['en'][:100]}")
+                # Make sure we have values for both languages, even if empty
+                return {
+                    "zh": parsed.get("zh", ""), 
+                    "en": parsed.get("en", ""),
+                    "token_usage": {
+                        "prompt_tokens": prompt_tokens,
+                        "completion_tokens": completion_tokens,
+                        "total_tokens": total_tokens
+                    }
                 }
-            }
-        
-        # Return token usage along with the narrative
-        return {
-            "content": narrative,
-            "token_usage": {
-                "prompt_tokens": prompt_tokens,
-                "completion_tokens": completion_tokens,
-                "total_tokens": total_tokens
-            }
-        }
-    
+            except Exception as e:
+                print(f"❌ Error parsing bilingual response: {e}")
+                # Provide a fallback
+                return {
+                    "zh": "[错误: 无法解析双语响应]",
+                    "en": "[Error: Unable to parse bilingual response]",
+                    "token_usage": {
+                        "prompt_tokens": prompt_tokens,
+                        "completion_tokens": completion_tokens,
+                        "total_tokens": total_tokens
+                    }
+                }
+
     except Exception as e:
         print(f"❌ ERROR generating narrative: {e}")
         print(f"Exception details: {str(e)}")  # Add more detailed error output
@@ -253,20 +279,44 @@ def start_story():
         
         # Handle different response formats based on language
         if language == Language.BILINGUAL and isinstance(opening_result, dict) and "zh" in opening_result:
-            opening_narrative_zh = opening_result["zh"]
-            opening_narrative_en = opening_result["en"]
+            opening_narrative_zh = opening_result.get("zh", "")
+            opening_narrative_en = opening_result.get("en", "")
             token_usage = opening_result.get("token_usage", {})
             
-            # Record the opening as the first turn
-            state.narrative_thread.append({
-                "turn": 0,
-                "roll": None,
-                "action_type": "opening",
-                "elements": {"cosmic_element": state.cosmic_position},
-                "narrative": opening_narrative_en,
-                "narrative_zh": opening_narrative_zh,
-                "token_usage": token_usage
-            })
+            # Add fallbacks for empty content
+            if not opening_narrative_zh:
+                opening_narrative_zh = "[无法生成故事]"
+            if not opening_narrative_en:
+                opening_narrative_en = "[Unable to generate narrative]"
+                
+            else:
+                # Handle the case where opening_result is now a dict with content and token_usage
+                if isinstance(opening_result, dict) and "content" in opening_result:
+                    opening_narrative = opening_result["content"]
+                    token_usage = opening_result.get("token_usage", {})
+                else:
+                    # Add explicit fallback for None or unexpected format
+                    opening_narrative = str(opening_result) if opening_result is not None else "[Error: Unable to generate narrative]"
+                    token_usage = {}
+                
+                # Record with token usage - with safety checks
+                state.narrative_thread.append({
+                    "turn": 0,
+                    "roll": None,
+                    "action_type": "opening",
+                    "elements": {"cosmic_element": state.cosmic_position},
+                    "narrative": opening_narrative,
+                    "narrative_zh": opening_narrative if language == Language.CHINESE else "",
+                    "token_usage": token_usage
+                })
+                
+                # Safe printing with None check
+                if opening_narrative is not None:
+                    print(f"   Opening narrative: '{opening_narrative[:100]}...'")
+                else:
+                    print("   Opening narrative: [None]")
+            
+            # Update previous sentences
             state.previous_sentence = opening_narrative_en
             state.previous_sentence_zh = opening_narrative_zh
             
@@ -404,21 +454,31 @@ def next_turn():
     
     # Build prompt
     prompt = story_engine.build_prompt(state, selected_elements, action_type)
-    
-    print("📋 PROMPT CREATED")
-    print(f"   Action type: {action_type}")
-    print(f"   Cosmic element: {current_element}")
-    print()
-    
-    # Generate narrative using API
-    print("🖋️  GENERATING NARRATIVE...")
+
+    # Add even more explicit instruction
+    if language == Language.CHINESE:
+        prompt += "\n\n【特别提示】：请从新情节直接开始，勿重复前文内容。"
+    elif language == Language.ENGLISH:
+        prompt += "\n\n[SPECIAL NOTE]: Start directly with new narrative development. Do not repeat previous content."
+    else:  # BILINGUAL
+        prompt += "\n\n[SPECIAL NOTE / 特别提示]: Start directly with new narrative development in both languages. Do not repeat previous content."
+
     narrative_result = generate_narrative_with_llm(prompt, language)
-    
+
     # Handle different response formats based on language
     if language == Language.BILINGUAL and isinstance(narrative_result, dict) and "zh" in narrative_result:
         narrative_zh = narrative_result["zh"]
         narrative_en = narrative_result["en"]
         token_usage = narrative_result.get("token_usage", {})
+        
+        # Check for empty content and provide fallbacks
+        if not narrative_zh.strip():
+            print("⚠️ WARNING: Empty Chinese content received")
+            narrative_zh = "【未能生成中文内容】"
+        
+        if not narrative_en.strip():
+            print("⚠️ WARNING: Empty English content received")
+            narrative_en = "[Unable to generate English content]"
         
         # Add to narrative thread
         state.narrative_thread.append({
@@ -434,6 +494,39 @@ def next_turn():
         # Update previous sentences
         state.previous_sentence = narrative_en
         state.previous_sentence_zh = narrative_zh
+
+    # Handle different response formats based on language
+    elif language == Language.CHINESE:
+        # Handle the case where narrative_result is now a dict with content and token_usage
+        if isinstance(narrative_result, dict) and "content" in narrative_result:
+            narrative = narrative_result["content"]
+            token_usage = narrative_result.get("token_usage", {})
+        else:
+            narrative = narrative_result
+            token_usage = {}
+        
+        # Add explicit fallback for empty response
+        if not narrative or narrative.strip() == "":
+            print("⚠️ WARNING: Empty narrative response received. Using fallback text.")
+            narrative = "故事继续..."  # Fallback text
+        
+        # Log the narrative to debug
+        print(f"📜 Final narrative to be saved (first 100 chars): {narrative[:100]}")
+        
+        # Add to narrative thread with checks
+        state.narrative_thread.append({
+            "turn": state.current_turn,
+            "roll": roll,
+            "action_type": action_type,
+            "elements": selected_elements,
+            "narrative": "",
+            "narrative_zh": narrative,
+            "token_usage": token_usage
+        })
+        
+        # Update previous sentences
+        state.previous_sentence_zh = narrative
+
     else:
         # Handle single language or other format
         if isinstance(narrative_result, dict) and "content" in narrative_result:
@@ -460,7 +553,6 @@ def next_turn():
         else:
             state.previous_sentence = narrative
     
-    # THIS IS THE CRITICAL FIX: Increment the turn counter after adding new narrative
     state.current_turn += 1
     print(f"📈 Turn counter incremented to {state.current_turn}/{state.max_turns}")
     
@@ -507,17 +599,35 @@ def next_turn():
 
     # Return response based on language
     if language == Language.BILINGUAL:
+        # Make sure we're not returning "[Chinese content unavailable]"
+        narrative_zh = state.narrative_thread[-1].get("narrative_zh", "")
+        if narrative_zh == "[Chinese content unavailable]" and "zh" in narrative_result:
+            narrative_zh = narrative_result["zh"]
+            
         return jsonify({
             "message": "Turn generated successfully",
             "story_id": state.story_id,
-            "turn": state.current_turn - 1,  # We've already incremented the counter
+            "turn": state.current_turn - 1,
             "remaining_turns": state.max_turns - state.current_turn,
-            "narrative_zh": state.narrative_thread[-1].get("narrative_zh", ""),
+            "narrative_zh": narrative_zh,
             "narrative_en": state.narrative_thread[-1].get("narrative", ""),
             "cosmic_position": state.cosmic_position,
             "action_type": action_type,
+            "elements": selected_elements
+        })
+    elif language == Language.CHINESE:
+        # Return response for Chinese
+        return jsonify({
+            "message": "Turn generated successfully",
+            "story_id": state.story_id,
+            "turn": state.current_turn - 1,
+            "remaining_turns": state.max_turns - state.current_turn,
+            "narrative": "",  # Empty for Chinese-only
+            "narrative_zh": narrative,  # Include the Chinese narrative
+            "cosmic_position": state.cosmic_position,
+            "action_type": action_type,
             "elements": selected_elements,
-            "token_usage": token_usage if 'token_usage' in locals() else {}
+            "token_usage": token_usage
         })
     else:
         return jsonify({
@@ -532,7 +642,7 @@ def next_turn():
             "token_usage": token_usage if 'token_usage' in locals() else {}
         })
 
-        
+
 @app.route('/get_story/<story_id>', methods=['GET'])
 def get_story(story_id):
     """Retrieve a specific completed story"""

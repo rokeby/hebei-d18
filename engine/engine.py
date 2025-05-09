@@ -110,17 +110,18 @@ class StoryEngine:
         return selected
     
     def build_prompt(self, state: StoryState, elements: Dict, action_type: str) -> str:
-        """Create a prompt for the story generation.
+        """Create a prompt for the story generation."""
+        prompt = create_prompt(state, elements, action_type, self.wuxing)
         
-        Args:
-            state: Current story state.
-            elements: Elements to include in this turn.
-            action_type: The type of action for this turn.
-            
-        Returns:
-            Formatted prompt for the language model.
-        """
-        return create_prompt(state, elements, action_type, self.wuxing)
+        # Add explicit instruction to avoid repetition
+        if state.language == Language.CHINESE:
+            prompt += "\n\n重要: 不要重复前面的内容，只需继续故事情节。提供全新的叙述，将故事向前推进。"
+        elif state.language == Language.ENGLISH:
+            prompt += "\n\nIMPORTANT: Do not repeat the previous content. Only continue the story with new narrative that advances the plot."
+        else:  # BILINGUAL
+            prompt += "\n\nIMPORTANT: Do not repeat the previous content. Only continue the story with new narrative that advances the plot in both languages."
+        
+        return prompt
     
     def save_story(self, state: StoryState):
         """Save completed story to archive.
