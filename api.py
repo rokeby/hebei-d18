@@ -567,36 +567,36 @@ def next_turn():
     state.current_turn += 1
     print(f"📈 Turn counter incremented to {state.current_turn}/{state.max_turns}")
     
-    # Check if the story should end
-    if story_engine.should_end_story(state, roll):
-        print("🏁 STORY ENDING TRIGGERED")
+    # # Check if the story should end
+    # if story_engine.should_end_story(state, roll):
+    #     print("🏁 STORY ENDING TRIGGERED")
         
-        # Generate an ending if needed
-        if roll == 18:
-            print("   Reason: Die rolled 18 (forced ending)")
+    #     # Generate an ending if needed
+    #     if roll == 18:
+    #         print("   Reason: Die rolled 18 (forced ending)")
             
-            # CHANGED: Use story_engine for ending prompt
-            ending_prompt = story_engine.create_ending_prompt(state, current_element)
+    #         # CHANGED: Use story_engine for ending prompt
+    #         ending_prompt = story_engine.create_ending_prompt(state, current_element)
             
-            print("📜 GENERATING FINAL ENDING...")
-            ending_result = generate_narrative_with_llm(ending_prompt, language)
-    print(f"   Selected arc: {state.story_arc.arc_type}")
-    print(f"   Arc stages: {' → '.join(state.story_arc.stages)}")
-    print(f"   Thematic elements: {state.story_arc.theme_elements}")
-    print(f"   Motifs: {state.story_arc.motifs}")
+    #         print("📜 GENERATING FINAL ENDING...")
+    #         ending_result = generate_narrative_with_llm(ending_prompt, language)
+    # print(f"   Selected arc: {state.story_arc.arc_type}")
+    # print(f"   Arc stages: {' → '.join(state.story_arc.stages)}")
+    # print(f"   Thematic elements: {state.story_arc.theme_elements}")
+    # print(f"   Motifs: {state.story_arc.motifs}")
         
-    print(f"   Initial cosmic position: {state.cosmic_position}")
-    if language == Language.CHINESE:
-        print(f"   种子文本: '{state.previous_sentence_zh[:100]}...'")
-    elif language == Language.ENGLISH:
-        print(f"   Seed text: '{state.previous_sentence[:100]}...'")
-    else:
-        print(f"   Seed text (ZH): '{state.previous_sentence_zh[:50]}...'")
-        print(f"   Seed text (EN): '{state.previous_sentence[:50]}...'")
-    print()
+    # print(f"   Initial cosmic position: {state.cosmic_position}")
+    # if language == Language.CHINESE:
+    #     print(f"   种子文本: '{state.previous_sentence_zh[:100]}...'")
+    # elif language == Language.ENGLISH:
+    #     print(f"   Seed text: '{state.previous_sentence[:100]}...'")
+    # else:
+    #     print(f"   Seed text (ZH): '{state.previous_sentence_zh[:50]}...'")
+    #     print(f"   Seed text (EN): '{state.previous_sentence[:50]}...'")
+    # print()
     
-    # CHANGED: Use story_engine to create opening prompt
-    opening_prompt = story_engine.create_opening_prompt(state)
+    # # CHANGED: Use story_engine to create opening prompt
+    # opening_prompt = story_engine.create_opening_prompt(state)
     
     print("📝 GENERATING NEXT NARRATIVE SECTION")
     opening_result = generate_narrative_with_llm(opening_prompt, language)
@@ -610,24 +610,19 @@ def next_turn():
 
     # Return response based on language
     if language == Language.BILINGUAL:
-        # Make sure we're not returning "[Chinese content unavailable]"
-        narrative_zh = state.narrative_thread[-1].get("narrative_zh", "")
-        if narrative_zh == "[Chinese content unavailable]" and "zh" in narrative_result:
-            narrative_zh = narrative_result["zh"]
-            
         return jsonify({
             "message": "Turn generated successfully",
             "story_id": state.story_id,
             "turn": state.current_turn - 1,
             "remaining_turns": state.max_turns - state.current_turn,
-            "narrative_zh": narrative_zh,
+            "narrative_zh": state.narrative_thread[-1].get("narrative_zh", ""),
             "narrative_en": state.narrative_thread[-1].get("narrative", ""),
             "cosmic_position": state.cosmic_position,
             "action_type": action_type,
-            "elements": selected_elements
+            "elements": selected_elements,
+            "token_usage": token_usage if 'token_usage' in locals() else {}
         })
     elif language == Language.CHINESE:
-        # Return response for Chinese
         return jsonify({
             "message": "Turn generated successfully",
             "story_id": state.story_id,
@@ -652,7 +647,6 @@ def next_turn():
             "elements": selected_elements,
             "token_usage": token_usage if 'token_usage' in locals() else {}
         })
-
 
 @app.route('/get_story/<story_id>', methods=['GET'])
 def get_story(story_id):
