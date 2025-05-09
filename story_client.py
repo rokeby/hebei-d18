@@ -138,34 +138,46 @@ def display_story_turn(data, is_opening=False):
     
     # Debug the structure of the data received
     print("DEBUG: Response data structure:")
-    print(f"Keys: {list(data.keys())}")
+    keys = list(data.keys())
+    print(f"Keys: {keys}")
     
-    # Extract narrative content from various possible keys
-    narrative_content = None
+    # Determine what content we have
+    has_chinese = "narrative_zh" in keys and data["narrative_zh"]
+    has_english = "narrative_en" in keys and data["narrative_en"]
+    has_single_narrative = "narrative" in keys and data["narrative"]
     
-    # Check for opening narrative keys (used in start_story response)
-    if "opening_narrative" in data and data["opening_narrative"]:
-        narrative_content = data["opening_narrative"]
-    elif "opening_narrative_zh" in data and data["opening_narrative_zh"]:
-        narrative_content = data["opening_narrative_zh"]
-    elif "opening_narrative_en" in data and data["opening_narrative_en"]:
-        narrative_content = data["opening_narrative_en"]
+    # Handle opening narrative naming
+    if is_opening:
+        if "opening_narrative_zh" in keys and data["opening_narrative_zh"]:
+            has_chinese = True
+            data["narrative_zh"] = data["opening_narrative_zh"]
+        if "opening_narrative_en" in keys and data["opening_narrative_en"]:
+            has_english = True
+            data["narrative_en"] = data["opening_narrative_en"]
+        if "opening_narrative" in keys and data["opening_narrative"]:
+            has_single_narrative = True
+            data["narrative"] = data["opening_narrative"]
     
-    # Check for turn narrative keys (used in next_turn response)
-    elif "narrative" in data and data["narrative"]:
-        narrative_content = data["narrative"]
-    elif "narrative_zh" in data and data["narrative_zh"]:
-        narrative_content = data["narrative_zh"]
-    elif "narrative_en" in data and data["narrative_en"]:
-        narrative_content = data["narrative_en"]
-        
-    # Display the narrative content if we found it
-    if narrative_content:
-        print("📖 NARRATIVE:")
-        print(narrative_content)
-    else:
-        print("⚠️ NO NARRATIVE CONTENT FOUND")
-        
+    # Display Chinese content if available
+    if has_chinese:
+        print("\n🇨🇳 CHINESE NARRATIVE:")
+        print(data["narrative_zh"])
+    
+    # Display English content if available
+    if has_english:
+        print("\n🇬🇧 ENGLISH NARRATIVE:")
+        print(data["narrative_en"])
+    elif has_single_narrative:
+        print("\n📖 NARRATIVE:")
+        print(data["narrative"])
+    
+    # If no narrative content found, display a warning
+    if not (has_chinese or has_english or has_single_narrative):
+        print("\n⚠️ NO NARRATIVE CONTENT FOUND")
+        if "raw_response" in keys:
+            print("\nRaw LLM Response:")
+            print(data["raw_response"])
+    
     print_separator()
     
     # Print story metadata
@@ -688,7 +700,7 @@ def interactive_mode():
 def command_line_mode():
     """Process input as commands in a simpler interactive mode"""
     print("\n📚 FOLKTALE GENERATOR COMMAND MODE 📚\n")
-    print("Type 'help' for a list of commands, or 'menu' for guided menu\n")
+    print("Type 'help' for a list of commands, 'menu' for guided menu, or 'auto' for quick story generation\n")
     
     while True:
         command = input("\nCommand > ").strip().lower()
@@ -701,6 +713,9 @@ def command_line_mode():
         
         elif base_cmd == "menu":
             interactive_mode()
+        
+        elif base_cmd == "auto":
+            auto_mode()
             
         elif base_cmd == "help":
             if len(parts) > 1:
@@ -742,6 +757,88 @@ def command_line_mode():
             print(f"❌ Unknown command: {base_cmd}")
             print("Type 'help' for a list of commands or 'menu' for guided menu")
 
+def auto_mode():
+    """Run the folktale generator in automatic mode with minimal user input"""
+    print_header("AUTO MODE - FOLKTALE GENERATOR")
+    
+    # Get language preference only
+    print("Choose a language for your story:")
+    print("  1. English only (en)")
+    print("  2. Chinese only (zh)")
+    print("  3. Bilingual (both)")
+    
+    while True:
+        lang_choice = input("Enter choice (1-3) [1]: ").strip()
+        if not lang_choice:
+            language = "en"
+            break
+        try:
+            choice_num = int(lang_choice)
+            if choice_num == 1:
+                language = "en"
+                break
+            elif choice_num == 2:
+                language = "zh"
+                break
+            elif choice_num == 3:
+                language = "both"
+                break
+            else:
+                print("❌ Please enter a number between 1 and 3.")
+        except ValueError:
+            print("❌ Please enter a valid number.")
+    
+    print(f"\nSelected language: {language}")
+    print("All other settings will be randomized...")
+    
+    # Start a story with random settings
+    story_data = start_story(language=language)
+    if not story_data:
+        print("❌ Failed to start story")
+        return
+    
+    # Ask whether to continue generating turns automatically
+    auto_continue = input("\nContinue generating turns automatically? (Y/n): ").strip().lower()
+    if auto_continue in ["", "y", "yes"]:
+        num_turns = 0
+        max_turns = 10  # Default maximum
+        
+        try:
+            max_turns_input = input(f"Maximum number of turns to generate [10]: ").strip()
+            if max_turns_input:
+                max_turns = int(max_turns_input)
+        except ValueError:
+            print(f"❌ Invalid number, using default: {max_turns}")
+        
+        print(f"\nGenerating up to {max_turns} turns automatically...")
+        
+        try:
+            while num_turns < max_turns:
+                input("\nPress Enter for next turn (or Ctrl+C to stop)...")
+                turn_data = next_turn()
+                if not turn_data:
+                    print("❌ Failed to generate turn")
+                    break
+                
+                # Check if we have reached the end
+                if turn_data.get('remaining_turns', 1) <= 0:
+                    print("🏁 Story has reached its conclusion!")
+                    break
+                
+                num_turns += 1
+            
+            print(f"\nCompleted {num_turns} turns. Story generation complete.")
+            
+            # Ask if user wants to save the story
+            save_prompt = input("\nSave this story to file? (Y/n): ").strip().lower()
+            if save_prompt in ["", "y", "yes"]:
+                guided_save_story()
+                
+        except KeyboardInterrupt:
+            print("\n\n⏹️ Auto generation stopped by user")
+    
+    print("\nReturning to main menu...")
+
 def main():
     """Main function parsing command line arguments"""
     parser = argparse.ArgumentParser(description="Folktale Generator Client")
@@ -749,10 +846,15 @@ def main():
                         help="Start in interactive menu mode (default is command mode)")
     parser.add_argument("--command", "-c", type=str, 
                         help="Execute a single command and exit")
+    parser.add_argument("--auto", "-a", action="store_true",
+                        help="Start in auto mode (quick story generation)")
     
     args = parser.parse_args()
     
-    if args.command:
+    if args.auto:
+        # Start in auto mode
+        auto_mode()
+    elif args.command:
         # Execute single command mode
         if args.command == "start":
             guided_start_story()
