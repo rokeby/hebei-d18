@@ -306,7 +306,7 @@ def list_story_arcs():
         print()
 
 def next_turn():
-    """Generate the next turn with continuous file saving for Chinese"""
+    """Generate the next turn with metadata and continuous file saving for Chinese"""
     print("⏭️ GENERATING NEXT TURN")
     
     try:
@@ -321,6 +321,43 @@ def next_turn():
         # Parse the response
         story_data = response.json()
         
+        # Capture metadata that would be displayed
+        metadata_lines = []
+        
+        # Story status metadata
+        story_id = story_data.get("story_id", "unknown")
+        turn = story_data.get("turn", "?")
+        remaining = story_data.get("remaining_turns", "?")
+        total = int(turn) + int(remaining) if isinstance(turn, int) and isinstance(remaining, int) else "?"
+        cosmic_pos = story_data.get("cosmic_position", "unknown")
+        language = story_data.get("language", "unknown")
+        action_type = story_data.get("action_type", "unknown")
+        
+        metadata_lines.append("📖 STORY STATUS:")
+        metadata_lines.append(f"   ID: {story_id}")
+        metadata_lines.append(f"   Turn: {turn}/{total}")
+        metadata_lines.append(f"   Cosmic Position: {cosmic_pos}")
+        metadata_lines.append(f"   Language: {language}")
+        
+        # Add action type info (simulating die roll display)
+        metadata_lines.append(f"🎲 ACTION TYPE: {action_type}")
+        metadata_lines.append(f"🌟 Cosmic position: {cosmic_pos}")
+        
+        # Add elements if available
+        if "elements" in story_data and story_data["elements"]:
+            metadata_lines.append("🎴 ELEMENTS SELECTED:")
+            for key, value in story_data["elements"].items():
+                if isinstance(value, dict) and "zh" in value and "en" in value:
+                    if language == "zh":
+                        metadata_lines.append(f"   {key}: {value['zh']}")
+                    else:
+                        metadata_lines.append(f"   {key}: {value['zh']} / {value['en']}")
+                else:
+                    metadata_lines.append(f"   {key}: {value}")
+        
+        # Join metadata
+        metadata_text = "\n".join(metadata_lines) + "\n\n"
+        
         # Display the story turn
         display_story_turn(story_data)
         
@@ -333,7 +370,6 @@ def next_turn():
             os.makedirs(archive_dir, exist_ok=True)
             
             # Get story ID and turn number
-            story_id = story_data.get("story_id", "unknown")
             turn_num = story_data.get("turn", 0)
             
             # Adjust turn number for display (API returns 0 for second turn)
@@ -342,7 +378,7 @@ def next_turn():
             # Define continuous file name based on story ID
             continuous_file = os.path.join(archive_dir, f"continuous_zh_{story_id}.txt")
             
-            # Append to the continuous file
+            # Append to the continuous file with metadata
             try:
                 # Check if file exists
                 is_new_file = not os.path.exists(continuous_file)
@@ -354,11 +390,12 @@ def next_turn():
                         f.write(f"Started: {datetime.now()}\n")
                         f.write("-" * 40 + "\n\n")
                     
-                    # Add turn header and content
+                    # Add turn header with metadata
                     f.write(f"\n--- Turn {display_turn_num} ---\n\n")
+                    f.write(metadata_text)  # Add the metadata here
                     f.write(story_data["narrative_zh"] + "\n")
                 
-                print(f"✅ Chinese content appended to: {continuous_file}")
+                print(f"✅ Chinese content with metadata appended to: {continuous_file}")
             except Exception as e:
                 print(f"❌ Error saving Chinese content: {str(e)}")
         
@@ -1375,8 +1412,9 @@ def guided_save_story():
         # For non-bilingual stories, use the regular save function
         return save_story_to_file(story_data, filename)
 
+# Modified display_main_menu function to clarify arc selection
 def display_main_menu():
-    """Display the main menu options with emergency saving options"""
+    """Display the main menu options with automatic modes"""
     print_header("FOLKTALE GENERATOR")
     print("What would you like to do?\n")
     print("  1. Start a new story")
@@ -1385,12 +1423,17 @@ def display_main_menu():
     print("  4. List available story arcs")
     print("  5. Change story language")
     print("  6. Save story to file (standard)")
-    print("  7. EMERGENCY: Generate and save directly")   # New option
-    print("  8. EMERGENCY: Save last turn")              # New option
-    print("  9. EMERGENCY: Manual copy-paste save")      # New option
+    print("  7. EMERGENCY: Generate and save directly")
+    print("  8. EMERGENCY: Save last turn")
+    print("  9. EMERGENCY: Manual copy-paste save")
+    print("  10. 🤖 FULLY AUTOMATIC MODE (single story, select arc)")
+    print("  11. 🚀 BATCH AUTOMATIC MODE (multiple stories, same arc)")  # Updated description
     print("  0. Exit\n")
-    return input("Enter your choice (0-9): ").strip()
+    return input("Enter your choice (0-11): ").strip()
 
+
+
+# Modified interactive_mode function to handle the new option
 def interactive_mode():
     """Run an interactive storytelling session with auto-save option"""
     os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen
@@ -1413,8 +1456,7 @@ def interactive_mode():
         elif choice == "5":
             guided_change_language()
         elif choice == "6":
-            # Toggle auto-save setting
-            auto_save_every_turn(not AUTO_SAVE_TURNS)
+            guided_save_story()
         elif choice == "7":
             # Get current story data and save directly
             try:
@@ -1434,15 +1476,18 @@ def interactive_mode():
             except Exception as e:
                 print(f"❌ Error: {str(e)}")
         elif choice == "8":
-            manual_copy_paste_save()
+            emergency_save_last_turn()
         elif choice == "9":
-            # Export all stories option
-            export_all_stories()
+            manual_copy_paste_save()
+        elif choice == "10":  # Single fully automatic mode
+            fully_automatic_mode()
+        elif choice == "11":  # Batch automatic mode
+            batch_automatic_mode()
         elif choice == "0":
             print("\nGoodbye! 👋")
             break
         else:
-            print("❌ Invalid choice. Please enter a number between 0 and 9.")
+            print("❌ Invalid choice. Please enter a number between 0 and 11.")
         
         # Pause before returning to the main menu
         input("\nPress Enter to continue...")
@@ -1618,6 +1663,271 @@ def auto_mode():
             print("\n\n⏹️ Auto generation stopped by user")
     
     print("\nReturning to main menu...")
+
+# Add this helper function to select story arc type
+def select_story_arc_type():
+    """Let user select a story arc type from available options"""
+    print("📖 Selecting Story Arc Type...")
+    
+    # Get available arc types
+    arc_types = get_story_arcs()
+    if not arc_types:
+        print("❌ Could not retrieve story arc types. Using 'quest' as fallback.")
+        return "quest"
+    
+    print("\nAvailable story arc types:")
+    print("  0. Random (let the system choose)")
+    
+    # Display available arc types
+    arc_list = list(arc_types.keys())
+    for i, arc_id in enumerate(arc_list, 1):
+        description = arc_types[arc_id].get('description', '')
+        print(f"  {i}. {arc_id} - {description[:60]}{'...' if len(description) > 60 else ''}")
+    
+    while True:
+        choice = input(f"\nEnter choice (0-{len(arc_list)}) [0]: ").strip()
+        if not choice:
+            return None  # Random
+        try:
+            choice_num = int(choice)
+            if choice_num == 0:
+                return None  # Random
+            elif 1 <= choice_num <= len(arc_list):
+                selected_arc = arc_list[choice_num - 1]
+                print(f"✅ Selected arc type: {selected_arc}")
+                return selected_arc
+            else:
+                print(f"❌ Please enter a number between 0 and {len(arc_list)}.")
+        except ValueError:
+            print("❌ Please enter a valid number.")
+
+# Add this new function for batch automatic story generation
+def batch_automatic_mode():
+    """Run multiple automatic story generations"""
+    print_header("BATCH AUTOMATIC MODE - HAN DYNASTY FOLKTALES")
+    
+    # First, get the story arc type selection
+    selected_arc_type = select_story_arc_type()
+    arc_display = selected_arc_type if selected_arc_type else "Random"
+    
+    # Get number of stories to generate
+    while True:
+        try:
+            num_stories = input("How many stories would you like to generate? (1-20): ").strip()
+            num_stories = int(num_stories)
+            if 1 <= num_stories <= 20:
+                break
+            else:
+                print("❌ Please enter a number between 1 and 20.")
+        except ValueError:
+            print("❌ Please enter a valid number.")
+    
+    print(f"\n🤖 Starting batch generation of {num_stories} stories...")
+    print("   Language: Chinese (zh)")
+    print(f"   Arc Type: {arc_display}")
+    print("   Mode: Fully automatic until completion")
+    print()
+    
+    batch_start_time = datetime.now()
+    successful_stories = []
+    failed_stories = []
+    
+    for story_num in range(1, num_stories + 1):
+        print(f"\n{'='*60}")
+        print(f"📚 GENERATING STORY {story_num} OF {num_stories}")
+        print(f"{'='*60}")
+        
+        try:
+            # Generate one complete story with the selected arc type
+            story_info = fully_automatic_mode(selected_arc_type=selected_arc_type)
+            
+            if story_info and story_info.get("turns_completed", 0) > 0:
+                successful_stories.append({
+                    "number": story_num,
+                    "arc_type": story_info.get("arc_type", selected_arc_type or "unknown"),
+                    "turns": story_info.get("turns_completed", 0),
+                    "cosmic_positions": story_info.get("cosmic_positions", []),
+                    "duration": (datetime.now() - story_info["start_time"]).total_seconds()
+                })
+                print(f"✅ Story {story_num} completed successfully!")
+            else:
+                failed_stories.append(story_num)
+                print(f"❌ Story {story_num} failed to complete properly.")
+            
+        except Exception as e:
+            failed_stories.append(story_num)
+            print(f"❌ Story {story_num} failed with error: {str(e)}")
+        
+        # Brief pause between stories
+        if story_num < num_stories:
+            print(f"\n⏸️ Brief pause before next story...")
+            time.sleep(2)
+    
+    # Generate batch summary
+    batch_end_time = datetime.now()
+    total_duration = batch_end_time - batch_start_time
+    
+    print(f"\n{'='*80}")
+    print("🎉 BATCH GENERATION COMPLETED!")
+    print(f"{'='*80}")
+    
+    print(f"\n📊 BATCH SUMMARY:")
+    print(f"   Total Stories Requested: {num_stories}")
+    print(f"   Successfully Completed: {len(successful_stories)}")
+    print(f"   Failed: {len(failed_stories)}")
+    print(f"   Arc Type Used: {arc_display}")
+    print(f"   Total Duration: {total_duration.total_seconds():.1f} seconds")
+    print(f"   Average Time per Story: {total_duration.total_seconds()/max(len(successful_stories), 1):.1f} seconds")
+    
+    if successful_stories:
+        print(f"\n📖 STORY DETAILS:")
+        total_turns = 0
+        
+        for story in successful_stories:
+            print(f"   Story {story['number']}: {story['arc_type']} ({story['turns']} turns, {story['duration']:.1f}s)")
+            total_turns += story['turns']
+        
+        print(f"\n📈 STATISTICS:")
+        print(f"   Total Turns Generated: {total_turns}")
+        print(f"   Average Turns per Story: {total_turns/len(successful_stories):.1f}")
+    
+    if failed_stories:
+        print(f"\n❌ FAILED STORIES: {', '.join(map(str, failed_stories))}")
+    
+    print(f"\n✅ All generated stories have been saved to the archived_tales directory.")
+    
+    return {
+        "requested": num_stories,
+        "successful": len(successful_stories),
+        "failed": len(failed_stories),
+        "stories": successful_stories,
+        "duration": total_duration.total_seconds(),
+        "arc_type": selected_arc_type
+    }
+
+# Add this new function for fully automatic story generation
+def fully_automatic_mode(selected_arc_type=None):
+    """Run a completely automatic story generation with no user input"""
+    print_header("FULLY AUTOMATIC MODE - HAN DYNASTY FOLKTALE")
+    
+    # If no arc type provided, prompt user to select one
+    if selected_arc_type is None:
+        selected_arc_type = select_story_arc_type()
+    
+    arc_display = selected_arc_type if selected_arc_type else "Random"
+    
+    print("🤖 Starting fully automatic story generation...")
+    print("   Language: Chinese (zh)")
+    print(f"   Arc Type: {arc_display}")
+    print("   Mode: Continuous until completion")
+    print()
+    
+    # Start a story with Chinese language and the selected arc type
+    print("📚 Starting new story automatically...")
+    story_data = start_story(language="zh", arc_type=selected_arc_type)
+    if not story_data:
+        print("❌ Failed to start story automatically")
+        return
+    
+    story_id = story_data.get("story_id", "unknown")
+    print(f"✅ Story started with ID: {story_id}")
+    
+    # Track story information for summary - use the selected arc type directly
+    story_info = {
+        "arc_type": selected_arc_type or "random",
+        "turns_completed": 0,
+        "cosmic_positions": [],
+        "start_time": datetime.now()
+    }
+    
+    print(f"📖 Story Arc Type: {story_info['arc_type']}")
+    print()
+    
+    # Continue generating turns until story is complete
+    turn_count = 0
+    max_attempts = 20  # Safety limit
+    
+    try:
+        while turn_count < max_attempts:
+            print(f"🎲 Generating turn {turn_count + 1}...")
+            
+            turn_data = next_turn()
+            if not turn_data:
+                print("❌ Failed to generate turn")
+                break
+            
+            turn_count += 1
+            story_info["turns_completed"] = turn_count
+            
+            # Track cosmic position if available
+            cosmic_pos = turn_data.get('cosmic_position', 'unknown')
+            if cosmic_pos not in story_info["cosmic_positions"]:
+                story_info["cosmic_positions"].append(cosmic_pos)
+            
+            remaining_turns = turn_data.get('remaining_turns', 1)
+            print(f"✅ Turn {turn_count} completed. Remaining turns: {remaining_turns}")
+            
+            # Check if story is complete
+            if remaining_turns <= 0:
+                print("🏁 Story has reached its natural conclusion!")
+                break
+            
+            # Small delay to be respectful to the API
+            time.sleep(1)
+        
+        if turn_count >= max_attempts:
+            print(f"⚠️ Reached maximum turn limit ({max_attempts}). Stopping.")
+        
+    except KeyboardInterrupt:
+        print("\n⚠️ Automatic generation interrupted by user")
+    except Exception as e:
+        print(f"❌ Error during automatic generation: {str(e)}")
+    
+    # Generate and display summary
+    end_time = datetime.now()
+    duration = end_time - story_info["start_time"]
+    
+    summary = f"""
+=== STORY COMPLETED ===
+Story Arc Type: {story_info['arc_type']}
+Number of Turns: {story_info['turns_completed']}
+Cosmic Positions: {' → '.join(story_info['cosmic_positions'])}
+Duration: {duration.total_seconds():.1f} seconds
+Generated: {end_time.strftime('%Y-%m-%d %H:%M:%S')}
+========================
+"""
+    
+    print(summary)
+    
+    # Prepend summary to the story file and rename with new format
+    archive_dir = "./archived_tales"
+    old_continuous_file = os.path.join(archive_dir, f"continuous_zh_{story_id}.txt")
+    
+    # Create new filename format: YYYYMMDD_HHMMSS_arctype_X-turns_zh
+    arc_type_clean = story_info['arc_type'].replace('_', '-')  # Replace underscores with hyphens for readability
+    new_filename = f"{story_id}_{arc_type_clean}_{story_info['turns_completed']}-turns_zh.txt"
+    new_continuous_file = os.path.join(archive_dir, new_filename)
+    
+    if os.path.exists(old_continuous_file):
+        try:
+            # Read existing content
+            with open(old_continuous_file, 'r', encoding='utf-8') as f:
+                existing_content = f.read()
+            
+            # Write summary + existing content to new filename
+            with open(new_continuous_file, 'w', encoding='utf-8') as f:
+                f.write(summary + "\n\n")
+                f.write(existing_content)
+            
+            # Remove the old file
+            os.remove(old_continuous_file)
+            
+            print(f"✅ Story summary prepended and file renamed to: {new_filename}")
+        except Exception as e:
+            print(f"❌ Error processing story file: {str(e)}")
+    
+    print("\n🎉 Fully automatic story generation completed!")
+    return story_info
 
 def direct_save_current_turn_raw():
     """Save the current turn directly from raw API response data with minimal processing"""

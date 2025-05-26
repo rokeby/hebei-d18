@@ -1,0 +1,73 @@
+{
+  "id": "20250526_114036",
+  "completed_at": "2025-05-26T11:41:50.223052",
+  "final_narrative": [
+    {
+      "turn": 0,
+      "roll": null,
+      "action_type": "opening",
+      "elements": {
+        "cosmic_element": "fire"
+      },
+      "narrative": "",
+      "narrative_zh": "周木本是南阳郡一介布衣，每日在桑园耕作奉养老母。这日他锄地时忽见土中露出一角赤玉，掘出竟是枚蟠桃状的玉坠，内里隐有朱砂纹路流转如焰。  \n\n老母见玉坠大惊，说此乃西王母蟠桃宴上遗落的丙火精魄，凡人得之必招祸患。话音未落，玉坠突然发烫，周木恍惚见云端有神女执青鸾扇遥指东方，耳畔响起缥缈仙音：\"持此物赴东郊桑林，可证汝周氏乃黄帝铸鼎时掌火官后裔。\"  \n\n是夜灶台无故爆出三昧真火，将《淮南子》竹简烧出\"九婴现世，火德当镇\"八字焦痕。周木摸着灼热的玉坠，浑然不知自己已卷入五行火劫的千年因果。",
+      "token_usage": {
+        "prompt_tokens": 441,
+        "completion_tokens": 206,
+        "total_tokens": 647
+      }
+    },
+    {
+      "turn": 0,
+      "roll": 8,
+      "action_type": "environmental_event",
+      "elements": {
+        "cosmic_element": "fire",
+        "event": "易水忽然倒流三日",
+        "place": "阜平山中密林"
+      },
+      "narrative": "",
+      "narrative_zh": "周木持玉坠东行，途经易水时忽见浊浪逆涌，鱼虾皆浮于水面作朝拜状。岸边老渔人惊告此乃《淮南子》所载\"水德逆行\"之兆，上次出现还是始皇帝驾崩之年。  \n\n他循异象入阜平山，见密林深处有九色鹿踏火而行，所过之处夏草尽成赤玉。那鹿忽作人言：\"吾乃祝融座下司炎君，为九婴凶火所困，需借汝体内黄帝血脉重化人形。\"说罢角间落下三枚燃烧的桃核，正是《山海经》记载的\"火精丹\"。  \n\n周木方拾起桃核，顿觉五内如焚，恍惚见自己化作青铜鼎上饕餮纹。司炎君叹息道：\"凡人欲承神能，须先焚尽贪嗔痴三毒，汝可愿舍寿数一纪为代价？\"此时玉坠突然裂开，内中朱砂凝成《史记·天官书》失传的\"荧惑守心\"星图。",
+      "token_usage": {
+        "prompt_tokens": 731,
+        "completion_tokens": 247,
+        "total_tokens": 978
+      }
+    },
+    {
+      "turn": 1,
+      "roll": 18,
+      "action_type": "story_ending",
+      "elements": {
+        "cosmic_element": "earth"
+      },
+      "narrative": "",
+      "narrative_zh": "周木体内黄帝血脉翻涌，忽见三枚火精丹化作赤色流萤钻入七窍。他浑身骨节爆响如雷，皮肤竟生出青铜鳞纹，恰似《淮南子》所述\"夏官铸鼎\"时的异象。司炎君鹿角断裂处涌出金液，落地成《周礼》记载的\"六瑞玉璋\"，其声如凤鸣九霄。  \n\n此时西方飘来昆仑玄女驾云车，袖中抛出素绢丹书：\"此子贪恋长生，私触天火，当受《搜神记》所载'人化兽'之刑！\"周木腰间玉坠突然飞起，拼合星图显出\"荧惑守心\"天象，正是《史记·天官书》预言圣王降世的征兆。玄女见状惊退三步，云车碾碎的夏花皆化作金乌羽翎。  \n\n司炎君趁机将最后枚仙桃塞入周木口中，叹道：\"汝吞此西王母蟠桃，便永绝人间五谷。然欲化人形，须先斩断《春秋繁露》所谓'三正之道'——\"话音未落，周木双目已燃起南明离火，看见自己前世竟是黄帝铸鼎时逃逸的一缕饕餮精魄。",
+      "token_usage": {
+        "prompt_tokens": 752,
+        "completion_tokens": 291,
+        "total_tokens": 1043
+      }
+    }
+  ],
+  "cosmic_position": "earth",
+  "total_turns": 2,
+  "max_turns": 8,
+  "language": "zh",
+  "story_arc": {
+    "type": "transformation",
+    "stages": [
+      "ordinary",
+      "encounter",
+      "change",
+      "challenge",
+      "transcendence"
+    ],
+    "theme_elements": {
+      "transformation_type": "animal to human",
+      "catalyst": "divine encounter",
+      "price_of_change": "mortal desires"
+    },
+    "current_stage": "encounter"
+  }
+}
