@@ -11,6 +11,8 @@ from datetime import datetime
 SERVER_URL = "http://localhost:5555"
 AUTO_SAVE_TURNS = True  # Default value
 
+#hello
+
 # Try to load from config file
 try:
     with open('./config.json', 'r') as f:
@@ -302,7 +304,6 @@ def list_story_arcs():
         if "typical_motifs" in arc_info and arc_info["typical_motifs"]:
             print(f"   Motifs: {', '.join(arc_info.get('typical_motifs', []))}")
         print()
-
 
 def next_turn():
     """Generate the next turn with continuous file saving for Chinese"""
