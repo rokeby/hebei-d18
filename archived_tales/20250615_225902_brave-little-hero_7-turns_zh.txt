@@ -1,0 +1,125 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: brave_little_hero
+Number of Turns: 7
+Cosmic Positions: water → wood → earth
+Duration: 57.9 seconds
+Generated: 2025-06-15 23:00:05
+========================
+
+
+FOLKTALE STORY: 20250615_225902
+Started: 2025-06-15 22:59:08.053060
+----------------------------------------
+
+--- Opening ---
+
+阿罗陀每日清晨必去渭河取水，那玄衣女子总在波光中若隐若现，教他辨认水中暗藏的先天八卦纹路。老匠人发现每当自己克服畏惧将手探入寒流，河底青玉便会发出与月相相应的微光，而灶台上的桃脯竟渐渐化作《山海经》中记载的祝余草，食之三日不饥。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250615_225902
+   Turn: 0/6
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   intervention: 云中君降临雾锁太行
+
+一日阿罗陀在河边拾得一片龟甲，上面刻着"云从龙，风从虎"的谜语，正困惑间，忽见一只金睛白猿从老槐树上跃下，尾巴卷着半块残缺的玉琮。此时北方天际乌云翻涌，云中君驾六龙车掠过太行山巅，洒下的雨滴竟在空中凝成《河图》纹样，那白猿便指着星图般的雨痕吱吱叫唤，原来破解谜题需集齐五行童子之力。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250615_225902
+   Turn: 1/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   intervention: 古墓守护兽苏醒
+
+阿罗陀正欲询问白猿，忽闻地底传来夔牛鼓声，震得河边青铜铃铛叮当作响。那残缺玉琮突然泛起青光，照出地下古墓中苏醒的玄龟守护兽，其背甲上竟刻着与龟甲对应的"虎啸谷"三字。白猿嬉笑着摘来东郊桃林新发的三枝春花，示意阿罗陀需寻得属木的青龙童子方能平息地气躁动。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250615_225902
+   Turn: 2/6
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   intervention: 中山狼神指引迷路之人
+
+阿罗陀捧着三枝桃花正踌躇时，忽见中山狼神踏着黄云而来，其尾尖沾着昆仑雪水画出一道谜图："木生于土而克土，青童隐于东方甲乙木"。白猿闻言抓耳挠腮，却见桃枝上停着三只朱喙青鸟，每啼一声便落下一片带着晨露的柳叶。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250615_225902
+   Turn: 3/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 擅长草药的医者
+   cosmic_element: wood
+
+阿罗陀正欲询问青鸟，那白猿却已攀上桃枝，摘下一片沾着晨露的柳叶递给树下采药的葛衣老者。老者抚须而笑，将柳叶浸入腰间青瓷瓶中的山泉，顿时浮现出东方青龙盘绕扶桑木的倒影。三只青鸟忽然齐声鸣唱，每声啼鸣都化作一缕春风，将柳叶上的露珠吹散成七色虹桥。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250615_225902
+   Turn: 4/6
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: wildcard
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 考察古墓的博士
+   cosmic_element: water
+   object: 玉制礼器
+   place: 邺城铸币作坊
+
+虹桥尽头忽现一座青铜古镜，镜中映出邺城铸币作坊的忙碌景象。那白猿化作顽童模样，拾起地上半片残破玉琮，对着博士笑道："若要解开这迷局，需得三友相助——金匠识纹路，史官辨铭文，药师验沁色。"博士正诧异间，玉琮突然泛起幽蓝水光，显现出北方玄武星宿的图案。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250615_225902
+   Turn: 5/6
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   event: 蓟县长城砖石自行修复
+   place: 白洋淀芦苇荡
+
+蓟县长城忽起异象，断裂的砖石竟如活物般自行拼接，砖缝间渗出晶莹水珠。白猿童子指向北方白洋淀方向，只见芦苇荡中升起三道清气，化作金匠、史官与药师模样，各自手持青铜规、竹简与药囊。那残破玉琮突然发出龙吟之声，将三人身影映在镜面，与玄武星宿连成北斗之形。
+
+--- Turn 7 ---
+
+📖 STORY STATUS:
+   ID: 20250615_225902
+   Turn: 6/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 养蚕女工
+   cosmic_element: wood
+
+那养蚕女工踏着晨露而来，手中桑叶泛着青色木气，却见北斗星光照得玉琮上龙纹游动。白猿童子忽从树梢掷下一枚蟠桃核，落地化作九宫格，其中阴阳鱼眼处浮现"春蚕何故食不眠"的谜题。三位清气所化的仙人相视而笑，金匠的青铜规画出星轨，史官的竹简显蚕神传说，药师的囊中飘出安神香，恰似东方青龙吐出的三缕祥云。

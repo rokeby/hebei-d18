@@ -1,0 +1,56 @@
+{
+  "id": "20250615_232951",
+  "completed_at": "2025-06-15T23:30:14.574641",
+  "final_narrative": [
+    {
+      "turn": 0,
+      "roll": null,
+      "action_type": "opening",
+      "elements": {
+        "cosmic_element": "water"
+      },
+      "narrative": "",
+      "narrative_zh": "村中长老望着干涸的河床叹息，说这无水的年景怕是舞不动春龙了，孩子们却从蚕女遗留的星辉中悟得玄机。他们取来冬至封存的露珠，以青玉碗承接月光，在龟甲上刻下云纹，竟引来天河之水在陶盆中流转。当第一滴玄冥真水触及土地时，沉睡的龙鳞竹突然抽枝发芽，为即将到来的舞龙节编织出翡翠般的鳞甲。",
+      "token_usage": {
+        "prompt_tokens": 495,
+        "completion_tokens": 109,
+        "total_tokens": 604
+      }
+    },
+    {
+      "turn": 0,
+      "roll": 18,
+      "action_type": "story_ending",
+      "elements": {
+        "cosmic_element": "water"
+      },
+      "narrative": "",
+      "narrative_zh": "月华如水之夜，村中老乐师发现祖传的青铜编钟少了一枚黄钟，恰是舞龙点睛时需奏响的主音。孩子们循着月光下的萤火踪迹，遇见一位素衣仙子正在溪畔以青玉磬调和宫商，原是广寒宫司乐的玉兔化身。仙子将月露凝成冰弦赠与孩童，嘱咐以东方青龙七宿的方位排列，便能奏出唤醒春神的太古元音。",
+      "token_usage": {
+        "prompt_tokens": 611,
+        "completion_tokens": 102,
+        "total_tokens": 713
+      }
+    }
+  ],
+  "cosmic_position": "water",
+  "total_turns": 1,
+  "max_turns": 6,
+  "language": "zh",
+  "story_arc": {
+    "type": "festival_adventure",
+    "stages": [
+      "preparation",
+      "problem",
+      "creative_solution",
+      "community_help",
+      "joyful_festival"
+    ],
+    "theme_elements": {
+      "festival_element": "Moon Festival",
+      "disruption": "lost musical instrument",
+      "festival_helper": "kind spirit"
+    },
+    "current_stage": "preparation"
+  }
+}

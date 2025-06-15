@@ -1,0 +1,93 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: kind_deed_reward
+Number of Turns: 5
+Cosmic Positions: water → wood → earth
+Duration: 35.3 seconds
+Generated: 2025-06-16 00:17:02
+========================
+
+
+FOLKTALE STORY: 20250616_001620
+Started: 2025-06-16 00:16:26.727126
+----------------------------------------
+
+--- Opening ---
+
+村中老妪每日清晨都要去溪边打水，她的木桶早已破旧不堪，却因家贫无力更换。一日，她发现溪边石上趴着一只受伤的玄龟，龟壳上隐约可见北斗纹路，便用裙裾盛水为它清洗伤口。当夜老妪梦见龟化身为青衣童子，将一枚刻着河图洛书的玉简投入她破旧的水桶，次日醒来，桶中清水竟永不枯竭，且饮之可愈百病。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001620
+   Turn: 0/4
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: wildcard
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 守护青铜器的器灵
+   cosmic_element: water
+   object: 铜人俑
+   place: 广宗县祭坛
+
+老妪将神水之事告知广宗县祭坛的守坛老翁，谁知那老翁竟是青铜器所化之灵，他抚摸着祭坛中央的铜人俑叹道："诚心可感天地，然独善其身终非大道。"当夜北风骤起，铜人俑眼中流出黑水，在月下凝结成玄冰，冻裂了老妪的神奇水桶。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001620
+   Turn: 1/4
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: plot_twist
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+
+老妪望着碎裂的水桶泪落如雨，忽闻东方传来青鸾鸣叫，只见那神鸟衔来一枚青玉坠入井中。井水顿时泛起青光，化作甘霖滋润方圆十里的枯田，而老妪手中破桶竟自动修复如新。铜人俑在月光下低语："天之道，损有余而补不足，汝当以诚心分水济众，方得青龙护佑。"
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001620
+   Turn: 2/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: plot_twist
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+
+老妪谨记铜人俑教诲，每日以青玉桶汲水济民，却见村中富户张氏暗中将水分藏于地窖。三日后，张氏窖中清水竟化作黄泥，其孙染疾高烧不退。铜人俑眼中闪过土德之光，对老妪道："黄土藏水违天和，当以诚心化劫厄。"老妪取井中青玉水滴于孩童眉心，顿时黄土复清，孩童热退。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001620
+   Turn: 3/4
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 远近闻名的石匠
+   cosmic_element: wood
+
+石匠闻老妪善行，携青玉凿前来相助，欲为村中凿一清泉。凿至深处，忽见地下涌出赤色浊流，石匠双手顿生疮疖。老妪取青玉桶中甘露洒向石匠，道："火气郁结伤肝木，当以水性润之。"霎时浊流转清，石匠手上疮痕化作片片桃花飘散。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001620
+   Turn: 4/4
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   event: 平山汉墓玉器夜放光芒
+   place: 满城汉墓甬道
+
+清泉涌出后，村中孩童发现泉底隐现青玉微光，原是平山汉墓失落多年的玉璧。老妪告诫众人："玉乃天地精气所凝，当诚心供奉于满城汉墓甬道，不可私藏。"当夜玉器自行飞向北方，在墓道中化作北斗七星之形，照亮了整座山陵。

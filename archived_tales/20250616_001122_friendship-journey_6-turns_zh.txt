@@ -1,0 +1,109 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: friendship_journey
+Number of Turns: 6
+Cosmic Positions: water → wood → earth
+Duration: 47.4 seconds
+Generated: 2025-06-16 00:12:17
+========================
+
+
+FOLKTALE STORY: 20250616_001122
+Started: 2025-06-16 00:11:29.965466
+----------------------------------------
+
+--- Opening ---
+
+少年们惊愕间，那金睛舞狮已跃上龙舟，青铜编钟落入舟中发出清越龙吟，溪水忽分两路现出青玉台阶。一位身着玄色深衣的少女踏波而来，腰间玉佩刻着"水德"二字，手中却持着火纹木桨，轻声道："玄武使者命我引路，这北斗钟原该归位昆仑瑶池，只是..."话音未落，溪底忽涌出墨色漩涡，无数青铜鱼符衔着红线将龙舟团团围住。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001122
+   Turn: 0/5
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 皇室贵胄
+   cosmic_element: water
+
+那玄衣少女的玉佩突然映出北斗七星，青铜鱼符衔着的红线竟化作冰晶锁链。龙舟甲板下传来老妪沙哑歌声："黑水忘川道，需以火德照..."话音未落，漩涡中浮起半块焦黑的龟甲，上面依稀可见姜桂之方的残纹。北岸忽有华盖马车疾驰而至，车帘掀起时露出绣着二十八宿的紫绶深衣，那位皇室贵胄抛来一包尚带余温的灶心土，正落在火纹木桨中央。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001122
+   Turn: 1/5
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 赵国太守
+   cosmic_element: wood
+
+那灶心土遇木桨即燃，青烟中显出一条被荆棘遮蔽的古道。赵国太守的紫绶深衣无风自动，袖中落下一卷残破的竹简，正是少女祖母失传的姜桂药方。玄衣少女与龙舟少年相视而悟，原来那焦黑龟甲上的裂纹，正与竹简缺角处的火痕严丝合缝。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001122
+   Turn: 2/5
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   event: 邺城古井突然涌出美酒
+   place: 真定府衙
+
+古道荆棘间忽现黄光，原是地脉灵气所化的土精引路。少女指尖触及药方竹简时，真定府衙的古井竟涌出醇香美酒，井台青砖上浮现与龟甲相似的星图纹路。少年取青铜酒爵舀之，酒液在月光下映出他们即将同行的西方昆仑山影。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001122
+   Turn: 3/5
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 渔阳鼓手
+   cosmic_element: wood
+
+古道分岔处，渔阳鼓手敲击腰间皮鼓，震落满树桃花，露出被春藤缠绕的残碑。少女发现碑文所载正是祖母药方缺失的最后一味——昆仑山巅的晨露，而少年注意到鼓声竟与地脉灵气共鸣，使西方云雾间隐约现出天梯轮廓。土精忽然跃入青铜酒爵，将星图纹路化作青色光点，指引他们踏上这条被世人遗忘的登天之路。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001122
+   Turn: 4/5
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   intervention: 铜镜仙姬映照人心
+
+登天之路云雾缭绕，忽见一铜镜悬于半空，镜中仙姬朱唇轻启："欲过此路，需解三人心结。"少年想起渔阳鼓手腰间皮鼓已裂，少女念及祖母药方尚缺晨露，土精则忧心青铜酒爵沾染凡尘。三人各取一滴心血滴入镜面，铜镜顿时映出昆仑山巅景象——晨露凝于玄鸟羽尖，而天梯尽头，正是修补皮鼓的龙筋与净化酒爵的瑶池仙水。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001122
+   Turn: 5/5
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   event: 井陉关外虎豹同行
+   place: 清漳河谷
+
+三人取得仙物正欲下山，忽见清漳河谷间一条被落叶掩埋的古道若隐若现。玄鸟振翅示警，原来这遗忘之路每逢冬至子时便有虎豹同行，需以晨露调和祖母药方中的朱砂，方能安抚山中精魄。少女取出青玉药臼研磨时，土精忽然指向东方——第一缕晨光穿透云层，将三人身影映在冰封的河面上，恰似上古神农尝百草的壁画。

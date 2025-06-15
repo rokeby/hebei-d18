@@ -1,0 +1,92 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: nature_harmony
+Number of Turns: 5
+Cosmic Positions: water → wood → earth
+Duration: 38.1 seconds
+Generated: 2025-06-15 23:09:54
+========================
+
+
+FOLKTALE STORY: 20250615_230909
+Started: 2025-06-15 23:09:16.347839
+----------------------------------------
+
+--- Opening ---
+
+玄衣女子指尖的冰凌化作一滴晶莹露珠，坠入阿罗陀院中的老井，井水顿时泛起青玉般的光泽，井底竟浮现出九尾白狐与玄龟共游的异象。次日清晨，匠人发现院中桃树无端开出腊月繁花，每片花瓣上都凝着北斗七星的露水图案，而灶台上的桃脯不知何时已化作一捧闪着金光的黍米。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250615_230909
+   Turn: 0/4
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 护卫皇陵的将军
+   cosmic_element: water
+
+腊月北风呼啸时，阿罗陀村外的渭水支流突然泛起黑浊之气，鱼虾翻白浮于水面。正当村民惊慌之际，一只青羽朱喙的玄鸟栖于枯柳枝头，其鸣声如清泉击磬，所过之处浊流竟自分开，露出河底沉积多年的青铜箭簇与玉琮碎片。那位曾护卫武帝陵寝的老将军闻讯而来，拾起箭簇时忽见水中倒影显出自己年轻时的模样，身披玄甲立于昆仑之巅。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250615_230909
+   Turn: 1/4
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 燕国使者
+   cosmic_element: wood
+
+老将军正惊疑间，忽见一位身着青袍的燕国使者踏浪而来，腰间玉佩发出与玄鸟鸣声相和的清音。使者从袖中取出一把青铜小铲，在河底轻轻一划，那些箭簇玉琮便化作青色光点升入云霄。此时东风骤起，岸边枯柳抽出新芽，玄鸟振翅时洒落的羽毛化作无数翠叶，随流水涤荡着河中浊气。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250615_230909
+   Turn: 2/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 护卫皇陵的将军
+   cosmic_element: earth
+
+老将军望着清澈的河水若有所思，忽见那只玄鸟衔来一枚黄玉坠入水中，河底顿时升起五色祥云。他俯身捧起河水，发现掌心竟躺着九粒金粟，每粒粟米上都刻着细小的云纹，与皇陵青铜器上的铭文如出一辙。此时河岸泥土中钻出七只白玉蟾蜍，围着将军吐纳清气，将最后一丝浊气化作甘露渗入大地。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250615_230909
+   Turn: 3/4
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   object: 铜爵
+
+老将军将金粟撒向河面，忽闻东岸传来清越鸟鸣，一只青羽朱喙的灵雀踏着水波起舞。它每振翅一次，浑浊的河水便澄澈三分，河底渐渐显出一尊青铜爵，爵身缠绕着苍翠藤蔓。那铜爵自行浮出水面，盛满甘露倾倒而下，水中浊气顿时化作缕缕青烟消散于春风之中。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250615_230909
+   Turn: 4/4
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 龙山附近的溪水精灵
+   cosmic_element: water
+
+溪水精灵自青铜爵中现身，身着玄色鲛绡，手持青玉净瓶。她将瓶中甘露洒向两岸，枯萎的芦苇顿时抽出新芽，河床淤泥中绽放出朵朵墨莲。灵雀飞落精灵肩头，二者相视而笑，溪水便映出北斗七星的倒影，将污浊尽数化入太阴之精。

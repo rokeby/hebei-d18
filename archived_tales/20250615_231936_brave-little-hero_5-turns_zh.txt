@@ -1,0 +1,93 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: brave_little_hero
+Number of Turns: 5
+Cosmic Positions: water → wood → earth
+Duration: 40.0 seconds
+Generated: 2025-06-15 23:20:24
+========================
+
+
+FOLKTALE STORY: 20250615_231936
+Started: 2025-06-15 23:19:44.550025
+----------------------------------------
+
+--- Opening ---
+
+小牧童阿泉每日放羊时总躲在老柳树下，望着水中倒影自惭形秽，直到祖父将祖传的玄玉系在他颈间，那玉坠触水便泛起青芒，映得溪中鲤鱼皆化作《山海经》记载的文鳐鱼跃出水面。当夜暴雨倾盆，他护着羊群涉过暴涨的河水时，玉坠突然发出编钟般的清响，河底沉睡千年的青铜神兽睁开双眼，在漩涡中为他分开一条月光铺就的水道。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250615_231936
+   Turn: 0/4
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 渔阳鼓手
+   cosmic_element: water
+
+阿泉的祖母见他夜归时衣袍滴水却神色从容，便取出珍藏的渔阳战鼓残片，在火塘边敲出雨水节气的韵律。鼓声惊醒了蜷缩在柴房的白狐，这曾被雷火灼伤的小兽眼中映着玉坠青光，竟口吐人言道出河伯使者将至的预言。此时村外芦苇荡中，青铜神兽驮着三位戴鱼鳞冠的鼓手破浪而来，他们腰间悬挂的陶埙正与阿泉的玉坠共鸣。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250615_231936
+   Turn: 1/4
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 皇家炼丹术士
+   cosmic_element: wood
+
+祖母将白狐揽入怀中，指尖划过它焦黑的皮毛时，青玉坠突然映出东方青龙星宿的轨迹。三位鼓手跃下青铜神兽的瞬间，为首的炼丹术士袖中飞出三粒朱砂丹丸，在月光下化作赤鲤环绕阿泉游动。受伤的白狐忽然挣脱祖母怀抱，衔住最明亮的赤鲤投向芦苇深处，那里正浮动着河伯使者的玄色旌旗。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250615_231936
+   Turn: 2/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 恒山上的隐士
+   cosmic_element: earth
+
+阿泉追着白狐跑进芦苇荡，却见一位黄袍隐士正盘坐在河畔青石上，手中黄土捏成的龟甲正泛着微光。祖母轻抚青玉坠低语道："此乃恒山修行的土德真人，最善调和阴阳。"忽然受伤的白狐跃入隐士怀中，他衣袖拂过处，焦黑的皮毛竟生出新茸，三尾赤鲤也化作朱砂落回龟甲纹路之中。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250615_231936
+   Turn: 3/4
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 精通卜卦的祭司
+   cosmic_element: wood
+
+阿泉正欲上前请教，忽见芦苇丛中走出一位手持桃木杖的祭司，腰间青铜卦盘映着春日青光。祖母轻推孙儿后背道："这位是太卜大人，当年在长安城用蓍草为孝武皇帝解过梦。"祭司笑抚白狐头顶，那畜牲竟口吐人言："小童莫怕，你腰间青玉与我昆仑山有缘，可借木德生气治我伤势。"
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250615_231936
+   Turn: 4/4
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   event: 河北四境同时出现五色云
+   place: 幽州城楼
+
+幽州城楼上，祖母指着北方天际忽现的五色祥云道："此乃水德将兴之兆，你怀中受伤的白狐，当是应运而生的灵兽。"那白狐忽然跃上城垛，对着五色云长啸三声，引得城中百鸟齐鸣。阿泉腰间的青玉随之泛起涟漪般的幽光，与云端降下的玄黑雨丝交织成网，将受伤的狐爪包裹如初。

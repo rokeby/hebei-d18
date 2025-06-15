@@ -1,0 +1,80 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: kind_deed_reward
+Number of Turns: 4
+Cosmic Positions: water → wood → earth
+Duration: 30.1 seconds
+Generated: 2025-06-16 00:16:18
+========================
+
+
+FOLKTALE STORY: 20250616_001541
+Started: 2025-06-16 00:15:47.864848
+----------------------------------------
+
+--- Opening ---
+
+村中老妪每日清晨都颤巍巍地到溪边打水，十岁的小童见她步履蹒跚，便日日相帮。某日溪水忽现五彩光华，水中浮起一枚青玉，刻着"上善若水"四字，老妪接过玉时竟化作青衣仙子，原来她是掌管此方水域的河伯之女，为报童子的善心，赐他一支能唤甘霖的柳枝。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001541
+   Turn: 0/3
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: wildcard
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 恒山上的隐士
+   cosmic_element: water
+   object: 陶质谷仓模型
+   place: 新乐青铜矿场
+
+童子持柳枝归家途中，遇恒山隐士立于风雪中，其手中陶制谷仓模型正渗出五谷精华。隐士叹道："北地青铜矿场因人心不敬而枯竭，需以至诚之心方能重启地脉。"童子想起村中老妪常教导"敬天爱人"之理，遂以柳枝沾取谷仓甘露，向北方矿场洒去，黑土中顿时泛起青铜光泽。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001541
+   Turn: 1/3
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 赵国太守
+   cosmic_element: wood
+
+童子善举惊动了东岳山神，化作青袍老者现身云端。此时赵国太守正率兵途经此地，见童子与老者交谈，竟以鞭指喝："何方妖童，敢在此装神弄鬼！"老妪闻声拄杖而来，手中青铜酒爵忽生裂纹，太守坐骑顿时惊嘶人立——原来那马乃矿脉精气所化，最忌不敬之心。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001541
+   Turn: 2/3
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   event: 中山国遗址现神秘铭文
+   place: 蓟县长城烽火台
+
+青铜酒爵裂纹中渗出琥珀色琼浆，渗入黄土化作蝌蚪状金文，老妪以杖画地曰："此乃中山国祭地古礼，尔等速退！"蓟县长城忽起狼烟，烽火台上浮现龟甲裂纹般的云纹，太守佩剑无故自鸣三声。童子俯身捧起带裂纹的酒爵，其中映出昆仑玉虚宫倒影，西王母座下青鸾正衔来五色补天石。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001541
+   Turn: 3/3
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 远近闻名的石匠
+   cosmic_element: wood
+
+童子将酒爵恭敬捧给老妪时，远处走来个背着石凿的跛足匠人，腰间悬着的青玉珏突然迸出裂痕。老妪以杖点地三下，地脉中涌出汩汩清泉，水中浮着片片桃木符，上面刻着"敬天爱人"的鸟篆。石匠见状慌忙跪拜，原来他昨日凿碑时伤了山中老樟树的灵根，此刻树精正化作青烟缠绕其右足。

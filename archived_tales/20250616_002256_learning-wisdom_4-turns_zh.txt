@@ -1,0 +1,81 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: learning_wisdom
+Number of Turns: 4
+Cosmic Positions: earth → metal → wood
+Duration: 36.6 seconds
+Generated: 2025-06-16 00:23:39
+========================
+
+
+FOLKTALE STORY: 20250616_002256
+Started: 2025-06-16 00:23:03.218371
+----------------------------------------
+
+--- Opening ---
+
+白鹿踏着五彩石子向西奔去，蹄下腾起的尘雾中隐约可见社稷坛的土龙翻腾，阿水怀中的陶鸟每振翅一次，沿途的黄土便开出金线绣纹的灵芝。祖父从袖中取出一方未雕琢的黄玉，对着星光呵气道："这昆仑之土孕化的灵物，正合修补你那支画地成川的神笔。"
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250616_002256
+   Turn: 0/3
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 来自太行山的樵夫
+   cosmic_element: earth
+
+樵夫肩挑两捆黄荆柴自太行山而来，腰间悬着的青铜斧随步伐发出"叮当"清响，恰似宫商角徵羽五音相和。他见阿水捧着断笔发愁，便取三片柏叶覆于黄玉上，笑道："小童且看，这中央戊己土遇东方甲木，自会生出修补万物的胶漆。"  
+
+忽有山风卷起柏叶，叶脉间渗出琥珀色的树脂，将神笔断处裹成金茧。樵夫指着正在衔泥补巢的玄鸟道："昔年黄帝造舟车，亦曾观蜘蛛结网而悟机杼之理。"阿水踮脚望去，见那修补好的笔尖竟凝着颗土精化成的黄星。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250616_002256
+   Turn: 1/3
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   intervention: 冀州土地神平息洪水
+
+阿水正欲道谢，忽见西方天际乌云翻涌，黄河之水竟逆流倒灌冀州平原。樵夫抚须叹道："此乃金气太盛克了脾土，需请土地公调和水火。"说着以青铜斧叩击山石三下，霎时一位拄着青藜杖的老者从地脉中升起，袖中飞出五色息壤落入洪流。  
+
+洪水退去处显露出被泥沙半掩的陶土偶人，阿水拾起时，那偶人竟在掌心化作会走动的泥虎。土地公笑道："小童既懂借木生火、以土制水之理，何不以此偶为鉴？"泥虎每踏一步，爪下便绽开朵金菊花，恰似《淮南》所言"秋金为义"的征兆。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250616_002256
+   Turn: 2/3
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   intervention: 八极游神显灵于月夜
+
+泥虎踏出的金菊忽被夜风吹散，化作点点萤火照亮山路。阿水正惊异间，月轮中降下八位游神，衣袂飘飞如云霞流转，为首的游神将半截竹笛递给阿水："昔年大禹治水时，曾以此笛召应龙相助。"那泥虎闻言跃上阿水肩头，残缺的陶土身躯竟开始自行修补，露出青玉般的纹理。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250616_002256
+   Turn: 3/3
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   character: 考察古墓的博士
+   cosmic_element: metal
+
+萤火聚散间，那位考察古墓的白须博士自山道转出，手中青铜罗盘忽指向阿水腰间竹笛。泥虎从阿水肩头跃下，衔来一片金菊瓣放在博士鞋尖，那花瓣竟化作玉圭纹样。博士抚须笑道："白虎星君曾言，秋金主信，求助者当以诚心叩天门。"

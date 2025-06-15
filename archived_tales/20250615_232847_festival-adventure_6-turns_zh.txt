@@ -1,0 +1,109 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: festival_adventure
+Number of Turns: 6
+Cosmic Positions: water → wood → earth
+Duration: 53.8 seconds
+Generated: 2025-06-15 23:29:49
+========================
+
+
+FOLKTALE STORY: 20250615_232847
+Started: 2025-06-15 23:28:55.998219
+----------------------------------------
+
+--- Opening ---
+
+村中长老望着干涸的河床忧心忡忡，因这上元节若无活水映灯，来年必生旱魃之灾；七位童子夜半潜入古井，以青玉碗盛接月华凝露，却见井底浮现龟甲纹路，原是河伯留下的治水秘图。童子们按图索骥，在东方青龙位掘得一眼灵泉，泉水涌出时竟带着七彩光晕，恰似元宵花灯倒映水中，引得四方游鱼皆来朝拜。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250615_232847
+   Turn: 0/5
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   event: 白洋淀水中现古城倒影
+   place: 野狐岭古道
+
+童子们引来的七彩灵泉惊动了野狐岭古道的山神，他化作白发老翁现身，告知孩子们白洋淀底沉睡着上古丰收庆典的青铜编钟。就在上元节前夜，水面忽现古城幻影，隐约传来钟磬清音，却总在童子们伸手触碰时消散无踪。一位身着素纱的河姑从月影中踏波而来，指点他们需以冬至采集的玄冰为槌，方能敲响这水中仙乐。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250615_232847
+   Turn: 1/5
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   intervention: 北斗七星夜降河北平原
+
+童子们正愁寻不着冬至玄冰，忽见北斗七星自天河垂落，化作七枚晶莹的冰晶悬于芦苇荡上。河姑轻挥素袖，指引他们以东方青龙位上的柳枝为引，将星辉冰晶编成北斗之形的冰槌。此时野狐岭方向传来山神的笑声，惊起一群青鸾衔着五谷穗从古城幻影中飞出，在月下划出九道祥瑞轨迹。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250615_232847
+   Turn: 2/5
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   object: 汉代铜镜蚕桑纹饰
+
+童子们捧着冰槌正要返回，忽见田间升起一面古铜镜，镜面蚕桑纹映着月光流转。镜中走出位绿衣仙娥，手持失传已久的五音笙箫，原是去年秋收时被地气吸入镜中的乐神。她将笙箫交给为首的童子，铜镜随即化作金黄色的麦浪，指引众人沿着桑林小径前往丰收游行的场地。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250615_232847
+   Turn: 3/5
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 擅长草药的医者
+   cosmic_element: wood
+
+童子们随麦浪指引前行，忽闻桑林深处传来咳嗽声，原是村中白发医者正采药归来。老医者从药囊取出青木香投入笙箫孔窍，乐神遗留的五音顿时化作春蚕吐丝般的清音。此时东方天际泛起鱼肚白，游行的鼓点与这清音相和，惊醒了沉睡的桑林土地公，他抖落胡须上的晨露为队伍铺就一条星光小径。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250615_232847
+   Turn: 4/5
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   event: 白洋淀水中现古城倒影
+   place: 蓟县长城烽火台
+
+童子们循着星光小径来到白洋淀畔，忽见平静的水面浮现出古城楼阁的倒影，檐角铜铃无风自鸣。蓟县长城烽火台上飘来一缕青烟，化作执戟神将模样，将遗失的青铜编钟从水中托起，钟身刻着的云雷纹在晨光中流转着黑水玄光。土地公捋须笑道："此乃冬神玄冥留下的礼乐之器，当助尔等唤醒春官句芒。"
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250615_232847
+   Turn: 5/5
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 拓片技艺精湛的工匠
+   cosmic_element: water
+
+童子们将编钟悬于柏木架上，那位善拓片的工匠以松烟墨拓下钟面玄纹，忽见纹路化作游龙潜入地脉。田间忽现百兽率舞，执戟神将的青铜甲胄映着冬日暖阳，将冰封的渠水震开三尺春波。土地公袖中飞出十二只玄鸟，衔来去年秋收时的五谷穗实，在雪地上排成迎春的卦象。

@@ -1,0 +1,92 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: kind_deed_reward
+Number of Turns: 5
+Cosmic Positions: water → wood → earth
+Duration: 38.9 seconds
+Generated: 2025-06-16 00:17:49
+========================
+
+
+FOLKTALE STORY: 20250616_001704
+Started: 2025-06-16 00:17:10.710075
+----------------------------------------
+
+--- Opening ---
+
+村中孩童阿水在溪边浣衣时，忽见一尾青鲤搁浅石上，鳞片映着晨光流转五行水德之色。他捧鱼归河时，鱼目竟闪过星芒，次日溪边便现出一枚润如明月的玉璧，璧上水纹暗合洛书之数，每当月圆便会涌出甘霖滋润干旱的田地。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001704
+   Turn: 0/4
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   intervention: 雪女降临化解干旱
+
+阿水将玉璧藏于家中，却因贪玩与邻童夸口，不慎道出宝物所在。当夜北风骤起，雪女踏着玄冰降临，村中老井皆结薄霜，那会说话的玄熊猫自昆仑而来，蹲坐门前道："童言无忌，然失信于天，当以诚心补过。"阿水悔悟，捧玉璧跪于溪畔三日，终见青鲤再现，吐出一颗冰晶化入干裂的田地。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001704
+   Turn: 1/4
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 精通《易经》的学者
+   cosmic_element: wood
+
+冰晶入土次日，村东忽现青袍老者，手持桃木算筹立于田间。玄熊猫伏地作揖道："此乃河洛先生，善推天机。"老者抚须而笑，指间木筹竟生嫩芽，对阿水言："青鲤吐晶为引，今当种梧桐于井畔，引凤凰来仪。"阿水依言栽下树苗，土中忽涌清泉，水中游动着玉璧般的鳞光。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001704
+   Turn: 2/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 能预知天象的星官
+   cosmic_element: earth
+
+梧桐初长成时，星官夜观天象，见紫微垣隐现赤气，急寻阿水告曰："玉鳞乃西王母瑶池信物，当于月圆夜诚心归还。"玄熊猫忽现人言："若私藏鳞片，必招旱魃之灾。"阿水却因贪恋鳞光之美，暗自藏起一片。次日井水骤涸，梧桐叶卷，土中传来低沉呜咽，似大地含怨。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001704
+   Turn: 3/4
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: plot_twist
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+
+阿水梦中见青帝使者踏祥云而至，手持枯荣木杖点其眉心："汝藏鳞失信，已伤东方木德。"醒来时怀中玉鳞竟生出荆棘，刺破其衣。玄熊猫衔来昆仑雪水浇灌梧桐，叹息道："天地以诚立春，失信者当见草木含悲。"
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001704
+   Turn: 4/4
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   event: 赵国故城石碑自行倒伏
+   place: 卢龙古渡口
+
+阿水连夜赶往卢龙古渡，见赵国石碑倒卧浊浪中，碑文"信义立国"四字被鱼虾啃噬。玄熊猫立于残碑之上，爪捧昆仑冰晶道："北水克东木，今以寒冰镇汝妄念，待春雷响时方见转机。"忽然渡口老柳垂下枯枝，缠住阿水腰间玉鳞，将荆棘尽数吸去化作青烟。

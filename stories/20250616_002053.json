@@ -1,0 +1,122 @@
+{
+  "id": "20250616_002053",
+  "completed_at": "2025-06-16T00:21:54.845810",
+  "final_narrative": [
+    {
+      "turn": 0,
+      "roll": null,
+      "action_type": "opening",
+      "elements": {
+        "cosmic_element": "earth"
+      },
+      "narrative": "",
+      "narrative_zh": "阿水跟随老者行至终南山麓，见一白须道人正用朱砂笔在陶瓮上绘制蟠螭纹，每画一笔，瓮中便涌出五色土，落地即化作麒麟、玄龟等祥瑞之兽。老者取腰间青玉印在阿水眉心轻按，那孩子顿觉双脚生根似与大地相连，竟能听懂泥土中蛰龙讲述的禹王治水古事。",
+      "token_usage": {
+        "prompt_tokens": 502,
+        "completion_tokens": 96,
+        "total_tokens": 598
+      }
+    },
+    {
+      "turn": 0,
+      "roll": 3,
+      "action_type": "character_action",
+      "elements": {
+        "cosmic_element": "earth",
+        "character": "铜马车的驭手"
+      },
+      "narrative": "",
+      "narrative_zh": "阿水正惊叹间，忽闻铜铃叮当，一辆鎏金铜马车自云中驶来，驭手乃黄巾力士所化，扬鞭指地道：\"此五色土乃女娲补天所遗，小童既得地脉通灵，何不取黄土塑马？\"阿水依言捏土成马，那泥马竟化作先前摔坏的木马玩具，鬃毛间还沾着昆仑玉屑。老者抚须而笑：\"大地载物无声，汝今知土德之厚否？\"",
+      "token_usage": {
+        "prompt_tokens": 618,
+        "completion_tokens": 122,
+        "total_tokens": 740
+      }
+    },
+    {
+      "turn": 1,
+      "roll": 14,
+      "action_type": "cosmic_intervention",
+      "elements": {
+        "cosmic_element": "metal",
+        "intervention": "燕国先祖托梦后人"
+      },
+      "narrative": "",
+      "narrative_zh": "阿水夜宿桑林，梦见玄鸟衔金枝而来，化作一位戴燕尾冠的老者。老者指点西方道：\"昔日大禹治水，曾留金简于华山之巅，汝当寻白鹿为引。\"翌日晨露未晞，阿水发现木马伤口处生出灵芝，老者笑言：\"金秋肃杀之气能摧万物，然朽木得天地精华，亦可焕发生机。\"",
+      "token_usage": {
+        "prompt_tokens": 645,
+        "completion_tokens": 95,
+        "total_tokens": 740
+      }
+    },
+    {
+      "turn": 2,
+      "roll": 9,
+      "action_type": "environmental_event",
+      "elements": {
+        "cosmic_element": "wood",
+        "event": "恒山雾气化作人形",
+        "place": "满城汉墓甬道"
+      },
+      "narrative": "",
+      "narrative_zh": "阿水循着白鹿足迹来到恒山脚下，忽见山中雾气翻涌，化作一位执玉圭的仙人。仙人衣袖拂过之处，枯木逢春抽出新芽，他轻抚阿水怀中修补好的木马道：\"昔者鲁班造木鸢，三日不落，盖因心存造化之仁。\"\n\n穿过刻满星图的汉墓甬道，青苔覆盖的砖墙上浮现出祖父曾讲过的神农尝草图。阿水指尖触碰处，壁画中的药草竟渗出清露，那白鹿呦呦鸣叫着引他望向墓顶——北斗七星正透过天井洒下银辉，照在生发灵芝的木马伤口上。",
+      "token_usage": {
+        "prompt_tokens": 629,
+        "completion_tokens": 147,
+        "total_tokens": 776
+      }
+    },
+    {
+      "turn": 3,
+      "roll": 7,
+      "action_type": "environmental_event",
+      "elements": {
+        "cosmic_element": "metal",
+        "event": "平山汉墓玉器夜放光芒",
+        "place": "易水河畔"
+      },
+      "narrative": "",
+      "narrative_zh": "易水河畔的芦苇忽作金声，阿水怀中的木马眼中闪过玉光，与远处汉墓中升起的青白辉光相应和。祖父曾说\"玉有五德\"，此刻河面浮起的龟甲上，正显出水波纹与星图交织的图案，那白鹿踏波而来，角上挂着串会唱歌的露珠。",
+      "token_usage": {
+        "prompt_tokens": 681,
+        "completion_tokens": 80,
+        "total_tokens": 761
+      }
+    },
+    {
+      "turn": 4,
+      "roll": 18,
+      "action_type": "story_ending",
+      "elements": {
+        "cosmic_element": "earth"
+      },
+      "narrative": "",
+      "narrative_zh": "阿水手中的木马忽然化作青烟，在龟甲上方凝成\"仁\"字篆文，那些会唱歌的露珠纷纷坠入河底，化作五彩石子铺成通往昆仑的小径。祖父抚须而笑，指着西天渐明的长庚星道：\"你看那星辉与河光，本是天地呼吸吐纳的灵气，正如这修补好的木马，残缺处自有造化玄机。\"白鹿屈膝让阿水骑上背脊时，他怀中残破的陶鸟竟生出翡翠羽翼，随着夜风发出清越鸣叫。",
+      "token_usage": {
+        "prompt_tokens": 593,
+        "completion_tokens": 126,
+        "total_tokens": 719
+      }
+    }
+  ],
+  "cosmic_position": "earth",
+  "total_turns": 5,
+  "max_turns": 5,
+  "language": "zh",
+  "story_arc": {
+    "type": "learning_wisdom",
+    "stages": [
+      "curiosity",
+      "seeking_teacher",
+      "funny_lessons",
+      "practice",
+      "sharing_knowledge"
+    ],
+    "theme_elements": {
+      "lesson_learned": "appreciating nature",
+      "wisdom_guide": "grandfather's story",
+      "growth_sign": "a mended toy"
+    },
+    "current_stage": "sharing_knowledge"
+  }
+}

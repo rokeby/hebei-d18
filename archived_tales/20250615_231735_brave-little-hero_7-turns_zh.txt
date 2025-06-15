@@ -1,0 +1,126 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: brave_little_hero
+Number of Turns: 7
+Cosmic Positions: water → wood → earth
+Duration: 57.5 seconds
+Generated: 2025-06-15 23:18:41
+========================
+
+
+FOLKTALE STORY: 20250615_231735
+Started: 2025-06-15 23:17:43.693018
+----------------------------------------
+
+--- Opening ---
+
+竹林深处，十岁的阿青正蹲在溪边浣洗衣裳，忽见水中浮起一枚青玉坠子，其纹路恰似阴阳二气流转。当他颤抖的手指触到玉坠时，溪水竟逆流而上化作蛟龙形状，将他的倒影与竹影交织成上古河图。村中老巫闻声而来，望着玉坠上若隐若现的北斗七星纹，低语此物乃昆仑西王母失落人间的"水德真符"，唯有心澄如镜者方能唤醒其中蛰伏的龙灵。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250615_231735
+   Turn: 0/6
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 养蚕女工
+   cosmic_element: water
+
+阿青攥着玉坠奔回家中，却发现祖母珍藏的传家青铜樽不翼而飞，樽底刻着的玄武纹正是镇守家宅的水精。竹梢忽传来窸窣声响，一只金睛白猿捧着偷来的铜樽嬉笑，原是昆仑山看守蟠桃园的灵猴后裔，最喜收集闪亮器物。养蚕女工路过见状，取腰间桑叶笛吹奏商调，那猿猴闻音手舞足蹈，阿青灵机一动将玉坠映着冬日残照，折射七彩光斑与笛声相和，引得灵猴主动交还了宝物。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250615_231735
+   Turn: 1/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 邯郸城的儒生
+   cosmic_element: wood
+
+那白猿归还铜樽后却不离去，蹲在竹枝上挠首抓耳。此时邯郸城来的儒生路过，见青竹摇曳生异象，便取出怀中桃木算筹卜卦。卦象显示东方木气郁结，原是这灵猴贪恋玉坠灵气，欲与阿青结一段善缘。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250615_231735
+   Turn: 2/6
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 冀州刀匠
+   cosmic_element: earth
+
+那白猿忽从竹梢跃下，将腰间系着的黄铜铃铛解下递给阿青。此时冀州刀匠正巧路过，见铜铃上刻着"土德镇物"四字，便道此物乃先汉遗宝，能寻失物于厚土之中。阿青握铃轻摇，竹根下竟透出微微黄光，指引着家族玉坠埋藏之处。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250615_231735
+   Turn: 3/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 精通《易经》的学者
+   cosmic_element: wood
+
+阿青循着黄光指引，在竹根处挖出半块青玉坠，却见断裂处阴阳纹路残缺不全。那白猿抓耳挠腮间，忽想起东山有位皓首穷经的老先生，常对着竹简推演八卦。此时春风忽转，竹叶沙沙作响似在指路，阿青握紧铜铃与残玉，朝东方晨曦处奔去。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250615_231735
+   Turn: 4/6
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   event: 太行山忽现上古兽迹
+   place: 易水湖渔村
+
+阿青奔至易水湖畔时，渔村老叟正惊惶议论太行山上的异象——雪地里赫然印着形似夔兽的爪痕，村民供奉的青铜鼎竟渗出玄色水珠。白猿攀上老槐树吱吱叫唤，阿青忽觉怀中残玉与铜铃共振，想起古籍有云"玉能引灵"，便将青玉坠浸入湖中，霎时涟漪化作八卦纹路指向北方。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250615_231735
+   Turn: 5/6
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: wildcard
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 深谙河北地脉的风水师
+   cosmic_element: water
+   object: 一面刻有仙鹤纹饰的铜镜
+   place: 卢龙古渡口
+
+阿青循着八卦涟漪来到卢龙古渡，却见一位须发皆白的老者手持鹤纹铜镜，镜面映着北斗七星。那风水师抚须叹道："此镜乃黄帝战蚩尤时遗落的通灵之物，与汝玉坠本是一对。"白猿忽从树梢抛下一串野果，果核落水竟化作金色鲤鱼，阿青灵机一动将玉坠与铜镜相合，镜中顿时显出祖传宝物埋在渡口老柳下的景象。
+
+--- Turn 7 ---
+
+📖 STORY STATUS:
+   ID: 20250615_231735
+   Turn: 6/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   event: 邺城古井突然涌出美酒
+   place: 蓟县长城烽火台
+
+阿青掘得祖传玉璧时，邺城古井忽飘来酒香，引得白猿抓耳挠腮跃向城垣。那顽猴攀上蓟县烽燧时爪滑跌落，竟撞开暗格现出秦时避火图，图中星象与玉璧纹路暗合。阿青悟得阴阳相济之理，将酒泉之水点染烽火台青砖，砖缝间顿时浮现出通往家族秘藏的星斗路径。

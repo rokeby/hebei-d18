@@ -1,0 +1,107 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: festival_adventure
+Number of Turns: 6
+Cosmic Positions: water → wood → earth
+Duration: 46.7 seconds
+Generated: 2025-06-15 23:32:56
+========================
+
+
+FOLKTALE STORY: 20250615_233202
+Started: 2025-06-15 23:32:10.148810
+----------------------------------------
+
+--- Opening ---
+
+少年们将青铜编钟悬于龙舟之首，那北斗微光竟化作七盏碧玉灯笼，映得溪水粼粼如星河倒悬。村中老妪取出珍藏的桃木面具，以朱砂绘上玄武纹样，道是"水德当令，当以木器承之"。忽见溪底浮起万千莲灯，原是上游村落顺水放下的祈福之物，与龙舟相映成趣，恰应了"水火既济"的天象。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250615_233202
+   Turn: 0/5
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   event: 赵国古墓中传出丝竹声
+   place: 易水河畔
+
+易水河畔忽起异香，赵国古墓方向飘来缕缕青烟，竟化作十二面云锣悬于夜空。那轮满月忽开口言语："尔等尚缺一味引魂香，需取玄武鳞甲与梧桐灰烬相合。"少年们望向水中浮沉的莲灯，发现每盏灯芯都映着古墓壁画上的乐舞场景，丝竹声随水波荡漾，与编钟清音暗合宫商。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250615_233202
+   Turn: 1/5
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   intervention: 冀州土地神平息洪水
+
+少年们正愁寻不得玄武鳞甲，忽见冀州土地神踏浪而来，手中青玉笏板轻点水面，泛滥的春洪顿时化作九曲清溪。土地神笑指溪底："昔年禹王治水，玄武曾在此蜕甲镇水，其鳞入土为玉，出水为金。"溪畔老梧桐似有所感，无风自燃却枝叶不焚，青烟凝成凤凰形状直上九霄，与云锣共演《咸池》古乐。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250615_233202
+   Turn: 2/5
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: plot_twist
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+
+溪底金鳞忽化作千盏明灯浮出水面，却独缺一盏北斗主灯。正当少年们踌躇时，天上冰轮轻转，月宫素娥以桂枝为笔，在云端写下"太阴炼形"四字。那些散落田间的陶罐受月光点化，竟生出朱砂符纹，自行拼成七曜灯阵，引得天枢星光垂落如丝，将缺失的灯盏补全。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250615_233202
+   Turn: 3/5
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   object: 玉制礼器
+
+月华如水，那七曜灯阵忽生异变，青玉礼器自村中祠堂飞出，悬于北斗主灯之上。礼器上蟠螭纹路渐次亮起，与月光相激荡，竟映出西王母宴饮昆仑的幻影。村中老者见状惊呼，此乃上古祭天时沟通人神的礼器，今夜显圣，必是吉兆。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250615_233202
+   Turn: 4/5
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 冀州刀匠
+   cosmic_element: water
+
+忽闻月中有声如磬，皎皎玉轮竟化作慈眉老妪面容，对众人言道："冀州刀匠所铸铜镜尚缺一味玄阴之水，难成通天之器。"村童阿蛮闻言，解下腰间黑陶水囊，此乃冬至子时取自北冥寒泉之水。铜镜遇水即鸣，镜面浮现二十八宿图纹，与天上星斗遥相呼应。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250615_233202
+   Turn: 5/5
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 皇室贵胄
+   cosmic_element: water
+
+镜中星斗骤然大亮，照得村中千盏素灯尽染朱紫。忽有华盖自云中降，原是皇室贵胄循天象而至，见寒泉玄水竟能通灵，遂取腰间青玉龙佩投入镜中。刹那间，佩化赤龙绕灯而舞，所过之处冰消雪融，桃李竟发，正月未至而满村已见春意。

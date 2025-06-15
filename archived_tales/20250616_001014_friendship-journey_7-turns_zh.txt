@@ -1,0 +1,124 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: friendship_journey
+Number of Turns: 7
+Cosmic Positions: water → wood → earth
+Duration: 57.4 seconds
+Generated: 2025-06-16 00:11:20
+========================
+
+
+FOLKTALE STORY: 20250616_001014
+Started: 2025-06-16 00:10:22.910073
+----------------------------------------
+
+--- Opening ---
+
+少年们惊愕间，那金睛舞狮已化作一位身着碧鳞甲的少年郎，手中青铜编钟发出清越龙吟，震得溪水泛起九曲波纹。老者见那少年眉间有玄武星纹，便知是北方水神使者，遂令村中子弟以青竹为桨，助其寻回失落河底的其余六件编钟。溪水忽分阴阳两路，东流清澈见底显木德生机，西流幽深莫测藏金精之气，两少年各执一舟相视而笑，共赴那北斗指引的深渊秘境。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001014
+   Turn: 0/6
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 祭祀礼仪专家
+   cosmic_element: water
+
+两舟行至云雾缭绕的北山脚下，忽见一白发老妪独坐寒潭边，手中捣药的玉杵竟与编钟纹饰同源。碧鳞少年认出那是冬至祭祀专用的黄精药方，老妪却叹息道山中瘴气已使药草尽数枯萎。持竹桨的少年忽将怀中温养的木德生气注入潭水，霎时枯枝抽新芽，阴阳二气在药臼中流转如太极。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001014
+   Turn: 1/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 守护汉墓的武士
+   cosmic_element: wood
+
+潭边青雾忽聚为甲胄之形，一位面覆青铜傩面的武士踏浪而出，腰间玉具剑与老妪药杵同泛青光。少年们正惊疑间，武士却以剑指东方瘴气源头，原来那枯萎药草皆因守墓铜人失了木德精魄所致。老妪颤巍巍捧出记载着上古配方的青玉简，简上云纹竟与武士甲胄的雷纹隐隐相合。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001014
+   Turn: 2/6
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   intervention: 青龙神将封印古井妖魔
+
+青铜武士甲胄忽作龙吟，东方瘴气中现出古井轮廓，井沿蟠螭纹正被黑雾侵蚀。少年们按老妪配方取黄土合药，却见井中伸出枯骨之手欲夺玉简，此时云间传来角木蛟清啸，青龙神将踏着二十八宿星辉降下，将腰间青玉圭投入井中化作镇魔碑。老妪药杵突然自行飞起，与玉简相击发出黄钟大吕之声，枯萎的药草竟在音律中抽出嫩芽。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001014
+   Turn: 3/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   intervention: 紫微星君下降人间
+
+青玉圭镇住古井后，东方忽现紫气氤氲，紫微星君驾着北斗七星光辇降临，衣袖拂过处瘴气化作甘霖。少年们怀中的药方突然泛起青光，枯骨之手触及星辉竟生出血肉，原是山中采药人魂魄所化。星君指点他们以初生嫩芽合着晨露研磨，药杵在月光下自行捣药，每一声都引得群山回响如黄钟应和。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001014
+   Turn: 4/6
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   event: 易水忽然倒流三日
+   place: 太行山云雾中
+
+易水倒流之际，太行山云雾忽化作玄色蛟龙盘踞峰顶，采药人魂魄指引少年们望向云深处——那里有位白发老妪正守着口青铜药鼎，鼎中熬煮的正是祖母失传的百草方。少年们踏着倒流的易水逆溯而上，每步都在水面留下金色莲印，惊得水中阴鱼纷纷衔来月华相赠。老妪见少年们怀中的药方青光与鼎中烟气相应，便将最后三味药材化作星斗投入鼎中，霎时云开雾散，山间响起《咸池》古乐。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001014
+   Turn: 5/6
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   object: 一面刻有仙鹤纹饰的铜镜
+
+云雾深处忽现一面铜镜悬于古松枝头，镜面映着少年们的身影却显出前世模样——原是西王母座下司药童子转世。老妪取镜轻叩三声，镜中仙鹤纹饰竟化作真禽衔来昆仑雪莲，此物正是药方最后引子。少年们将雪莲投入鼎中时，北天黑水翻涌处升起朝阳，阴阳二气在鼎中交融成太极之象。
+
+--- Turn 7 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001014
+   Turn: 6/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   event: 元氏县铜镜预示年岁丰歉
+   place: 邯郸古城墙下
+
+邯郸古城墙下，青石板上忽然渗出晶莹甘露，原是铜镜中溢出的昆仑仙气凝结。少年们将老妪药方熬成的汤药分与城中病患时，东方天际忽现青龙云纹，预示今年五谷丰登。元氏县那面预示丰歉的铜镜此刻映出少年们的身影，镜缘青铜饕餮纹竟化作春风，将城墙根的枯柳点出新芽。

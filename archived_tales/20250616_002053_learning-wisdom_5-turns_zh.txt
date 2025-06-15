@@ -1,0 +1,95 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: learning_wisdom
+Number of Turns: 5
+Cosmic Positions: earth → metal → wood
+Duration: 54.6 seconds
+Generated: 2025-06-16 00:21:54
+========================
+
+
+FOLKTALE STORY: 20250616_002053
+Started: 2025-06-16 00:21:00.291177
+----------------------------------------
+
+--- Opening ---
+
+阿水跟随老者行至终南山麓，见一白须道人正用朱砂笔在陶瓮上绘制蟠螭纹，每画一笔，瓮中便涌出五色土，落地即化作麒麟、玄龟等祥瑞之兽。老者取腰间青玉印在阿水眉心轻按，那孩子顿觉双脚生根似与大地相连，竟能听懂泥土中蛰龙讲述的禹王治水古事。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250616_002053
+   Turn: 0/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 铜马车的驭手
+   cosmic_element: earth
+
+阿水正惊叹间，忽闻铜铃叮当，一辆鎏金铜马车自云中驶来，驭手乃黄巾力士所化，扬鞭指地道："此五色土乃女娲补天所遗，小童既得地脉通灵，何不取黄土塑马？"阿水依言捏土成马，那泥马竟化作先前摔坏的木马玩具，鬃毛间还沾着昆仑玉屑。老者抚须而笑："大地载物无声，汝今知土德之厚否？"
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250616_002053
+   Turn: 1/4
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   intervention: 燕国先祖托梦后人
+
+阿水夜宿桑林，梦见玄鸟衔金枝而来，化作一位戴燕尾冠的老者。老者指点西方道："昔日大禹治水，曾留金简于华山之巅，汝当寻白鹿为引。"翌日晨露未晞，阿水发现木马伤口处生出灵芝，老者笑言："金秋肃杀之气能摧万物，然朽木得天地精华，亦可焕发生机。"
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250616_002053
+   Turn: 2/4
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   event: 恒山雾气化作人形
+   place: 满城汉墓甬道
+
+阿水循着白鹿足迹来到恒山脚下，忽见山中雾气翻涌，化作一位执玉圭的仙人。仙人衣袖拂过之处，枯木逢春抽出新芽，他轻抚阿水怀中修补好的木马道："昔者鲁班造木鸢，三日不落，盖因心存造化之仁。"
+
+穿过刻满星图的汉墓甬道，青苔覆盖的砖墙上浮现出祖父曾讲过的神农尝草图。阿水指尖触碰处，壁画中的药草竟渗出清露，那白鹿呦呦鸣叫着引他望向墓顶——北斗七星正透过天井洒下银辉，照在生发灵芝的木马伤口上。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250616_002053
+   Turn: 3/4
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   event: 平山汉墓玉器夜放光芒
+   place: 易水河畔
+
+易水河畔的芦苇忽作金声，阿水怀中的木马眼中闪过玉光，与远处汉墓中升起的青白辉光相应和。祖父曾说"玉有五德"，此刻河面浮起的龟甲上，正显出水波纹与星图交织的图案，那白鹿踏波而来，角上挂着串会唱歌的露珠。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250616_002053
+   Turn: 4/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: story_ending
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+
+阿水手中的木马忽然化作青烟，在龟甲上方凝成"仁"字篆文，那些会唱歌的露珠纷纷坠入河底，化作五彩石子铺成通往昆仑的小径。祖父抚须而笑，指着西天渐明的长庚星道："你看那星辉与河光，本是天地呼吸吐纳的灵气，正如这修补好的木马，残缺处自有造化玄机。"白鹿屈膝让阿水骑上背脊时，他怀中残破的陶鸟竟生出翡翠羽翼，随着夜风发出清越鸣叫。

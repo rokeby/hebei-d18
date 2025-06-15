@@ -1,0 +1,79 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: brave_little_hero
+Number of Turns: 4
+Cosmic Positions: water → wood → earth
+Duration: 34.6 seconds
+Generated: 2025-06-15 23:22:10
+========================
+
+
+FOLKTALE STORY: 20250615_232129
+Started: 2025-06-15 23:21:36.206424
+----------------------------------------
+
+--- Opening ---
+
+牧童阿宝在溪边拾得一枚青玉坠，其纹路似水波流转，每当月圆之夜便发出幽幽蓝光。这日他放牛时遇暴雨，玉坠突然化作一条青龙盘旋于乌云间，将倾盆雨水尽数吸入鳞甲之中。村中老者见状抚须而叹，说此乃上古禹王治水时遗落的"水德之精"，唯有心地纯净者方能唤醒其神力。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250615_232129
+   Turn: 0/3
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 考察古墓的博士
+   cosmic_element: water
+
+阿宝正为村中冬至祭典准备的水晶冰灯突然碎裂而发愁时，一只毛色如墨的灵猴从古柏跃下，爪中握着一支昆仑紫竹制成的短笛。灵猴眨着金睛告诉阿宝，这冰灯乃北方玄冥精气所凝，需以水德之精为引，配合《九渊》古调方能重铸。  
+
+此时那位常来考察附近汉墓的博士恰好路过，他腰间悬挂的青铜罗盘突然指向阿宝胸前的玉坠，盘中磁针竟化作一条首尾相衔的小龙急速旋转。博士望着乌云密布的苍穹喃喃道："坎卦主水，这玉坠既已认主，小友何不随灵猴往北潭一试？"
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250615_232129
+   Turn: 1/3
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 邯郸城的儒生
+   cosmic_element: wood
+
+阿宝随灵猴穿行竹林时，忽闻清越琴声自潭畔传来。一位身着青衫的邯郸儒生正在抚弄五弦琴，琴轸上缠绕的朱丝随着《九渊》古调泛出淡淡水光。灵猴跃上儒生肩头吱吱作语，那儒生含笑指向潭心："此乃少昊氏留下的玄冥阵眼，小友玉坠中的青龙精魄，正可引动四方水精。"
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250615_232129
+   Turn: 2/3
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 铜马车的驭手
+   cosmic_element: earth
+
+潭水忽现漩涡，一辆青铜马车破浪而出，驭手身披玄甲，面如金纸。灵猴吱呀叫着跳上阿宝肩膀，小声道："此乃少昊帝巡游四方的铜车，当年黄帝铸之以镇四方土精。"驭手抛来半截断裂的玉琮，琴声顿时转为《承云》之调，阿宝胸前的青玉坠应和着发出龙吟。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250615_232129
+   Turn: 3/3
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   intervention: 赵王陵墓守护灵现身
+
+断裂的玉琮突然绽放青光，显出一位身着赤绡衣的老者虚影，腰间玉带缀着七颗星辰。灵猴慌忙作揖道："原是赵王陵的守墓灵君！"老者抚须而笑，指着阿宝腰间破损的社祭礼器："此物乃东方青龙之鳞所化，当以角音调其生气。"琴弦无风自动，奏出《阳阿》之曲，玉坠中竟游出一条鳞爪宛然的青气小龙。

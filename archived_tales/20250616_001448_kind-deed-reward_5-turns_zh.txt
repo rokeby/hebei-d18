@@ -1,0 +1,91 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: kind_deed_reward
+Number of Turns: 5
+Cosmic Positions: water → wood → earth
+Duration: 42.7 seconds
+Generated: 2025-06-16 00:15:39
+========================
+
+
+FOLKTALE STORY: 20250616_001448
+Started: 2025-06-16 00:14:56.383324
+----------------------------------------
+
+--- Opening ---
+
+村中少年阿水见老者独坐溪边洗衣，便放下龙舟前去相助，谁知刚触到老者衣袖，溪水突然泛起金光，那青铜编钟竟自行奏响《云门》古乐。老者浑浊的双眼忽现星辰流转，将一枚刻着龟蛇纹的玉璜放入阿水手中："此物遇善则温，遇恶则寒，可助你明日渡过洛水之险。"次日暴雨倾盆，阿水果然在渡河时见玉璜化作玄武神兽，背负他与落水的乡民安然抵岸。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001448
+   Turn: 0/4
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   object: 铜银双翼神兽
+
+阿水归家后，祖母见他腰间玉璜泛着幽光，便告诫道："玄武主信，此物需以诚敬相待。"翌日村中富户欲以千金购玉璜，少年心动应允，谁知铜银双翼神兽突然破空而来，衔走玉璜消失于北方黑云之中。祖母叹息抚其背曰："北属水位主智，失信则水德溃散，当以诚意追回才是。"
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001448
+   Turn: 1/4
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   intervention: 五行之火神焚烧妖邪
+
+阿水连夜向北追寻，途经枯木林时忽见赤焰冲天，原是南方火德星君显圣，以离火焚烧盘踞此地的食言妖。那妖物化作青烟消散时，星君袖中飘落一片赤玉简，上书"敬天爱人"四字朱文。祖母在院中织布，忽见东方青龙星大亮，便知孙儿已得火神点化，将重获玄武庇佑。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001448
+   Turn: 2/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 燕国使者
+   cosmic_element: earth
+
+阿水拾起赤玉简时，忽闻马蹄声震，原是燕国使者被食言妖所惑迷失方向。那使者见童子手持星君信物，慌忙下马作揖，腰间青铜符节竟与玉简共鸣生光。祖母在织机前掐指一算，黄泥炉中香灰无风自旋，显出土德承火之象。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001448
+   Turn: 3/4
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 龙山附近的溪水精灵
+   cosmic_element: wood
+
+阿水正欲答话，忽见溪水泛起青光，一位青衣童子踏浪而来，原是龙山溪水精灵感应到赤玉简的召唤。精灵向祖母深深一揖，道出食言妖本是守山神将，因违逆天誓才堕入魔道。祖母将织机上的青丝投入炉中，香灰顿时化作春燕形状，预示着东方木德当令的转机。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001448
+   Turn: 4/4
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: story_ending
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+
+青衣童子取出一枚玄龟甲片，上面刻着守山神将当年立下的血誓。祖母将龟甲投入炉中，火中竟浮现出北斗七星的图案。此时食言妖浑身黑气尽散，现出金甲神将本相，向着东方昆仑方向三拜九叩，化作一道金光直冲霄汉。

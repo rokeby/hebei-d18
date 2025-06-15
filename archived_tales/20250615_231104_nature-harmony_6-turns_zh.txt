@@ -1,0 +1,107 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: nature_harmony
+Number of Turns: 6
+Cosmic Positions: water → wood → earth
+Duration: 48.1 seconds
+Generated: 2025-06-15 23:12:01
+========================
+
+
+FOLKTALE STORY: 20250615_231104
+Started: 2025-06-15 23:11:13.512283
+----------------------------------------
+
+--- Opening ---
+
+村中三个孩童循着蚕丝星辉来到虹桥下，发现积水中的玄色波纹竟能映出昆仑山上的神兽白泽，那神兽双目如月，口中衔着一卷绘有云纹的竹简。当最小的孩子伸手触碰水面时，波纹忽然化作青黑色的鲤鱼跃出，鳞片上闪烁着《尚书》中记载的洛书图案，在空中划出一道连接天地的水幕。鲤鱼吐出的泡泡里，隐约可见上古时期大禹治水时留下的九鼎虚影，随着水幕流动渐渐显露出"上善若水"四个古老的篆文。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250615_231104
+   Turn: 0/5
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 守护汉墓的武士
+   cosmic_element: water
+
+那青黑鲤鱼跃入月影，化作一位身披玄甲的武士，腰间玉具剑上刻着北斗七星。他指向远处污浊的溪流，水中惊慌的鱼群正被黑雾缠绕，月华照到之处却显出银鳞闪烁的生机。孩童们跟着武士用桐叶舀起浊水时，发现每片落叶沉底都化作青龟，龟甲上浮现出疏导水脉的古老图纹。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250615_231104
+   Turn: 1/5
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: plot_twist
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+
+青甲武士取腰间玉剑轻点水面，月影碎作七只银蟾跃入溪中，惊得黑雾里逃窜的鱼群忽而聚作青龙之形。孩童们发现每清理一段溪流，对岸古柏上便多栖一只青鸾，其尾羽滴落的晨露将淤塞处冲出星斗状的孔窍。待到东方既白，那些被黑雾惊走的玄鹿竟踏着虹桥归来，鹿角间缠绕的藤蔓开出五色花，落在水面便化作疏导水脉的活符。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250615_231104
+   Turn: 2/5
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 远近闻名的石匠
+   cosmic_element: earth
+
+溪畔忽现一位须发皆白的老石匠，手持黄玉凿在岸边青石上刻出二十八星宿图。每凿一记，便有土黄色的光晕从石缝升起，惊散的玄鹿竟驻足回望，眼中映出月影化成的银蟾。老匠人将凿下的石粉撒入溪中，那些星斗状的孔窍便生出嫩黄根须，将黑雾缠结成滋养水脉的灵络。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250615_231104
+   Turn: 3/5
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 皇家炼丹术士
+   cosmic_element: wood
+
+溪水忽转幽蓝，一位身着赤绶的皇家炼丹术士踏月而来，腰间悬着的青铜药壶中溢出缕缕紫烟。他取银针蘸取蟾影化成的月华，点在玄鹿眉间，那些受惊的灵兽便安静下来，眼中恐惧化作青莹莹的流光。术士袖中飞出十二只玉蝉，衔着老石匠凿落的星宿石粉，将溪底淤积的黑雾尽数吞食净化。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250615_231104
+   Turn: 4/5
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   intervention: 长城将军显灵守关隘
+
+玉蝉净化溪水之际，北方忽现长城虚影，一位身披玄甲的将军英灵踏着北斗星光降临。他手中青铜戈往地上一顿，关隘处千年戍守的兵魂便化作金甲神将，将惊逃的灵兽温柔拢入怀中。月光映在将军铠甲上流转如水，那些受惊的玄鹿竟开始舔舐他战袍上凝结的冰晶，每舔一下，溪底便浮起一片星辉洗净的鹅卵石。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250615_231104
+   Turn: 5/5
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   event: 白洋淀水中现古城倒影
+   place: 新乐青铜矿场
+
+玄甲将军的青铜戈忽生异响，引得白洋淀水面泛起涟漪，水下竟浮现一座琉璃宫殿的倒影。矿场深处沉睡的青铜矿脉感应到月光，化作青鸾振翅飞出，衔来昆仑玉屑撒入溪中。受惊的灵兽们饮下这玉屑融化的清水，眼中惊惶渐消，皮毛上结出霜花般的星纹。

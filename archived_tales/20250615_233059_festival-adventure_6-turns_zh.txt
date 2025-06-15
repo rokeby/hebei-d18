@@ -1,0 +1,108 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: festival_adventure
+Number of Turns: 6
+Cosmic Positions: water → wood → earth
+Duration: 53.2 seconds
+Generated: 2025-06-15 23:32:00
+========================
+
+
+FOLKTALE STORY: 20250615_233059
+Started: 2025-06-15 23:31:07.677144
+----------------------------------------
+
+--- Opening ---
+
+孩子们捧着晶莹的冰弦回到村中，恰逢老槐树下祭月仪式将启，却发现盛满秋露的青铜樽无故泛起涟漪。素衣仙子在月下轻语道："此乃水德星君示警，需以五音调和五行，待子时北斗指寅，将冰弦悬于柳枝，可引青龙吐息。"村中少女们立即采来新熟的莲藕，雕成十二盏月灯，按河图之数排列在溪畔，静候天地交泰之时。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250615_233059
+   Turn: 0/5
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: story_ending
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+
+溪畔忽闻鼓声震天，原是村中少年们划着青竹龙舟逆流而上，舟首悬挂的玄色旌旗无风自动。一只金睛舞狮踏浪而来，口中衔着遗失的青铜编钟，钟身缠绕着水草，隐隐泛着北斗七星的微光。老者抚须叹道："此乃玄武显圣，以水中金器应和东方木舟，阴阳始得调和。"
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250615_233059
+   Turn: 1/5
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   event: 元氏县铜镜预示年岁丰歉
+   place: 卢龙古渡口
+
+青竹龙舟行至卢龙古渡，忽见水中浮起一面古铜镜，镜面映出九穗嘉禾之象。舞狮金睛射出两道赤光，照得铜镜背面铭文显现："青龙衔穗，岁在甲寅"，恰与岸边老槐树上新结的槐米相应和。少年们相视而笑，知是木德当令之兆，遂以青丝系镜于龙首，鼓声愈急如春雷破土。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250615_233059
+   Turn: 2/5
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   intervention: 北斗七星夜降河北平原
+
+龙舟竞渡正酣时，忽闻岸上老乐师惊呼月琴失落河中。北斗七星恰于此时垂落河面，化作七只银鳞鼍龙，将沉入河底的月琴托出水面。舞狮跃入水中衔住琴身，狮鬃间沾染的朱砂竟在琴面上绘出二十八宿图纹，与水中七星辉映成章。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250615_233059
+   Turn: 3/5
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   object: 汉代彩绘陶俑
+
+月琴出水之际，岸边青石忽现裂纹，一尊彩绘陶俑破土而出，其衣袂间流转着东方青龙之气。舞狮见状将月琴轻放陶俑怀中，那陶俑竟舒展四肢，奏起《云门》古调，引得两岸杨柳随风起舞。河面七星随之变幻，化作七只青鸾绕舟而飞，为龙舟竞渡指引新航。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250615_233059
+   Turn: 4/5
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: wildcard
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 能预知天象的星官
+   cosmic_element: water
+   object: 铜镂雕香熏
+   place: 无极县古驿站
+
+青鸾引路之际，无极县古驿站的铜镂雕香熏忽生异象，袅袅青烟化作星图流转。那位能预知天象的星官抚须惊叹，见烟星与河面七星相应，方悟此乃阴阳相召之兆。舞狮踏着北斗方位跃入龙舟，其金铃震响竟使沉落河底的五音石磬重现光华，乐声与陶俑《云门》古调浑然相合。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250615_233059
+   Turn: 5/5
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: plot_twist
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+
+龙舟竞渡正酣时，河心忽现漩涡吞没了领航舟上的青铜编钟，水面顿失金声玉振。那金铃舞狮纵身入水，鳞甲映着北斗星光竟化作玄龟之形，以北方癸水之精镇住湍流。河底五音石磬忽与沉钟共鸣，奏出《咸池》古乐，引得月宫玉兔捣药声相和，雪白糯米团自天而降化为瑞雪糕饼。

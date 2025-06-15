@@ -1,0 +1,81 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: nature_harmony
+Number of Turns: 4
+Cosmic Positions: water → wood → earth
+Duration: 33.7 seconds
+Generated: 2025-06-15 23:09:07
+========================
+
+
+FOLKTALE STORY: 20250615_230827
+Started: 2025-06-15 23:08:33.597805
+----------------------------------------
+
+--- Opening ---
+
+玄衣女子化作一缕青烟消散后，阿罗陀发现家中水缸里的鲤鱼竟口吐人言："渭水龙王遣我来引路，每月望日可随我游于云梦泽。"次日清晨，院中那株百年桃树无风自动，飘落的粉瓣在空中凝成《山海图》模样，显出一头青鳞鹿影踏着四时水纹奔腾。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250615_230827
+   Turn: 0/3
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 远近闻名的石匠
+   cosmic_element: water
+
+阿罗陀循着青鳞鹿影来到渭水畔，却见岸边柳树尽皆枯黄，水面映着残月如泣。远近闻名的石匠正在凿刻镇水石兽，忽见月影中游出一尾银鲤，衔来一片桃瓣落在他粗粝的手掌上。  
+
+当夜北风呜咽，阿罗陀将家中黍饼分与冻僵的松鼠时，石匠的凿子突然迸出火星，照亮了刻痕中隐藏的《山海图》水纹——那青鳞鹿正踏着月光，将枯柳的根系引向地底暗泉。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250615_230827
+   Turn: 1/3
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 能预知天象的星官
+   cosmic_element: wood
+
+银鲤跃入渭水时，星官正仰观紫微垣，忽见东方青龙七宿间坠下一缕青光。他循迹来到枯柳林，发现阿罗陀用黍饼喂过的松鼠正衔来松籽，在月光下排成北斗之形。  
+
+石匠的凿痕里渗出清泉，倒映的残月渐渐圆满，青鳞鹿踏着水纹将枯枝点化成新芽。星官抚须而叹："月魄生水，木德逢春，此乃阴阳相济之象也。"
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250615_230827
+   Turn: 2/3
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   object: 青铜编钟
+
+松鼠排成的北斗忽然颤动，松籽间升起青铜编钟虚影，每记钟鸣都震落枯枝上的尘埃。阿罗陀将黍饼掰碎撒向树根，月光在饼屑上折射出万千萤火，照亮了藏在树洞里的黄玉小兽。那玉兽衔起最大的一块饼屑，竟化作编钟的青铜钟舌，敲响了唤醒大地的宫音。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250615_230827
+   Turn: 3/3
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 巡行各地的方士
+   cosmic_element: wood
+
+钟声余韵中，一位披着青霞衣的方士踏月而来，他腰间悬挂的桃木罗盘正指向那株古松。方士抚须而笑，从袖中取出三枚五铢钱抛向空中，钱币化作青鸾、玄龟、白虎三灵，衔来东海扶桑枝上的晨露。阿罗陀将露水点在黄玉小兽眉心，整片森林的枯枝顿时抽出翡翠般的新芽，月光在叶脉间流淌成银河。

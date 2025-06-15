@@ -1,0 +1,123 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: kind_deed_reward
+Number of Turns: 7
+Cosmic Positions: water → wood → earth
+Duration: 56.5 seconds
+Generated: 2025-06-16 00:18:55
+========================
+
+
+FOLKTALE STORY: 20250616_001751
+Started: 2025-06-16 00:17:58.788430
+----------------------------------------
+
+--- Opening ---
+
+村中老妪每日清晨都要去溪边打水，她的木桶早已破旧不堪，却因家贫无力更换。一日，童子见老妪打水时桶底渗漏，便悄悄用河边青泥补好裂缝，谁知那泥中竟混着龙宫遗落的玉屑，月光下泛着幽幽蓝光。次日老妪发现桶中清水永不枯竭，更在桶底看见北斗倒影随波浮动，方知是水德星君感念童子纯孝之心所赐。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001751
+   Turn: 0/6
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: plot_twist
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+
+老妪感念童子恩德，将珍藏多年的昆仑玉坠相赠，嘱其不可示人。童子应允，却在市集见商贾欺压老叟，情急之下取出玉坠为质，谁知玉坠触地即化青龙入云。当夜北风骤起，童子梦见水德星君立于玄冥之渊，叹曰："一诺轻破，当受三冬寒水涤心。"
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001751
+   Turn: 1/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: wildcard
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 冀州刀匠
+   cosmic_element: wood
+   object: 玉制龙形佩饰
+   place: 易水河畔
+
+童子惊醒时，发现枕边多了一枚青玉龙佩，正是昨日所化之物。他循着易水河畔的叮当声寻去，遇见一位冀州刀匠正在熔铸青铜剑，炉火映得老人须发皆赤。老刀匠见他腰间玉佩青光流转，忽然停锤叹道："此物乃昆仑寒玉所制，当与玄铁相配，可铸成镇水之器。"
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001751
+   Turn: 2/6
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   intervention: 邯郸城隍显圣除妖
+
+童子正欲解下玉佩相赠，忽忆祖母叮嘱此乃传家之物不可离身。老刀匠见他犹豫，眼中赤光一闪竟化作河伯模样，冷笑道："凡人果然背信！"霎时易水翻涌如沸，黑云压城而来。此时邯郸城隍庙方向传来清越钟声，一位拄着桑木杖的老妪踏浪而至，正是童子梦中常见的那位指点迷津的慈祥祖母。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001751
+   Turn: 3/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   intervention: 渔阳鼓神暗助边关将士
+
+老妪手中桑杖轻点水面，易水顿时分开一条青玉小径，对童子叹道："河伯试尔诚心，何不将玉佩暂系柳枝？"童子恍然解佩悬于岸边垂柳，那柳枝忽化作青龙衔玉入水。此时渔阳方向传来隐隐鼓声，河伯面色骤变，原是戍边将士的忠勇之气惊动了鼓神相助。黑云散尽时，老妪袖中落出一枚温润青玉，正是童子家传玉佩，却比原先更添三分灵光。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001751
+   Turn: 4/6
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 邺城的织锦女子
+   cosmic_element: water
+
+童子拜谢老妪时，忽闻岸边传来织机声，原是邺城织女在河边浣纱。那女子见童子手中青玉生辉，想起三日前河伯托梦所求的云锦尚未织就，手中金梭不慎坠入水中。老妪以桑杖轻叩河面，水中竟浮起一尾衔梭的玄龟，龟甲上密布着河图纹样。织女见状慌忙下拜，原来她为赶制嫁衣误了与河神的约定，此刻方知触怒了水府神明。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001751
+   Turn: 5/6
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   intervention: 赵王陵墓守护灵现身
+
+玄龟吐梭入水，河面忽现漩涡，一队青铜甲士踏浪而出，为首者手持玉戈，正是赵王陵守护灵将。老妪将桑杖横于胸前，杖头桑叶无风自动，显出阴阳流转之象。童子忽觉怀中青玉发烫，原是当年赵王赐予其先祖的"报恩玦"，此刻与守护灵腰间玉璜相映生辉。
+
+--- Turn 7 ---
+
+📖 STORY STATUS:
+   ID: 20250616_001751
+   Turn: 6/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 皇家炼丹术士
+   cosmic_element: wood
+
+守护灵将见玉玦生辉，忽忆三百年前赵王临终所托，原是其嫡孙违背祖训私取陵中丹砂，致王陵风水失衡。老妪手中桑杖忽化青龙，衔来当年皇家炼丹术士遗留的青铜丹炉，炉中尚余一缕真火未灭。童子将青玉玦投入炉中，霎时东方青气大盛，枯桑抽新枝，地涌甘泉，那丹炉竟将失衡的五行重新调和。

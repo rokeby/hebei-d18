@@ -1,0 +1,109 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: brave_little_hero
+Number of Turns: 6
+Cosmic Positions: water → wood → earth
+Duration: 43.8 seconds
+Generated: 2025-06-15 23:19:34
+========================
+
+
+FOLKTALE STORY: 20250615_231843
+Started: 2025-06-15 23:18:50.469963
+----------------------------------------
+
+--- Opening ---
+
+小童阿水每日在渭水边放羊时，总被湍急的漩涡吓得发抖，直到祖父将一枚刻着玄武纹的玉坠挂在他颈间，那青玉触到肌肤便泛起涟漪般的幽光，河伯庙前的铜铃无风自鸣，惊起的水鸟衔来一片龟甲落在阿水掌心，上面天然形成的卦象正应了"坎为水"的古老智慧。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250615_231843
+   Turn: 0/5
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 深谙河北地脉的风水师
+   cosmic_element: water
+
+阿水捧着龟甲回家时，祖母正在织机上唱着古老的"坎调"，那曲调如渭水般九曲回环。祖母见他神色惶惑，便取出珍藏的蓍草，教他按龟甲纹路摆出六爻，西北角的青铜油灯突然窜起三寸青焰，照见卦象中暗藏的信使之路。  
+
+翌日风雪交加，里正命阿水送竹简去邻村，必经之路上横着冰封的支流。祖母将玉坠浸入井水，教他唱起"履霜歌"，每唱一句，冰面就浮现出玄武背甲般的裂纹，指引着最安全的过河路径。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250615_231843
+   Turn: 1/5
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   object: 薄胎陶器
+
+阿水刚踏过冰河，怀中竹简突然发出青玉相击之声，惊见路边雪堆里埋着件薄胎陶器，胎壁薄如蝉翼却绘着完整的二十八宿图。祖母教他的歌谣余韵未消，陶器竟随着残存的音律微微震颤，器底浮现出用朱砂写的"急"字，正是里正竹简上缺失的那枚封印符。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250615_231843
+   Turn: 2/5
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   object: 用于祭祀的铜鼎
+
+阿水捧着陶器疾行，忽见道旁黄土中半埋着一尊青铜方鼎，鼎耳铸着阴阳鱼纹。祖母教他的歌谣在心头响起时，鼎中竟涌出汩汩清泉，水面映出里正被困在城西古庙的景象。他想起这鼎正是去年冬至祭祀时见过的礼器，鼎足三阳爻的纹样突然与陶器底部的"急"字朱砂产生了共鸣。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250615_231843
+   Turn: 3/5
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 祭祀礼仪专家
+   cosmic_element: wood
+
+阿水想起祖母教他的《祈雨歌》，便对着青铜鼎轻声吟唱起来。歌声中，鼎内清泉化作一条青龙腾空而起，鳞片闪烁着东方春木的青光。青龙俯首示意阿水骑上龙背，原来这鼎是当年黄帝祭祀时留下的通灵法器，专助有急难之人。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250615_231843
+   Turn: 4/5
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   intervention: 八极游神显灵于月夜
+
+青龙驮着阿水穿云破雾，忽见北方夜空现出八道神光。祖母的玉坠突然泛起玄黑水光，月华下显出一位银须游神，手持北斗七星杖。游神将杖尖轻点阿水眉心，北冥之水化作墨色锦囊落入他手中，内藏祖母临终前托付的密信。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250615_231843
+   Turn: 5/5
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   intervention: 燕国先祖托梦后人
+
+阿水展开密信，祖母熟悉的字迹浮现："燕祖有训，北冥玄歌可通幽冥"。当夜他梦见一位着玄鸟羽衣的老者，在北斗星光下吟唱古老歌谣，每句尾音都化作墨色燕子飞入锦囊。次日雪停时，阿水发现掌心不知何时多了一枚燕形玉哨，吹响时竟与梦中旋律相应和。

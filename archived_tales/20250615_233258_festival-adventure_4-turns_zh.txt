@@ -1,0 +1,78 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: festival_adventure
+Number of Turns: 4
+Cosmic Positions: water → wood → earth
+Duration: 31.8 seconds
+Generated: 2025-06-15 23:33:37
+========================
+
+
+FOLKTALE STORY: 20250615_233258
+Started: 2025-06-15 23:33:06.087027
+----------------------------------------
+
+--- Opening ---
+
+少年们纷纷跳入水中，只见那青铜编钟上的水草忽化作碧绿丝绦，随波流转间竟显出水德星君的符印。村中老妪取出珍藏的桃木月饼，将其掰碎撒入溪中，霎时月华大盛，编钟自鸣出《云门》古调，引得两岸杨柳无风自舞，仿佛在为即将到来的仲秋庆典预演天人之乐。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250615_233258
+   Turn: 0/3
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   intervention: 燕国先祖托梦后人
+
+溪水忽转幽暗，月轮隐入云中，少年们发现桃木月饼的桂花蜜竟失了香气。是夜，村中织女阿芷梦见玄衣老者踏北斗而来，自称燕昭王时司膳官，指点道："月魄精华藏于昆仑玉臼，需以金乌羽为引。"翌日，众人见铜镜中映出会说话的月轮，其光如水流淌，显出西方山巅有青鸾衔着金羽盘旋。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250615_233258
+   Turn: 1/3
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   intervention: 燕国先祖托梦后人
+
+少年们连夜向东而行，青鸾啼鸣处忽现一株通天神木，其叶如翡翠，枝干上缠绕着赤色云气。阿芷取出铜镜与月轮对话，镜中流光化作青丝，指引他们以春分朝露调和五行，方能唤醒沉睡的金乌羽灵性。此时天际传来编钟清响，原是燕昭王魂灵乘青龙车驾显圣，将一枚刻着"木德承天"的玉符投入神木根部。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250615_233258
+   Turn: 2/3
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   event: 清漳河水一日三变色
+   place: 邺城铸币作坊
+
+少年们循着清漳河水的奇异变化来到邺城，发现铸币作坊的铜炉中竟映出月宫倒影。那会说话的明月在铜液中显形，告知他们制作月饼的桂花蜜被河伯藏在了五行金气最盛的铜钱模子里。恰逢子时阴阳交替，阿芷将玉符投入铜炉，霎时金木相激，千百枚铜钱化作金乌振翅飞出，衔来带着月露的桂枝落入面盆。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250615_233258
+   Turn: 3/3
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 祭祀礼仪专家
+   cosmic_element: wood
+
+金乌衔来的桂枝落入面盆时，邺城的老祭司正捧着青铜簋观测星象。他见东方青龙七宿忽放青光，便知这是月神显圣，立即取来珍藏的昆仑玉杵，教少年们将桂枝与五谷同捣。铜炉中未凝固的月影随着玉杵起落荡漾，渐渐化作满盆流光的蜜浆，散发出比秋露更清冽的甜香。
