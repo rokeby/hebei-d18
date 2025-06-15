@@ -1,0 +1,121 @@
+{
+  "id": "20250526_162130",
+  "completed_at": "2025-05-26T16:22:45.945167",
+  "final_narrative": [
+    {
+      "turn": 0,
+      "roll": null,
+      "action_type": "opening",
+      "elements": {
+        "cosmic_element": "earth"
+      },
+      "narrative": "",
+      "narrative_zh": "公孙氏收起玉琮，脚下黄土忽生异动，地脉如龙蛇般隆起，将他推向西方。他回首望见故乡城郭渐隐于尘雾，腰间青铜剑忽作悲鸣，剑穗上系着的五色土簌簌落下，在荒原上开出朵朵金莲，为他指明归途。",
+      "token_usage": {
+        "prompt_tokens": 551,
+        "completion_tokens": 75,
+        "total_tokens": 626
+      }
+    },
+    {
+      "turn": 0,
+      "roll": 8,
+      "action_type": "environmental_event",
+      "elements": {
+        "cosmic_element": "earth",
+        "event": "无极县雨水化为铜色",
+        "place": "邯郸古城墙下"
+      },
+      "narrative": "",
+      "narrative_zh": "公孙氏行至邯郸古城墙下，忽见天降铜雨，万千铜珠击打夯土城墙竟发出编钟清响。墙根处一株赤色灵芝在雨中舒展，却被九只青铜铸造的守宫神兽团团围住，兽眼闪烁着地脉深处的幽光。他握紧悲鸣不止的青铜剑，剑身浮现出黄帝战蚩尤时留下的云雷纹，五色土所化金莲突然在他足下结成八卦阵图。",
+      "token_usage": {
+        "prompt_tokens": 610,
+        "completion_tokens": 107,
+        "total_tokens": 717
+      }
+    },
+    {
+      "turn": 1,
+      "roll": 15,
+      "action_type": "cosmic_intervention",
+      "elements": {
+        "cosmic_element": "metal",
+        "intervention": "太行山神显灵于商旅"
+      },
+      "narrative": "",
+      "narrative_zh": "公孙氏正欲采撷灵芝，忽闻太行山巅传来苍老叹息，山石化作白发老者拦在阵前。老者袖中飞出九道金符，每道符箓皆刻着商周古文字，在空中结成天罗地网困住守宫神兽。那灵芝受金气感应，竟生出七片玉叶，叶脉中流淌着西王母瑶池的月华精髓。",
+      "token_usage": {
+        "prompt_tokens": 638,
+        "completion_tokens": 93,
+        "total_tokens": 731
+      }
+    },
+    {
+      "turn": 2,
+      "roll": 8,
+      "action_type": "environmental_event",
+      "elements": {
+        "cosmic_element": "wood",
+        "event": "广宗县天降铁器",
+        "place": "涿郡集市"
+      },
+      "narrative": "",
+      "narrative_zh": "公孙氏见那玉叶灵芝光华流转，忽闻东方传来震天巨响，原是涿郡集市上空坠下玄铁巨鼎，鼎身刻着\"广宗\"二字，震得青龙方位地脉翻涌。白发老者面色骤变，掐指一算道：\"此乃商纣王焚天铁器，阴气冲犯木德，需以瑶池月华调和阴阳。\"话音未落，七片玉叶自行飞旋成北斗状，将铁鼎笼罩在青色光幕之中。",
+      "token_usage": {
+        "prompt_tokens": 632,
+        "completion_tokens": 113,
+        "total_tokens": 745
+      }
+    },
+    {
+      "turn": 3,
+      "roll": 16,
+      "action_type": "plot_twist",
+      "elements": {
+        "cosmic_element": "metal"
+      },
+      "narrative": "",
+      "narrative_zh": "玉叶青光中忽现西王母座下白虎神君，金睛如电喝道：\"凡夫敢窃瑶池仙草，当受金刑之劫！\"公孙氏怀中灵芝忽化白虹贯天，竟引动西方庚金之气凝成万道剑芒。老者急将腰间青铜司南掷向震位，铜器遇金而鸣，声如凤啼，霎时化解了漫天肃杀之气。",
+      "token_usage": {
+        "prompt_tokens": 631,
+        "completion_tokens": 96,
+        "total_tokens": 727
+      }
+    },
+    {
+      "turn": 4,
+      "roll": 18,
+      "action_type": "story_ending",
+      "elements": {
+        "cosmic_element": "earth"
+      },
+      "narrative": "",
+      "narrative_zh": "白虎神君见庚金之气被破，怒啸震得昆仑积雪崩落，却见公孙氏怀中灵芝绽放九色霞光，显化出黄帝当年亲手栽种时的景象。老者趁机取出黄玉圭板向地一叩，顿时大地涌出玄黄之气结成屏障，将西方金气与东方木精调和为一。西王母在瑶池畔颔首而笑，命青鸟衔来一枚赤玉环，化作虹桥接引二人渡过弱水。",
+      "token_usage": {
+        "prompt_tokens": 615,
+        "completion_tokens": 107,
+        "total_tokens": 722
+      }
+    }
+  ],
+  "cosmic_position": "earth",
+  "total_turns": 5,
+  "max_turns": 7,
+  "language": "zh",
+  "story_arc": {
+    "type": "quest",
+    "stages": [
+      "departure",
+      "challenge",
+      "revelation",
+      "return",
+      "transformation"
+    ],
+    "theme_elements": {
+      "obstacle_type": "supernatural",
+      "virtue_tested": "courage",
+      "quest_object": "celestial herb"
+    },
+    "current_stage": "return"
+  }
+}

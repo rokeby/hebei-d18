@@ -1,0 +1,121 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: bureaucratic_trial
+Number of Turns: 7
+Cosmic Positions: wood → fire → metal
+Duration: 92.7 seconds
+Generated: 2025-05-26 13:47:04
+========================
+
+
+FOLKTALE STORY: 20250526_134523
+Started: 2025-05-26 13:45:31.948372
+----------------------------------------
+
+--- Opening ---
+
+樵夫张五不知自己触动了昆仑山脚的青龙封印，他砍下的那株千年古柏原是镇守东方的木精，树身流出的碧血染透了整片山林。地府判官夜观星象，见东方苍龙七宿黯淡无光，生死簿上顿时浮现朱砂批注："乙卯年三月初三，凡人伐木犯天条，当折寿一纪"。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134523
+   Turn: 0/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 考察古墓的博士
+   cosmic_element: wood
+
+城隍庙内青烟缭绕，主簿手持朱笔疾书，生死簿上墨迹忽化作青龙纹样游动。恰逢太学博士王邈掘开周代古冢，惊动墓中青铜神树，东方木气骤然紊乱，城隍案头那盏青玉莲花灯无风自灭。阴差踏着满地飘落的桃符而来，每道符纸上都显出血字："春官失职，木德有亏"。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134523
+   Turn: 1/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 擅长草药的医者
+   cosmic_element: fire
+
+城南药铺的崔姓医者正捣着朱砂，忽见药臼中赤色粉末无火自燃，化作朱雀形状直冲云霄。城隍殿内生死簿突然翻动，显出一行灼烧痕迹："周礼崩而木德衰，当以离火镇之"。白发判官拾起跌落殿角的桃木剑，剑身上不知何时缠满了医者常采的赤箭藤，叶脉间渗出琥珀色的树脂，竟在青石板上映出王邈盗墓时的景象。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134523
+   Turn: 2/6
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   intervention: 云中君降临雾锁太行
+
+城隍殿内青烟骤起，生死簿上的朱砂字迹忽化作金线飞向西天，惊得太行山巅云雾翻涌如沸。云中君驾玄豹而至，手中白玉圭映出王邈盗掘古墓时损毁的青铜礼器——那断裂的夔龙纹竟与周天星斗缺损相应。白发判官手中桃木剑嗡鸣不止，剑尖垂落的赤箭树脂在青砖上蔓延成河图洛书之象，显出其祖上三代所积阴德正被金气寸寸削蚀。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134523
+   Turn: 3/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 皇家炼丹术士
+   cosmic_element: fire
+
+赤色箭脂凝成的河图忽现裂纹，南方离位窜起三尺火舌，惊得城隍冕旒上的玄珠叮当作响。殿角转出一位着赤绡衣的炼丹术士，腰间悬着的青铜丹炉里竟装着王邈祖坟的土灰，炉底三足刻着的朱雀纹正与星斗缺损处遥相呼应。白发判官以桃木剑划破掌心，血珠滴入火中显出一行焦字：金气克木则祖德尽焚，当以南方丙火炼其罪愆。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134523
+   Turn: 4/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 龙山附近的溪水精灵
+   cosmic_element: wood
+
+龙山溪水忽泛青光，水中跃出个碧衣童子，手持青玉简呈与城隍。简上水纹竟显王邈祖上三代伐木毁林的罪状，每行字迹都随溪水流动变幻。城隍冕旒垂下的十二旒无风自动，玄珠碰撞间将罪状映在殿顶星图上，恰与南方火舌形成木火相生之局。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134523
+   Turn: 5/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   intervention: 鸿蒙至圣赐下符诏
+
+城隍殿内青玉简忽化青龙腾空，衔来鸿蒙紫气凝成的符诏。那符诏展开时，东方天际群星移位，王邈家族祖坟四周的柏树竟同时结出赤红木瘤，状若判官硃笔所点的生死簿。童子袖中飞出七十二枚青铜算筹，在虚空排列成春木生火之象，每根算筹上都浮现王家历代伐木时惊走的山精木魅。
+
+--- Turn 7 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134523
+   Turn: 6/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: story_ending
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+
+赤色木瘤忽作霹雳声，迸出万千火星化作萤虫，每只虫翼皆映出王家伐木时惊扰的天地灵气。城隍爷朱笔虚点，那些萤火竟在空中连成南方朱雀星图，照见王邈祖辈斫断的千年古木年轮里，皆刻着山神用雷火写就的冤债文书。此时王家祠堂的青铜鼎无故自鸣，鼎腹饕餮纹睁开双目，吐出三昧真火将族谱烧出七十二处焦痕，恰对应算筹所示罪孽之数。

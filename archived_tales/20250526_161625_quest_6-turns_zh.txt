@@ -1,0 +1,119 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: quest
+Number of Turns: 6
+Cosmic Positions: earth → metal → wood
+Duration: 70.8 seconds
+Generated: 2025-05-26 16:17:47
+========================
+
+
+FOLKTALE STORY: 20250526_161625
+Started: 2025-05-26 16:16:36.998037
+----------------------------------------
+
+--- Opening ---
+
+公孙氏捧着玉琮立于长城残垣，忽见琮中河图纹路化作一条黄土小径蜿蜒向西，脚下大地传来低沉脉动，似有巨龟在地下翻身。他想起古籍所载"地脉通灵"之说，知是后土娘娘显圣指引，遂取腰间五色土撒向四方，那黄土小径顿时升起蒙蒙玄光，直通天际白虎七宿所在。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_161625
+   Turn: 0/5
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 来自太行山的樵夫
+   cosmic_element: earth
+
+黄土小径尽头忽现一樵夫，背负枯枝如山，双目却泛着青玉般的光泽。他拦住公孙氏去路道："此路通昆仑瑶池，凡人欲采仙草，须解我三问。"话音未落，腰间柴刀竟化作青铜量天尺，地上五色土随之排列成洛书九宫。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_161625
+   Turn: 1/5
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   event: 元氏县铜镜预示年岁丰歉
+   place: 无极县古驿站
+
+公孙氏凝视九宫图纹，忽见西方白土泛起金光，想起元氏铜镜所示"秋金当位"之兆。樵夫以量天尺点向无极驿方向，驿站残垣间竟浮现一面青铜古镜，镜中映出三株仙草随月相枯荣的景象。  
+
+"西王母瑶池之草，非智取不可得。"樵夫话音未落，镜面阴阳二气流转，显出月缺时仙草藏于金精之穴，需以驿站古井的玄阴之水浇灌方能现形。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_161625
+   Turn: 2/5
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 渔阳鼓手
+   cosmic_element: wood
+
+公孙氏正欲取玄阴之水，忽闻渔阳鼓声震四野，一位赤面鼓手踏着春雷般的节奏拦在井前。鼓手双目如炬道："此水乃青龙之泪，需答我三问方能取用——何物生于木而克于金？何色属东方却镇西方？何人看似愚钝实藏大智？"  
+
+公孙氏观鼓手腰间悬着青玉夔纹佩，想起古籍所载"木德之精化形为鼓"，便以指蘸井水在鼓面写下"仁、义、礼"三字。鼓声戛然而止，井底浮起一片青萍，托着玄阴之水升至月影所照之处。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_161625
+   Turn: 3/5
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   character: 皇家炼丹术士
+   cosmic_element: metal
+
+公孙氏取得玄阴之水时，忽见西方天际升起一道白虹，一位身着素纱的皇家炼丹术士踏虹而来。术士手持金匮玉函，声如寒铁相击："此水合西方庚金之气，需配昆仑雪莲方能成丹，然雪莲三百年方开，唯有大智之人能见其真形。"
+
+公孙氏观术士眉间隐现太白金星之相，遂取腰间青铜小刀割破手指，以血在玉函上画出北斗七星。霎时函中透出七色霞光，一株通体如霜的雪莲自虚空中浮现，其瓣上犹带西王母瑶池的晨露。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_161625
+   Turn: 4/5
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   event: 野狐岭古道上商旅遇异人
+   place: 琉璃河古道
+
+公孙氏携雪莲东归，行至琉璃河古道时，忽遇一青袍方士拦路。那方士手持桃木罗盘，盘中金针乱转如群蚁排衙，口中念念有词："此物合太阴精气，凡人持之必遭五鬼夺命。"
+
+古道旁的老柳无风自动，柳叶簌簌化作黄蝶纷飞。公孙氏见方士袖中隐现朱砂符咒，便取雪莲置于黄土之上，任其根系扎入地脉，霎时四周升起九道金芒结成八卦阵图。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250526_161625
+   Turn: 5/5
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 祭祀礼仪专家
+   cosmic_element: earth
+
+青袍方士见状面色骤变，手中罗盘砰然炸裂，竟化作九只青铜小鼎散落八方。此时一位身着玄端礼服的祭祀官自云中降下，足踏禹步将小鼎按九宫之位排列，每踏一步便有一道黄气自地脉涌出。
+
+公孙氏见那祭祀官眉间有北斗七星之相，知其乃司掌天地通途的礼官，遂以周礼九拜之仪相迎。祭祀官袖中飞出一方黄玉圭板，雪莲根系顿时与圭板上镌刻的山川脉络相连，绽放出七十二道霞光。

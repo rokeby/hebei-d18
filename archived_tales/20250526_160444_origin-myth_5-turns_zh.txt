@@ -1,0 +1,94 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: origin_myth
+Number of Turns: 5
+Cosmic Positions: fire → earth → water
+Duration: 52.6 seconds
+Generated: 2025-05-26 16:05:44
+========================
+
+
+FOLKTALE STORY: 20250526_160444
+Started: 2025-05-26 16:04:52.248005
+----------------------------------------
+
+--- Opening ---
+
+太古之时，天地未分，阴阳混沌如鸡子，赤色浊气与玄色清气纠缠不休。南方有祝融氏执朱砂笔点破虚空，火精迸溅处生出九日金乌，其炎上之气托举清阳为天，残留的赤焰化作朱草藏于昆仑之巅。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160444
+   Turn: 0/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: wildcard
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 能解读铜镜中异象的术士
+   cosmic_element: fire
+   object: 带有神兽图案的銅鍑
+   place: 赵王宫殿遗址
+
+浊气沉降为地时，黄帝命土伯执黄琮丈量四方，其足迹所至处生出五色息壤。赵王宫中一尊饕餮纹铜鍑突然鸣响，惊动了一位能窥天机的白发术士，他见鍑中映出地母孕育万物的景象。术士抚鍑长叹："此乃土德显圣，人间稼穑之礼将由此始。"
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160444
+   Turn: 1/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   event: 井陉关外虎豹同行
+   place: 阜平山中密林
+
+井陉关外忽现奇观，虎豹竟相携而行，其足迹所过之处，黄土化为沃壤。阜平山密林深处，地母显圣化作老妪，以黄玉杵捣五色土，林中顿生百谷之精。古籍有云，此乃地德交感之兆，自此人间始知以黄土筑坛，祭祀地祇以祈丰年。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160444
+   Turn: 2/4
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 考察古墓的博士
+   cosmic_element: water
+
+考察古墓的博士掘得一方玄玉圭，忽见土中涌出黑水如墨，地脉震动间显出一位黄袍神人。那神人以圭划地成沟，黑水遂分阴阳二流，阴者入地为泉，阳者升天化云，自此人间始知掘井引泉之法。传说此神乃黄帝佐臣后土氏，掌大地之德，教民以土制器、以水润物之道。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160444
+   Turn: 3/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: plot_twist
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+
+黄袍神人见黑水已分，遂取玄玉圭于掌中摩挲三转，玉圭竟化作九寸黄土。他将此土分赐众人，教以抟土为器之法：阴土塑瓮以盛五谷，阳土制鼎以祭天地。自此人间始有陶器之礼，每逢长夏必以黄土塑牲祭祀后土，此乃"社稷"之源也。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160444
+   Turn: 4/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   intervention: 太行山神显灵于商旅
+
+太行山神见人间陶器粗陋，遂于盛夏之夜显形于商旅道中。他取赤土为胎，引地火为釉，烧制出纹如云雷的朱陶，并授以"阳火塑形，阴土养器"的秘法。自此南方的陶匠每逢三伏必祭山神，烧制出的赤陶器方能经久不裂，这便形成了"夏祭窑神"的习俗。

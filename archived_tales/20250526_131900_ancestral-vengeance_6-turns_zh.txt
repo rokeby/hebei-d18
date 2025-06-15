@@ -1,0 +1,109 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: ancestral_vengeance
+Number of Turns: 6
+Cosmic Positions: wood → fire → metal
+Duration: 67.1 seconds
+Generated: 2025-05-26 13:20:19
+========================
+
+
+FOLKTALE STORY: 20250526_131900
+Started: 2025-05-26 13:19:12.429066
+----------------------------------------
+
+--- Opening ---
+
+昔日洛阳城外有七位采药人，于孟春时节入终南山寻灵芝，却被山中豪强诬为盗贼，活埋于老槐树下。那槐树吸了冤者血气，竟在月夜生出七朵血色灵芝，每逢朔望便化作青面鬼火，绕着豪强宅院飞舞。豪强夜夜梦见七人披发立于床前，手中捧着断裂的桃木令牌，令牌上刻着"春官断狱"四个朱砂大字。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131900
+   Turn: 0/5
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   object: 冬青釉陶炉
+
+那豪强府中新来的婢女夜半添香时，忽见冬青釉陶炉中升起七缕青烟，化作采药人模样向她跪拜。次日清晨，婢女在炉灰中发现七枚桃核，排成北斗之形，核上天然生着"木精申冤"的纹路。自此每逢东方既白，陶炉便无故自鸣，其声如泣，惊得檐下春燕纷纷坠巢。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131900
+   Turn: 1/5
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   object: 灰陶仓
+
+那婢女夜梦七位采药人立于灰陶仓前，仓门渗出血水浸透粟米，化作赤色蚯蚓钻入地脉。三日后，豪强家中储粮尽数霉变，仓底惊现七具人形焦炭，恰似被雷火劈斫而亡。府中老仆暗中传言，每逢子时便能听见陶仓中传来捣药之声，与当年采药人遇害时辰丝毫不差。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131900
+   Turn: 2/5
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   character: 祭祀礼仪专家
+   cosmic_element: metal
+
+那豪强府中忽有白鹤衔玉简而至，落在祭祀礼仪专家案前。玉简上浮现朱砂符文，记载着七位采药人遭活埋祭祀的始末，字迹渗血如蚯蚓游动。当夜专家梦见西方昆仑山升起七道白气，化作北斗七星坠入陶仓方位，惊醒时发现手中紧握着一把沾满秋霜的青铜量器。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131900
+   Turn: 3/5
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   event: 邺城古井突然涌出美酒
+   place: 阜平山中密林
+
+邺城古井忽涌琼浆，酒香三日不散，引得城中百姓争相取饮。唯那祭祀专家独见井中浮起七盏青铜觞，觞底刻着采药人的生辰八字，酒液触唇竟化作腥血。当夜他再入梦境，见阜平密林深处有赤衣鬼吏以朱绳丈量土地，每量七步便现一具白骨，林中群鸦惊飞时皆作人语："夏至阳盛，阴魂待雪"。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131900
+   Turn: 4/5
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 巡行各地的方士
+   cosmic_element: wood
+
+那方士夜宿邺城驿馆，忽见东窗透入青光，七只青鸟衔着桑枝排成北斗之形。他掐指一算，惊觉木德当令却含金煞，遂取腰间桃木剑划地为牢。三更时分，采药人冤魂踏着满地桑叶显形，每片叶脉皆渗出血色卦象，指向城南废弃的铜矿。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131900
+   Turn: 5/5
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   event: 易水忽然倒流三日
+   place: 恒山祭天台
+
+方士循着血卦指引来到恒山祭天台，却见易水逆流而上，水面浮着七盏青莲灯。当夜他梦见采药人立于月下，手持断裂的青铜矿镐，每滴落的水珠都在青石上刻出凶手的生辰。次日清晨，祭坛东侧的柏树无故枯萎，树心竟嵌着半枚带血的五铢钱。

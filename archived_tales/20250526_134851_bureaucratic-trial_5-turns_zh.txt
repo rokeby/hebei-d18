@@ -1,0 +1,93 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: bureaucratic_trial
+Number of Turns: 5
+Cosmic Positions: fire → earth → water
+Duration: 59.7 seconds
+Generated: 2025-05-26 13:50:01
+========================
+
+
+FOLKTALE STORY: 20250526_134851
+Started: 2025-05-26 13:49:02.094139
+----------------------------------------
+
+--- Opening ---
+
+王邈惊惶跪地时，祠堂梁木忽现赤色雷纹，那些焦痕竟化作七十二只火鸦盘旋鸣泣，每啼一声，族中便有一人呕出带金屑的黑血——此乃山神将伐木时吞没的日精月华尽数追讨。城隍案前青铜獬豸突然昂首，其独角射出火光，在祠堂照出王家历代伐木工跪拜山灵的虚影，却见那些身影腰间绳索皆系着被斩断的龙脉残须。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134851
+   Turn: 0/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   object: 玉制礼器
+
+祠堂青砖忽裂，一方残缺的苍璧自地缝浮出，玉面刻着王家先祖伐木祭山的血誓。城隍案前青铜獬豸怒目圆睁，玉璧映照出当年被斩的龙脉竟化作赤色小蛇，正啃噬着王家子孙的三魂七魄。南墙悬挂的《泰山府君巡狩图》无风自动，画中判官朱笔滴落墨汁，在生死簿上晕开七十二道裂痕般的血纹。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134851
+   Turn: 1/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   event: 邯郸城地下铜器鸣响
+   place: 渤海之滨古港口
+
+邯郸城下忽闻铜器嗡鸣，其声如黄钟大吕震动地脉，惊得城隍殿前獬豸铜像双目迸出青光。渤海古港浊浪排空，有渔人见水中浮出青铜觚爵十二件，器底铭文皆被赤蛇盘绕，恰与王家玉璧血纹相应。阴司主簿取来九泉玄镜照之，镜中竟映出当年伐木工匠的冤魂，正以槐木为笔在黄泉沙地上书写诉状。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134851
+   Turn: 2/4
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 来自太行山的樵夫
+   cosmic_element: water
+
+城隍殿内青烟骤起，那太行樵夫忽自梁上倒悬而下，发间插着的枯松枝竟生出嫩芽。他张口吐出三枚带血铜钉，钉上缠绕的怨气与九泉玄镜中的冤魂共鸣，震得殿角悬着的算盘珠自行滚动，显出三十年前一笔血债数目。北海龙王派来的龟丞相应声裂开背甲，露出腹中记载着王家祖上违逆天时砍伐神木的玉简。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134851
+   Turn: 3/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   object: 长信宫灯
+
+城隍爷案前忽现一盏鎏金长信宫灯，灯焰无风自动，映出王家祖宅地脉中纠缠的土煞之气。那灯座蟠螭纹中游出一缕青烟，化作当年被伐神木的树精，其声如裂帛："戊己居中，黄天为证，此子违逆四时，当受地气反噬之报。"龟丞相腹中玉简忽生裂纹，渗出黑血浸染了生死簿上王氏族谱。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134851
+   Turn: 4/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 渔阳鼓手
+   cosmic_element: fire
+
+渔阳鼓手夜半击鼓时，忽见城南腾起赤色烟霞，鼓皮无端自裂，渗出朱砂般的血珠。城隍庙前老槐树上悬挂的铜镜映出异象：王家祖宅地基下涌出黑水，水中沉浮着被焚毁的桑木残枝，每根枝桠上都缠着写满咒文的素帛。鼓手惊觉手中鼓槌重若千钧，耳畔响起树精临终时被夏至阳气灼伤的哀鸣。

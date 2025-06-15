@@ -1,0 +1,94 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: bureaucratic_trial
+Number of Turns: 5
+Cosmic Positions: wood → fire → metal
+Duration: 55.2 seconds
+Generated: 2025-05-26 13:42:12
+========================
+
+
+FOLKTALE STORY: 20250526_134107
+Started: 2025-05-26 13:41:17.689534
+----------------------------------------
+
+--- Opening ---
+
+血玉蜂飞至仇家宅第时，恰逢东方破晓，青气升腾。那仇家子嗣晨起梳发，铜镜忽现古籍所载"魂照之术"，镜中七道黑影正如天官所言"列星坠地"，缠绕其颈项。庭院古柏无风自动，树皮剥落处渗出医经记载的"怨血精"，落地竟生幽蓝鬼火，张夫子手持桃木剑踏罡步至，见梁上悬着传说中的"缢鬼素"，厉声道："此乃木德显威，春官司命！"
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134107
+   Turn: 0/4
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 汉代漆器工匠
+   cosmic_element: wood
+
+青烟缭绕间，月宫仙子素手轻挥，一面汉代漆器匠人所制的"太阴镜"浮于半空。镜中映出那工匠生前以血调漆的罪孽，搅乱了五行木气，致使东方青龙七宿移位。三缕游魂从镜中飘出，正是被工匠活祭的学徒冤魂，其声如秋虫鸣泣，道出当年漆器暗藏厌胜之术的始末。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134107
+   Turn: 1/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: wildcard
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 皇室贵胄
+   cosmic_element: fire
+   object: 玉制龙形佩饰
+   place: 清漳河谷
+
+月宫仙子闻言蹙眉，指尖轻点太阴镜，镜中忽现清漳河谷浊浪翻涌之象。一位皇室贵胄腰间玉龙佩饰突然碎裂，原是那厌胜之术扰乱了水火既济之局，致使南方离火失控焚烧河谷。三魂见状齐声泣诉，道出当年工匠受贵胄指使，以活人精血养玉龙的骇人秘事。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134107
+   Turn: 2/4
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   object: 陶质谷仓模型
+
+月宫仙子素手轻扬，一面陶质谷仓模型自镜中浮现，仓门洞开处涌出万千粟粒，却在半空化作点点金星。古籍有载，此乃西方庚金显化，对应秋收冬藏之理，却因贵胄逆天而行，致使五谷精魂化为怨气。三魂见状悲鸣更甚，道出那工匠临终前将血泪封入陶仓，方使金气失衡、阴阳倒错。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134107
+   Turn: 3/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   object: 青釉多足观
+
+月宫仙子玉指轻点，那青釉多足砚忽自怨气中浮现，砚底十二兽足竟渗出朱砂血泪。古籍有云，此乃南方离火之精所化，却因沾染人间冤屈，赤色转为凶煞。三魂见状齐声泣诉，原来那贵胄曾以此砚书写谶纬，妄改生死簿上农人阳寿，致使火德失序、夏旱连年。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134107
+   Turn: 4/4
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 皇家炼丹术士
+   cosmic_element: wood
+
+月宫仙子青袖一挥，那染血的青釉砚台竟化作一条青龙，盘绕在皇家炼丹术士的丹炉之上。术士惊觉炉中本应炼成的长生金丹，此刻却泛着幽幽青光，炉火忽明忽暗似有冤魂呜咽。古籍有载，青龙现世主东方木气紊乱，这炼丹术士曾为贵胄篡改农人命数，如今自身丹道亦遭天机反噬。

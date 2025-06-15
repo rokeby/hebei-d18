@@ -1,0 +1,110 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: bureaucratic_trial
+Number of Turns: 6
+Cosmic Positions: fire → earth → water
+Duration: 68.5 seconds
+Generated: 2025-05-26 13:51:23
+========================
+
+
+FOLKTALE STORY: 20250526_135003
+Started: 2025-05-26 13:50:14.875339
+----------------------------------------
+
+--- Opening ---
+
+王邈惊惶跪地时，祠堂梁木忽现赤色雷纹，那些焦痕竟化作火鼠窜入祖坟，掘出七代先人陪葬的青铜斧钺——刃口犹带山神血渍。城隍爷朱笔判官簿上火星四溅，每粒火珠皆映出当年伐木人耳中听见的树精哀鸣，而祠堂香炉青烟凝成锁链，将王邈三魂中的"爽灵"缚往酆都火狱受审。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_135003
+   Turn: 0/5
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   intervention: 龙山神女收服山魈
+
+龙山神女踏赤霞而降，手中玉瓶倾倒出三滴甘露，那肆虐的山魈顿时化作青烟被收入瓶中。此时酆都判官殿前，王邈的爽灵跪伏于地，青铜斧钺上残留的山神血迹突然化作火蝶飞舞，每一只蝶翼都显现出当年伐木时被误伤的山精面容。城隍爷的朱笔忽被天风吹折，原来西方昆仑镜照出此事本为山魈作祟，王邈祖上实乃奉命开山，那斧钺沾染的竟是恶神伪装的山精之血。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_135003
+   Turn: 1/5
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   intervention: 易水女神护佑渔民
+
+酆都判官殿内青烟缭绕，青铜灯台上的九幽火突然转为明黄色，照见王邈爽灵背后浮现易水女神的虚影。这位执掌北方水域的女神以鲛绡拭泪，原来当年王邈祖父开山时曾救下被山魈所困的渔童，那孩童正是女神座下灵龟所化。生死簿上墨迹自行游动，显现出黄土中埋着的龟甲，其上裂纹恰与斧钺血痕构成相生之象。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_135003
+   Turn: 2/5
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: wildcard
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 皇室御用铸铜师
+   cosmic_element: water
+   object: 玉制龙形佩饰
+   place: 新乐青铜矿场
+
+酆都判官朱笔忽悬于半空，北冥玄冰凝结的案几上浮现一方断裂的玉龙佩，正是当年皇室铸铜师在新乐矿场以血祭炉时遗落的信物。那玉龙双目泣血，鳞甲间渗出黑水，显露出匠人无意中凿穿了镇压水眼的禹王碑。易水女神袖中游出一条玄色小蛟，衔来矿洞深处呜咽的冤魂证词，原来地脉水精被惊动时，恰有七名矿工正在坎位掘井。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_135003
+   Turn: 3/5
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   object: 玉制礼器
+
+判官朱笔忽坠，在黄绢天书上洇出九道血痕，那断裂的玉龙佩竟自行拼合，化作一方完整的苍璧。璧中浮现矿工们临终所见：他们误触的并非普通水脉，而是黄帝埋于九幽的玄圭碎片，此物镇着地阴与阳世的最后界限。易水女神叹息间，苍璧中央裂开一道金痕，露出里面记载着七世因果的玉册文字。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_135003
+   Turn: 4/5
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   event: 河北四境同时出现五色云
+   place: 易水湖渔村
+
+易水湖畔忽现五色祥云，渔村老叟见云中隐现朱衣判官身影，手持玉册朗声宣读："尔等误触玄圭，实乃前世杀业所致。"湖面顿时浮起无数幽蓝光点，皆是矿工亡魂显形作证。南方天际赤云翻涌，将判官朱笔坠落的九道血痕映照得如同血河倒悬。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250526_135003
+   Turn: 5/5
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 精通《易经》的学者
+   cosmic_element: fire
+
+湖畔忽有青衫儒生排众而出，手持龟甲仰观天象，见那血痕竟化作南方朱雀七宿之形。他抚掌叹道："赤气冲斗，此乃离火克金之象，诸位前世开矿伤及地脉，今当以火德化解。"话音未落，九道血痕忽化作赤色流萤，绕着老叟腰间那枚误拾的玄圭盘旋三匝，玉上阴刻的夔龙纹竟渗出朱砂般的血露。

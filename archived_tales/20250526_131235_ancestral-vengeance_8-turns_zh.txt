@@ -1,0 +1,136 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: ancestral_vengeance
+Number of Turns: 8
+Cosmic Positions: wood → fire → metal
+Duration: 97.7 seconds
+Generated: 2025-05-26 13:14:23
+========================
+
+
+FOLKTALE STORY: 20250526_131235
+Started: 2025-05-26 13:12:45.637669
+----------------------------------------
+
+--- Opening ---
+
+古槐树下新坟未干，夜半忽有青藤破土而出，缠绕着七枚带血的玉蝉。守墓老仆梦见先主披发立于月下，手中青铜爵溢出黑水，浸透了祠堂历代牌位。次日清晨，族中长子暴毙于东厢房，窗棂上爬满《神农本草经》记载的"怨血精"，其状如泪，落地竟使青砖生出《山海经》所述"断肠草"的红花。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131235
+   Turn: 0/7
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   object: 青铜编钟
+
+族中幼子夜闻庭院传来编钟清响，循声见一只青鸟衔着血书立于钟架。那青铜编钟无人自鸣，十二律吕皆成哀调，惊醒了祠堂供奉的祖先木主。次日集市上，卖浆老妪忽作冤魂声调，道出当年县官为夺祖传铜矿，竟用朱砂混入祭酒毒杀其父。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131235
+   Turn: 1/7
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: plot_twist
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+
+那青鸟忽化作赤色火雀，飞入县衙后院，将血书投于县令枕畔。是夜县令梦见铜矿中涌出朱砂血泉，其父牌位在祠堂无端开裂，惊觉时发现案头官印竟渗出暗红汁液。恰逢乡里童子放纸鸢，南风骤起，将绘有獬豸的赤色风筝直送入县令厅堂，悬于明镜高悬匾额之上。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131235
+   Turn: 2/7
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   object: 玉制礼器
+
+县令惊魂未定之际，衙门外忽有老妇献上一尊青玉琮，言是西山古墓所出。玉琮内壁刻着"含冤三载"四字，每至子时便渗出寒露，凝成白虎形状。更奇者，县中蒙童皆作同样噩梦，见一白鹿衔着断绳，将无辜者从刑架解救。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131235
+   Turn: 3/7
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 守护汉墓的武士
+   cosmic_element: fire
+
+那青玉琮忽于夏至日正午自生赤焰，火光中显出一位披甲武士虚影，其盔甲纹饰正是前朝戍卫皇陵的制式。县中卖浆老翁夜半惊醒，见窗外白鹿踏火而来，鹿角上悬着当年冤案的麻绳与状纸，纸上"诬"字被朱雀纹样的火舌反复舔舐。武士魂灵借老翁之口道出三载前冤死者实乃守陵人后裔，因撞破盗墓之事反被诬为盗贼。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131235
+   Turn: 4/7
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 汉代漆器工匠
+   cosmic_element: wood
+
+那漆器工匠夜作漆奁时，忽见朱砂颜料自行流淌，在漆黑底面上勾勒出一幅冤狱图景。次日清晨，工匠发现院中老槐无风自动，青翠叶片纷纷坠落，竟在泥地上拼出"东郊古冢"四字。工匠循迹前往，见一青铜剑半埋土中，剑身缠绕着与白鹿角上相同的麻绳，绳结处渗出点点血珠，在春日朝阳下泛着诡异的青光。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131235
+   Turn: 5/7
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   intervention: 邯郸城隍显圣除妖
+
+那漆匠捧剑入城时，忽见一只青羽玄鸟自东方飞来，衔着染血的麻绳坠于城隍庙前。当夜邯郸城隍在匠人梦中显圣，周身缠绕着春雷震震的木气，道破此剑乃十年前被污谋反的忠良遗物，其冤魂化白鹿鸣冤至今。次日匠人醒转，发现剑上麻绳已断为九截，恰合阳数之极，而庙前古槐竟开出满树血似的红花。
+
+--- Turn 7 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131235
+   Turn: 6/7
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 邯郸城的儒生
+   cosmic_element: fire
+
+邯郸城那位素衣儒生夜读《春秋》时，忽见案头青铜灯焰化作赤色玄鸟，衔来一片带霜的槐叶落于砚台。三更时分，他梦见南郊荒冢间立着九位戴枷文士，脚下踩着龟裂的焦土，为首者手持断裂的玉圭指向北方。翌日儒生循梦勘察，在城北玄武位挖出九具铁链缠身的骸骨，每具天灵盖上都钉着生锈的算筹——正是当年构陷忠良的计吏所用之物。
+
+--- Turn 8 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131235
+   Turn: 7/7
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   object: 玉制礼器
+
+那儒生将九具骸骨移至向阳高坡，忽见西风卷来九只白鹤，衔来昆仑玉屑覆于尸骨之上。当夜月华如水，那些算筹竟化作青烟升腾，在空中凝成"冤"字，被一只自北方飞来的玄龟吞入腹中。次日清晨，儒生发现骸骨旁整齐排列着九件残缺的玉琮，每件内壁都刻着被污者的名讳与生平。

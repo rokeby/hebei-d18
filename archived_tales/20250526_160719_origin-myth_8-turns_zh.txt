@@ -1,0 +1,136 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: origin_myth
+Number of Turns: 8
+Cosmic Positions: fire → earth → water
+Duration: 91.0 seconds
+Generated: 2025-05-26 16:09:02
+========================
+
+
+FOLKTALE STORY: 20250526_160719
+Started: 2025-05-26 16:07:31.600143
+----------------------------------------
+
+--- Opening ---
+
+太古之时，天地未判，阴阳未分，混沌如鸡子，唯有祝融氏执赤玉圭立于南方，其目如炬，照破鸿蒙。火精游走于无形之间，时而化作赤龙腾跃，时而凝为朱鸟振翅，烧灼出九重天界与八荒大地的雏形，却因无土相济而不得成形，终日在虚空中明灭流转。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160719
+   Turn: 0/7
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   object: 刻有铭文的青铜虎符
+
+东方忽现青气升腾，句芒神君踏青龙而至，手持青铜虎符，其上有"制衡阴阳"四字古篆。虎符落地生根，化作参天建木，枝干撑起混沌天幕，根系扎入虚无之中。木德生发之力与南方火精相激，赤青二气交缠如龙蛇，始有山川脉络显现于天地之间。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160719
+   Turn: 1/7
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   intervention: 恒山玉女降下甘霖
+
+恒山玉女自九霄飘然而下，手持白玉净瓶倾泻甘霖，其水落地化为玄黄之气。黄帝之影自建木纹理中显化，手抚五色土坛，坛上忽生青赤白黑四色瑞气。甘霖与土气相融，遂成九州地貌，山岳如龙脊起伏，河川似银带蜿蜒。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160719
+   Turn: 2/7
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   intervention: 昆仑使者传递天机
+
+昆仑使者乘青鸾自西而来，羽衣飘摇间落下建木神叶三片。黄帝之影接叶而叹，忽见东方青龙自云中探首，衔来太初之木精。使者以玉简叩击建木，天地间顿时响起春雷般的木德之音，震得混沌中清浊二气彻底分离。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160719
+   Turn: 3/7
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 养蚕女工
+   cosmic_element: earth
+
+建木神叶落地生根，化作三株桑树，其叶金黄如土德之精。一位养蚕女工循着木德之音而来，见桑叶脉络间流淌着青龙留下的太初木精。黄帝之影指点她采叶养蚕，蚕食木精而吐丝，其丝竟能织就连接天地的云锦。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160719
+   Turn: 4/7
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 能预知天象的星官
+   cosmic_element: fire
+
+那星官夜观天象，见南方朱雀七宿赤光流转，知是火德当令之时。他取桑蚕所吐云锦为引，以青龙木精为墨，在龟甲上刻下二十八宿分野图。黄帝之影授他以玉衡之法，从此人间始知四时更替、星辰运行之道，桑蚕吐丝亦随天象变化而显五彩光华。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160719
+   Turn: 5/7
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   intervention: 渔阳鼓神暗助边关将士
+
+渔阳鼓神见人间战事将起，遂取昆仑山巅青龙木精为鼓架，以朱雀赤羽蒙鼓面。每当边关狼烟升起，鼓声便随五行相生之理自行鸣响，声震三百里。古籍有云，此乃黄帝战蚩尤时遗留的兵道余韵，鼓声所至之处，草木皆化为持戈卫士，护佑华夏疆土。
+
+--- Turn 7 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160719
+   Turn: 6/7
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: story_ending
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+
+鼓声震荡间，黄帝之魂自昆仑木精中苏醒，见人间战火将熄，遂以指划地。霎时黄土隆起为山岳，青龙木气渗入地脉，化作万里长城蜿蜒于华夏边境。古籍有载，此乃初祖以东方甲乙木德镇守中央戊己土，使天地永隔，混沌不复相接。
+
+--- Turn 8 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160719
+   Turn: 7/7
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   object: 传国玉玺复制品
+
+黄帝见长城已成，遂取昆仑玄玉一方，吐纳青龙木气于其上。玉中忽现九条蟠龙纹，化作传国玉玺复制品沉入渭水之阴，自此北方黑水与东方青木相生相克，冬雪覆城时便有龙吟自地脉传来。故老相传，此乃木德圣王以玉镇水，使寒冰不侵长城之故。

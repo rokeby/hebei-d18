@@ -1,0 +1,152 @@
+{
+  "id": "20250526_141430",
+  "completed_at": "2025-05-26T14:16:15.564431",
+  "final_narrative": [
+    {
+      "turn": 0,
+      "roll": null,
+      "action_type": "opening",
+      "elements": {
+        "cosmic_element": "water"
+      },
+      "narrative": "",
+      "narrative_zh": "将军府中，老将军正为独子不孝之事忧心忡忡，那逆子竟将祖传玉圭投入井中祭祀邪神；此时庭院古柏无风自动，树根处盘踞的玄蛟眼中泛着幽蓝寒光，其吐纳间引得府中水井泛起黑雾，连铜镜都凝结出冰花，正是水德失衡之兆。",
+      "token_usage": {
+        "prompt_tokens": 492,
+        "completion_tokens": 87,
+        "total_tokens": 579
+      }
+    },
+    {
+      "turn": 0,
+      "roll": 2,
+      "action_type": "character_action",
+      "elements": {
+        "cosmic_element": "water",
+        "character": "铜马车的驭手"
+      },
+      "narrative": "",
+      "narrative_zh": "黑雾弥漫之际，铜马车自北方疾驰而来，驭手身披玄甲，手持朝廷诏令。那逆子见诏书上\"不孝当诛\"四字泛着金光，顿时双膝发软，却见井中玉圭突然浮出水面，表面布满龟裂纹路。玄蛟仰首长吟，引得冬雷震震，仿佛天地共谴此不义之人。",
+      "token_usage": {
+        "prompt_tokens": 621,
+        "completion_tokens": 87,
+        "total_tokens": 708
+      }
+    },
+    {
+      "turn": 1,
+      "roll": 16,
+      "action_type": "plot_twist",
+      "elements": {
+        "cosmic_element": "wood"
+      },
+      "narrative": "",
+      "narrative_zh": "那逆子仓皇欲逃，却见东方青气骤起，化作千条柳枝缠住其足。玄甲使者掷出青铜令箭，落地即生根，长成五株刺柏围住罪人。井中玉圭裂纹间渗出赤红朱砂，在春泥上写出\"天刑\"古篆，柏枝无风自动，抽打得逆子衣衫尽裂。此时西方忽现太白金星，却是其亡父元神乘金车而至，垂泪而不语。",
+      "token_usage": {
+        "prompt_tokens": 611,
+        "completion_tokens": 110,
+        "total_tokens": 721
+      }
+    },
+    {
+      "turn": 2,
+      "roll": 2,
+      "action_type": "character_action",
+      "elements": {
+        "cosmic_element": "earth",
+        "character": "远近闻名的石匠"
+      },
+      "narrative": "",
+      "narrative_zh": "那石匠闻讯赶来，见太白金星映照下，五株刺柏竟化作黄玉刑柱。他取出怀中未完工的玄鸟玉雕，以凿击之，玉屑纷飞间显出一篇金文诏书。原来这石匠乃奉天子密旨，以雕玉之术镇守人间孝义。此时西方金气大盛，亡父元神所乘金车忽化为青铜鼎器，鼎腹铭文与玉雕诏书相应生辉，照得逆子周身罪纹毕现。",
+      "token_usage": {
+        "prompt_tokens": 646,
+        "completion_tokens": 117,
+        "total_tokens": 763
+      }
+    },
+    {
+      "turn": 3,
+      "roll": 11,
+      "action_type": "object_appearance",
+      "elements": {
+        "cosmic_element": "wood",
+        "object": "薄胎陶器"
+      },
+      "narrative": "",
+      "narrative_zh": "那逆子见罪纹显现，仓皇间碰倒祭案上的薄胎陶器，青瓷碎裂竟发出编钟清响。陶片落地化作七十二枚玉琮，排列成周天星象，每枚琮孔中皆映出他昔日怠慢双亲的景象。此时东方忽现青龙虚影，衔来玄鸟玉雕中逸出的金文诏书，将\"不孝不义\"四字烙于其眉心，引得春雷震震催发刑柱上黄玉新芽。",
+      "token_usage": {
+        "prompt_tokens": 651,
+        "completion_tokens": 116,
+        "total_tokens": 767
+      }
+    },
+    {
+      "turn": 4,
+      "roll": 9,
+      "action_type": "environmental_event",
+      "elements": {
+        "cosmic_element": "water",
+        "event": "渔阳三鼓声传千里",
+        "place": "元氏玉石工坊"
+      },
+      "narrative": "",
+      "narrative_zh": "渔阳戍鼓三声穿透寒夜，震得元氏工坊中未雕的玉石尽数迸裂，露出内里血丝般的赤纹。那逆子跪在碎玉间，忽见每道血纹皆化作《孝经》金文，随北风盘旋成黑水玄龙，将他七年前藏在井底的药囊卷至面前——正是当年为省汤药钱而弃置的老母续命方。此时诏书金字突然灼烧，将\"义\"字烙进他颤抖的掌心，地下随之传来编钟悲鸣，原是埋骨多年的父亲在九泉下击柩而泣。",
+      "token_usage": {
+        "prompt_tokens": 662,
+        "completion_tokens": 140,
+        "total_tokens": 802
+      }
+    },
+    {
+      "turn": 5,
+      "roll": 3,
+      "action_type": "character_action",
+      "elements": {
+        "cosmic_element": "water",
+        "character": "铜马车的驭手"
+      },
+      "narrative": "",
+      "narrative_zh": "黑水玄龙忽化作铜马车，青面驭手执玄铁鞭指向北方，车辕上悬挂的青铜铎正刻着诏书\"义\"字。那逆子掌心烙印突然发烫，竟引动井中升起七盏莲灯，照见母亲病容在每盏灯焰中浮现。驭者挥鞭击碎最暗的那盏，灯油落地竟成血书，原是老母临终用指血写就的\"羔羊跪乳\"四字。",
+      "token_usage": {
+        "prompt_tokens": 674,
+        "completion_tokens": 108,
+        "total_tokens": 782
+      }
+    },
+    {
+      "turn": 6,
+      "roll": 18,
+      "action_type": "story_ending",
+      "elements": {
+        "cosmic_element": "wood"
+      },
+      "narrative": "",
+      "narrative_zh": "那逆子见血书字迹如刀，肝胆俱裂，跪地时东方忽现青龙虚影盘绕其身。铜马车辕上\"义\"字诏书大放青光，照得井中剩余六盏莲灯化作春蚕，吐出青色丝线将他与血书缠绕成茧。忽闻云端传来太常乐声，茧中浮现母亲纺织的身影，每根丝线都显着\"冬温夏清\"的古训。",
+      "token_usage": {
+        "prompt_tokens": 632,
+        "completion_tokens": 99,
+        "total_tokens": 731
+      }
+    }
+  ],
+  "cosmic_position": "wood",
+  "total_turns": 7,
+  "max_turns": 8,
+  "language": "zh",
+  "story_arc": {
+    "type": "moral_lesson",
+    "stages": [
+      "harmony",
+      "transgression",
+      "consequence",
+      "realization",
+      "atonement"
+    ],
+    "theme_elements": {
+      "virtue": "righteousness (义)",
+      "transgression": "filial neglect",
+      "moral_authority": "imperial decree"
+    },
+    "current_stage": "realization"
+  }
+}

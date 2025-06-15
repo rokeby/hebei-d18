@@ -1,0 +1,123 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: cosmic_balance
+Number of Turns: 7
+Cosmic Positions: fire → earth → water
+Duration: 78.1 seconds
+Generated: 2025-05-26 14:03:17
+========================
+
+
+FOLKTALE STORY: 20250526_140146
+Started: 2025-05-26 14:01:58.985659
+----------------------------------------
+
+--- Opening ---
+
+昔日山阳郡有千年赤枫，其根盘结地脉，枝叶承露接霞，每逢朔望便吞吐离火精气，为方圆百里调和阴阳。老辈相传此木乃祝融氏遗落人间的火精所化，其瘤中藏着《火德真经》三章，能镇四方旱魃之灾。王邈高祖为造宅第，不顾山神托梦劝阻，执意伐倒神木，致使郡中火气失衡，连年大旱，田畴龟裂如星图。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140146
+   Turn: 0/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 龙山附近的溪水精灵
+   cosmic_element: fire
+
+龙山溪水精灵青娥见赤枫被伐，日夜悲泣，泪落成霜。溪水逆流而上，化作百丈白练缠绕枯枫残桩，致使阴阳二气在树根处纠缠成旋。自此郡中忽而赤日炎炎忽而六月飞雪，田间禾苗皆生双穗而中空如竹，老农掘地三尺竟见蚯蚓背生火纹。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140146
+   Turn: 1/6
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   object: 汉代铜镜
+
+郡守夜梦黄衣老妪授以古铜镜，镜背蟠螭纹中暗藏阴阳二气流转。翌日衙役来报，城中井水皆映赤枫倒影，镜面所照之处霜雪与炎气竟自分界。铜镜悬于枯枫残桩三日，土中火纹蚯蚓尽数化为玄色玉圭，其上刻着"地德不载，天精反流"八字古篆。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140146
+   Turn: 2/6
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 远近闻名的石匠
+   cosmic_element: water
+
+远近闻名的石匠张衡夜观星象，忽见北斗七星中摇光星位现出双影，其妻梦中被黑水浸染的织机惊醒。翌日凿石时，青石中竟渗出赤红玉髓，阴阳二气在凿痕间流转成太极之形。城中老巫见之变色，言此乃共工氏怒触不周山时，溅落人间的玄冥精魄。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140146
+   Turn: 3/6
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   event: 新乐古窑无人自燃
+   place: 易水河畔
+
+易水河畔忽起阴风，新乐古窑中沉寂百年的陶坯无火自燃，青烟化作玄鸟之形盘旋三日不散。张衡循着古籍记载的方位掘地三尺，发现一方黄玉圭斜插土中，其下镇压着共工氏部将相柳的九首残魂，正是这上古凶神搅动了阴阳二气。此时长夏的天空竟飘起鹅毛大雪，黄河水倒流三百里，五岳地脉同时发出悲鸣。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140146
+   Turn: 4/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   object: 青铜编钟
+
+张衡捧起黄玉圭的刹那，地底忽闻金声玉振，十二枚青铜编钟破土而出，悬于半空自成宫商。那编钟表面刻着日月星辰之象，钟舌无风自动，奏出调和阴阳的太古遗音。相柳残魂在音波中嘶吼扭曲，赤红天火与鹅毛大雪竟在空中凝成太极之形，缓缓旋转消融。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140146
+   Turn: 5/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   intervention: 铜镜仙姬映照人心
+
+铜镜仙姬自九天而降，手持一面青铜宝镜，镜面映出相柳残魂中纠缠的七情六欲。那镜光所照之处，赤红天火化作朱雀振翅南飞，鹅毛大雪凝成玄武归位北方，天地间骤然响起编钟与玉磬的和鸣。古籍有云，人心不正则阴阳失调，此刻镜中照见的贪嗔痴慢，皆化作黑气被钟声涤荡殆尽。
+
+--- Turn 7 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140146
+   Turn: 6/6
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   intervention: 雪女降临化解干旱
+
+北方忽现素衣女子踏雪而来，所过之处焦土生白霜，龟裂的田垄覆上晶莹冰纹。她广袖轻扬间，九霄垂下万千银丝，原是雪女奉西王母之命，以极阴之气调和人间阳火肆虐。阴阳二气在云端相激，化作甘霖滋润八荒，枯黄的禾苗竟在长夏时节抽出新穗，呈现土德中兴之象。

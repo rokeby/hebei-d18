@@ -1,0 +1,135 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: transformation
+Number of Turns: 8
+Cosmic Positions: fire → earth → water
+Duration: 103.7 seconds
+Generated: 2025-05-26 16:43:00
+========================
+
+
+FOLKTALE STORY: 20250526_164106
+Started: 2025-05-26 16:41:16.434984
+----------------------------------------
+
+--- Opening ---
+
+昔日易阳县令张伯阳乃颍川寒士，每日辰时必于县衙东侧丹炉前焚香祝祷，以朱砂在桃木简上记民生疾苦投于炉中，青烟升腾处常有赤色雀鸟盘旋不去。这日炉火忽作虎啸之声，惊得衙役四散，唯见县令素袍无风自动，腰间祖传青玉璜泛起离火纹路，竟与炉中火焰相和如古乐黄钟。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_164106
+   Turn: 0/7
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 渔阳鼓手
+   cosmic_element: fire
+
+炉火虎啸声中，忽有渔阳鼓手踉跄闯入县衙，其腰间皮鼓竟自行震响如雷鸣。张伯阳见鼓面朱漆剥落处露出赤色鳞纹，原是上古应龙褪鳞所制，此刻与丹炉离火相激，竟化出三尺火蛟绕柱而游。县令手中青玉璜忽现裂痕，其中一缕精魂随火蛟共舞，方悟此乃先祖以命魂封印的丹劫。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_164106
+   Turn: 1/7
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   event: 涿郡忽降丹药雨
+   place: 清漳河谷
+
+涿郡上空忽现五彩祥云，万千丹药如雨坠入清漳河谷，落地即化作金蟾玉兔之形。张伯阳见河谷黄土尽染丹霞，方知此乃西王母丹元所化，凡人食之可蜕去凡胎，却要永绝人伦之乐。忽有老农吞丹化为白鹤冲天而去，其妻跪地痛哭时，鹤唳声中竟落下三根带血羽翎。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_164106
+   Turn: 2/7
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 从西域来的商人
+   cosmic_element: water
+
+西域商人阿罗陀驱驼队途经河谷，见满地金蟾跃动，眼中闪过贪婪之色。他取青铜匣尽收丹药，却不知匣底镌刻的饕餮纹正吞噬其阳气。当夜商队歇息时，驼铃无风自鸣，阿罗陀惊觉双手已生出鹤羽，腰间玉佩浮现血丝般的赤纹。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_164106
+   Turn: 3/7
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 精通《易经》的学者
+   cosmic_element: earth
+
+阿罗陀惊惶间遇见一位白发苍苍的易学老者，老者见他鹤羽渐生，掐指一算叹道："贪心引动离火，浊气已伤中宫黄土。"话音未落，商队驼铃突然化作金蟾鸣叫，老者腰间蓍草无风自动，在空中排成坎离相交之象。阿罗陀怀中青铜匣突然发烫，匣中药丸竟化作点点流萤，在他周身织成一张光网。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_164106
+   Turn: 4/7
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 守护青铜器的器灵
+   cosmic_element: fire
+
+那青铜匣忽地裂开，跃出一只赤色蟾蜍，双目如炬。蟾蜍张口吐出青烟，烟中显出一位身披玄甲的器灵，手持玉圭指向南方道："离火焚身之劫将至，汝若不舍凡心，必化灰烬。"阿罗陀顿觉四肢如被赤蚁啃噬，方才的流萤光网竟开始灼烧他的血肉。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250526_164106
+   Turn: 5/7
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: story_ending
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+
+阿罗陀痛极而呼，忽见南方天际赤云翻涌，化作朱雀之形俯冲而下。那玄甲器灵将玉圭往他心口一按，喝道："欲脱凡胎，先焚尘念！"霎时间，他体内七情六欲皆化作赤焰，从七窍喷薄而出，与朱雀之火相融。
+
+--- Turn 7 ---
+
+📖 STORY STATUS:
+   ID: 20250526_164106
+   Turn: 6/7
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: plot_twist
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+
+朱雀之火与七情烈焰相融之际，阿罗陀的凡躯竟如陶土般龟裂剥落，露出内里流转的玄黄之气。那玄甲器灵以玉圭引动中央戊土精气，将他残存的贪嗔痴三毒尽数镇入昆仑地脉。古籍有云，凡脱胎换骨者，必先历三劫九难，此刻他灵台清明，方知那丹药原是西王母座下白虎衔来的昆仑玉英所化。
+
+--- Turn 8 ---
+
+📖 STORY STATUS:
+   ID: 20250526_164106
+   Turn: 7/7
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: story_ending
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+
+玄甲器灵见他凡尘尽褪，遂引北方玄冥真水洗炼其魂，那水中映出前世种种贪恋痴妄，皆化作黑气消散。阿罗陀顿觉周身轻若鸿毛，原是七魄已凝成玉质，三魂化作青烟直上九霄。白虎于云端长啸相迎，衔来西王母所赐云纹玉璧，从此世间少一凡夫，昆仑多一守山仙灵。

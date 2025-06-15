@@ -1,0 +1,139 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: ancestral_vengeance
+Number of Turns: 8
+Cosmic Positions: wood → fire → metal
+Duration: 88.9 seconds
+Generated: 2025-05-26 13:18:58
+========================
+
+
+FOLKTALE STORY: 20250526_131718
+Started: 2025-05-26 13:17:29.193264
+----------------------------------------
+
+--- Opening ---
+
+青槐树下埋着七具无名尸骨，每具心口都压着块刻有仇家姓氏的桃木符，那些符咒吸饱了冤魂的怨气，竟在月夜生根发芽，长出七株血红的曼陀罗花。每逢子时，花朵便化作《淮南万毕术》所载"离魂香"，顺着东风飘入仇家祠堂，使得供桌上的祖先牌位渗出黑血，在青砖地上写出"偿命"两个古篆。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131718
+   Turn: 0/7
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   object: 汉代彩绘陶俑
+
+东风夜半，一只青羽玄鸟衔着彩绘陶俑落在祠堂檐角，那陶俑双目淌朱，正是汉代陪葬所用的"引魂童子"。守夜的老巫祝见状大惊，急取青铜罗盘相测，只见天池针逆旋三周，直指东方木气最盛的乱葬岗。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131718
+   Turn: 1/7
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 能解读铜镜中异象的术士
+   cosmic_element: fire
+
+老巫祝连夜请来城南通晓阴阳的术士，那人手持一面蟠螭纹铜镜，镜中竟映出乱葬岗上盘旋的赤色怨气。术士掐指推算，惊觉此乃丙午年冤死之人所化，其魂附于玄鸟，正借盛夏火气炽盛之时寻仇。此时祠堂内的祖先牌位突然齐齐震动，香炉中三柱线香无风自断，青烟凝成个"申"字悬于梁间。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131718
+   Turn: 2/7
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   object: 刻有铭文的青铜虎符
+
+术士从怀中取出一枚青铜虎符，其上铭文在月光下泛着幽光，正是当年冤死者生前所执兵符。忽闻西风骤起，一只玄鸟衔着染血的白绢落在祠堂檐角，绢上字迹如蝌蚪游动，细看竟是金文所书"申时三刻"四字。老巫祝见状面色煞白，因那虎符与血书相合，正应了金克木的凶兆，预示今夜必有刀兵之灾。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131718
+   Turn: 3/7
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   intervention: 中山狼神指引迷路之人
+
+祠堂内的烛火突然转为青碧色，照得祖先牌位上的朱砂铭文渗出血珠。术士手中虎符剧烈震颤，南墙阴影里竟浮现出一头赤目白额的狼影，正是中山狼神显化。那狼神衔住术士衣袂向西疾行，沿途草木皆化为焦炭，显是引他去见那申时三刻的因果。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131718
+   Turn: 4/7
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   event: 武灵丘陵草木一夜变色
+   place: 白洋淀芦苇荡
+
+术士随狼神行至白洋淀畔，忽见芦苇荡中浮起千盏青灯，每盏灯芯皆缠绕着枉死者的发丝。东方天际雷声隐隐，武灵丘陵上的松柏竟尽数转为赤红，宛如血染。那狼神仰首长啸，术士手中虎符应声碎裂，显是阴阳二气在此处已彻底颠倒。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131718
+   Turn: 5/7
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 守护汉墓的武士
+   cosmic_element: wood
+
+青灯忽明忽暗间，一位身披青铜铠甲的武士从水中踏浪而出，甲缝间缠绕着水藻与冤魂凝结的冰晶。他手持断裂的玉戈指向天际，东方雷云中竟降下三足青乌，衔来一枚刻有"代天行诛"四字的赤符。术士见状立即以桃木剑划破掌心，血滴入水化作九尾玄鱼，游向那些载着发丝的青灯。
+
+--- Turn 7 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131718
+   Turn: 6/7
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   event: 冬日雪落成古篆文字
+   place: 满城汉墓甬道
+
+三足青乌振翅间，赤符化作流火坠入满城汉墓甬道，青石板上积雪忽现"冤"字古篆。术士掐指推演天时，见南方离火正旺，遂取青铜觞盛无根水，水中倒影竟现出当年血案真相：一商贾为夺玉璧，毒杀守墓校尉于甬道深处。此时墓中传来金戈交鸣之声，那武士冤魂与商贾祖灵在阴阳交界处兵刃相见。
+
+--- Turn 8 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131718
+   Turn: 7/7
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   object: 刻有铭文的青铜虎符
+
+术士忽见西方白光乍现，一只白虎衔着青铜虎符跃出墓道，符上"兵甲之符，右在君，左在杜"的铭文泛着幽光。商贾祖灵见符大惊，因那正是当年校尉调兵的信物，白虎怒目而视，其啸声震得墓中玉琮嗡嗡作响。术士将虎符浸入无根水中，水中倒影竟现出商贾先祖跪地求饶之态，而武士冤魂的铠甲渐渐化作金粉飘向昆仑西方。

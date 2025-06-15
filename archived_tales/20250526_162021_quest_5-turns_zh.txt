@@ -1,0 +1,93 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: quest
+Number of Turns: 5
+Cosmic Positions: earth → metal → wood
+Duration: 55.9 seconds
+Generated: 2025-05-26 16:21:28
+========================
+
+
+FOLKTALE STORY: 20250526_162021
+Started: 2025-05-26 16:20:33.075030
+----------------------------------------
+
+--- Opening ---
+
+公孙氏收起玉琮时，脚下黄土突然裂开九道沟壑，露出地脉中沉睡的玄龟甲片，甲上刻着"戊己守中"的古老符咒。他心知这是中央黄帝的召唤，便取腰间五色土洒向四方，只见东方青气、南方赤云、西方白雾、北方黑霭皆向中土汇聚，在龟甲上凝成一方黄玉符令。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_162021
+   Turn: 0/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 养蚕女工
+   cosmic_element: earth
+
+公孙氏正欲拾起黄玉符令，忽闻桑林间传来女子悲泣。一位素衣养蚕女工跪在桑树下，怀中紧抱半卷残破的丝帛，其上星图隐约与玉符相呼应。女工泪落处，蚕丝竟化作金线没入土中，原来她守护的正是黄帝失落的星历秘术，此刻九道沟壑开始吞噬桑林根基。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_162021
+   Turn: 1/4
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: plot_twist
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+
+公孙氏见那养蚕女工泪落金线，心知此乃西方白虎之象，主肃杀之秋。女工忽抬首露出青面獠牙，原是西王母座下玉女所化，专为考验持符者心志。她厉声质问："汝欲取星历秘术，可愿以毕生忠义为誓？"
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_162021
+   Turn: 2/4
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 祭祀礼仪专家
+   cosmic_element: wood
+
+公孙氏取出腰间青玉圭，以周礼九拜之仪向玉女行礼。玉女獠牙渐收，化作青衣老妪模样，从袖中取出一卷蚕丝织就的星图，其上东方苍龙七宿正泛着青光。老妪低声道："春主仁德，汝既知木德生发之理，当往东寻访守藏史之后，彼处有汝所求璇玑玉衡之秘。"
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_162021
+   Turn: 3/4
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   object: 长信宫灯
+
+公孙氏东行至洛阳旧墟，忽见一青铜宫灯自土中浮出，灯上朱雀纹饰流转赤光。守灯老者乃昔日长信宫旧人，以灯芯为试，问其愿以性命护先王遗典否。  
+
+公孙氏咬破指尖滴血入灯，火中忽现竹简虚影，正是当年焚书时儒生冒死藏于骊山地脉的《尚书》逸篇。老者颔首而笑，身形化作白鹤衔灯西去，留满地银杏如金符铺路。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_162021
+   Turn: 4/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   object: 一面刻有仙鹤纹饰的铜镜
+
+公孙氏拾起铜镜时，镜中忽现故友面容，那人手持残缺玉圭求他交出竹简。银杏叶无风自动，在黄土上排出"忠"字卦象。铜镜背面仙鹤双目流转青光，照出对方袖中暗藏的淬毒匕首。

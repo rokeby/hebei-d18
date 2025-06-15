@@ -1,0 +1,104 @@
+{
+  "id": "20250526_140818",
+  "completed_at": "2025-05-26T14:09:16.135220",
+  "final_narrative": [
+    {
+      "turn": 0,
+      "roll": null,
+      "action_type": "opening",
+      "elements": {
+        "cosmic_element": "metal"
+      },
+      "narrative": "",
+      "narrative_zh": "昔日长安城西郊有座白虎祠，每逢秋分时节，祠中青铜祭器便自行鸣响，其声如金戈相击。老祭司观天象而知金气过盛，遂命童子将五色丝帛系于庭前桑树，以木德调和肃杀之气，使百姓免受刀兵之灾。",
+      "token_usage": {
+        "prompt_tokens": 479,
+        "completion_tokens": 75,
+        "total_tokens": 554
+      }
+    },
+    {
+      "turn": 0,
+      "roll": 2,
+      "action_type": "character_action",
+      "elements": {
+        "cosmic_element": "metal",
+        "character": "护卫皇陵的将军"
+      },
+      "narrative": "",
+      "narrative_zh": "皇陵将军夜巡时，忽见白虎祠前桑树一夜尽枯，枝干却泛着金属寒光。他拔出青铜剑欲斩枯枝，剑锋竟与树枝相击迸出火星，惊觉此乃金精化形作祟。此时西方天际太白星大亮，照得将军甲胄如雪，古籍有云此乃兵戈将起之兆。",
+      "token_usage": {
+        "prompt_tokens": 603,
+        "completion_tokens": 87,
+        "total_tokens": 690
+      }
+    },
+    {
+      "turn": 1,
+      "roll": 12,
+      "action_type": "object_appearance",
+      "elements": {
+        "cosmic_element": "water",
+        "object": "传国玉玺复制品"
+      },
+      "narrative": "",
+      "narrative_zh": "将军俯身拾起从枯枝中坠落的青玉方印，只见其螭钮盘错，印文\"受命于天\"四字却泛着诡异的血光。此时北风骤起，卷起枯桑落叶化作黑蝶纷飞，玉玺复制品竟在将军掌中渗出寒露，浸透了他的虎符锦囊。古籍有云冬月现露乃阴盛阳衰之兆，而西方白虎七宿同时隐入乌云，预示人间将失天命庇佑。",
+      "token_usage": {
+        "prompt_tokens": 616,
+        "completion_tokens": 112,
+        "total_tokens": 728
+      }
+    },
+    {
+      "turn": 2,
+      "roll": 5,
+      "action_type": "character_action",
+      "elements": {
+        "cosmic_element": "fire",
+        "character": "巡行各地的方士"
+      },
+      "narrative": "",
+      "narrative_zh": "一位巡行各地的方士途经此地，见田间稻穗竟生赤芒如火焰，而桑树却结出霜白的果实。他掐指推算，发现南方朱雀星宿的光芒被一团黑气缠绕，正是天机紊乱之象。方士从袖中取出五色丝线编织的罗盘，其指针疯狂旋转不定，指向将军府邸方向时突然断裂成三截。",
+      "token_usage": {
+        "prompt_tokens": 638,
+        "completion_tokens": 87,
+        "total_tokens": 725
+      }
+    },
+    {
+      "turn": 3,
+      "roll": 18,
+      "action_type": "story_ending",
+      "elements": {
+        "cosmic_element": "water"
+      },
+      "narrative": "",
+      "narrative_zh": "方士夜观天象，见北斗七星竟倒悬如垂泪，知是玄冥水德过盛冲克了火德。他循着断裂罗盘的指引来到将军府，发现庭院中一株千年古柏竟开出五色花，而树根处盘踞着一条通体漆黑的蛟龙，正吞吐着北方玄阴之气。古籍有云，此乃水精作祟，若不及时制止，来年必将江河泛滥、五谷不登。",
+      "token_usage": {
+        "prompt_tokens": 603,
+        "completion_tokens": 104,
+        "total_tokens": 707
+      }
+    }
+  ],
+  "cosmic_position": "water",
+  "total_turns": 4,
+  "max_turns": 6,
+  "language": "zh",
+  "story_arc": {
+    "type": "cosmic_balance",
+    "stages": [
+      "order",
+      "disruption",
+      "chaos",
+      "intervention",
+      "new_order"
+    ],
+    "theme_elements": {
+      "cosmic_force": "heavenly mandate",
+      "imbalance_cause": "supernatural being",
+      "natural_sign": "plant anomaly"
+    },
+    "current_stage": "chaos"
+  }
+}

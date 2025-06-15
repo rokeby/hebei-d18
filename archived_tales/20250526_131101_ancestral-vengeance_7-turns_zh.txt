@@ -1,0 +1,126 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: ancestral_vengeance
+Number of Turns: 7
+Cosmic Positions: wood → fire → metal
+Duration: 82.6 seconds
+Generated: 2025-05-26 13:12:33
+========================
+
+
+FOLKTALE STORY: 20250526_131101
+Started: 2025-05-26 13:11:11.304201
+----------------------------------------
+
+--- Opening ---
+
+古宅祠堂的柏木灵牌突然渗出暗红汁液，在寅时三刻凝成七道血符，正是当年被活埋的七位匠人怨气所化。那家主晨起更衣时，忽见中衣领口爬满《神农本草经》所载"木心蠹"，每只虫背上皆浮现冤死者生辰，庭中老槐无风自摇，飘落的叶子竟在空中组成《淮南子》所述"尸衣卦象"。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131101
+   Turn: 0/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 冀州刀匠
+   cosmic_element: wood
+
+那刀匠后人夜半惊醒，见案头祖传青铜刀匣中爬出七只青蝉，翅翼纹路恰似当年契约上的指纹。蝉鸣声中，东厢房梁忽现一匹木雕天马，马尾系着半截发黑的麻绳，绳结正是冀州大牢特有的"阴阳扣"。刀匠之女拾起蝉蜕时，掌心赫然显出七道血痕，与祠堂灵牌上的符咒一模一样。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131101
+   Turn: 1/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 邺城的织锦女子
+   cosmic_element: fire
+
+邺城的织锦女子夜半织机自鸣，赤色丝线无风自动，在锦缎上织出七只衔刀青蝉。她惊觉这图案与城南刀匠家传的青铜纹样如出一辙，忽闻窗外传来三声杜鹃啼血，其声凄厉似含冤魂。女子循声推窗，见月光下立着只赤睛玄鸟，羽翼间夹着片发黄的麻布，正是当年冀州牢狱死囚衣的残片。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131101
+   Turn: 2/6
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   character: 龙山附近的溪水精灵
+   cosmic_element: metal
+
+织锦女子拾起麻布残片，指尖触到暗红血迹时忽闻溪水呜咽，只见月光下溪水精灵化身为白衣童子，手持青铜水盂向她低语："西方金气肃杀，此乃百年前刀匠先祖为夺织锦秘方，以青铜蝉刀陷害汝家先人之证。"童子将水盂倾倒，盂中浮现龙山刑场旧景，冤魂化成的七只青蝉正绕着断头台飞舞。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131101
+   Turn: 3/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   event: 清漳河水一日三变色
+   place: 无极县古驿站
+
+织锦女子惊觉手中麻布渗出赤色水珠，抬头见清漳河水忽而朱砂翻涌忽而玄墨流转，驿站老槐树上七只青蝉齐声鸣泣。无极县古驿站的残碑突然渗出鲜血，显露出刀匠先祖与县令密谋时按下的血手印，碑下钻出一只衔着青铜蝉刀的白狐，眼含南离之火望向女子。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131101
+   Turn: 4/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 皇室御用铸铜师
+   cosmic_element: wood
+
+白狐将青铜蝉刀置于织锦女子掌心，刀身忽现"丙午"铭文，正是当年皇室铸铜师为天子铸剑时私藏的阳燧之精。女子指尖触及铭文刹那，东方天际骤起青龙云气，驿站残碑中浮出铸铜师虚影，其腰间玉带钩正与县令祖祠牌位下的密函纹样相合。青蝉振翅声中，白狐化作一缕南离真火钻入碑底，露出半截刻着"背主者诛"的断剑。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131101
+   Turn: 5/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   event: 邺城古井突然涌出美酒
+   place: 清漳河谷
+
+邺城古井忽涌琼浆，清漳河畔垂柳无风自动，惊得县令嫡孙跌碎手中玉卮。那酒香中隐现白狐虚影，引他望向祖祠方向，却见东方青龙云气缠绕牌位，显出血书"丙午"二字。  
+
+河底沉剑随波鸣响，惊起岸边青铜蝉群，化作青衣童子捧出密函残片。嫡孙指触血字刹那，井中酒液忽凝为冰，映出当年铸铜师被玉带钩勒毙之景。
+
+--- Turn 7 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131101
+   Turn: 6/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   intervention: 蚕神赐福养蚕女
+
+嫡孙惊觉手中残片化作赤色蚕茧，忽闻西窗传来机杼声，见一素衣女子以金梭织就"丙午"血字。庭前老桑无端结出朱果，落地竟成玉带钩形，正是当年凶器。此时祠堂梁上垂下白丝千缕，隐约现出蚕神法相，指点嫡孙将玉钩沉入漳河漩涡。

@@ -1,0 +1,93 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: moral_lesson
+Number of Turns: 5
+Cosmic Positions: wood → fire → metal
+Duration: 58.2 seconds
+Generated: 2025-05-26 14:21:57
+========================
+
+
+FOLKTALE STORY: 20250526_142047
+Started: 2025-05-26 14:20:59.444541
+----------------------------------------
+
+--- Opening ---
+
+那玉琮原是先父祭祀地祇所用，通体碧绿如春柳新芽，暗合东方木德生生之气。市集喧嚣中，逆子忽见玉琮表面浮现龟裂纹路，竟似老父额间皱纹，而编钟余韵里隐约传来《蓼莪》悲音，令他想起幼时父亲教他辨认青铜器上饕餮纹的模样。桃木杖点地三声，长老袖中飘出几片桑叶，在空中化作"孝悌忠信"四个篆字，每个字都流淌着青帝太昊的春晖。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_142047
+   Turn: 0/4
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 精通《易经》的学者
+   cosmic_element: wood
+
+那逆子竟将玉琮典当换酒，恰逢精通《易经》的学者路过当铺，见青玉表面浮现血丝般的赤纹，掐指一算惊觉此乃"木德泣血"之兆。次日县衙张贴皇榜，言东方青龙七宿异常摇动，圣天子下诏责问民间可有违逆人伦之举，违者当受"春刑"——以桃木钉贯手足三日。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_142047
+   Turn: 1/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 冀州刀匠
+   cosmic_element: fire
+
+冀州刀匠闻得皇榜，连夜熔了祖传青铜剑为钉，却见炉火中隐现朱雀振翅之形。他想起古籍有云"赤帝司夏主礼"，遂将桃木钉浸入雄黄酒，以应南方火德。不料此举触怒灶神，当夜铁砧无故崩裂，其母突发心疾卧榻不起。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_142047
+   Turn: 2/4
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   event: 渔阳三鼓声传千里
+   place: 野狐岭古道
+
+野狐岭上忽闻渔阳三鼓，其声穿云裂石，惊得古道旁白杨落叶纷飞如雪。刀匠跪于病榻前，方悟熔剑铸钉虽应皇命，却违了"百善孝为先"的天理，致使金气失衡冲克母体。此时西方天际白虹贯日，一羽白鹤衔着昆仑玉屑掠过茅檐，灶台灰烬中竟生出三株灵芝。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_142047
+   Turn: 3/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   intervention: 太行山神显灵于商旅
+
+刀匠连夜采下灵芝煎药时，忽见灶火化作赤龙盘旋，南窗透入的夏风里传来太行山神的低语："仁心可补金德之缺，然礼数未周，犹违天和。"次日商旅带来消息，说山神庙前青石自裂，现出先王祭器三件。匠人遂以赤绳系玉，按周礼方位将灵芝余烬埋于南山阳坡，此时天际雷声隐隐如鼓，却见母亲咳出郁结多年的黑血，化作玄鸟向西飞去。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_142047
+   Turn: 4/4
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 深谙河北地脉的风水师
+   cosmic_element: wood
+
+风水师夜观星象，见紫微垣东侧青气翻涌，知是刀匠孝行感天。他持青铜罗盘踏勘南山，发现灵芝灰烬处竟生出九茎嘉禾，叶脉间隐现先王祭文。此时朝廷使者持诏而至，宣示圣天子因梦获玄鸟衔玉，特赦天下违礼之罪，命重建太行山神庙以正人伦。

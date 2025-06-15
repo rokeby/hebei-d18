@@ -1,0 +1,121 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: moral_lesson
+Number of Turns: 7
+Cosmic Positions: wood → fire → metal
+Duration: 88.0 seconds
+Generated: 2025-05-26 14:20:45
+========================
+
+
+FOLKTALE STORY: 20250526_141908
+Started: 2025-05-26 14:19:17.643087
+----------------------------------------
+
+--- Opening ---
+
+那逆子跪在桑树下，忽见母亲生前所植的桑枝无风自动，青叶上浮现出《孝经》金字，每片叶子都化作一只衔着丝线的青鸟。井中六盏莲灯忽明忽暗，映得桑树影子在地上织成《礼记》中的"五刑章"，而树根处涌出汩汩清泉，水中沉浮着七枚刻有"温凊定省"的玉蚕。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_141908
+   Turn: 0/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   intervention: 青龙神将封印古井妖魔
+
+青鸟衔着的丝线忽然化作七道青光，缠绕在逆子手腕上形成北斗纹样。村中长老拄着青桐杖踏月而来，杖头悬挂的青铜铃无风自鸣，惊醒了井底沉睡的妖魔。东方天际传来龙吟，云气中隐约可见青龙神将的鳞爪，其尾扫过处桑叶上的金字皆化作镇魔符箓坠入井中。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_141908
+   Turn: 1/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   intervention: 易水女神护佑渔民
+
+青铜铃声中，易水女神踏浪而来，素手轻扬间将渔民们护在碧波屏障之后。那逆子见井中妖魔被符箓所困，竟贪心大起，妄图窃取镇魔金符换取富贵，北斗纹样顿时化作赤红锁链灼其手腕。长老叹息间以青桐杖划地为界，东方青龙鳞爪映着火光，在桑林投下天道昭昭的阴影。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_141908
+   Turn: 2/6
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   character: 邺城的织锦女子
+   cosmic_element: metal
+
+邺城的织锦女子夜观星象，见西方白虎星宿异动，便以五色丝线织就避祸云纹锦。那逆子腕间赤链忽化作金蛇游入锦中，将贪念尽数吐出成黑雾。长老抚须而叹，取青铜刀割锦三寸，云纹顿时化作白鹤衔着金符飞向昆仑。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_141908
+   Turn: 3/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 能预知天象的星官
+   cosmic_element: fire
+
+白鹤西去三日后，邺城突现赤云蔽日之象，星官夜观璇玑，见金蛇黑雾竟化作了南方荧惑犯太微。长老取龟甲灼之，裂纹显出"贪火焚智"之兆，急命人敲击青铜编钟以调和五行。此时那逆子双目渐染赤色，竟将家中传世玉琮盗出欲售于市。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_141908
+   Turn: 4/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: story_ending
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+
+那逆子怀揣玉琮行至市集，忽闻青铜编钟清音自宗庙传来，其声如春雷震动东方青龙。他低头见手中玉琮竟渗出殷红血泪，耳边响起亡父临终"智以守器"的教诲，顿时如遭雷殛跪倒在地。白发长老手持桃木杖踏青霞而至，以五行相生之理点化道："贪火焚心时，当思木德生发之性，玉琮本为礼地通神之器，岂可沦于商贾之手？"
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250526_141908
+   Turn: 5/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   object: 漆器酒具
+
+那逆子拭去玉琮血泪，忽见市集东首漆器摊上，一套青黑相间的酒具在春日下泛着幽光。长老以桃木杖轻叩地面，漆器竟自行奏出宫商之音，显露出"智"字铭文。逆子顿悟此乃父亲生前珍藏的祭器，当年为换钱财竟将其典当，如今器物通灵，在此等候迷途知返之人。
+
+--- Turn 7 ---
+
+📖 STORY STATUS:
+   ID: 20250526_141908
+   Turn: 6/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   object: 陶质谷仓模型
+
+那逆子捧起酒具时，摊主案头陶质谷仓模型突然涌出赤色粟米，在夏阳下如流火倾泻。长老以杖画地成离卦，谷仓腹中传出父亲训诫之声："仓廪实当知礼节，智愚之辨在取舍"。南风骤起，吹散满地粟米化为朱雀纹样，指引他前往宗祠方向。

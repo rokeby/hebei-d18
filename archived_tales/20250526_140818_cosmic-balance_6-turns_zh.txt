@@ -1,0 +1,106 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: cosmic_balance
+Number of Turns: 6
+Cosmic Positions: metal → water → fire
+Duration: 70.8 seconds
+Generated: 2025-05-26 14:09:36
+========================
+
+
+FOLKTALE STORY: 20250526_140818
+Started: 2025-05-26 14:08:25.782044
+----------------------------------------
+
+--- Opening ---
+
+昔日长安城西郊有座白虎祠，每逢秋分时节，祠中青铜祭器便自行鸣响，其声如金戈相击。老祭司观天象而知金气过盛，遂命童子将五色丝帛系于庭前桑树，以木德调和肃杀之气，使百姓免受刀兵之灾。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140818
+   Turn: 0/5
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   character: 护卫皇陵的将军
+   cosmic_element: metal
+
+皇陵将军夜巡时，忽见白虎祠前桑树一夜尽枯，枝干却泛着金属寒光。他拔出青铜剑欲斩枯枝，剑锋竟与树枝相击迸出火星，惊觉此乃金精化形作祟。此时西方天际太白星大亮，照得将军甲胄如雪，古籍有云此乃兵戈将起之兆。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140818
+   Turn: 1/5
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   object: 传国玉玺复制品
+
+将军俯身拾起从枯枝中坠落的青玉方印，只见其螭钮盘错，印文"受命于天"四字却泛着诡异的血光。此时北风骤起，卷起枯桑落叶化作黑蝶纷飞，玉玺复制品竟在将军掌中渗出寒露，浸透了他的虎符锦囊。古籍有云冬月现露乃阴盛阳衰之兆，而西方白虎七宿同时隐入乌云，预示人间将失天命庇佑。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140818
+   Turn: 2/5
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 巡行各地的方士
+   cosmic_element: fire
+
+一位巡行各地的方士途经此地，见田间稻穗竟生赤芒如火焰，而桑树却结出霜白的果实。他掐指推算，发现南方朱雀星宿的光芒被一团黑气缠绕，正是天机紊乱之象。方士从袖中取出五色丝线编织的罗盘，其指针疯狂旋转不定，指向将军府邸方向时突然断裂成三截。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140818
+   Turn: 3/5
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: story_ending
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+
+方士夜观天象，见北斗七星竟倒悬如垂泪，知是玄冥水德过盛冲克了火德。他循着断裂罗盘的指引来到将军府，发现庭院中一株千年古柏竟开出五色花，而树根处盘踞着一条通体漆黑的蛟龙，正吞吐着北方玄阴之气。古籍有云，此乃水精作祟，若不及时制止，来年必将江河泛滥、五谷不登。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140818
+   Turn: 4/5
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   intervention: 冀州土地神平息洪水
+
+方士急焚符箓，青烟直上九霄，惊动了昆仑山西王母座下白虎星君。那白虎踏云而来，爪按黑蛟七寸，却见蛟身化作玄冥真水渗入地下，霎时冀州大地震动，黄河水倒灌入城。土地公显圣于柏树之巅，手持黄帝所赐玉圭，引西方庚金之气镇住水脉，五色柏花纷纷化作白蝶飞向四方，所落之处洪水立退。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140818
+   Turn: 5/5
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   character: 铜马车的驭手
+   cosmic_element: metal
+
+铜马车自西方疾驰而来，驭手身披白虎纹战袍，手中青铜鞭竟生出五色柏枝。那柏枝触地之处，龟裂的田垄忽现甘泉，水中游动着玄冥真水所化的银鳞。古籍有云，此乃天授神驭，以金德化水厄，白虎星君遂降下庚金之气凝成这铜车马。

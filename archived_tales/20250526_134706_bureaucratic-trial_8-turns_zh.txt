@@ -1,0 +1,138 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: bureaucratic_trial
+Number of Turns: 8
+Cosmic Positions: fire → earth → water
+Duration: 92.5 seconds
+Generated: 2025-05-26 13:48:49
+========================
+
+
+FOLKTALE STORY: 20250526_134706
+Started: 2025-05-26 13:47:16.597939
+----------------------------------------
+
+--- Opening ---
+
+王邈见那族谱焦痕处竟渗出朱砂血泪，祠堂梁上悬挂的青铜明镜忽现城隍判官虚影，手持火签令箭，将三年前他焚林拓田时惊走的赤豹精魂召来作证。那精魂化作流火绕鼎三匝，每经一处焦痕便吐出枚带火星的算珠，落地即成《山海经》所载的祸斗幼兽，对着王家米仓发出婴啼般的讨债声。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134706
+   Turn: 0/7
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   object: 汉代铜镜
+
+铜镜忽射出一道赤光，照出王邈袖中暗藏的贪墨账册，那竹简上墨字竟化作黑蚁四散奔逃。此时镜面浮现紫微垣星图，北斗第七星摇光骤亮，昭示天庭已派纠察灵官携生死簿副卷下界。祠堂香炉无风自燃，青烟中显出一位戴獬豸冠的判官虚影，手持玉版记录着王邈克扣赈粮时饿殍的哭诉。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134706
+   Turn: 1/7
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   object: 青铜编钟
+
+祠堂梁上悬挂的青铜编钟无故自鸣，其声沉郁如黄泉呜咽。钟面饕餮纹中渗出暗红锈迹，竟凝成饿殍指爪形状，在青砖地上刻出王邈私吞官仓的路线图。此时判官玉版突然映出紫微垣投影，北斗杓柄所指处，一位身着玄黄朝服的饿鬼从地脉中浮现，其腹大如鼓却肋骨嶙峋，正是去年腊月冻毙在官道上的粮商魂魄。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134706
+   Turn: 2/7
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 精通《易经》的学者
+   cosmic_element: water
+
+饿鬼腹中忽现北斗七星倒影，每粒星芒皆映出官仓米斗被私换的时辰。此时堂外飘来一位鹤发童颜的老者，腰间玉琮叮当作响，原是精通河图洛书的隐士。他袖中铜钱自组六爻卦象，坎卦水纹里浮出王邈与粮商在子夜密谋的残影，卦象中黑水翻涌，显是天帝降罚之兆。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134706
+   Turn: 3/7
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 来自太行山的樵夫
+   cosmic_element: earth
+
+堂下忽闻松脂清香，那太行樵夫肩扛枯枝而入，枝上竟结着七枚晶莹露珠。老者以玉琮轻叩露珠，每滴水中皆现出粮商以黄土掩埋官印的罪证，露珠落地化作玄龟，龟甲裂纹恰似判官朱笔勾画的"斩"字。此时天穹传来闷雷，五方土地神从判官袍的黄色云纹里显形，齐声诵出天帝敕令。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134706
+   Turn: 4/7
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: plot_twist
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+
+赤色天幕忽现裂痕，南方火德星君驾朱雀而降，羽翼扇动间洒落七颗火星。每颗火星中皆映出粮商私吞赈灾粮时，饿殍眼中最后的景象。判官朱笔未落，那些亡魂已从火星中走出，以枯骨手指在生死簿上烙下赤红指印。此时北斗第七星突然大亮，照见粮商命格中本有的三寸紫气正被黑烟蚕食殆尽。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134706
+   Turn: 5/7
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   object: 长信宫灯
+
+南方火德星君袖中忽现一盏鎏金长信宫灯，灯芯燃着青紫火焰，照见粮商祖上三代积下的阴德如薄纱般飘散。天庭使者手持玉板踏云而至，灯影中显现出饿殍魂魄化作的火精，正环绕着那贪官发出凄厉鸣叫。北斗星光与灯焰交辉之际，生死簿上的朱砂字迹突然化作赤蛇，将粮商名讳一寸寸吞入腹中。
+
+--- Turn 7 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134706
+   Turn: 6/7
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   object: 青釉多足观
+
+贪官府中忽现青釉多足观，十二只陶足皆呈跪拜状，观内盛着黄土与五谷杂陈。天庭使者以玉笏轻叩器缘，观中黄土竟浮现饿殍面容，发出地脉深处的呜咽。此时西方飘来昆仑玄风，将观中五谷吹作金黄蝴蝶，每只蝶翼都映着生死簿残页的朱批。
+
+--- Turn 8 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134706
+   Turn: 7/7
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: wildcard
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 邺城的织锦女子
+   cosmic_element: water
+   object: 黑漆木耳杯
+   place: 阜平山中密林
+
+邺城织锦女子夜半惊醒，见窗前黑漆木耳杯中浮着半轮血月，杯中倒映着贪官在阜平密林被玄豹追逐的残影。她手中金梭忽化作判官笔，在未完成的锦缎上自行勾勒出贪官三魂被北阴黑绳捆缚的图样。此时窗外飘来带着冰凌的朔风，将锦缎上朱砂染就的罪状吹成赤色雪花，每一片都印着天庭御史的紫微印。

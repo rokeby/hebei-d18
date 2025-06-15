@@ -1,0 +1,121 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: origin_myth
+Number of Turns: 7
+Cosmic Positions: earth → metal → wood
+Duration: 90.6 seconds
+Generated: 2025-05-26 16:10:46
+========================
+
+
+FOLKTALE STORY: 20250526_160904
+Started: 2025-05-26 16:09:15.763833
+----------------------------------------
+
+--- Opening ---
+
+太古之时，天地未判，阴阳未分，浊气下沉为九幽黄泉，清气上浮作八荒苍穹，唯有中央一片混沌如鸡子，其中孕育着盘古之精。黄帝以戊己土德镇守中央，其息化为息壤，其血凝作玄黄，然混沌之气仍如巨蟒缠绕，时而上触天穹引发雷火，时而下探九泉搅动幽冥。直至昆仑山巅建木通天，黄帝取东方青龙木气为引，方使清浊二气各归其位，如磨盘般缓缓旋转不相混杂。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160904
+   Turn: 0/6
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 养蚕女工
+   cosmic_element: earth
+
+混沌初分之际，南方离火之气忽如赤龙腾空，灼烧天幕三日不息。黄帝命养蚕女工采昆仑玉露织就天罗，又以息壤塑五色陶釜，纳丙丁真火于其中。自此天火化入人间窑灶，每逢长夏便见桑林间缫丝女以文火煮茧，青烟袅袅上达天听。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160904
+   Turn: 1/6
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   character: 能预知天象的星官
+   cosmic_element: metal
+
+西方昆仑山巅忽现白气冲天，星官夜观天象，见白虎七宿光芒大盛。黄帝命人取首山之铜铸成十二面夔纹镜，由十二位贞人持镜引西方金精之气，镇住躁动的离火。自此秋日里常见白露凝霜，金风肃杀，万物收敛锋芒以待春阳。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160904
+   Turn: 2/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   object: 陶质谷仓模型
+
+东方青帝座下童子不慎打翻玉壶，壶中离火之精散落人间。神农氏见中原大旱，取五色土烧制陶质谷仓模型，内藏青龙木气以调和火性。自此田野间每逢春日，便有青烟自谷仓升起，化作甘霖滋润万物。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160904
+   Turn: 3/6
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   character: 赵国太守
+   cosmic_element: metal
+
+赵国太守夜观天象，见西方白虎星宿间有赤光浮动，知是离火之精未靖。遂命工匠采昆仑白玉铸九鼎，暗合金生水之理，以镇南方炎气。自此中原大地上，每逢秋日白露时节，山间便有清泉自石隙涌出，世人皆道是太守以金德调和水火之功。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160904
+   Turn: 4/6
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 巡行各地的方士
+   cosmic_element: earth
+
+那方士行至太行山下，见赤光自地脉升腾，知是离火之精未净。遂取腰间黄玉圭，按土克火之理，在五方设下祭坛，以中央黄土调和阴阳。自此山间每逢长夏，便有赤霞映照黄土，化作遍地金粟，农人皆称是方士以土德化火为祥瑞之功。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160904
+   Turn: 5/6
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: story_ending
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+
+那方士见金粟遍野，遂取黄土塑成五谷之形，置于中央祭坛。古籍有云，火精化育万物，其性暴烈难驯，唯有土德圣君能以中和之道降服。自此太行山麓每逢长夏黄昏，赤霞必与黄土相融，化作遍地嘉禾，农人皆言此乃黄帝土德遗泽，使离火之精永镇中州。
+
+--- Turn 7 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160904
+   Turn: 6/6
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   character: 邺城的织锦女子
+   cosmic_element: metal
+
+邺城有位织锦女子，夜夜见西方天幕现赤霞异象，遂取白丝为经、金线为纬，织就火凤翔天图。传说记载，此女乃祝融后裔，指尖所过处离火暗涌，却借秋金肃杀之气将烈焰化入经纬。自此太行以西的晚霞皆成凤羽纹样，世人方知火德虽烈，终需金气裁制方能成就天工。

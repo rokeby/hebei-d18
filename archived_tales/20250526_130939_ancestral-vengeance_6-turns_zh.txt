@@ -1,0 +1,111 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: ancestral_vengeance
+Number of Turns: 6
+Cosmic Positions: wood → fire → metal
+Duration: 70.6 seconds
+Generated: 2025-05-26 13:10:59
+========================
+
+
+FOLKTALE STORY: 20250526_130939
+Started: 2025-05-26 13:09:49.211178
+----------------------------------------
+
+--- Opening ---
+
+昔日有七位同窗结为异姓兄弟，在古柏下刻血为盟，立誓同生共死；不料其中一人贪图富贵，竟在酒中下毒，将六位兄弟害死于赴京途中，又将他们的心口玉契藏于祠堂梁木之中。每逢春分时节，那株饮过血酒的古柏便会渗出赤露，枝头栖息的青鸟衔来断发，在月夜编织成七条索命绳，而祠堂里的祖先牌位总在子时无故转向西方，仿佛在凝视着什么。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_130939
+   Turn: 0/5
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: plot_twist
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+
+那负心人的曾孙近来夜夜惊梦，总见六位青衣客立于床前，各执半截玉契，口中念着"物归原主"四字。每逢东方既白，祠堂供案上便凭空多出六枚青玉碎片，排列如北斗之形，而供香总在未燃尽时自行折断，香灰落地成"冤"字。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_130939
+   Turn: 1/5
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   object: 带有神兽图案的銅鍑
+
+那曾孙白日里忽见庭院南墙下现出一口青铜鍑，上铸饕餮纹样，腹中盛满赤色液体如血。是夜他梦见六位青衣客围鍑而立，以玉契碎片搅动血水，水中竟浮现其先祖当年冒名顶替、窃取他人功名的罪证。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_130939
+   Turn: 2/5
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   object: 铜镜银错仙人图
+
+那曾孙惊醒后，发现枕边竟多了一面铜镜，镜背银错着仙人乘云图。镜面映出的却不是他的面容，而是一位素衣儒生在西风萧瑟的秋日里含恨而终的景象。古籍有云，银属西方之金，主肃杀之气，这镜子每逢子时便渗出露珠，在月下显出"代代相报"四个血字。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_130939
+   Turn: 3/5
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   event: 蓟县长城砖石自行修复
+   place: 元氏玉石工坊
+
+蓟县长城忽现异象，断裂的砖石竟自行愈合如初，砖缝间渗出赤色血珠，在烈日下化作朱雀纹样。元氏玉石工坊的老匠人夜梦素衣儒生立于火中，手持断裂的玉琮诉说当年科场被人顶替功名的冤屈，醒来时发现工坊所有未雕琢的玉石都浮现出"血誓未消"的篆文。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_130939
+   Turn: 4/5
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   event: 元氏县铜镜预示年岁丰歉
+   place: 涿郡集市
+
+涿郡集市上，元氏后人元昭偶得一面古铜镜，镜面忽现青芒，照见当年科场舞弊的真相。夜深人静时，镜中竟浮现先祖牌位，血誓文字如藤蔓缠绕镜缘，与工坊玉石篆文同出一源。东方忽起青雾，集市老槐无风自动，落下千百片带血痕的槐叶，拼成当年顶替功名者的族谱。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250526_130939
+   Turn: 5/5
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   event: 卢龙渡口水下现古桥
+   place: 元氏玉石工坊
+
+元昭夜梦先祖立于卢龙渡口，但见水下青石古桥浮现，桥上人影憧憧皆着前朝衣冠。翌日循梦至渡口，果见河底隐现桥影，水中青鲤衔来一枚刻有"元"字的古玉印，正是当年被夺的功名信物。
+
+玉石工坊内，元昭将铜镜与玉印置于祭台，忽闻木梁发出龙吟之声，先祖牌位渗出朱砂泪痕。东方青气汇聚成旋，将当年舞弊者的族谱槐叶尽数卷入，化作一只青鸾衔着血誓飞向昆仑。

@@ -1,0 +1,109 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: quest
+Number of Turns: 6
+Cosmic Positions: earth → metal → wood
+Duration: 66.6 seconds
+Generated: 2025-05-26 16:20:19
+========================
+
+
+FOLKTALE STORY: 20250526_161902
+Started: 2025-05-26 16:19:12.651546
+----------------------------------------
+
+--- Opening ---
+
+公孙氏手捧玉琮立于长城残垣，忽见西方白虎七宿化作七道白光坠入关中沃野，大地深处传来沉闷震动。太卜夜观天象，见土德星暗淡无光，遂进言："地脉失衡，需寻大禹所埋息壤方能镇之。"公孙氏解下腰间黄玉组佩掷向空中，玉件化作九只土精在前引路，他踏着龟甲纹路向嵩山方向行去，身后只余一缕黄土随风飘散。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_161902
+   Turn: 0/5
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   intervention: 五行之火神焚烧妖邪
+
+公孙氏行至嵩山腹地，忽见九只土精纷纷钻入地下，前方裂开一道赤红地缝，喷涌出灼热岩浆。古籍有云，此乃祝融所设火狱试炼，唯有持纯阳之心者方能穿越。他取出腰间黄玉组佩残片，念动黄帝所传避火诀，顿时周身泛起土德金光，与地火相抗发出金石交鸣之声。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_161902
+   Turn: 1/5
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   intervention: 云中君降临雾锁太行
+
+公孙氏正与地火相持之际，忽闻云端传来清越玉磬之声，只见西方天际涌来千丈白雾，将整座太行山笼罩其中。雾中隐现云中君驾六龙之车，其袖袍挥动间降下寒露甘霖，与祝融之火相激化作金戈铁马之形。老者腰间黄玉忽生感应，竟自行飞入雾中，化作一柄玄圭落入神君掌中。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_161902
+   Turn: 2/5
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   object: 汉代彩绘陶俑
+
+白雾渐散时，公孙氏足下忽现青玉台阶蜿蜒向东，每级阶面皆浮刻着春木生发之象。台阶尽头立着九尊彩绘陶俑，其双目镶嵌的东夷美玉突然射出青光，化作青龙之形盘踞天穹。老者握紧云中君所赐玄圭，但见陶俑腹中隐现一方青铜罗盘，其上二十八宿正与东方苍龙七宿交相辉映。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_161902
+   Turn: 3/5
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   object: 冬青釉陶炉
+
+公孙氏正欲拾阶而下，忽闻西方传来虎啸之声，但见一只吊睛白额虎自秋林跃出，其爪踏过之处草木皆成霜白。老者将玄圭横于胸前，那冬青釉陶炉忽从袖中飞出，炉内三昧真火化作朱雀之形与白虎对峙。白虎眼中金光渐敛，竟低头让开通路，露出腹下一块刻着"勇"字的龟甲。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_161902
+   Turn: 4/5
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 皇室御用铸铜师
+   cosmic_element: earth
+
+公孙氏拾起龟甲，忽见黄土翻涌，一位身着赭黄深衣的铸铜师破土而出，手持青铜量天尺。铸铜师以尺击地，五色土应声而裂，露出地脉中沉睡的应龙骸骨，龙骨间嵌着一面夔纹铜镜。老者以玄圭轻叩镜面，镜中竟显出九重天阙景象，云间有位戴山玄玉冠的神君颔首微笑。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250526_161902
+   Turn: 5/5
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: wildcard
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 守护汉墓的武士
+   cosmic_element: earth
+   object: 长信宫灯
+   place: 望都陵园
+
+公孙氏执铜镜欲观天阙，忽闻地动山摇，望都陵园中跃出十二尊青铜武士，皆执金戈挡其去路。为首武士擎长信宫灯照来，灯焰中现出九幽黄泉幻象，公孙氏以镜迎之，镜灯相激迸发五彩霞光。霎时间武士化作陶俑，宫灯落地化为玄鸟，衔来黄帝阴符经三卷。

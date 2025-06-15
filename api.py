@@ -58,6 +58,11 @@ def generate_narrative_with_llm(prompt: str, language=Language.ENGLISH, system_p
                 - 融入宇宙和道德维度
                 - 保持神秘感和永恒性
                 - 引用真实的汉代文化和信仰
+
+                重要约束:
+                - 只写纯粹的故事内容，不要标题、注释或解释
+                - 避免直接引用古籍书名，改用"古籍有云"、"传说记载"等表达
+                - 每次回应只包含故事叙述段落
                 
                 请保持故事段落简洁(2-3句)但生动。
 
@@ -78,8 +83,8 @@ def generate_narrative_with_llm(prompt: str, language=Language.ENGLISH, system_p
                 - Uses classical Chinese narrative structures
                 - Incorporates cosmic and moral dimensions
                 - Maintains an air of mystery and timelessness
-                - References authentic Han dynasty culture and beliefs
-                
+                - References authentic Han dynasty culture and beliefs 
+                 
                 Keep each narrative turn concise (2-3 sentences) but evocative.]
                 """
             elif language == Language.BILINGUAL:

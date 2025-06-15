@@ -1,0 +1,107 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: quest
+Number of Turns: 6
+Cosmic Positions: earth → metal → wood
+Duration: 61.9 seconds
+Generated: 2025-05-26 16:19:00
+========================
+
+
+FOLKTALE STORY: 20250526_161749
+Started: 2025-05-26 16:17:58.632520
+----------------------------------------
+
+--- Opening ---
+
+公孙氏收起玉琮时，脚下黄土忽现龟裂纹路，显出一幅九州舆图。地脉深处传来黄帝战鼓的闷响，他腰间青铜剑自行出鞘三寸，剑穗上系着的五色土块簌簌掉落，化作黄巾力士在前引路。西方白虎七宿的煞气仍在云间游走，迫使这位守土者踏上寻找中央戊己土的征程。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_161749
+   Turn: 0/5
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   object: 铜银双翼神兽
+
+黄巾力士行至函谷关前，忽遇铜银双翼神兽拦路，其翼左铜右银暗合阴阳。守关校尉手持残缺竹简，声称此乃天帝赐予人间的镇关真文，须以公孙氏腰间祖传玉琮为质方得通行。青铜剑在鞘中铮鸣示警，五色土化作的力士却纷纷跪拜那竹简上若隐若现的黄帝云篆。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_161749
+   Turn: 1/5
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   character: 来自太行山的樵夫
+   cosmic_element: metal
+
+忽见太行山樵夫负薪而至，其腰间柴刀映着秋阳泛出白虎凶光。他掷下枯枝竟化作金戈铁马，指着残缺竹简厉声道："此乃吾族守护千年的黄帝阴符，岂容尔等假借天威！"公孙氏玉琮突然迸发青光，与樵夫额间浮现的北斗七星印记遥相呼应。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_161749
+   Turn: 2/5
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   object: 冬青釉陶炉
+
+那樵夫忽从怀中捧出一尊冬青釉陶炉，炉中青烟袅袅竟凝成上古云篆。公孙氏见状稽首泣拜，方知眼前樵夫实为东岳帝君座下青木使者，此番显化专为考验其守护天书之诚心。陶炉中烟篆忽化作青龙盘绕竹简，残缺文字次第补全，显露出"苍天示警，赤伏当兴"八字真言。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_161749
+   Turn: 3/5
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   object: 薄胎陶器
+
+公孙氏怀揣天书西归，途经函谷遇一老叟拦路索观竹简。那老叟手持白陶薄胎酒器，器身透光如月，倒映出天书文字竟成相反卦象。竹简忽发龙吟之声，揭破老叟乃西方白虎精魄所化，专试持书者是否会被金气所惑而背弃天命。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_161749
+   Turn: 4/5
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 冀州刀匠
+   cosmic_element: earth
+
+公孙氏行至冀州，忽见一赤面刀匠拦于道中，其腰间悬着七把青铜短刀，刀身隐现血纹。刀匠言天书乃黄帝所遗金文，需以人间烈火重锻其形，话音未落便掷出三把飞刀，刀锋过处土气翻涌化作黄沙障目。竹简中忽跃出玄龟虚影，负洛书而现，沙尘遇水即沉，显露出刀匠脚下踩着白虎精魄留下的金印。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250526_161749
+   Turn: 5/5
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   object: 用于祭祀的铜鼎
+
+公孙氏见那铜鼎自黄沙中浮现，鼎身铸有二十八宿纹样，鼎足深陷处渗出赤泉。刀匠见状忽跪地泣拜，原来此鼎乃其先祖为黄帝铸九鼎时私藏的一尊赝品，因沾染白虎凶气化为精怪。玄龟吐息间，鼎中升起一缕青烟，化作手持玉圭的周室太祝虚影，将刀匠腰间七刀尽数收入鼎中炼为铜汁。

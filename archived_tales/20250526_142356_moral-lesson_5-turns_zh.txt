@@ -1,0 +1,102 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: moral_lesson
+Number of Turns: 5
+Cosmic Positions: fire → earth → water
+Duration: 62.5 seconds
+Generated: 2025-05-26 14:25:07
+========================
+
+
+FOLKTALE STORY: 20250526_142356
+Started: 2025-05-26 14:24:05.023660
+----------------------------------------
+
+--- Opening ---
+
+长安城南的朱砂矿脉深处，赤色晶石随日晷投影流转，每逢正午便在地宫石壁上映出《孝经》篆文。守矿老吏发现晶石异动时，矿洞深处的赤玉麒麟像双目突然流下血泪，而太庙中供奉的青铜鼎内，先帝亲铸的"永孝"铭文竟无端消融了三笔。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_142356
+   Turn: 0/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: wildcard
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 汉代漆器工匠
+   cosmic_element: fire
+   object: 嵌松石熊手纹金饰牌
+   place: 燕赵故地
+
+燕赵故地的漆器名匠公孙衍，近日得了一块嵌松石熊手纹金饰牌，此物乃先父遗物，本该供奉于家庙。然盛夏火气旺盛之时，他竟将此牌熔了重铸酒器，只为讨好邯郸富商。  
+
+正午烈日下，金饰牌熔化的瞬间，作坊东墙悬挂的桃木八卦镜突然裂为两半。路过的白发儒生驻足叹息，指间《孝经》竹简无风自动，翻到"身体发肤受之父母"章句便再难移动。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_142356
+   Turn: 1/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   intervention: 邯郸城隍显圣除妖
+
+夜深时分，公孙衍梦见金饰牌上的熊纹化作黄巾力士，踏碎了他新铸的酒器。邯郸城隍庙的泥塑突然双目流赤，手中玉笏指向公孙氏作坊方向，惊得巡夜更夫连退三步跌坐在地。
+
+次日清晨，那位白发儒生竟立于熔炉残灰前，袖中落出三粒昆仑五色土，正落在八卦镜裂缝处。城中老巫觋见状伏地而拜，称此乃"土德镇器，天官示警"。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_142356
+   Turn: 2/4
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 邺城的织锦女子
+   cosmic_element: water
+
+邺城的织锦女子夜半惊醒，见织机上的玄色丝线自行交织成"不义"二字，窗外北风卷着黑雪拍打窗棂。她想起昨日拒养病母的恶行，忽见案上铜镜映出白发儒生手持《孝经》立于雪中，身后跟着三只衔玉的玄鸟。  
+
+五色土落处升起青烟，化作戴枷的熊纹精魄跪拜儒生，其声如碎玉："公孙氏熔礼器铸酒具，致使北方水德失衡"。织女闻得此言，手中金梭突然化作一条黑蛇，缠住她怠慢双亲的右腕。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_142356
+   Turn: 3/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 守护汉墓的武士
+   cosmic_element: earth
+
+黑蛇缠腕之际，地底忽传来金戈之声，一尊身披赤甲的武士破土而出，腰间悬着的青铜剑鞘渗出玄鸟纹样的血珠。武士以剑划地成卦，沉声道："黄泉之下，孝子骨殖生玉；人间之上，逆女血脉凝冰。"  
+
+织女腕间黑蛇闻声化为五色丝绦，每道颜色对应她亏欠母亲的五伦：青为晨省，赤为冬温，白为药饵，玄为丧祭，黄为墓田。铜镜中的儒生叹息挥袖，三只玄鸟衔来孝水，浇灌在她足下龟裂的土德方位上。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_142356
+   Turn: 4/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   object: 一面刻有仙鹤纹饰的铜镜
+
+铜镜忽现鹤纹流转，镜中儒生化作白须老者，手持赤玉圭指向南方。五色丝绦遇火而燃，织女掌心浮现"义"字烙印，灼痛中听见亡母在镜中轻吟："夏至阳盛，当以心火化寒冰。"玄鸟振翅时，青铜剑鞘里飞出一支丹羽，正落在她未扫的母坟方位。

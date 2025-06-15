@@ -1,0 +1,109 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: bureaucratic_trial
+Number of Turns: 6
+Cosmic Positions: wood → fire → metal
+Duration: 77.0 seconds
+Generated: 2025-05-26 13:43:42
+========================
+
+
+FOLKTALE STORY: 20250526_134214
+Started: 2025-05-26 13:42:25.709784
+----------------------------------------
+
+--- Opening ---
+
+庭院古槐忽生异象，树皮皲裂处渗出青碧汁液，竟在青石板上凝成《生死簿》字样。那仇家子嗣每夜惊梦，总见东方苍龙七宿倒悬于梁，七位青衣判官手持桃木简牍，将其生平罪孽刻入树心年轮。待到立春惊蛰，雷劈古槐，树中飞出七只木精化作《业镜》，照见其前世今生所欠七条人命，枝头青虫顿时化作锁魂铁链叮当作响。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134214
+   Turn: 0/5
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   object: 一面刻有仙鹤纹饰的铜镜
+
+那仇家子嗣慌乱中拾起铜镜，却见镜面映出月宫仙子冷眸如霜，原是当年他误伐月桂灵根时，惊动了广寒宫主。镜中忽现一樵夫身影，正是他前世误杀的采药人，此刻化作月宫仙吏前来作证。铜镜背面仙鹤纹饰突然振翅，衔来一枝带血桂枝，正是当年罪证。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134214
+   Turn: 1/5
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   object: 灰陶仓
+
+那灰陶仓忽自案几跃下，仓门洞开，涌出赤色烟霞，显出一卷斑驳竹简。月宫仙子素手轻拂，简上浮现当年樵夫采药时误触的朱雀封印，引得南岳真火焚山三日。此时仓中又飘出一缕青烟，化作那被焚山神残魂，向阎君诉说当年火劫因果。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134214
+   Turn: 2/5
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   event: 广宗县天降铁器
+   place: 白洋淀芦苇荡
+
+月宫仙子玉指轻点，那朱雀封印忽化作点点金芒散入西方白雾之中。恰此时广宗县上空传来金铁交鸣之声，数百件古旧兵器自云端坠落白洋淀，惊起芦苇丛中栖息的玄鹤。残魂见状忽显悲戚之色，原来当年樵夫所携药锄正是黄帝战蚩尤时遗落的金精所铸，触怒朱雀实乃天意使然。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134214
+   Turn: 3/5
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: wildcard
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 祭祀礼仪专家
+   cosmic_element: fire
+   object: 铜镜银错仙人图
+   place: 涿郡集市
+
+涿郡集市上，一位通晓祭祀礼仪的老者正擦拭铜镜银错仙人图，镜面忽现月宫仙子真容。集市东首卖卜者惊见铜镜映出白洋淀残魂，原是当年樵夫误触朱雀封印时，恰有玄鹤衔着金精碎片掠过，成为见证天机的他界之证。月宫仙子轻叹因果循环，铜镜中银错纹路渐化作赤色火纹，显露出樵夫无心之过实乃五行火德相冲所致。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134214
+   Turn: 4/5
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: story_ending
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+
+月宫仙子纤指轻点铜镜，镜中火纹忽化作青木之气升腾，显出一卷天书虚影。玄鹤所衔金精碎片坠入镜面，映出当年樵夫误触封印时，东方青龙七宿正隐于春云之后。古籍有云，木德当令时节犯火禁，其过可恕，仙子遂挥袖将此事记入天书末卷，镜面复归平静如初。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134214
+   Turn: 5/5
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   intervention: 天璇使者勘正乾坤
+
+天璇使者踏青霞而至，手持北斗玉衡，将樵夫命格中的木火相冲之厄化作一缕春风。月宫镜中忽现玄鹤衔来昆仑青玉，正是当年樵夫拾柴时无意救下的灵禽所化。仙子见因果已明，遂以月露调和阴阳，令东郊枯木逢春再生新枝。

@@ -1,0 +1,110 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: cosmic_balance
+Number of Turns: 6
+Cosmic Positions: fire → earth → water
+Duration: 76.3 seconds
+Generated: 2025-05-26 14:04:45
+========================
+
+
+FOLKTALE STORY: 20250526_140319
+Started: 2025-05-26 14:03:29.304536
+----------------------------------------
+
+--- Opening ---
+
+昔日昆仑山麓有株赤精梧桐，每逢朔望便吞吐日月精华，其根须通达九幽黄泉，枝叶抚慰二十八宿。山神常以雷火为墨，在树皮上记录人间善恶，直至王邈曾祖为造宫殿伐断此木，树心淌出的赤浆三日不凝，化作七十二只火鸦盘桓不去。自此南方离火之位渐衰，冬雷夏霜频现，阴阳二气在王家宅院上空纠缠如沸鼎。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140319
+   Turn: 0/5
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: wildcard
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 守护青铜器的器灵
+   cosmic_element: fire
+   object: 传国玉玺复制品
+   place: 太行山云雾中
+
+太行山云雾深处，一尊青铜鼎突然发出龙吟之声，鼎身饕餮纹中浮现出器灵身影。这守护者眼见南方赤气渐弱，便取出藏于鼎腹的传国玉玺复制品，只见玉玺上雕刻的"受命于天"四字正渗出丝丝血痕。此时北斗七星突然偏离常轨，紫微垣中划过一道赤色彗星，惊得山中百兽皆朝北方跪伏。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140319
+   Turn: 1/5
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 龙山附近的溪水精灵
+   cosmic_element: earth
+
+龙山溪水忽现异象，清澈水流竟化作浑浊黄汤，水中精灵青娥惊见自己倒影中浮现土德衰败之相。她循着地脉探查，发现山阴处有巫者以黑犬血污了社稷坛，致使中央土气外泄。此时天穹裂开一道缝隙，五色陨石如泪坠落，惊得林中玄鸟纷纷衔来昆仑玉屑试图补天。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140319
+   Turn: 2/5
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 守护汉墓的武士
+   cosmic_element: water
+
+青娥急奔至汉墓求援，却见守墓武士青铜甲胄上凝结着诡异冰霜，原是北方水德过盛反克中央土气。武士手中长戈忽作龙吟，指向北方夜空，但见北斗七星竟偏离常位，摇摇欲坠如将倾之斗。地底传来编钟自鸣之声，十二律吕皆乱，惊得墓中玉衣金缕无风自动，似在应和这天人失序之象。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140319
+   Turn: 3/5
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: story_ending
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+
+青娥见墓中黄玉圭忽生裂纹，土德精华化作缕缕黄烟散入夜空，方悟因朝廷久废郊祀之礼，致使五行之气不得其序。此时北方玄武七宿竟与南方朱雀错位相冲，天幕现出赤黑交杂的凶兆，四野草木皆无故枯萎。忽闻昆仑西王母使青鸟传讯，言若不重铸九鼎以镇四方，则天地将复归混沌未开之状。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140319
+   Turn: 4/5
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 赵国太守
+   cosmic_element: fire
+
+赵国太守夜观星象，见朱雀七宿赤芒大盛，竟与玄武黑气相绞如斗，急召太卜问卦。太卜以龟甲占之，见裂纹呈离坎相克之象，进言曰："此乃火德过亢而水气郁结，当铸赤铜朱雀置于南郊，以泄炎精。"太守遂命开武库取前朝所遗九鼎残片，熔以祭天赤金，然炉火三日不燃，工匠皆见鼎中隐有黄龙悲吟。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140319
+   Turn: 5/5
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: wildcard
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 远近闻名的石匠
+   cosmic_element: fire
+   object: 青釉多足观
+   place: 新乐青铜矿场
+
+太守闻报新乐矿场忽现青玉矿脉，急遣人寻访远近闻名的石匠前来开凿。那石匠夜宿矿洞时，见青釉多足砚自行移动，在岩壁上刻出五行相生图纹，次日果然掘得一方通体莹润的苍玉。当夜天象骤变，朱雀七宿与玄武星宫之间现出黄道祥云，九鼎残片竟在炉中自燃，火舌化作赤凤振翅三匝。

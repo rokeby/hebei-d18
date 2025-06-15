@@ -1,0 +1,93 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: origin_myth
+Number of Turns: 5
+Cosmic Positions: fire → earth → water
+Duration: 54.5 seconds
+Generated: 2025-05-26 16:04:42
+========================
+
+
+FOLKTALE STORY: 20250526_160340
+Started: 2025-05-26 16:03:48.053985
+----------------------------------------
+
+--- Opening ---
+
+太古之初，天地未判，阴阳未分，唯有一团赤色混沌如鸡子悬于虚空，其内孕育着先天火精。忽有一日，混沌中现出兄妹二神，兄执青铜矩尺丈量四方，妹捧赤玉圭表测度八极，他们呼吸间喷吐的炎气在虚空中凝结成朱砂般的星斗。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160340
+   Turn: 0/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   object: 嵌松石熊手纹金饰牌
+
+兄妹二神见星斗流转无序，遂取混沌中沉淀的玄黄土精，兄长以矩尺塑成四方大地，妹妹将嵌松石熊手纹金饰牌埋入地心。金饰牌上熊掌按五行方位排列，每当熊掌拍击大地，土气便随阴阳消长而起伏，自此草木荣枯有序，四时更替始成。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160340
+   Turn: 1/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 拓片技艺精湛的工匠
+   cosmic_element: earth
+
+那工匠取昆仑玄玉为材，以青铜凿刻出十二枚节气拓片。每当金饰牌上熊掌拍击大地，玉片便随土气升沉依次亮起，先民观其明灭而知寒暑。黄帝南巡时见此神物，命工匠铸鼎铭文，将四时八节之理传于九州。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160340
+   Turn: 2/4
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 渔阳鼓手
+   cosmic_element: water
+
+渔阳鼓手夜观星象，见北斗七星隐于黑水之渊，知是阴气盛极将转。他取黄土捏作十二时辰人偶，以鼓声为引，使人偶随月相盈亏而舞动。  
+
+北方玄冥之神见此大怒，掀起黑浪欲吞没人偶，黄帝所铸青铜鼎忽鸣，鼎中息壤化作长堤护住岸边。阴阳二气在冬夜交锋，冰晶与火星在浪尖相撞，渔阳鼓手的鼓点竟使冻结的河水开始松动。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160340
+   Turn: 3/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   object: 青釉多足观
+
+就在黑浪与长堤相持之际，黄河古道深处传来一声苍老叹息，初祖伏羲手持青釉多足砚自九泉升起。那砚台十二足踏地支方位，砚池中沉淀的黄土竟随月相流转而变幻色泽，冬至子时泛玄冥之黑，夏至午时现炎帝之赤。砚中墨汁随节气更替自然凝结消散，从此人间便有了四时轮转之象。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160340
+   Turn: 4/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: plot_twist
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+
+伏羲将砚中黄土撒向四方，那土遇风化为十二只玄鸟，每只衔着一枚地支符印飞往八方。其中赤色玄鸟停驻南方，口中符印化作离火之精，从此夏日便有骄阳似火；青色玄鸟栖于东方，符印生出震雷之气，遂使春雷惊蛰万物生发。黄土玄鸟盘旋中央，其印化为坤德之象，故大地承载四时而生生不息。

@@ -1,0 +1,107 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: transformation
+Number of Turns: 6
+Cosmic Positions: water → wood → earth
+Duration: 61.0 seconds
+Generated: 2025-05-26 16:44:13
+========================
+
+
+FOLKTALE STORY: 20250526_164302
+Started: 2025-05-26 16:43:12.286739
+----------------------------------------
+
+--- Opening ---
+
+洛阳城西有个卖药的少年郎，每日背着青囊沿渭水叫卖，囊中总装着几味从终南山采来的奇药。这日暮色四合时，他在河畔浣洗药锄，忽见水中浮起一枚赤色丹丸，随波流转竟不沉没，细看时丹上密布着龟甲纹路，隐隐有青气缭绕。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_164302
+   Turn: 0/5
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   intervention: 五行之火神焚烧妖邪
+
+少年郎拾起丹丸的刹那，渭水北岸忽现赤光冲天，原是荧惑星与辰星相会于玄武七宿。那丹丸在他掌心化作流火，顺经脉游走周身，竟使他双足生出鳞爪，背脊弓曲如龟。此时天际传来祝融氏啸声，一道烈焰自云间劈下，将缠绕少年的黑水秽气焚作青烟。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_164302
+   Turn: 1/5
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   intervention: 赵王陵墓守护灵现身
+
+少年郎鳞爪方生，忽见渭水畔青雾升腾，一尊玄甲武士自赵王陵阙破土而出，双目如炬映着星辉。那守护灵挥动青铜钺，将辰星余辉与少年体内流火勾连成网，使其龟背浮现先天八卦纹理。古籍有云，此乃阴阳交泰之象，然少年每得一分神力，鳞爪便向脖颈蔓延三分，恰应了"天道盈亏"之理。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_164302
+   Turn: 2/5
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   object: 汉代铜镜蚕桑纹饰
+
+少年踉跄跌入渭水，波光中忽现一面蚕桑纹铜镜随浪浮沉。镜面映出他脖颈鳞片竟与天上紫微垣星图相连，每片龙鳞都对应着太一神君丹炉里的一粒金丹。此时西方昆仑传来钟鸣，那铜镜背面桑叶纹路突然化作活蚕，吐出金丝将他缠成茧蛹，水中倒影已半是龙形半是人面。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_164302
+   Turn: 3/5
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   object: 一面刻有仙鹤纹饰的铜镜
+
+金茧随渭水东流，忽遇青帝使者驾玄鹤而至。使者抛下刻有仙鹤纹饰的铜镜，镜光所照之处茧丝尽化碧烟，少年左臂已生龙爪，右脸却浮现丹炉火纹。此时东方苍龙七宿大亮，镜中仙鹤竟衔来昆仑玉实，其声如雷："吞此实者当承木德，然春荣秋枯，永失人形"。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_164302
+   Turn: 4/5
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   intervention: 青龙神将封印古井妖魔
+
+少年正欲吞玉实，忽闻北方传来龙吟震天。渭水逆流成冰，青龙神将踏玄冰而至，其爪中镇压着一口喷涌黑雾的古井，井中妖魔嘶吼竟与少年右脸火纹相呼应。古籍有云，此乃阴阳相冲之兆，少年体内木德将生之际，却逢北方水德神将降妖，五行相激恐致形神俱灭。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250526_164302
+   Turn: 5/5
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 恒山上的隐士
+   cosmic_element: water
+
+少年右脸火纹骤然化作赤鳞，周身青气翻涌竟与北方玄冰相抗。恒山隐士踏雪而来，袖中飞出九转金丹没入少年口中，霎时星移斗转，少年身形在青龙玄冰与井中黑雾间扭曲变幻，终化作一只青鳞赤目的龙驹踏破冰河。古籍有云，此乃冬至子时阴阳交泰之象，凡躯承受不住天地灵炁，故以兽形存其神魂。

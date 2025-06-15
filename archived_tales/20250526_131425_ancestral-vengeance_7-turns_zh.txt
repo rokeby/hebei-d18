@@ -1,0 +1,123 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: ancestral_vengeance
+Number of Turns: 7
+Cosmic Positions: wood → fire → metal
+Duration: 82.5 seconds
+Generated: 2025-05-26 13:15:58
+========================
+
+
+FOLKTALE STORY: 20250526_131425
+Started: 2025-05-26 13:14:35.663954
+----------------------------------------
+
+--- Opening ---
+
+古宅祠堂的柏木灵牌突然渗出朱砂泪痕，那正是三年前被活埋的七位匠人心头血所化。夜半时分，庭院老槐无风自摇，树根下爬出七条青鳞木虬，每只口中皆衔着半截断裂的玉带钩——这正是当年仇家为掩盖杀匠取玉的罪证，生生折断的契约信物。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131425
+   Turn: 0/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   event: 河北四境同时出现五色云
+   place: 赵王宫殿遗址
+
+河北四境忽现五色祥云，青气自东方直贯赵王旧宫遗址，惊动新任太守夜梦七位青衣匠人跪诉冤情。那太守本是太史令门生，晨起便见案头铜镜无故映出断裂玉钩之影，镜面水汽凝成"木德当伸"四字。恰逢春分时节，东方苍龙七宿在宫阙残垣上空排成衔尾之阵，地下隐隐传来柏木开裂之声。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131425
+   Turn: 1/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   object: 铜镂雕香熏
+
+新任太守夜不能寐，案头铜镂雕香熏忽自燃起青烟，烟气中浮现七张黥面匠人的愁容。南窗无风自动，香灰在案几上聚成"金克木"三字，太守惊觉此乃先师所言"夏火熔金"之凶兆。翌日巡城，见城南古柏尽数枯死，树心皆渗出赤色汁液，状若泣血。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131425
+   Turn: 2/6
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   character: 邺城的织锦女子
+   cosmic_element: metal
+
+太守夜梦七名黥面匠人立于织机旁，织锦女子素手翻飞间，金线竟化作锁链缠绕其身。晨起查案卷，方知城南曾有位擅织云纹锦的巧手女子，因被诬窃取官库金线而投井自尽。是夜西风骤起，井中传来金梭击水之声，每响一声，府衙梁上便落下一缕银丝。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131425
+   Turn: 3/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: plot_twist
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+
+太守案前烛火忽明忽暗，南窗飘入的赤色槐花竟在青石板上排成"冤"字。他循着古籍记载取来青铜觚祭井，却见水面浮现女子面容，七道黥痕如北斗悬于其额。当夜子时，城南老桑无火自燃，火光中隐约可见织机转动，每转一圈，太守印绶上的朱砂便褪色一分。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131425
+   Turn: 4/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 深谙河北地脉的风水师
+   cosmic_element: wood
+
+太守夜梦青鸾衔状纸入帐，惊醒时枕畔竟真落着三片带血桑叶。翌日有风水师自邯郸来，言城东地脉被怨气所伤，其手中罗盘金针直指太守府旧井。是夜井中浮起七枚玉琮，每枚皆刻着当年被黥面女子的生辰八字。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131425
+   Turn: 5/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   object: 用于祭祀的铜鼎
+
+太守府中那尊祭祀用的青铜鼎忽生异变，鼎腹内壁渗出青黑色汁液，竟浮现出当年被诬女子的面容。府中老吏夜见鼎中升起缕缕青烟，化作七只青鸟向东飞去，次日邯郸风水师暴毙于驿馆，手中紧握着一枚刻有太守生辰的玉琮。古籍有云，铜鼎乃通灵之物，今春木气旺盛，正应了东方青龙主刑杀之象。
+
+--- Turn 7 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131425
+   Turn: 6/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   event: 冀州出土千年不腐谷种
+   place: 恒山祭天台
+
+冀州刺史夜梦青鸟衔谷，醒时案头竟现三粒朱砂染就的黍粒，恰与恒山祭天台新掘出的千年谷种同源。是夜阴风穿堂，那被诬女子的幽魂现于铜镜，以赤绳系住刺史手腕，镜面浮现太守私改粮仓账簿的罪证。翌日恒山雷火劈中南郊古柏，树心裂处显出血字谶文，刺史方知此案牵动天地火德，遂开仓放粮以平冤魂之怒。

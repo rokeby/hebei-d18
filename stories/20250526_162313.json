@@ -1,0 +1,71 @@
+{
+  "id": "20250526_162313",
+  "completed_at": "2025-05-26T16:23:58.556618",
+  "final_narrative": [
+    {
+      "turn": 0,
+      "roll": null,
+      "action_type": "opening",
+      "elements": {
+        "cosmic_element": "earth"
+      },
+      "narrative": "",
+      "narrative_zh": "公孙氏捧着那枚赤玉环，只觉掌心传来大地脉动般的温热，忽见玉环上浮现出二十八宿的星图。正当他惊疑之际，脚下黄土突然化作流沙，将他卷入地脉深处，耳边只余西王母缥缈的告诫：\"持此玉符寻访九州地脉，待土德圆满之时，方能解白虎之厄。\"",
+      "token_usage": {
+        "prompt_tokens": 493,
+        "completion_tokens": 85,
+        "total_tokens": 578
+      }
+    },
+    {
+      "turn": 0,
+      "roll": 16,
+      "action_type": "plot_twist",
+      "elements": {
+        "cosmic_element": "earth"
+      },
+      "narrative": "",
+      "narrative_zh": "公孙氏在幽暗地脉中坠落，忽见前方黄沙凝聚成巨灵神将，手持土德之戈拦住去路。他紧握赤玉环，星图忽明忽暗，照见神将眉心嵌着半片龟甲，上面刻着早已失传的《地母真形图》。传说记载，唯有诵出龟甲上残缺的禹步口诀，方能令土灵让道，继续追寻九州地脉的奥秘。",
+      "token_usage": {
+        "prompt_tokens": 606,
+        "completion_tokens": 101,
+        "total_tokens": 707
+      }
+    },
+    {
+      "turn": 1,
+      "roll": 18,
+      "action_type": "story_ending",
+      "elements": {
+        "cosmic_element": "metal"
+      },
+      "narrative": "",
+      "narrative_zh": "公孙氏凝视龟甲上残缺的符文，忽闻地脉深处传来金戈交鸣之声，原是西方白虎七宿显化，化作七道白芒环绕神将。他咬破指尖以血补全龟甲裂纹，顿时地动山摇，土德之戈化作秋霜覆盖的青铜简册，记载着黄帝战蚩尤时失传的《金天兵法》。神将轰然崩解为金沙，露出通往昆仑墟的玉阶，每级台阶都浮动着星斗运行的轨迹。",
+      "token_usage": {
+        "prompt_tokens": 616,
+        "completion_tokens": 114,
+        "total_tokens": 730
+      }
+    }
+  ],
+  "cosmic_position": "metal",
+  "total_turns": 2,
+  "max_turns": 8,
+  "language": "zh",
+  "story_arc": {
+    "type": "quest",
+    "stages": [
+      "departure",
+      "challenge",
+      "revelation",
+      "return",
+      "transformation"
+    ],
+    "theme_elements": {
+      "obstacle_type": "natural",
+      "virtue_tested": "courage",
+      "quest_object": "lost knowledge"
+    },
+    "current_stage": "challenge"
+  }
+}

@@ -1,0 +1,151 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: origin_myth
+Number of Turns: 8
+Cosmic Positions: earth → metal → wood
+Duration: 110.5 seconds
+Generated: 2025-05-26 16:12:48
+========================
+
+
+FOLKTALE STORY: 20250526_161048
+Started: 2025-05-26 16:10:57.960676
+----------------------------------------
+
+--- Opening ---
+
+太古之时，天地混沌如鸡子，阴阳未分，浊气沉而为地，清气浮而为天，然二者相薄，常有雷霆激荡。有神人兄妹居于昆仑之巅，见下界生灵困于天地相争之苦，遂取息壤为引，以黄土塑九鼎镇于八方，又立中央土坛调和阴阳，自此天地始安，四时有序。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_161048
+   Turn: 0/7
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   intervention: 紫微星君下降人间
+
+紫微星君见人间虽得安定，却无计时之法，遂取西方精金铸成十二金乌，置于扶桑神木之上。每日由金乌轮流巡天，其翅展则昼，其翼收则夜，自此人间始知昼夜更替。  
+
+兄妹二人又采五色金石，于中央土坛上铸成浑天仪，其枢轴转动间，金气流转，星宿方位皆现其中。古籍有云，此乃紫微星君授人以观天之术，使黎民得窥天道运行之妙。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_161048
+   Turn: 1/7
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   event: 中山国遗址现神秘铭文
+   place: 易水湖渔村
+
+易水湖畔渔人夜捕，忽见湖底金光浮动，次日水退现出青铜古鼎，鼎身铭文如星斗排列。村中老巫以白茅占卜，言此乃黄帝时代金德圣王所遗，铭文记载着天象异变之秘。
+
+兄妹闻讯前来，见铭文与浑天仪相合，遂以西方白虎之金气点化铭文。霎时铭文升空化作金色星轨，与十二金乌交相辉映，自此人间始知四季星移之道。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_161048
+   Turn: 2/7
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   intervention: 长城将军显灵守关隘
+
+金乌星轨现世之际，北方黑气骤起，长城烽燧无故自燃。守关士卒见一青甲将军虚影立于雉堞，手持青铜钺指向紫微垣方向。古籍有载，此乃秦时蒙恬将军英魂显化，感应金德之气而醒，为阻幽冥阴兵犯界。  
+
+兄妹二人登临关隘，见将军英魂与星轨共鸣，青铜钺上北斗纹饰竟与鼎铭相合。霎时东方青龙七宿青光暴涨，化作七道青虹贯入长城砖石，自此边关雄隘得四象星力加持，寒暑不侵。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_161048
+   Turn: 3/7
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   character: 养蚕女工
+   cosmic_element: metal
+
+金乌西坠之时，关内忽闻桑林沙沙作响，原是百名养蚕女工素衣翩跹而至，手中银梭皆泛太白精光。她们以素丝结网，将星辉与金气织成天罗，网眼间流转着秋分白露的肃杀之气。
+
+蒙恬英魂见状挥钺指天，青铜器上饕餮纹竟吞噬蚕丝金光，化作万千金甲兵俑列阵云间。西方昆仑忽现白帝虚影，抛下素练般的银河横贯苍穹，与长城星轨连成绝地天通的屏障。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_161048
+   Turn: 4/7
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: story_ending
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+
+银梭织就的天网忽现裂痕，西方白帝长啸一声，昆仑山巅飞起九柄玉钺，化作白虎七宿直扑中土。黄帝后裔公孙氏踏黄云而起，腰间青铜剑鸣动如雷，剑身铭文"承天景命"四字迸发赤光，与西方金气在空中相击，震落满天星斗如雨。
+
+霎时间，天地间金戈交鸣之声骤歇，坠落的星辰在长城垛口化作玄黄之炁。公孙氏取腰间玉琮承接星辉，只见琮壁浮现河图纹样，四方金气尽数归入中央厚土，终成"金生丽水，玉出昆冈"的天地至理。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250526_161048
+   Turn: 5/7
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   object: 玉制礼器
+
+公孙氏将玉琮高举过头，琮中星辉忽化作九条金龙盘旋而下，衔住西方白虎獠牙。此时黄帝遗留的玄圭自云中显现，圭上"土德镇方"四字与玉琮辉映，金气遂凝为甘露坠入中原五岳。  
+
+古籍有载，此乃天降"金精玉液"，自此凡间帝王皆以苍璧礼天、黄琮祭地。那玉琮内圆外方之形，暗合阴阳交泰之象，白虎七宿亦永镇西方，不再犯中土分毫。
+
+--- Turn 7 ---
+
+📖 STORY STATUS:
+   ID: 20250526_161048
+   Turn: 6/7
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   intervention: 天璇使者勘正乾坤
+
+天璇使者踏着北斗星光降临，手持青铜矩尺丈量天地。其尺上刻二十八宿分野，每量一寸，西方金气便凝作霜华，将偏移的星辰推回正道。  
+
+使者袖中飞出七枚白玉圭，化作北斗杓柄指向昆仑。自此秋分时节，白虎七宿必随斗柄西指，人间方得五谷丰登，此乃"璇玑玉衡以齐七政"之始。
+
+--- Turn 8 ---
+
+📖 STORY STATUS:
+   ID: 20250526_161048
+   Turn: 7/7
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 汉代漆器工匠
+   cosmic_element: wood
+
+那漆器工匠夜观星象，见北斗柄指西方，便取东方青龙木心为胎，以西方白虎金粉为饰。他手中朱笔勾勒时，忽有金风自昆仑来，将漆器上白虎纹样吹得熠熠生辉。自此人间漆器必以金木相生之法制作，方能得天地灵气，不腐不蠹。

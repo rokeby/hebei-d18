@@ -1,0 +1,94 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: origin_myth
+Number of Turns: 5
+Cosmic Positions: fire → earth → water
+Duration: 57.9 seconds
+Generated: 2025-05-26 16:03:38
+========================
+
+
+FOLKTALE STORY: 20250526_160231
+Started: 2025-05-26 16:02:40.391716
+----------------------------------------
+
+--- Opening ---
+
+太古之时，天地未判，混沌如鸡子，中有赤色精气盘旋如火龙，昼夜不息。南方有祝融氏执朱砂笔点破鸿蒙，火精化生朱雀振翅，其羽翼所拂之处，青铜熔作赤水，凝结成未央宫首块赤砖，砖纹隐现先天离卦之象。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160231
+   Turn: 0/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   intervention: 冀州刀神授艺于匠人
+
+朱雀振翅南飞之际，冀州有刀神自赤霄降世，其形如青铜熔铸，双目含太白金星之芒。他将天火淬炼之术授予人间匠人，以离火锻金精，铸出首柄七星环首刀，刀纹暗合二十八宿轨迹。自此凡铸器者必先祭南离，青铜礼器始现朱雀纹饰，映照天象于人间。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160231
+   Turn: 1/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 考察古墓的博士
+   cosmic_element: earth
+
+那考察古墓的博士夜观星象，忽见紫微垣中坠下一道金芒，落入黄帝陵西侧的青铜祭坛。翌日掘土三尺，得见一玄铁陨星，其纹如龙蛇盘绕，暗合周天星斗之数。古籍有云，此乃太初之金精，昔年黄帝采首山之铜时，曾见其自九天而降，遂铸轩辕剑以定四方。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160231
+   Turn: 2/4
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   object: 铜镜银错仙人图
+
+那玄铁陨星出土三日后，祭坛西侧忽现一铜镜，镜背银错仙人御龙图，镜面却映不出人影，只显周天星斗流转。博士以五行之水涤镜，黑水触镜即化作玄雾升腾，雾中隐现黄帝披发仗剑之形。古籍有云，此镜乃太阴之精所铸，可照三界阴阳之变，昔年黄帝战蚩尤时曾悬于军门以辨妖氛。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160231
+   Turn: 3/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: wildcard
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 精通卜卦的祭司
+   cosmic_element: earth
+   object: 玉制礼器
+   place: 蓟县长城烽火台
+
+蓟县长城烽火台上，精通卜卦的祭司捧出青玉圭璧，忽见东方天幕裂开一道金痕。黄帝虚影自铜镜中踏玄雾而出，手持陨星所化玄铁剑，剑锋所指处，星斗皆随其轨迹流转。古籍有载，此乃太初金精显化，自此人间始知日月星辰运行有序，不复混沌无章。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_160231
+   Turn: 4/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   object: 铜人俑
+
+黄帝虚影挥动玄铁剑时，剑锋溅落的星火坠入人间，化作十二尊赤铜人俑立于四方。这些铜俑双目嵌着昆仑玉，每逢夏至子时便齐诵天机，其声如金玉相击。自此南天朱雀七宿随铜俑吟诵显形，世人方知赤帝执掌夏令乃承金精而生，火德之中暗藏太白锋芒。

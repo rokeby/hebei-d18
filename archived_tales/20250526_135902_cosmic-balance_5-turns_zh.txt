@@ -1,0 +1,97 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: cosmic_balance
+Number of Turns: 5
+Cosmic Positions: fire → earth → water
+Duration: 50.8 seconds
+Generated: 2025-05-26 14:00:02
+========================
+
+
+FOLKTALE STORY: 20250526_135902
+Started: 2025-05-26 13:59:11.577218
+----------------------------------------
+
+--- Opening ---
+
+传说那株千年古木原是南方火精所化，根须深入九幽地脉，枝叶承接离火精华，每逢朔望便吞吐赤霞，为方圆百里调和阴阳。山神曾以雷纹在树心刻下契约，令其镇守地火不使妄动，谁知王家伐木时斧刃带煞，竟斩断了这天地间的火德纽带。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_135902
+   Turn: 0/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: wildcard
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 拓片技艺精湛的工匠
+   cosmic_element: fire
+   object: 汉代铜镜蚕桑纹饰
+   place: 新乐青铜矿场
+
+那株古木断裂的第三日，新乐矿场的铜镜工匠发现镜面蚕桑纹竟自行扭曲，原本温润的赤铜忽而泛出青黑之色。天象官夜观星宿，见南天朱雀七宿偏离常位，炎夏时节却降下冰雹，砸碎了矿场新采的青铜原石。一位专司拓片的老匠人梦中得见火精化形，泣诉其精魄被困于断裂的树根，致使地火失衡上涌。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_135902
+   Turn: 1/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   intervention: 药王携灵草救治瘟疫
+
+冰雹过后，长安城郊忽起无名疫症，病者面色青黄如铜锈，医者皆束手无策。药王孙君携昆仑灵芝踏云而至，其药锄所过之处，土中渗出赤泉，与灵芝露相融成琥珀色药浆。古籍有云，此乃地脉淤塞所致，土德过盛反伤肝木，故显青黄之症。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_135902
+   Turn: 2/4
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: wildcard
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 守护汉墓的武士
+   cosmic_element: water
+   object: 嵌松石熊手纹金饰牌
+   place: 鸡泽古陶窑
+
+鸡泽古陶窑忽现异象，窑中陶器自行碎裂，碎片上浮现星图纹路，与北方玄武七宿相合。守护汉墓的武士夜巡时，腰间嵌松石熊手纹金饰牌无端发烫，显出血色裂纹。天象骤变，北斗七星偏移三度，冬雷震震如天鼓，黑云中隐现赤色闪电交织如网。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_135902
+   Turn: 3/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   object: 黑漆木耳杯
+
+黑漆木耳杯忽自汉宫旧库飞出，悬于中庭半空，杯底渗出黄土凝成河图之形。太史令夜观天象，见紫微垣中黄帝星明灭不定，西方白气如练贯入中宫。长安城内地脉震动，未央宫阶前五色土自行翻涌，显出一条黄龙虚影盘旋而上。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_135902
+   Turn: 4/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   event: 平山汉墓玉器夜放光芒
+   place: 无极县古驿站
+
+无极县古驿站的石阶上，忽现九星连珠之影，恰与平山汉墓中夜放的青玉光芒相映。驿丞夜半惊醒，见南方赤云如焚，而驿站古井竟涌出玄冰，阴阳二气在此交汇盘旋。古籍有云，此乃天枢移位之兆，黄帝所铸的十二铜人在地下同时发出嗡鸣，震得五岳松涛如怒。

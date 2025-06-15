@@ -1,0 +1,169 @@
+{
+  "id": "20250526_163740",
+  "completed_at": "2025-05-26T16:39:41.654153",
+  "final_narrative": [
+    {
+      "turn": 0,
+      "roll": null,
+      "action_type": "opening",
+      "elements": {
+        "cosmic_element": "metal"
+      },
+      "narrative": "",
+      "narrative_zh": "公孙氏本是长安城西市一名寻常的玉匠，每日在青石案前琢磨那些王侯将相送来的玉佩，却不知自己祖上原是黄帝麾下掌管金玉之器的工正。这日他正雕琢一枚白虎纹玉璜，忽见案上未完工的玉器泛起七道金芒，恍惚间耳畔响起远古战场上的钟鼓之声，手中刻刀竟自行在玉面游走，刻出星斗连珠之象。",
+      "token_usage": {
+        "prompt_tokens": 489,
+        "completion_tokens": 106,
+        "total_tokens": 595
+      }
+    },
+    {
+      "turn": 0,
+      "roll": 18,
+      "action_type": "story_ending",
+      "elements": {
+        "cosmic_element": "metal"
+      },
+      "narrative": "",
+      "narrative_zh": "那玉璜上的星斗忽然流转起来，化作一只白额猛虎从玉面跃出，却在落地时化作一位皓首老者。老者从袖中取出一粒金丹，叹道：\"汝祖以金玉通神明，今汝蒙尘三十载，当舍人间烟火气，方可复见昆仑玉京真容。\"公孙氏手中刻刀忽化作青蛇，将他左腕咬出朱砂般的血珠，滴在金丹上竟发出钟磬清音。",
+      "token_usage": {
+        "prompt_tokens": 617,
+        "completion_tokens": 107,
+        "total_tokens": 724
+      }
+    },
+    {
+      "turn": 1,
+      "roll": 16,
+      "action_type": "plot_twist",
+      "elements": {
+        "cosmic_element": "water"
+      },
+      "narrative": "",
+      "narrative_zh": "老者见金丹吸了血珠，忽将袖袍一展，北面窗棂外顿时涌来玄冥之水。公孙氏但觉腹中如冰炭相激，那青蛇竟顺着血脉游入心窍，化作青衣童子盘坐紫府。童子笑道：\"君舍口腹之欲三旬，当见白虎化形之妙，然需谨记——凡食五谷者，永不得见玉京真容。\"",
+      "token_usage": {
+        "prompt_tokens": 618,
+        "completion_tokens": 98,
+        "total_tokens": 716
+      }
+    },
+    {
+      "turn": 2,
+      "roll": 13,
+      "action_type": "cosmic_intervention",
+      "elements": {
+        "cosmic_element": "fire",
+        "intervention": "太行山神显灵于商旅"
+      },
+      "narrative": "",
+      "narrative_zh": "公孙氏正惊疑间，忽见太行山道中升起赤色云霞，一队商旅跪拜处显出血玉麒麟。那神兽踏火而行，口吐人言道：\"尔等凡人贪恋烟火食色，如何窥得金丹药性真谛？\"商队中忽有老者化作白鹤冲天，羽翼间落下三枚朱砂丹丸，触地即燃起南离真火。",
+      "token_usage": {
+        "prompt_tokens": 624,
+        "completion_tokens": 95,
+        "total_tokens": 719
+      }
+    },
+    {
+      "turn": 3,
+      "roll": 9,
+      "action_type": "environmental_event",
+      "elements": {
+        "cosmic_element": "water",
+        "event": "井陉关外虎豹同行",
+        "place": "蓟县长城烽火台"
+      },
+      "narrative": "",
+      "narrative_zh": "井陉关外忽现奇景，黑虎玄豹竟如兄弟般并辔而行，踏过长城残雪时化作两位披甲武士。那黑甲者眼含北冥寒光，对烽火台上戍卒喝道：\"尔等贪恋人间酒色财气，岂知蓟县地脉已生九幽阴煞？\"忽见戍卒腰间玉佩迸发青光，照得二人现出原形——原是昆仑山守鼎的玄冥二使，奉命来收人间溢散的丹元精气。",
+      "token_usage": {
+        "prompt_tokens": 633,
+        "completion_tokens": 118,
+        "total_tokens": 751
+      }
+    },
+    {
+      "turn": 4,
+      "roll": 2,
+      "action_type": "character_action",
+      "elements": {
+        "cosmic_element": "metal",
+        "character": "精通卜卦的祭司"
+      },
+      "narrative": "",
+      "narrative_zh": "烽燧台下忽现一白发老翁，手持龟甲罗盘，正是蓟城太卜令。他见玉佩青光冲散二使形影，掐指惊道：\"白虎临西，金气冲犯，此乃昆仑丹鼎泄炁之兆！\"话音未落，那玄冥二使化作青烟钻入玉中，老祭司的银须竟寸寸转为乌黑，腰间五铢钱无风自鸣。",
+      "token_usage": {
+        "prompt_tokens": 641,
+        "completion_tokens": 101,
+        "total_tokens": 742
+      }
+    },
+    {
+      "turn": 5,
+      "roll": 9,
+      "action_type": "environmental_event",
+      "elements": {
+        "cosmic_element": "metal",
+        "event": "平山汉墓玉器夜放光芒",
+        "place": "广宗县祭坛"
+      },
+      "narrative": "",
+      "narrative_zh": "广宗县祭坛忽起异香，那白发转乌的老太卜竟化作一只白额猛虎，却口吐人言道：\"玉中藏丹，虎魄为引，尔等凡人贪念便是炉火！\"此时平山汉墓方向青光大盛，照见县中铜镜皆映出人面虎纹之相。古籍有载，此乃金气太盛反伤肝木，使人魂化为兽之兆。",
+      "token_usage": {
+        "prompt_tokens": 638,
+        "completion_tokens": 100,
+        "total_tokens": 738
+      }
+    },
+    {
+      "turn": 6,
+      "roll": 9,
+      "action_type": "environmental_event",
+      "elements": {
+        "cosmic_element": "water",
+        "event": "清漳河水一日三变色",
+        "place": "易水湖渔村"
+      },
+      "narrative": "",
+      "narrative_zh": "清漳河水忽作玄黑、素白、赤红三色流转，渔人见水中浮起无数青铜丹炉，炉中虎啸声声。易水湖畔有老妪夜织，见月下群虎人立而拜，其首者褪去毛皮现出县令容貌，怀中青玉璜正与墓中青光相应。传说记载，此乃金木相战之极，必得真水调和，那老妪却将织梭投入湖心，叹道：\"人心如炉，不若归虚。\"",
+      "token_usage": {
+        "prompt_tokens": 636,
+        "completion_tokens": 120,
+        "total_tokens": 756
+      }
+    },
+    {
+      "turn": 7,
+      "roll": 18,
+      "action_type": "story_ending",
+      "elements": {
+        "cosmic_element": "fire"
+      },
+      "narrative": "",
+      "narrative_zh": "县令褪尽虎形，青玉璜化作流光没入其眉心。他仰天长啸三声，周身赤焰渐转玄水之色，原是借丹炉真火炼化兽性，终以坎水之德复归人形。然其双目犹存琥珀金光，古籍所谓\"得道者存其本相\"，自此昼理县政夜游山林，每逢月晦便见易水老妪坐湖畔织就星河。",
+      "token_usage": {
+        "prompt_tokens": 635,
+        "completion_tokens": 99,
+        "total_tokens": 734
+      }
+    }
+  ],
+  "cosmic_position": "fire",
+  "total_turns": 8,
+  "max_turns": 8,
+  "language": "zh",
+  "story_arc": {
+    "type": "transformation",
+    "stages": [
+      "ordinary",
+      "encounter",
+      "change",
+      "challenge",
+      "transcendence"
+    ],
+    "theme_elements": {
+      "transformation_type": "animal to human",
+      "catalyst": "inner cultivation",
+      "price_of_change": "mortal desires"
+    },
+    "current_stage": "transcendence"
+  }
+}

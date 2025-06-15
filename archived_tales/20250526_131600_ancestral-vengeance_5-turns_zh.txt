@@ -1,0 +1,101 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: ancestral_vengeance
+Number of Turns: 5
+Cosmic Positions: wood → fire → metal
+Duration: 66.3 seconds
+Generated: 2025-05-26 13:17:16
+========================
+
+
+FOLKTALE STORY: 20250526_131600
+Started: 2025-05-26 13:16:10.266160
+----------------------------------------
+
+--- Opening ---
+
+昔日有商贾名周，为夺邻家祖传青玉圭，竟使人掘断其宅东古槐根脉，致其全家七口暴毙。亡魂怨气凝结于槐树残根，每逢寅时便化作七只血玉蜂，循五行木气相生之理，飞绕仇家檐下，使其宅中桃李尽枯、梁柱生蕈，夜半常闻《薤露》悲歌自地底传来。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131600
+   Turn: 0/4
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 养蚕女工
+   cosmic_element: wood
+
+商贾周氏之女夜夜惊梦，见七位青衣人立于蚕室，指其父所夺青玉圭泣诉冤屈。蚕娘晨起察看，见东窗下春蚕尽僵，桑叶皆化青灰，方知梦中非虚。  
+
+老仆私语此乃木德受损之兆，劝主人速还玉圭，周氏却反将养蚕女工逐出，诬其窃取家中珍宝。女工含冤离去时，庭中古槐忽发新枝，七朵血色槐花在风中摇曳如诉。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131600
+   Turn: 1/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: wildcard
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 巡行各地的方士
+   cosmic_element: fire
+   object: 青铜编钟
+   place: 中山国故城
+
+周氏女夜半忽闻编钟自鸣，其声凄切如诉，循声至后院，见一青铜编钟悬于古槐枝头，钟面浮现七张泣血面容。恰逢云游方士途经此地，观天象见荧惑犯南斗，掐指算得此乃中山国枉死之魂借火德显化。  
+
+方士取龟甲占卜，见裂纹如七道血痕直指周氏祖坟方向，叹道："冤魂聚火，钟鸣示警，若不平反此案，恐有焚身之祸。"话音未落，编钟突然坠地，钟腔内涌出赤色流沙，竟在青砖上烙出"还玉"二字。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131600
+   Turn: 2/4
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   event: 清漳河水一日三变色
+   place: 太行山云雾中
+
+周氏女夜梦清漳河水忽变三色：晨如碧玉，午似玄铁，暮成赤血。其夫王生登太行山采药，见云雾中隐现七名素衣女子，手持断裂玉珏，声声泣诉当年因玉璧蒙冤之事。  
+
+翌日，周氏祖祠供案上的青铜觚无故渗出水珠，竟在案面凝成"中山"二字，恰与编钟所现血痕相合。村中老巫观星象，见西方白虎七宿光芒大盛，低语道："金气肃杀，冤魂索玉，此乃秋官断狱之期。"
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131600
+   Turn: 3/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   object: 灰陶仓
+
+王生夜归，见院中灰陶仓无故自启，仓内粟米尽化赤灰，随风聚成七女子身形。其幼子忽发高热，梦中呓语"中山宫玉匠"四字，周氏方忆家谱载先祖曾任中山国治玉官。是夜南风骤起，携来焦灼气息，灶台火舌竟凭空写出"还璧"古篆。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_131600
+   Turn: 4/4
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 拓片技艺精湛的工匠
+   cosmic_element: wood
+
+王生连夜寻访城东老拓工，见其案头青玉残片上竟有与灶火相同的"还璧"古篆。拓工抚玉长叹，道出中山国旧事：当年玉匠为护国宝螭龙璧，遭奸人构陷含冤而亡，青玉通灵，遂化七缕精魄寄于粟仓。童子高热不退，因他血脉中流淌着玉匠未雪之冤，需寻回螭璧残片置于东方桃木案上，借春木生发之气化解百年怨结。

@@ -211,8 +211,15 @@ class StoryEngine:
             {state.story_arc.get_motifs(lang)}
 
             故事发生在汉代，应包含中国传统宇宙观的元素。
-            从{self.wuxing.get_element_text(state.cosmic_position, Language.CHINESE)}元素开始。
-            写一个引人入胜的开场段落，合理引入故事的第一阶段。"""
+            
+            要求:
+            - 只写一个叙述段落(2-3句话)，不要章节标题或结构说明
+            - 直接开始故事情节，不要前言或设定介绍  
+            - 体现{self.wuxing.get_element_text(state.cosmic_position, Language.CHINESE)}元素的特质
+            - 使用汉代文化背景，但避免直接引用书名
+            - 营造神秘古韵的氛围
+
+            现在请直接开始故事:"""
         elif lang == Language.ENGLISH:
             return f"""Begin a new Han dynasty Chinese folktale based on this opening: "{state.previous_sentence}"
 

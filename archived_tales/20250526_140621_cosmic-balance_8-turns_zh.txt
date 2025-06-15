@@ -1,0 +1,139 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: cosmic_balance
+Number of Turns: 8
+Cosmic Positions: earth → metal → wood
+Duration: 103.2 seconds
+Generated: 2025-05-26 14:08:16
+========================
+
+
+FOLKTALE STORY: 20250526_140621
+Started: 2025-05-26 14:06:32.809248
+----------------------------------------
+
+--- Opening ---
+
+昔日长安城南有社稷坛，黄土筑台五丈见方，四时祭祀时总见黄气氤氲如龙蟠。坛中供奉的玄圭乃黄帝所遗，每逢春分便自行渗出甘露，滋养得方圆百里黍稷丰登；老农常见地脉中有黄精游走，所过之处土壤自生金纹，五谷穗实皆垂若珠玉。这般景象持续了三百春秋，直至孝武皇帝罢黜百家，那坛前青铜鼎中的香灰竟渐渐凝作龟裂的河图纹样。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140621
+   Turn: 0/7
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 邺城的织锦女子
+   cosmic_element: earth
+
+邺城有位织锦女子夜观天象，忽见中天黄星摇曳如梭，其光坠入织机竟化五色丝线。她所织云纹忽生异变，中央黄土图案自行裂开，涌出黑水浸染四方，恰应了古籍所言"土败水侮"之象。与此同时，长安太史令发现北斗第七星偏离常位，其光直射社稷坛方向，坛周五色土竟自行翻涌如沸。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140621
+   Turn: 1/7
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: story_ending
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+
+西方昆仑山巅忽现赤光冲天，白帝少昊的玄圭玉器无故碎裂，金气外泄致使秋霜早降。长安城中铜人十二尊竟同时流泪，其泪落地成冰，太庙编钟无人自鸣，声如哀鸿遍野。老巫祝夜观星象，见白虎七宿中参星与商星相斗，金光四溅如雨落人间。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140621
+   Turn: 2/7
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: wildcard
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 守护汉墓的武士
+   cosmic_element: wood
+   object: 青釉多足观
+   place: 满城汉墓甬道
+
+满城汉墓甬道深处，守护武士的青铜甲胄突然生出翠绿藤蔓，腰间悬挂的青釉多足观竟自行旋转，溢出缕缕青烟化作龙形。东方天际忽现木星犯月，青龙七宿中的角宿与亢宿相争不下，引得泰山之阳的千年古柏尽数倒伏，其根须渗出赤红汁液如血。古籍有云，此乃木德过盛反伤土性，致使大地精气外泄之兆。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140621
+   Turn: 3/7
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   event: 望都陵园夜间出现光华
+   place: 望都陵园
+
+望都陵园夜半忽现五彩光华，如天孙织锦垂落人间，照得石兽双目流转金芒。守陵人见西方白虎星宿骤然黯淡，而陵中青铜器皿皆自行鸣响，其声凄厉似金戈相击。老者私语此乃金气被木德所夺，白虎失位而青龙逞威之象。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140621
+   Turn: 4/7
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 守护汉墓的武士
+   cosmic_element: earth
+
+陵中石雕武士忽睁双目，手中青铜剑泛起土德黄光，与西方坠落的流星相呼应。古籍有云，土德居中可调和四方，然此刻武士脚下大地龟裂，显是中央戊己土气亦被天界争斗所扰。守墓人见武士铠甲上蟠螭纹路渐次亮起，原是地脉龙气欲借金甲卫土之躯镇守中宫。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140621
+   Turn: 5/7
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   event: 河北四境同时出现五色云
+   place: 平山汉墓内室
+
+石雕武士剑锋所指处，平山汉墓穹顶忽现五色祥云，如丝如缕缠绕于蟠螭纹青铜灯树之间。河北四境百姓皆见天际云气流转，青赤黄白黑五色分明，正是五行精气显化于人间。墓室地缝中渗出汩汩黄泉，却在触及武士玄甲时化作点点金星，应了土生金的天地至理。
+
+--- Turn 7 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140621
+   Turn: 6/7
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: story_ending
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+
+五色祥云忽化作白虎星象，昂首长啸震彻九霄，西方白帝显圣于参宿之间。黄泉所化金星尽数飞入白虎口中，霎时秋霜凝刃，金气肃杀，将作乱的阴浊邪祟尽数斩灭。古籍有云"金主肃杀"，此刻天地兵戈之气归位，四时更替复归常道，北斗杓转指向孟秋正位。
+
+--- Turn 8 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140621
+   Turn: 7/7
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 冀州刀匠
+   cosmic_element: wood
+
+冀州刀匠夜观星象，忽见东方青龙七宿青光暴涨，手中正在锻造的青铜剑竟自行嗡鸣。他知是五行木气感应，遂取昆仑玄玉置于炉中，剑成之时天降甘霖，枯木逢春，阴阳二气在剑身流转如游龙。

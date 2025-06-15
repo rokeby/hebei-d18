@@ -1,0 +1,93 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: quest
+Number of Turns: 5
+Cosmic Positions: metal → water → fire
+Duration: 50.9 seconds
+Generated: 2025-05-26 16:26:11
+========================
+
+
+FOLKTALE STORY: 20250526_162508
+Started: 2025-05-26 16:25:20.364912
+----------------------------------------
+
+--- Opening ---
+
+公孙氏拾起青铜简册的刹那，西方七宿的金沙忽聚成白虎之形，衔来一枚刻着"金天"二字的玉符，其纹路与龟甲裂纹暗合。他踏上星斗玉阶时，腰间佩剑无故自鸣，原是故土长安方向传来钟磬之音，似挽留又似送别，而昆仑墟的云雾已漫过他的衣袂。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_162508
+   Turn: 0/4
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   intervention: 古墓守护兽苏醒
+
+公孙氏行至半途，忽闻地底传来金戈交鸣之声，原是镇守古墓的青铜狻猊睁开了赤目。那兽身负五行金气，张口吐出白雾迷障，玉符上的"金天"二字顿时黯淡无光。他抚剑而立，想起太史公曾言西方属金主杀伐，遂以腰间玉琮叩地三响，借土德之力化解金煞。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_162508
+   Turn: 1/4
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: plot_twist
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+
+公孙氏破金煞后，忽见玉符背面浮现"玄冥"二字，墨色如渊。他行至北冥寒潭，水中倒影竟显出历代持符者皆殁于此地，心中顿生疑惧。此时潭底传来苍老吟诵："水德至柔克刚，然疑云蔽心，则寒冰蚀骨"，那卷记载天机的竹简在怀中突然变得重若千钧。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_162508
+   Turn: 2/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   event: 幽州城外现千年古树
+   place: 邯郸古城墙下
+
+公孙氏踌躇间，忽见幽州城外那株千年古柏无风自动，赤色霞光自树冠倾泻而下。他怀中的竹简突然轻如鸿毛，树皮上竟浮现出与玉符相同的"玄冥"二字，只是这二字如火灼烧，与寒潭墨色形成阴阳相济之势。古籍有云，南火可化北水之寒，公孙氏顿悟此乃天意指引，遂向邯郸古城墙疾行而去。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_162508
+   Turn: 3/4
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   event: 井陉关外虎豹同行
+   place: 易水湖渔村
+
+公孙氏行至易水湖畔，忽见渔村上空乌云翻涌如墨，湖面却映出赤霞千丈。他怀中竹简忽重若千钧，内中文字竟随水波流动变幻，似在考验其心志是否如磐石不移。恰此时，井陉关方向传来虎啸豹鸣，却见两头猛兽踏雪而来，眼中金芒与竹简辉光相应，如阴阳二气化生具象。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_162508
+   Turn: 4/4
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   character: 远近闻名的石匠
+   cosmic_element: metal
+
+公孙氏正自踌躇，忽见一位须发皆白的老石匠自湖畔走来，手中凿子泛着寒光。那石匠不言不语，只将凿子递来，竹简上流动的文字竟化作坚硬白玉，需以金器雕琢方能显现真义。公孙氏握凿的手微微颤抖，却见两头猛兽化作黑白二气缠绕其腕，助他刻下"坚心如玉"四个古篆。

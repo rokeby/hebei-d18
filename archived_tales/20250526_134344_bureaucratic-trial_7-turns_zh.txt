@@ -1,0 +1,125 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: bureaucratic_trial
+Number of Turns: 7
+Cosmic Positions: wood → fire → metal
+Duration: 83.3 seconds
+Generated: 2025-05-26 13:45:21
+========================
+
+
+FOLKTALE STORY: 20250526_134344
+Started: 2025-05-26 13:43:57.909945
+----------------------------------------
+
+--- Opening ---
+
+樵夫张五不知自己伐倒的那株千年古柏实为青龙鳞甲所化，只见树心流出碧血浸透斧刃，当晚便有黑白无常持桃木令箭入梦，言其触犯"春木禁伐"之律。次日县衙鸣冤鼓无故自响，包明府惊见案前青玉砚中浮现东岳大帝金批，判词墨迹未干即化作柳叶纷飞，原是月宫仙子那卷天书记载已入阴司文簿。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134344
+   Turn: 0/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   event: 涿郡忽降丹药雨
+   place: 易水湖渔村
+
+涿郡上空忽现五彩祥云，青赤丹药如雨坠入易水湖畔，渔家童子拾得一枚，入手即化作青龙鳞片，上书"春木伤伐，阴阳失衡"八字。包明府夜观星象，见东方苍龙七宿隐现血光，案头那本无字天书忽现朱砂判词，原是张五伐木之举已惊动紫微宫，玉帝降旨命东岳查勘人间因果。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134344
+   Turn: 1/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   object: 带有神兽图案的銅鍑
+
+东岳大殿忽现青铜鍑，其上饕餮纹样吞吐赤焰，阴司判官以朱笔轻叩，鍑中便浮出张五伐木时惊走的山精木魅。判官展卷查阅，只见孽镜台中映出千株古木倾倒之景，每株年轮皆化作血色符咒没入生死簿。此时南方离位火光骤亮，照得铜鍑上应龙图案竟似要破壁而出。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134344
+   Turn: 2/6
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   character: 能解读铜镜中异象的术士
+   cosmic_element: metal
+
+铜鍑忽转西方白虎方位，白气升腾间现出一位鹤发童颜的术士，手持青玉圭板。他双目映出铜镜中翻腾的血色年轮，指掐兑宫方位道："金气肃杀过甚，已伤东方青龙生气。"此时天庭降下玄色卷轴，展开时显出张五伐木所坏的地脉龙气，每条断裂处皆化作黑蛇游入孽镜深处。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134344
+   Turn: 3/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 擅长草药的医者
+   cosmic_element: fire
+
+赤色孽镜中忽现一位采药老者，腰间悬着五色药囊，正是终南山修道的扁鹊门人。他捧出青囊中一株九叶灵芝，其根须缠绕着张五伐木时惊散的龙脉地气，化作赤金丝线显现在天庭功过簿上。此时南方离位火光大盛，照见卷轴末端浮现天帝朱批："木德亏伤，当以火德炼其罪愆"。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134344
+   Turn: 4/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   intervention: 八极游神显灵于月夜
+
+月晦之夜，东方忽现八道青光，八极游神踏着北斗星辉降临凡尘。为首者手持青玉圭板，上面浮现张五伐木时惊散的龙脉地气，化作纠缠的赤金丝线在夜空中流转。游神挥袖间，那些金丝竟凝成《天罪录》文字，每一笔划都映着孽镜台的火光，将凡人之过镌刻在三界交界的青铜古树上。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134344
+   Turn: 5/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 精通《易经》的学者
+   cosmic_element: wood
+
+青铜古树上的赤金文字忽明忽暗，惊动了正在太微垣批阅奏章的玉帝。他掐指一算，东方青龙七宿竟偏离了天轨三度，原是那伐木人误伤了地脉龙睛。玉帝遂命司命星君取来玄龟甲，只见甲纹显出一位精通易理的布衣学者，此人曾在终南山观星时窥见天机一线。  
+
+那学者夜观天象，见紫微垣旁青气翻涌，急忙取出珍藏的蓍草占卜。蓍草落地竟排成震卦之象，他猛然悟到这是天地震怒之兆，当即焚香设坛，以青铜觚盛满春露向东祭拜。袅袅青烟中，隐约现出天曹判官手持朱笔，正在一卷竹简上勾画张五的命数流转。
+
+--- Turn 7 ---
+
+📖 STORY STATUS:
+   ID: 20250526_134344
+   Turn: 6/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   object: 五铢钱币
+
+那学者祭坛前忽现一枚赤色五铢钱，其孔方外圆，暗合天圆地方之道。钱币落地时竟自行旋转不止，引得四方阴风骤起，卷来一册朱砂写就的业力簿，其上记载张五伐木伤龙脉的罪业已惊动三官大帝。此时终南山上空雷云密布，隐约可见南斗星君手持玉圭立于云端，正在勾销那伐木人的阳寿。

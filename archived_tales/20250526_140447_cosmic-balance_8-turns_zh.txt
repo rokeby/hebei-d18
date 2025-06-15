@@ -1,0 +1,139 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: cosmic_balance
+Number of Turns: 8
+Cosmic Positions: earth → metal → wood
+Duration: 81.7 seconds
+Generated: 2025-05-26 14:06:19
+========================
+
+
+FOLKTALE STORY: 20250526_140447
+Started: 2025-05-26 14:04:57.841589
+----------------------------------------
+
+--- Opening ---
+
+昔日长安郊外，黄土垒就的社稷坛上终年缭绕着五色祥云，中央那方黄玉圭每逢春分便自行渗出甘露，滋养得方圆百里五谷丰登。太史令夜观星象，见土星循黄道缓缓而行，与其余四曜各安其位，地气升腾处常有麒麟显形。忽一日，那玉圭无端现出蛛网般的裂痕，坛前种植的嘉禾竟同时倒伏于地，化作缕缕黑烟渗入九泉之下。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140447
+   Turn: 0/7
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   event: 广宗县天降铁器
+   place: 涿郡集市
+
+涿郡集市上空的云层忽现赤红漩涡，无数铁犁、铜戈自九霄坠落，却未伤及百姓分毫，只深深插入黄土之中。广宗县老农见田间铁器竟渗出暗红锈水，浸染之处五谷立时枯萎，地脉中传来金戈相击之声。太史令急奏天子，称土德衰微而金气过盛，此乃西方白虎星君与中央黄帝相争之兆。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140447
+   Turn: 1/7
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   intervention: 太行山神显灵于商旅
+
+太行山道突现万丈金光，商旅们见山巅现出一位白须神人，手持青铜圭板指向西方。神人脚下岩石裂开，涌出九眼清泉环绕商队，水中浮现金色鲤鱼逆流而上。古籍有云，此乃山神显圣调和金水二气，以缓白虎星君之怒。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140447
+   Turn: 2/7
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 铜马车的驭手
+   cosmic_element: wood
+
+铜马车驭手忽见东方青龙七宿大放青光，手中青铜缰绳竟化作青蛇缠绕其臂。天穹裂开一道缝隙，紫微垣星辉如雨坠落，惊得九眼清泉瞬间沸腾。古籍有载，此乃天帝敕令显化，因西方白虎与东方苍龙争衡，致使天纲紊乱。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140447
+   Turn: 3/7
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   character: 从西域来的商人
+   cosmic_element: metal
+
+西域商人驼铃叮当入关，忽见西方太白金星大如车轮，其坐骑白骆驼眼中竟映出紫微帝星倒影。商人怀中昆仑美玉无故碎裂，化作九只玄鸟向西飞去，引得商队铜钱纷纷生出绿锈。传说记载，此乃天承运数更迭之兆，因金气过盛而克木，致使商道断绝、财货不通。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140447
+   Turn: 4/7
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   intervention: 河伯收回决堤之水
+
+黄河之水忽自倒流，河伯驾玄龟现于浊浪之上，手持玉圭收回泛滥之水。然水中蛟龙不服天命，与河伯相争于孟津，搅得中土大地黄尘蔽日。此时紫微垣中帝星忽明忽暗，北斗七星竟化作赤色，预示五行之土将遭火焚之劫。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140447
+   Turn: 5/7
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   object: 黑漆木耳杯
+
+河伯与蛟龙相争之际，昆仑西王母遣青鸟衔来一只黑漆木耳杯，杯底刻着"承天受土"四字古篆。此杯落地即化作丈余方圆的玄坛，中央涌出黄泉之水调和阴阳，霎时间紫微帝星复明，北斗褪去赤芒归位。古籍有云，此乃黄帝战蚩尤时埋于冀州的中和之器，专镇五行相克之乱。
+
+--- Turn 7 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140447
+   Turn: 6/7
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   event: 白洋淀水中现古城倒影
+   place: 广宗县祭坛
+
+白洋淀水忽现古城倒影，水中楼阁皆覆白霜，恰逢太白星昼现于西方。广宗县祭坛上，太祝见青铜祭器无故渗出水银，知是金气过盛冲犯水德。此时玄坛黄泉之水忽分九道，每道皆化作白虎之形，衔着北斗七星之影奔向四方。
+
+--- Turn 8 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140447
+   Turn: 7/7
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   intervention: 邯郸城隍显圣除妖
+
+邯郸城隍忽现真身，青面赤须踏青云而降，手中玉圭化作青龙直取白虎。霎时东方苍龙七宿大放青光，与西方白虎七宿金芒相激，天地间木金二气纠缠如盘古开天。忽见北斗杓柄转向，紫微垣中天帝法相显现，九道白虎顿时化作玄冥真水渗入地脉，城隍手中青龙亦归为玉圭，其上浮现"承天应运"四个古篆。

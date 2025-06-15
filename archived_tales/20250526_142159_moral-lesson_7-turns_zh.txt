@@ -1,0 +1,119 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: moral_lesson
+Number of Turns: 7
+Cosmic Positions: wood → fire → metal
+Duration: 105.8 seconds
+Generated: 2025-05-26 14:23:54
+========================
+
+
+FOLKTALE STORY: 20250526_142159
+Started: 2025-05-26 14:22:08.551784
+----------------------------------------
+
+--- Opening ---
+
+那逆子跪在青石板上，手中玉琮渗出的血泪竟化作嫩绿藤蔓缠绕其腕，市集东隅的老槐树无风自动，飘落三片形如龟甲的树叶。白发长老以桃木杖点地，泥土中忽现五色祥云，隐约可见其父魂魄立于云间，手持玄圭作礼地之状，四周商贾的铜钱声顿时化作春蚕食桑的沙沙细响。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_142159
+   Turn: 0/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 邯郸城的儒生
+   cosmic_element: wood
+
+那儒生袖中暗藏伪造的举荐竹简，青藤竟瞬间枯萎化为灰烬。邯郸城东忽起阴云，云中传来黄钟大吕之声，却是朝廷使节手持玄色诏书踏云而至。儒生怀中竹简无火自燃，火中现出"仁"字篆文，其父魂魄在云间长叹，引得满城桑叶簌簌而落。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_142159
+   Turn: 1/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 巡行各地的方士
+   cosmic_element: fire
+
+巡行方士手持赤铜罗盘行至城下，忽见南方天际赤云翻涌如血，盘中磁针竟指向那儒生腰间灰烬。方士掐指一算，袖中五色丝线无风自动，结成"仁"字卦象。此时诏书玄光映照下，儒生足下青砖裂开七道，渗出带着硫磺味的赤泉。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_142159
+   Turn: 2/6
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   object: 嵌松石熊手纹金饰牌
+
+赤泉翻涌间，一方嵌松石熊手纹金饰牌自地底浮出，其上熊目竟随天光流转。方士见那金牌背面刻着"仁者不欺"四字古篆，忽闻儒生袖中传来竹简断裂之声——原是当年篡改父亲遗嘱的证物化为齑粉。此时诏书玄光骤然大盛，将金饰牌照得通明如镜，映出儒生面上渐生的鳞甲与身后浮现的九重孝悌枷锁。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_142159
+   Turn: 3/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: story_ending
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+
+赤金牌中忽现先父容颜，双目垂泪化作赤泉，浸透儒生鳞甲。九重枷锁发出黄钟大吕之音，每响一声，便有篆字"仁"从诏书玄光中落下，如烈火灼其背脊。南天朱雀长鸣三声，衔来昆仑赤玉投入泉中，霎时水火相激，蒸腾起记载着"父子有亲"的云篆天书。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_142159
+   Turn: 4/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 护卫皇陵的将军
+   cosmic_element: wood
+
+将军跪伏于赤泉之畔，忽见青玉腰带自行解落，化作一条青龙盘绕其颈。龙吟声中，他忆起当年为求功名，曾篡改父亲临终谏言以迎合圣意。此时皇陵方向传来编钟九响，每声皆与青龙鳞片相和，显露出诏书金文中被墨迹遮掩的"诚"字真义。东方天际骤现启明星，其光如针，刺得将军眼中流出两行血泪，落地竟生出带着"孝"字纹路的朱草。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250526_142159
+   Turn: 5/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: story_ending
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+
+青龙鳞片忽化作青烟散去，将军手中血泪朱草无风自动，指向长安未央宫方向。他幡然醒悟当年篡改诏书时，那滴落在"仁"字金纹上的墨汁，原是父亲临终咳出的心头血所化。此时东方既白，青龙残影与启明星光交织成先帝虚影，将腰间玉印化作青藤缠绕的诫子书简。
+
+--- Turn 7 ---
+
+📖 STORY STATUS:
+   ID: 20250526_142159
+   Turn: 6/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: story_ending
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+
+将军跪捧诫子简，见青藤间浮现"仁"字金纹，与当年墨痕相合处竟生出赤色新芽。长安城南忽起祥云，未央宫檐角铜铃无风自鸣，那株朱草化作流光没入宫墙，修补了被谎言侵蚀的诏书金册。自此每逢夏至午时，宫墙赤砖便会映出将军父子对弈的身影，棋盘上黑白子分明组成"诚"字，警示后人君仁臣忠之理。

@@ -1,0 +1,141 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: cosmic_balance
+Number of Turns: 8
+Cosmic Positions: fire → earth → water
+Duration: 88.1 seconds
+Generated: 2025-05-26 14:01:44
+========================
+
+
+FOLKTALE STORY: 20250526_140004
+Started: 2025-05-26 14:00:16.057414
+----------------------------------------
+
+--- Opening ---
+
+昔日昆仑山南麓有株赤精木，其根盘结地脉，枝叶承露星辉，每逢甲子年便结出朱砂色的木实，山民采之可治百病。老辈人说此木乃祝融遗落的火精所化，其根系缠绕着地底炎泉，若伤其主干，必遭天火焚身之祸。王家先祖为造宫殿，不顾山神警告砍伐此木，斧刃入木时竟溅出赤血，树心裂处显出一道用火篆写就的谶文："木绝火起，七世而斩"。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140004
+   Turn: 0/7
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   intervention: 冀州刀神授艺于匠人
+
+赤精木倒下的第七日，冀州铁匠梦见刀神踏着朱雀星辉而来，授以锻冶赤铜的秘术。匠人醒时，发现炉中未熄的炭火竟凝成九枚赤玉符，上刻"火德当衰，金气代兴"八字。恰逢太白昼现，紫微垣中火星黯淡，太史令夜观天象，见南方有赤气如刀，直贯北斗。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140004
+   Turn: 1/7
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   event: 冬日雪落成古篆文字
+   place: 邯郸古城墙下
+
+邯郸城墙下，冬雪飘落竟在青砖上凝成鸟篆符文，守城士卒见那雪字分明写着"土德将崩"三字。是夜太阴星忽现于中天，与岁星争辉，引得四方地脉震动，邯郸古井中涌出混着金砂的黄泉。  
+
+古籍有载，此乃中央土精感应金气过盛而显异象，阴阳家见城头积雪化作玄黄色，知是地母示警——五行之中，土生金而金盛反克土，天地秩序已生颠倒。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140004
+   Turn: 2/7
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 养蚕女工
+   cosmic_element: water
+
+邯郸城西的养蚕女工夜半惊醒，见蚕室桑叶尽染霜白，蚕宝宝竟吐出赤红丝线。抬头望见北斗第七星摇光忽明忽暗，其光如血染透云层。老妪颤声说此乃少阴夺少阳之位，金火相煎之兆，当年黄帝战蚩尤时亦现此天象。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140004
+   Turn: 3/7
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   intervention: 昆仑使者传递天机
+
+昆仑山巅忽现五彩祥云，一位白须使者驾青鸾而降，手持黄玉圭板。他告知乡老：中央土德失守，致四方相克，需寻得黄帝遗留的玄圭方能调和阴阳。此时天穹裂开赤痕，荧惑星竟与岁星相撞，洒下漫天火雨。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140004
+   Turn: 4/7
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   event: 清漳河水一日三变色
+   place: 无极县古驿站
+
+白须使者挥动黄玉圭板，清漳河水忽而赤如丹砂，忽而黑似玄墨，三变其色映得无极县古驿站檐角生辉。驿站老吏见水中浮起一尾赤鲤，鱼目竟映出荧惑与岁星相争之象，鳞片剥落处显露出黄帝玄圭的方位。此时西方天际传来阵阵雷音，原是金德少昊遣白虎下界，欲镇南方失控的火精。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140004
+   Turn: 5/7
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 能预知天象的星官
+   cosmic_element: fire
+
+赤鲤跃出水面时，正逢太史令张衡的弟子夜观星象，忽见南方七宿的井鬼二星间迸出三尺赤芒。那星官袖中铜仪震颤不已，掐指惊觉此乃火德过盛冲犯天垣之兆，急取青玉圭板蘸取清漳黑水，在驿站土墙上画出北斗吞火之图。此时白虎已踏云而至，却见西方白气与南方赤焰在苍穹之上交织成太极之形，阴阳二气流转间竟显露出黄帝乘龙巡天的残影。
+
+--- Turn 7 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140004
+   Turn: 6/7
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   object: 灰陶仓
+
+驿站墙角忽现一尊灰陶仓，仓顶朱雀纹与仓身玄武纹竟自行流转，吞吐五色云气。太史令弟子见状急取黄土封其仓口，却见陶仓内传来编钟清响，原是中央土德感应天象，将过盛火气化为滋养万物的中和之气。此时北斗第七星摇光忽明，黄帝残影挥袖间，那陶仓化作一道黄虹直入中天，与四方星宿共演五行相生之局。
+
+--- Turn 8 ---
+
+📖 STORY STATUS:
+   ID: 20250526_140004
+   Turn: 7/7
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   object: 铜人俑
+
+黄虹消散处，一尊青铜人俑自地脉涌出，通体铭刻河图洛书之纹。其双目忽开，左眼流金乌真火，右眼淌玉兔玄霜，引得二十八宿星辉尽数垂落俑身。北方玄武七宿骤然移位，铜人足下竟生出黑水漩涡，将过盛水德引入九幽地脉，复归阴阳循环之道。

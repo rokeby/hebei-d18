@@ -175,13 +175,13 @@ def _add_style_instructions(lang, current_stage):
     """Add style instructions to the prompt."""
     if lang == Language.CHINESE:
         return f"""
-            \n\n请以汉代民间故事的风格写作，可以引用汉代文化元素如《淮南子》《搜神记》《史记》中的典故。应体现五行元素的特质和对应季节。确保你的叙述符合当前故事阶段（{current_stage}）的发展需要。文风应富有神秘感、道德寓意和汉代特有的宇宙观。
+            写作要求:
+            - 以汉代民间故事风格写作，融入五行、阴阳等传统宇宙观念
+            - 使用古典文化知识，但避免直接引用具体书名以保持阅读流畅
+            - 只写纯粹的故事叙述(2-3句)，不要解释或评论
+            - 避免在正文中出现《书名》格式的引用
 
-            重要提示：
-            1. 不要重复前面段落的内容
-            2. 你的叙述应该是全新的，推动故事情节向前发展
-            3. 直接从新的情节开始，而不是重述已经发生的事件
-            4. 保持叙事自然流畅，衔接前文内容
+            现在请继续故事:
                 """
     elif lang == Language.ENGLISH:
         return f"\n\nWrite in a style authentic to Han dynasty folklore, referencing elements from classical texts like Huainanzi, Records of the Seeking of Spirits, or Records of the Grand Historian. Incorporate the qualities and seasonal aspects of the current cosmic element. Ensure your narrative advances the current story stage ({current_stage}) appropriately. Your style should evoke the mystery, moral dimensions, and cosmological worldview characteristic of Han dynasty stories."

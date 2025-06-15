@@ -1,0 +1,135 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: quest
+Number of Turns: 8
+Cosmic Positions: earth → metal → wood
+Duration: 104.8 seconds
+Generated: 2025-05-26 16:25:06
+========================
+
+
+FOLKTALE STORY: 20250526_162313
+Started: 2025-05-26 16:23:21.388904
+----------------------------------------
+
+--- Opening ---
+
+公孙氏捧着那枚赤玉环，只觉掌心传来大地脉动般的温热，忽见玉环上浮现出二十八宿的星图。正当他惊疑之际，脚下黄土突然化作流沙，将他卷入地脉深处，耳边只余西王母缥缈的告诫："持此玉符寻访九州地脉，待土德圆满之时，方能解白虎之厄。"
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_162313
+   Turn: 0/7
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: plot_twist
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+
+公孙氏在幽暗地脉中坠落，忽见前方黄沙凝聚成巨灵神将，手持土德之戈拦住去路。他紧握赤玉环，星图忽明忽暗，照见神将眉心嵌着半片龟甲，上面刻着早已失传的《地母真形图》。传说记载，唯有诵出龟甲上残缺的禹步口诀，方能令土灵让道，继续追寻九州地脉的奥秘。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_162313
+   Turn: 1/7
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: story_ending
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+
+公孙氏凝视龟甲上残缺的符文，忽闻地脉深处传来金戈交鸣之声，原是西方白虎七宿显化，化作七道白芒环绕神将。他咬破指尖以血补全龟甲裂纹，顿时地动山摇，土德之戈化作秋霜覆盖的青铜简册，记载着黄帝战蚩尤时失传的《金天兵法》。神将轰然崩解为金沙，露出通往昆仑墟的玉阶，每级台阶都浮动着星斗运行的轨迹。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_162313
+   Turn: 2/7
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: wildcard
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 燕国使者
+   cosmic_element: wood
+   object: 汉代铜镜蚕桑纹饰
+   place: 元氏玉石工坊
+
+公孙氏踏上玉阶时，忽见东方青气翻涌，一株千年桑木破土而出，枝干间悬挂着燕国使者遗失的蚕桑纹铜镜。镜面映照间，元氏工坊的玉匠幻影浮现，手持未完成的蟠龙玉璧低语："欲取《金天兵法》，需先过桑林之劫。"霎时桑叶化为万千青刃，每一片都刻着失传的周礼乐谱，随罡风结成天罗地网。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_162313
+   Turn: 3/7
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: plot_twist
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+
+公孙氏面对漫天青刃，忽闻西方传来金戈之声，一队白虎神将踏着秋霜列阵而来。为首神将抛下一枚残缺的白玉符，符上刻着"金天"二字，正与桑叶乐谱相击发出清越之音。青刃应声化作桑蚕，吐出银丝将乐谱织成素帛，现出黄帝战蚩尤时失传的二十八宿阵图。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_162313
+   Turn: 4/7
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: plot_twist
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+
+公孙氏手握玉符，忽见脚下黄土翻涌如浪，地脉中钻出九条玄蛇，口吐浊气结成迷阵。她想起古籍所载"中央戊己土，其精为螣蛇"，遂以玉符叩击阵眼，土气顿时化作金色尘埃，显露出埋藏千年的黄帝《阴符经》残卷。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250526_162313
+   Turn: 5/7
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 恒山上的隐士
+   cosmic_element: earth
+
+公孙氏收好《阴符经》残卷，忽见恒山隐士踏云而来，手持黄玉圭指向西方。浊气凝结的九条玄蛇突然化作土龙，盘踞成山岳之形挡住归路，地脉中传来远古战鼓般的轰鸣。隐士朗声道："此乃黄帝试胆之关，欲携天机归尘世，当踏龙脊过幽渊。"
+
+--- Turn 7 ---
+
+📖 STORY STATUS:
+   ID: 20250526_162313
+   Turn: 6/7
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: plot_twist
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+
+公孙氏深吸西方金气，踏着土龙嶙峋的脊背前行，每步都震落青铜色的龙鳞。幽渊深处忽现九眼寒泉，泉中浮沉着刻有星图的玉版，却被玄冰封存。隐士袖中飞出一道白虹，击碎玄冰时万道金光冲天而起，照见渊底躺着黄帝征蚩尤时遗失的《天问》玉简。
+
+--- Turn 8 ---
+
+📖 STORY STATUS:
+   ID: 20250526_162313
+   Turn: 7/7
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   event: 易水忽然倒流三日
+   place: 平山汉墓内室
+
+公孙氏拾起玉简时，易水忽自东向西倒流，青碧水波中浮出九只玄龟背负洛书。平山汉墓内室的壁画突然剥落，露出刻满星象的青铜门，门缝渗出阵阵松柏清香。他咬破指尖以血画符，青铜门轰然中开，只见黄帝坐像手持玉衡，双目如电直视来者。

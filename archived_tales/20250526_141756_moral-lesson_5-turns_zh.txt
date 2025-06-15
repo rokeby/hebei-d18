@@ -1,0 +1,93 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: moral_lesson
+Number of Turns: 5
+Cosmic Positions: wood → fire → metal
+Duration: 59.0 seconds
+Generated: 2025-05-26 14:19:06
+========================
+
+
+FOLKTALE STORY: 20250526_141756
+Started: 2025-05-26 14:18:07.401524
+----------------------------------------
+
+--- Opening ---
+
+那逆子跪在茧中，忽见母亲纺织的丝线化作青藤缠绕其腕，每片藤叶都显出《孝经》文字，庭院中那株百年桑树无风自动，落下桑叶如蝶，叶脉间隐约可见"晨省昏定"的训诫。此时东方青龙虚影渐散，化作一缕青烟融入桑树枝头，树皮上竟浮现出父亲临终前用指甲刻下的"冬温夏清"四字，字痕渗出清露，滴在逆子额间如泪。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_141756
+   Turn: 0/4
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   intervention: 燕国先祖托梦后人
+
+那逆子昏沉入梦，忽见燕昭王乘青鸾而至，冠冕上的十二旒玉藻叮当作响，手持青铜觚盛满桑叶露，叹道："吾观汝祖积德如春木滋长，今汝贪念似秋霜凋零。"此时案头那方未刻完的玉琮突然泛起青光，显现出周公制礼时诸侯执圭的仪轨，而窗外贪食桑叶的蚕虫竟纷纷吐金丝，结成"克己复礼"四个篆字。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_141756
+   Turn: 1/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   event: 易水忽然倒流三日
+   place: 鸡泽古陶窑
+
+那逆子惊醒时，发现案头玉琮已裂作五瓣，恰应五行之数。易水忽自南向北倒流，惊得沿岸儒生纷纷捧简奔告，却见鸡泽古陶窑中烧出的礼器尽数龟裂，窑火竟凝成赤色麒麟对天悲鸣。白发苍苍的经学博士立于河畔，衣袂间系着的五色丝绦无风自动，叹道："夏火失位则礼崩，贪泉涌而孝泉竭矣。"
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_141756
+   Turn: 2/4
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   intervention: 药王携灵草救治瘟疫
+
+那药王踏着白露自昆仑而来，腰间悬着的青铜药锄叮当作响，所过之处枯黄的黍稷竟重抽新穗。白发博士伏地泣血，却见药王袖中飞出九茎灵芝，化作白鹤衔来西方庚金之气。古籍有云："金主肃杀而能生水"，霎时间龟裂的礼器渗出清露，贪泉浊浪中浮起先父遗留的玄圭，其上铭文"克己复礼"四字忽放毫光。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_141756
+   Turn: 3/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   intervention: 鸿蒙至圣赐下符诏
+
+白鹤振翅间，南方天际忽现赤霞万道，鸿蒙至圣的符诏化作火凤翩然而至。贪泉浊浪遇此真火竟如雪消融，那玄圭上"克己复礼"的铭文与符诏相映，照得白发博士须发皆赤。古籍有载："离火明而礼制彰"，博士顿觉胸中块垒尽消，对着先父玄圭三叩九拜，泉底忽有编钟古乐自鸣应和。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_141756
+   Turn: 4/4
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 养蚕女工
+   cosmic_element: wood
+
+青桑林间忽闻机杼声，原是养蚕女工正织素帛以祭先蚕。博士见其十指生茧犹恪守春蚕之礼，忽忆少时读《仪礼》"君子无故不撤琴瑟"之训，遂取玄圭为磬，采东方震木为架。当第一缕桑烟升起时，蚕娘们惊见素帛上竟现出《礼记》"玉帛云乎哉"的朱文鸟篆，而浊泉畔的野蚕皆化作了衔着礼器的青鸾。

@@ -17,7 +17,7 @@ class StoryState:
             language: The language to use for this story (CHINESE, ENGLISH, or BILINGUAL).
         """
         self.current_turn = 0
-        self.max_turns = random.randint(7, 12)
+        self.max_turns = random.randint(5, 8)
         self.active_elements = []
         self.cosmic_position = "wood"  # Starting position
         self.previous_sentence = ""

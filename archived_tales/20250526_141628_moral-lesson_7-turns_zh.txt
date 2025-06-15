@@ -1,0 +1,126 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: moral_lesson
+Number of Turns: 7
+Cosmic Positions: wood → fire → metal
+Duration: 71.9 seconds
+Generated: 2025-05-26 14:17:54
+========================
+
+
+FOLKTALE STORY: 20250526_141628
+Started: 2025-05-26 14:16:42.920772
+----------------------------------------
+
+--- Opening ---
+
+那逆子跪在桑树下，忽见母亲生前栽种的桑枝无风自动，青翠叶片上浮现出《孝经》文字，每片叶子都化作一只青鸾，衔着五色丝线绕树三匝。东方青龙虚影与西方白虎星辉在桑树顶端交汇，树根处涌出清泉，水中倒映着二十四节气更迭之象，而井中六盏莲灯竟自行排列成北斗之形，照得桑蚕吐出的丝线织就一件素衣，衣上暗纹正是"晨省昏定"四字古篆。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250526_141628
+   Turn: 0/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   event: 赵国古墓中传出丝竹声
+   place: 鸡泽古陶窑
+
+那素衣忽化作百只青鸟飞向东方，却在鸡泽古陶窑上空坠入黄土。窑中陶俑竟自行碎裂，露出赵国古乐师遗骨，其七窍涌出赤泉，将青鸟染作朱色。此时长安传来圣旨，金字绢帛上"仁"字却缺了中间一横，原是天子梦见青龙折角于东海之滨。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250526_141628
+   Turn: 1/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: wildcard
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 邺城的织锦女子
+   cosmic_element: fire
+   object: 刻有铭文的青铜虎符
+   place: 望都陵园
+
+邺城织锦女子拾得青铜虎符时，符上"仁"字铭文突然灼如赤炭，映得她眉间现出朱雀纹样。她竟将虎符系于腰间招摇过市，引得望都陵园七十二座石翁仲齐齐转向南方。古籍有云，夏火过盛则朱雀离位，那女子不知自己已触犯"骄阳蔽仁"之忌，长安缺笔的圣旨此刻正在驿道上无风自燃。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250526_141628
+   Turn: 2/6
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   intervention: 燕国先祖托梦后人
+
+那夜织锦女子梦见燕昭王乘白虎车驾自西方而来，手中玉圭映着秋霜般的寒光。先祖以金戈划地成卦，西方白虎七宿竟随卦象移位，引得她腰间虎符发出铮铮悲鸣。翌日长安传来消息，未央宫檐角铜铃尽数断裂，太史令占得"金德失位，仁星西沉"的凶兆。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250526_141628
+   Turn: 3/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   intervention: 易水女神护佑渔民
+
+易水畔忽现赤衣女神，手持朱砂笔在渔舟上画下避火符咒。那织锦女子见渔民们跪拜感恩，方悟自己昔日以巧技骄人，失了仁德本心。恰逢朝廷诏书南来，言明岁星移位当修德政，令郡国举荐孝廉以应天象。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250526_141628
+   Turn: 4/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   intervention: 太行山神显灵于商旅
+
+商旅行至太行险径，忽见山巅青气升腾，化作长须老者立于云间。老者手持青玉圭，声如松涛告诫众人："东方木德主仁，尔等贩丝帛却囤积居奇，岂非违逆天和？"商队首领闻言汗如雨下，想起家中老母倚门盼归，当即命人开仓济贫。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250526_141628
+   Turn: 5/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   event: 冬日雪落成古篆文字
+   place: 井陉古关隘
+
+商队行至井陉关时，忽见漫天飞雪化作"仁"字古篆，纷纷落在青石古道。关隘守将手持朝廷诏书，言东方木气感应仁德，特赦免商队过往之罪。首领望见雪中老母身影隐现，方知天意昭昭，遂将半数丝绸献于关内鳏寡孤独者。
+
+--- Turn 7 ---
+
+📖 STORY STATUS:
+   ID: 20250526_141628
+   Turn: 6/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   object: 陶质谷仓模型
+
+商队休憩时，首领于驿亭角落发现一赤色陶仓，仓门刻着"五谷丰登"四字，内藏黍稷却粒粒泛着金光。忽闻空中传来编钟清响，那陶仓竟自行移至老妇门前，仓中金谷化作暖粥滋润了卧病老者的肺腑。首领幡然醒悟此乃炎帝显圣，遂率众向南三拜，将剩余丝绸尽数分与沿途饥民。

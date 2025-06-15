@@ -1,0 +1,120 @@
+{
+  "id": "20250526_141908",
+  "completed_at": "2025-05-26T14:20:22.322448",
+  "final_narrative": [
+    {
+      "turn": 0,
+      "roll": null,
+      "action_type": "opening",
+      "elements": {
+        "cosmic_element": "wood"
+      },
+      "narrative": "",
+      "narrative_zh": "那逆子跪在桑树下，忽见母亲生前所植的桑枝无风自动，青叶上浮现出《孝经》金字，每片叶子都化作一只衔着丝线的青鸟。井中六盏莲灯忽明忽暗，映得桑树影子在地上织成《礼记》中的\"五刑章\"，而树根处涌出汩汩清泉，水中沉浮着七枚刻有\"温凊定省\"的玉蚕。",
+      "token_usage": {
+        "prompt_tokens": 487,
+        "completion_tokens": 105,
+        "total_tokens": 592
+      }
+    },
+    {
+      "turn": 0,
+      "roll": 14,
+      "action_type": "cosmic_intervention",
+      "elements": {
+        "cosmic_element": "wood",
+        "intervention": "青龙神将封印古井妖魔"
+      },
+      "narrative": "",
+      "narrative_zh": "青鸟衔着的丝线忽然化作七道青光，缠绕在逆子手腕上形成北斗纹样。村中长老拄着青桐杖踏月而来，杖头悬挂的青铜铃无风自鸣，惊醒了井底沉睡的妖魔。东方天际传来龙吟，云气中隐约可见青龙神将的鳞爪，其尾扫过处桑叶上的金字皆化作镇魔符箓坠入井中。",
+      "token_usage": {
+        "prompt_tokens": 641,
+        "completion_tokens": 94,
+        "total_tokens": 735
+      }
+    },
+    {
+      "turn": 1,
+      "roll": 13,
+      "action_type": "cosmic_intervention",
+      "elements": {
+        "cosmic_element": "fire",
+        "intervention": "易水女神护佑渔民"
+      },
+      "narrative": "",
+      "narrative_zh": "青铜铃声中，易水女神踏浪而来，素手轻扬间将渔民们护在碧波屏障之后。那逆子见井中妖魔被符箓所困，竟贪心大起，妄图窃取镇魔金符换取富贵，北斗纹样顿时化作赤红锁链灼其手腕。长老叹息间以青桐杖划地为界，东方青龙鳞爪映着火光，在桑林投下天道昭昭的阴影。",
+      "token_usage": {
+        "prompt_tokens": 627,
+        "completion_tokens": 100,
+        "total_tokens": 727
+      }
+    },
+    {
+      "turn": 2,
+      "roll": 1,
+      "action_type": "character_action",
+      "elements": {
+        "cosmic_element": "metal",
+        "character": "邺城的织锦女子"
+      },
+      "narrative": "",
+      "narrative_zh": "邺城的织锦女子夜观星象，见西方白虎星宿异动，便以五色丝线织就避祸云纹锦。那逆子腕间赤链忽化作金蛇游入锦中，将贪念尽数吐出成黑雾。长老抚须而叹，取青铜刀割锦三寸，云纹顿时化作白鹤衔着金符飞向昆仑。",
+      "token_usage": {
+        "prompt_tokens": 634,
+        "completion_tokens": 87,
+        "total_tokens": 721
+      }
+    },
+    {
+      "turn": 3,
+      "roll": 1,
+      "action_type": "character_action",
+      "elements": {
+        "cosmic_element": "fire",
+        "character": "能预知天象的星官"
+      },
+      "narrative": "",
+      "narrative_zh": "白鹤西去三日后，邺城突现赤云蔽日之象，星官夜观璇玑，见金蛇黑雾竟化作了南方荧惑犯太微。长老取龟甲灼之，裂纹显出\"贪火焚智\"之兆，急命人敲击青铜编钟以调和五行。此时那逆子双目渐染赤色，竟将家中传世玉琮盗出欲售于市。",
+      "token_usage": {
+        "prompt_tokens": 623,
+        "completion_tokens": 97,
+        "total_tokens": 720
+      }
+    },
+    {
+      "turn": 4,
+      "roll": 18,
+      "action_type": "story_ending",
+      "elements": {
+        "cosmic_element": "wood"
+      },
+      "narrative": "",
+      "narrative_zh": "那逆子怀揣玉琮行至市集，忽闻青铜编钟清音自宗庙传来，其声如春雷震动东方青龙。他低头见手中玉琮竟渗出殷红血泪，耳边响起亡父临终\"智以守器\"的教诲，顿时如遭雷殛跪倒在地。白发长老手持桃木杖踏青霞而至，以五行相生之理点化道：\"贪火焚心时，当思木德生发之性，玉琮本为礼地通神之器，岂可沦于商贾之手？\"",
+      "token_usage": {
+        "prompt_tokens": 619,
+        "completion_tokens": 127,
+        "total_tokens": 746
+      }
+    }
+  ],
+  "cosmic_position": "wood",
+  "total_turns": 5,
+  "max_turns": 7,
+  "language": "zh",
+  "story_arc": {
+    "type": "moral_lesson",
+    "stages": [
+      "harmony",
+      "transgression",
+      "consequence",
+      "realization",
+      "atonement"
+    ],
+    "theme_elements": {
+      "virtue": "wisdom (智)",
+      "transgression": "greed",
+      "moral_authority": "village elder"
+    },
+    "current_stage": "realization"
+  }
+}
