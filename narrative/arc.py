@@ -353,62 +353,111 @@ class StoryArc:
     #     self.theme_elements["divine_authority"] = random.choice(["Judge of the Dead", "City God", "Celestial Emperor", "Karma Official", "Moon Goddess"])
     #     self.theme_elements["supernatural_evidence"] = random.choice(["soul records", "magic mirror", "otherworld witness", "karmic ledger", "spirit testimony"])
     
+    # def _setup_stage_triggers(self):
+    #     """Define which action types are most appropriate to trigger stage advancements."""
+    #     stage_trigger_mappings = {
+    #         "quest": {
+    #             "departure": ["character_action", "environmental_event"],
+    #             "challenge": ["environmental_event", "cosmic_intervention"],
+    #             "revelation": ["object_appearance", "cosmic_intervention"],
+    #             "return": ["character_action", "environmental_event"],
+    #             "transformation": ["cosmic_intervention", "plot_twist"]
+    #         },
+    #         "moral_lesson": {
+    #             "harmony": ["character_action", "environmental_event"],
+    #             "transgression": ["character_action", "plot_twist"],
+    #             "consequence": ["cosmic_intervention", "environmental_event"],
+    #             "realization": ["object_appearance", "cosmic_intervention"],
+    #             "atonement": ["character_action", "cosmic_intervention"]
+    #         },
+    #         "cosmic_balance": {
+    #             "order": ["environmental_event", "character_action"],
+    #             "disruption": ["plot_twist", "cosmic_intervention"],
+    #             "chaos": ["environmental_event", "wildcard"],
+    #             "intervention": ["cosmic_intervention", "object_appearance"],
+    #             "new_order": ["cosmic_intervention", "character_action"]
+    #         },
+    #         "transformation": {
+    #             "ordinary": ["character_action", "environmental_event"],
+    #             "encounter": ["object_appearance", "cosmic_intervention"],
+    #             "change": ["cosmic_intervention", "character_action"],
+    #             "challenge": ["environmental_event", "plot_twist"],
+    #             "transcendence": ["cosmic_intervention", "wildcard"]
+    #         },
+    #         "origin_myth": {
+    #             "void": ["environmental_event", "cosmic_intervention"],
+    #             "creation": ["cosmic_intervention", "object_appearance"],
+    #             "conflict": ["character_action", "environmental_event"],
+    #             "resolution": ["cosmic_intervention", "plot_twist"],
+    #             "explanation": ["cosmic_intervention", "environmental_event"]
+    #         },
+    #         "ancestral_vengeance": {
+    #             "injustice": ["character_action", "plot_twist"],
+    #             "suffering": ["environmental_event", "character_action"],
+    #             "divine_sign": ["cosmic_intervention", "object_appearance"],
+    #             "retribution": ["cosmic_intervention", "environmental_event"],
+    #             "ancestral_peace": ["cosmic_intervention", "character_action"]
+    #         },
+    #         "bureaucratic_trial": {
+    #             "mortal_case": ["character_action", "environmental_event"],
+    #             "underworld_appeal": ["cosmic_intervention", "character_action"],
+    #             "divine_judgment": ["cosmic_intervention", "object_appearance"],
+    #             "cosmic_record": ["object_appearance", "cosmic_intervention"],
+    #             "karmic_resolution": ["cosmic_intervention", "plot_twist"]
+    #         }
+    #     }
+        
+    #     self.stage_triggers = stage_trigger_mappings.get(self.arc_type, {})
+
     def _setup_stage_triggers(self):
         """Define which action types are most appropriate to trigger stage advancements."""
         stage_trigger_mappings = {
-            "quest": {
-                "departure": ["character_action", "environmental_event"],
-                "challenge": ["environmental_event", "cosmic_intervention"],
-                "revelation": ["object_appearance", "cosmic_intervention"],
-                "return": ["character_action", "environmental_event"],
-                "transformation": ["cosmic_intervention", "plot_twist"]
+            "friendship_journey": {
+                "meeting": ["character_action", "environmental_event"],
+                "misunderstanding": ["character_action", "plot_twist"],
+                "adventure": ["environmental_event", "object_appearance"],
+                "understanding": ["character_action", "cosmic_intervention"],
+                "celebration": ["cosmic_intervention", "environmental_event"]
             },
-            "moral_lesson": {
-                "harmony": ["character_action", "environmental_event"],
-                "transgression": ["character_action", "plot_twist"],
-                "consequence": ["cosmic_intervention", "environmental_event"],
-                "realization": ["object_appearance", "cosmic_intervention"],
-                "atonement": ["character_action", "cosmic_intervention"]
+            "kind_deed_reward": {
+                "daily_life": ["character_action", "environmental_event"],
+                "kind_action": ["character_action", "object_appearance"],
+                "unexpected_result": ["environmental_event", "cosmic_intervention"],
+                "magical_help": ["cosmic_intervention", "object_appearance"],
+                "happy_ending": ["cosmic_intervention", "character_action"]
             },
-            "cosmic_balance": {
-                "order": ["environmental_event", "character_action"],
-                "disruption": ["plot_twist", "cosmic_intervention"],
-                "chaos": ["environmental_event", "wildcard"],
-                "intervention": ["cosmic_intervention", "object_appearance"],
-                "new_order": ["cosmic_intervention", "character_action"]
+            "festival_adventure": {
+                "preparation": ["character_action", "environmental_event"],
+                "problem": ["environmental_event", "plot_twist"],
+                "creative_solution": ["character_action", "object_appearance"],
+                "community_help": ["character_action", "cosmic_intervention"],
+                "joyful_festival": ["cosmic_intervention", "environmental_event"]
             },
-            "transformation": {
-                "ordinary": ["character_action", "environmental_event"],
-                "encounter": ["object_appearance", "cosmic_intervention"],
-                "change": ["cosmic_intervention", "character_action"],
-                "challenge": ["environmental_event", "plot_twist"],
-                "transcendence": ["cosmic_intervention", "wildcard"]
+            "learning_wisdom": {
+                "curiosity": ["character_action", "environmental_event"],
+                "seeking_teacher": ["character_action", "object_appearance"],
+                "funny_lessons": ["environmental_event", "cosmic_intervention"],
+                "practice": ["character_action", "object_appearance"],
+                "sharing_knowledge": ["character_action", "environmental_event"]
             },
-            "origin_myth": {
-                "void": ["environmental_event", "cosmic_intervention"],
-                "creation": ["cosmic_intervention", "object_appearance"],
-                "conflict": ["character_action", "environmental_event"],
-                "resolution": ["cosmic_intervention", "plot_twist"],
-                "explanation": ["cosmic_intervention", "environmental_event"]
+            "nature_harmony": {
+                "discovery": ["environmental_event", "character_action"],
+                "imbalance": ["environmental_event", "plot_twist"],
+                "understanding": ["character_action", "cosmic_intervention"],
+                "cooperation": ["character_action", "object_appearance"],
+                "restoration": ["cosmic_intervention", "environmental_event"]
             },
-            "ancestral_vengeance": {
-                "injustice": ["character_action", "plot_twist"],
-                "suffering": ["environmental_event", "character_action"],
-                "divine_sign": ["cosmic_intervention", "object_appearance"],
-                "retribution": ["cosmic_intervention", "environmental_event"],
-                "ancestral_peace": ["cosmic_intervention", "character_action"]
-            },
-            "bureaucratic_trial": {
-                "mortal_case": ["character_action", "environmental_event"],
-                "underworld_appeal": ["cosmic_intervention", "character_action"],
-                "divine_judgment": ["cosmic_intervention", "object_appearance"],
-                "cosmic_record": ["object_appearance", "cosmic_intervention"],
-                "karmic_resolution": ["cosmic_intervention", "plot_twist"]
+            "brave_little_hero": {
+                "ordinary_day": ["character_action", "environmental_event"],
+                "small_challenge": ["environmental_event", "plot_twist"],
+                "finding_courage": ["character_action", "cosmic_intervention"],
+                "clever_solution": ["character_action", "object_appearance"],
+                "growing_up": ["cosmic_intervention", "character_action"]
             }
         }
         
         self.stage_triggers = stage_trigger_mappings.get(self.arc_type, {})
-    
+        
     def get_current_stage(self, language=Language.ENGLISH):
         """Get the current narrative stage.
         

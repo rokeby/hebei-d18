@@ -1,0 +1,61 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: kind_deed_reward
+Number of Turns: 3
+Cosmic Positions: wood → fire
+Duration: 22.1 seconds
+Generated: 2025-06-17 14:16:57
+========================
+
+
+FOLKTALE STORY: 20250617_141627
+Started: 2025-06-17 14:16:34.980136
+----------------------------------------
+
+--- Opening ---
+
+奶奶从樟木箱底取出青瓷茶具，茶香与檀木香在晨光中交织。两个孩子跪坐在蒲团上，看奶奶用桃木勺舀起昆仑茶叶，沸水冲下时，茶叶竟化作一群翠鸟在茶烟中飞舞。最小的那只翠鸟落在妹妹肩头，衔来一片会发光的梧桐叶，上面写着："善心如玉，温润生光"。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141627
+   Turn: 0/3
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   intervention: 树爷爷伸出粗壮的手臂
+
+妹妹捧着发光的梧桐叶跑向村塾，却在路上看见几个顽童将果核扔在古槐树下。忽然间，槐树爷爷的枝干化作青翠手臂，轻轻接住下落的果核，树皮皱褶间浮现出学堂先生慈祥的面容："敬天惜物，方得春神眷顾"。那些果核在树爷爷掌心发芽，转眼开出朵朵粉白的槐花。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141627
+   Turn: 1/3
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   intervention: 树爷爷伸出粗壮的手臂
+
+妹妹惊讶地看着槐花飘落，每朵花瓣都映着学堂先生教过的《三字经》文字。树爷爷将开满花朵的枝条弯成拱门，指引她走向南方赤色霞光处，那里有位拄着赤玉杖的白发老翁正在微笑等候。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141627
+   Turn: 0/3
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: story_ending
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+
+翠鸟飞走后，妹妹发现村口老槐树下散落着果皮纸屑，想起夫子教导"敬天惜物"的道理，便拉着哥哥用青竹枝将垃圾一一拾起。这时学堂的夫子拄着紫檀杖经过，见兄妹如此懂事，从袖中取出一颗会唱歌的桃核，轻轻放在妹妹掌心。桃核在晨光中发芽，长成一株会讲故事的桃树苗，树梢上还挂着用红绳系着的《弟子规》竹简。

@@ -1,0 +1,139 @@
+{
+  "id": "20250616_161849",
+  "completed_at": "2025-06-16T16:19:50.280253",
+  "final_narrative": [
+    {
+      "turn": 0,
+      "roll": null,
+      "action_type": "opening",
+      "elements": {
+        "cosmic_element": "metal"
+      },
+      "narrative": "",
+      "narrative_zh": "阿水和小伙伴们捧着金灿灿的月饼模具跑向村口，发现老槐树下不知何时出现了一队会发光的金色蚂蚁，它们正搬运着桂花糖在树叶上拼出吉祥的云纹。村里的老铜匠笑呵呵地敲打着新铸的铜锣，每一声清脆的锣响都让天空中的晚霞多染上一层蜜糖般的金色，连路过的小狗都叼着红绸带加入了准备庆典的队伍。",
+      "token_usage": {
+        "prompt_tokens": 479,
+        "completion_tokens": 98,
+        "total_tokens": 577
+      }
+    },
+    {
+      "turn": 0,
+      "roll": 7,
+      "action_type": "environmental_event",
+      "elements": {
+        "cosmic_element": "metal",
+        "event": "萤火虫在夜晚发出柔和的光",
+        "place": "村里的图书馆"
+      },
+      "narrative": "",
+      "narrative_zh": "阿水忽然想起古籍记载的\"拜月礼\"，可村里没人记得这个仪式了。这时月亮悄悄从云后探出头来，用银铃般的声音说：\"西厢房的老竹简里，藏着中秋最古老的秘密呢。\"萤火虫们立刻聚成金色的光带，指引孩子们向村中那座堆满竹简的藏书楼飞去。",
+      "token_usage": {
+        "prompt_tokens": 631,
+        "completion_tokens": 78,
+        "total_tokens": 709
+      }
+    },
+    {
+      "turn": 1,
+      "roll": 1,
+      "action_type": "character_action",
+      "elements": {
+        "cosmic_element": "water",
+        "character": "会讲故事的爷爷"
+      },
+      "narrative": "",
+      "narrative_zh": "孩子们踩着月光来到藏书楼，发现会讲故事的爷爷正坐在青石阶上擦拭一面青铜镜。爷爷笑眯眯地说：\"这面玄水镜能照见被遗忘的往事，但需要五颗晨露才能唤醒它。\"最小的孩子阿黑立刻举起收集露水的玉瓶，瓶中的露珠恰好映出五道银光。",
+      "token_usage": {
+        "prompt_tokens": 600,
+        "completion_tokens": 74,
+        "total_tokens": 674
+      }
+    },
+    {
+      "turn": 2,
+      "roll": 13,
+      "action_type": "cosmic_intervention",
+      "elements": {
+        "cosmic_element": "fire",
+        "intervention": "春风姐姐带来温暖"
+      },
+      "narrative": "",
+      "narrative_zh": "春风姐姐轻轻吹过藏书楼的屋檐，带来一阵温暖的花香。玄水镜突然亮起银光，镜中浮现出会说话的月亮婆婆，她眨着眼睛说：\"孩子们，中秋的舞龙需要赤色火焰的心，才能唤醒沉睡的祥云。\"阿黑灵机一动，举起爷爷的红灯笼，里面跳动的烛火正好映出五片祥云的模样。",
+      "token_usage": {
+        "prompt_tokens": 594,
+        "completion_tokens": 82,
+        "total_tokens": 676
+      }
+    },
+    {
+      "turn": 3,
+      "roll": 17,
+      "action_type": "wildcard",
+      "elements": {
+        "cosmic_element": "water",
+        "character": "喜欢音乐的老师",
+        "object": "特别的纸灯笼",
+        "place": "古老的村庙院子"
+      },
+      "narrative": "",
+      "narrative_zh": "喜欢音乐的老师从古老的村庙院子里取出一把青铜编钟，轻轻敲击时，纸灯笼里的烛火竟随着音律跳动起来。月亮婆婆在镜中微笑点头：\"这北方的玄水之音，正可调和赤火与祥云。\"阿黑发现灯笼上的五片祥云开始旋转，在冬夜的星空下绘出美丽的金色光纹。",
+      "token_usage": {
+        "prompt_tokens": 618,
+        "completion_tokens": 81,
+        "total_tokens": 699
+      }
+    },
+    {
+      "turn": 4,
+      "roll": 13,
+      "action_type": "cosmic_intervention",
+      "elements": {
+        "cosmic_element": "metal",
+        "intervention": "玉石精灵保佑孩子们平安"
+      },
+      "narrative": "",
+      "narrative_zh": "月光下，编钟的余音引来一群发光的玉蝴蝶，它们翅膀上的花纹正是失传已久的月饼秘方。月亮婆婆轻声说：\"这些玉石精灵会指引你们找到藏在老槐树下的月饼模具，那是西王母赐给人间的礼物。\"\n\n孩子们跟着玉蝴蝶来到树下，发现树根处闪烁着温润的白光，原来是一套雕刻着祥云纹的月饼模子。当他们小心捧起模具时，每片祥云都化作金色粉末，飘向夜空重新组成完整的舞龙图案。",
+      "token_usage": {
+        "prompt_tokens": 604,
+        "completion_tokens": 112,
+        "total_tokens": 716
+      }
+    },
+    {
+      "turn": 5,
+      "roll": 18,
+      "action_type": "story_ending",
+      "elements": {
+        "cosmic_element": "metal"
+      },
+      "narrative": "",
+      "narrative_zh": "金色的舞龙图案在夜空中盘旋三圈，忽然化作点点星光洒落在村民们的竹篮里。每个篮子里都出现了香喷喷的月饼，饼面上还印着会发光的月宫图案，月亮婆婆笑着说：\"只要大家心连心，被遗忘的传统就会重新发光呢！\"  \n\n村里的老乐师敲响了青铜编钟，孩子们举着新做的月饼模具欢快奔跑，玉蝴蝶们绕着他们跳起了圆月舞。西风送来桂花香，整个村庄都沉浸在比往年更明亮的月光里，连井水都映出了天上舞龙的金色倒影。",
+      "token_usage": {
+        "prompt_tokens": 625,
+        "completion_tokens": 129,
+        "total_tokens": 754
+      }
+    }
+  ],
+  "cosmic_position": "metal",
+  "total_turns": 6,
+  "max_turns": 7,
+  "language": "zh",
+  "story_arc": {
+    "type": "festival_adventure",
+    "stages": [
+      "preparation",
+      "problem",
+      "creative_solution",
+      "community_help",
+      "joyful_festival"
+    ],
+    "theme_elements": {
+      "festival_element": "Moon Festival",
+      "disruption": "forgotten tradition",
+      "festival_helper": "talking moon"
+    },
+    "current_stage": "community_help"
+  }
+}

@@ -1,0 +1,64 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: nature_harmony
+Number of Turns: 2
+Cosmic Positions: fire → earth
+Duration: 17.8 seconds
+Generated: 2025-06-17 14:19:00
+========================
+
+
+FOLKTALE STORY: 20250617_141835
+Started: 2025-06-17 14:18:43.279519
+----------------------------------------
+
+--- Opening ---
+
+兄妹三人每日清晨都会帮村口的老陶匠拾柴生火，他们最喜欢看炉膛里跳动的火苗像小精灵般舞蹈。这天老陶匠送给他们三个红泥捏的小火炉，说这是用昆仑山脚下的神泥烧制的，只要心怀善念，炉中的火焰就会永远温暖明亮。孩子们抱着小火炉回家时，发现路边的野菊花都朝着他们轻轻点头，仿佛在感谢他们常年为村里老人送柴火的善举。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141835
+   Turn: 0/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   intervention: 蚕宝宝精灵教授编织的秘密
+
+三个小火炉在孩子们床头整夜散发着温暖的红光，照亮了墙上挂着的蚕茧。最小的妹妹阿秀清晨发现，一只雪白的蚕宝宝正趴在炉边吐丝，那丝线竟闪烁着赤色光芒。蚕宝宝忽然开口说话："诚心之人啊，我乃南火之精，愿教你们用这赤丝编织云霞般的绸缎。"
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141835
+   Turn: 0/5
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: plot_twist
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+
+小兄妹们忽然听见草丛里传来窸窸窣窣的哭声，原来是一群小兔子正躲在老槐树下发抖。槐树爷爷垂下枝条轻抚它们，用沙沙的声音说："别怕，南边的小溪被落叶堵住了，火气太旺吓着孩子们了。"哥哥立刻挽起袖子："让我们来帮忙清理溪水吧！"随着溪流恢复清澈，小动物们欢快地排着队来喝水，每滴水中都映着彩虹的光芒。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141835
+   Turn: 1/5
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: wildcard
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 编织丝绸的女子
+   cosmic_element: earth
+   object: 铜鬲
+   object_is_central: True
+   place: 种满蔬菜的田地
+
+小兄妹沿着彩虹溪水往下游走，看见一位穿黄裙子的女子正在田边用铜鬲舀水浇菜。铜鬲突然发出"叮咚"的响声，女子惊讶地说："这祖传的铜鬲只有在土地生气时才会鸣响！"他们低头一看，发现田里的萝卜全都蔫头耷脑，原来有人把垃圾埋在了菜地下。

@@ -1,0 +1,144 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: festival_adventure
+Number of Turns: 5
+Cosmic Positions: fire → earth → water
+Duration: 46.6 seconds
+Generated: 2025-06-17 14:17:44
+========================
+
+
+FOLKTALE STORY: 20250617_141650
+Started: 2025-06-17 14:16:57.675651
+----------------------------------------
+
+--- Opening ---
+
+村中的孩子们围着老槐树欢快地奔跑，手里捧着刚摘下的红纸和彩绳，准备为即将到来的节日扎灯笼。小芳踮起脚尖，将一枚铜钱系在最高的树枝上，铜钱在夕阳下泛着温暖的金光，仿佛点燃了整个村庄的喜悦。传说记载，这样的铜钱灯笼能引来灶君的目光，保佑来年家家户户红红火火。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141650
+   Turn: 0/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   object: 铜鬲
+   object_is_central: True
+
+小芳在槐树下发现一个布满铜绿的古老铜鬲，当她轻轻擦拭时，鬲中突然映出满月的光华，还飘出阵阵桂花香。村中智慧的老龟慢悠悠爬来，告诉孩子们这是月宫仙子失落人间的宝物，能奏响天籁之音，但要找回村里丢失的庆典乐器，必须集齐五片不同颜色的桂花放入鬲中。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141650
+   Turn: 1/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 友善的小龙
+   cosmic_element: earth
+
+小龙从云间探出金灿灿的脑袋，尾巴尖上卷着一片黄色的桂花瓣："我在中岳嵩山巅找到了土德桂花，但要拿到它，得先帮山神爷爷找回他丢失的陶埙。"孩子们跟着小龙爬上黄土坡，发现山神的乐器正卡在一株老松树的树洞里，树洞里还住着一窝刚出生的小云雀。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141650
+   Turn: 2/4
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   object: 错金银铜说唱俑
+   object_is_central: True
+
+孩子们小心翼翼地从树洞取出陶埙时，一个错金银铜说唱俑突然从松树根下蹦了出来，它圆鼓鼓的肚子里发出"叮叮咚咚"的乐声。老龟仙慢悠悠从溪边爬来，胡须上还沾着晶莹的水珠："这铜俑乃上古乐师所铸，它知晓所有失传的月宫曲谱，只要用北方的玄冰水擦拭它的眼睛......"
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141650
+   Turn: 3/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   intervention: 一只友善的精灵出现帮忙
+
+就在孩子们惊讶地望着铜俑时，一只闪着黄光的萤火虫精灵从月饼篮子里飞了出来，它翅膀上沾着桂花香，绕着铜俑跳起了八字舞。老龟仙笑眯眯地点头："这土精小友最懂调和之道，让它用长夏的黄土捏个陶碗，盛来北方的玄冰水正好。"精灵立刻从村口的黄泥地里捧来一抔散发着谷物香气的泥土，轻轻一吹就变成了带着祥云纹的陶盏。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141650
+   Turn: 3/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 做月饼的糕点师
+   cosmic_element: earth
+
+糕点师张婶正揉着金黄色的月饼面团，忽然听见铜俑的叮咚声。她捧来珍藏的桂花蜜，轻轻抹在铜俑的笑脸上："古籍有云，甜食能唤醒沉睡的记忆。"铜俑的眼睛顿时亮起温柔的黄光，肚中的乐声化作满天星斗般的音符。
+
+老龟仙用爪子蘸着溪水，在月饼上画出五行图案："土德居中，当以五谷为引。"孩子们把刚出炉的月饼分给村民，香甜的气息引来月宫玉兔，它衔来一根银桂枝，在铜俑头顶轻点三下。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141650
+   Turn: 4/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 喜欢画画的小朋友
+   cosmic_element: fire
+
+喜欢画画的小阿宝用朱砂在铜俑肚皮上描出火焰纹样，铜俑突然"咯咯"笑起来，从嘴里吐出一把流光溢彩的月琴。老龟仙用爪子拨动琴弦，南风便带着桂花香将乐声送到每家每户的屋檐下，连月亮都跟着节奏轻轻摇晃起来。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141650
+   Turn: 4/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   object: 铜人
+   object_is_central: True
+
+铜俑突然张开双臂，肚中传出清越的编钟声，惊飞了桂花树上的喜鹊。老龟仙抚须笑道："此乃周天子南巡时遗失的乐俑，其声可召百鸟来仪。"果然，随着铜俑旋转起舞，丢失的笙箫笛鼓纷纷从云间落下，裹着赤色霞光回到乐师手中。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141650
+   Turn: 4/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 练习书法的学生
+   cosmic_element: fire
+
+练习书法的学生小明突然发现铜俑的玉笛不见了，急得直跺脚。老龟仙慢悠悠地爬过来，用爪子沾着朱砂在宣纸上画了个月亮："南火克西金，去问问爱唱歌的蟋蟀吧。"  
+
+果然，一只红头蟋蟀正抱着玉笛在桂花树下打拍子，它害羞地说："这笛声太美了，让我想起了月宫里的嫦娥姐姐。"孩子们用月饼换来玉笛，铜俑吹奏时，桂花纷纷落下，化作满天金色的蝴蝶。

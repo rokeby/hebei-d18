@@ -1,0 +1,29 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: festival_adventure
+Number of Turns: 5
+Cosmic Positions: fire → earth → water
+Duration: 42.9 seconds
+Generated: 2025-06-17 14:18:36
+========================
+
+
+FOLKTALE STORY: 20250617_141746
+Started: 2025-06-17 14:18:36.152996
+----------------------------------------
+
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141746
+   Turn: 4/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 放风筝的孩子
+   cosmic_element: fire
+
+竹林深处传来清脆的笑声，一个放风筝的红衣孩子正追着飞舞的蝴蝶。老奶奶轻抚银须，指着地上蚂蚁排出的奇怪图案说："这夏日谜语比蜂蜜还甜，谁能用智慧解开？"小妹妹眼睛一亮，摘下头上的红丝带系在竹枝上，南风立刻带着丝带跳起舞来，蚂蚁们排成了"智慧"二字。

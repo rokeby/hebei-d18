@@ -1,0 +1,105 @@
+{
+  "id": "20250617_141652",
+  "completed_at": "2025-06-17T14:17:43.907455",
+  "final_narrative": [
+    {
+      "turn": 0,
+      "roll": null,
+      "action_type": "opening",
+      "elements": {
+        "cosmic_element": "wood"
+      },
+      "narrative": "",
+      "narrative_zh": "兄妹俩捧着会讲故事的桃树苗回家时，突然一阵清风将树梢的竹简吹上了天，化作一只青鸾形状的风筝。风筝线是用桑树皮搓成的，在夕阳下闪着金光，带着他们穿过飘着墨香的古老书院，那里有上千卷竹简正在月光下轻轻翻动书页。妹妹踮起脚尖，看见最顶上那卷竹简写着\"天地玄黄\"四个会发光的字，像萤火虫般在暮色中明明灭灭。",
+      "token_usage": {
+        "prompt_tokens": 508,
+        "completion_tokens": 111,
+        "total_tokens": 619
+      }
+    },
+    {
+      "turn": 0,
+      "roll": 2,
+      "action_type": "character_action",
+      "elements": {
+        "cosmic_element": "wood",
+        "character": "制作灯笼的工匠"
+      },
+      "narrative": "",
+      "narrative_zh": "风筝线忽然轻轻颤动，带着兄妹俩降落在一位正在扎竹灯笼的老匠人门前。老匠人用青竹片编成的灯笼里跳动着温暖的橘色火光，他笑眯眯地请孩子们品尝新摘的桑葚，紫色的果汁染得他们手指像春天的花瓣般鲜艳。  \n\n\"看那风筝，\"老匠人指着在桑树枝头休息的青鸾，\"它带着你们来学用春天的枝条编织光明呢。\"说着他取出几根嫩柳条，教他们在灯笼骨架上缠绕出会发光的叶脉纹路。",
+      "token_usage": {
+        "prompt_tokens": 644,
+        "completion_tokens": 118,
+        "total_tokens": 762
+      }
+    },
+    {
+      "turn": 1,
+      "roll": 2,
+      "action_type": "character_action",
+      "elements": {
+        "cosmic_element": "fire",
+        "character": "顽皮的小猴子"
+      },
+      "narrative": "",
+      "narrative_zh": "正当兄妹俩专心编织时，一只尾巴卷着桑枝的小猴子从屋檐倒挂下来，好奇地戳了戳未完成的灯笼骨架。老匠人笑着递给它一颗蜜枣：\"南方的火气最旺时，连山间的灵猴都爱来凑热闹呢。\"小猴子捧着枣子蹦到桑树上，将枣核种在青鸾风筝旁边，三双亮晶晶的眼睛一起期待地看着湿润的泥土。",
+      "token_usage": {
+        "prompt_tokens": 648,
+        "completion_tokens": 93,
+        "total_tokens": 741
+      }
+    },
+    {
+      "turn": 2,
+      "roll": 8,
+      "action_type": "environmental_event",
+      "elements": {
+        "cosmic_element": "metal",
+        "event": "雪花变成小小的星星",
+        "place": "制作陶器的小屋"
+      },
+      "narrative": "",
+      "narrative_zh": "桑枝上的枣核忽然冒出嫩芽，老匠人带着孩子们来到西厢的陶屋。当孩子们揉捏陶土时，窗外飘落的雪花竟化作点点银星，落在他们捏的小陶碗里，老匠人轻声道：\"金秋的白露最养万物，我们做的器皿要像星空般包容天地。\"孩子们捧着盛满星光的小碗，和小猴子分食新蒸的桂花糕，甜香里带着泥土的芬芳。",
+      "token_usage": {
+        "prompt_tokens": 633,
+        "completion_tokens": 99,
+        "total_tokens": 732
+      }
+    },
+    {
+      "turn": 3,
+      "roll": 18,
+      "action_type": "story_ending",
+      "elements": {
+        "cosmic_element": "fire"
+      },
+      "narrative": "",
+      "narrative_zh": "老匠人指着陶碗里跳动的星光说：\"看啊，这些星星是天上火神送来的礼物，就像夏日萤火般温暖。\"孩子们围坐在一起，用星光拌着桂花糕，小猴子也学着把糕饼掰成小块分给大家。夜风送来远处荷塘的清香，老匠人抚须微笑：\"懂得分享自然馈赠的人，心里永远住着夏天。\"",
+      "token_usage": {
+        "prompt_tokens": 621,
+        "completion_tokens": 86,
+        "total_tokens": 707
+      }
+    }
+  ],
+  "cosmic_position": "fire",
+  "total_turns": 4,
+  "max_turns": 7,
+  "language": "zh",
+  "story_arc": {
+    "type": "learning_wisdom",
+    "stages": [
+      "curiosity",
+      "seeking_teacher",
+      "funny_lessons",
+      "practice",
+      "sharing_knowledge"
+    ],
+    "theme_elements": {
+      "lesson_learned": "appreciating nature",
+      "wisdom_guide": "a kind teacher",
+      "growth_sign": "a shared meal"
+    },
+    "current_stage": "funny_lessons"
+  }
+}

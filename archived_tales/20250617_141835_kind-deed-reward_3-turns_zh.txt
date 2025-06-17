@@ -1,0 +1,29 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: kind_deed_reward
+Number of Turns: 3
+Cosmic Positions: fire → earth → water
+Duration: 28.6 seconds
+Generated: 2025-06-17 14:19:11
+========================
+
+
+FOLKTALE STORY: 20250617_141835
+Started: 2025-06-17 14:19:01.233068
+----------------------------------------
+
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141835
+   Turn: 1/5
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   intervention: 纸张精灵帮助写出美丽的字
+
+小兔子们喝完水后，忽然发现溪边飘来一张发光的黄纸，上面歪歪扭扭写着"救救我们"。纸上的墨迹突然扭动起来，变成个戴方巾的小精灵："我是被顽童乱丢的纸张精灵，请帮我找回端正的字形！"妹妹轻轻用手指描摹那些歪斜的字迹，每描一笔就有一道金光闪过，纸上的字渐渐变得工整漂亮，像春天新发的嫩芽般舒展。

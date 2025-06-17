@@ -1,0 +1,105 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: nature_harmony
+Number of Turns: 5
+Cosmic Positions: water → wood → earth
+Duration: 43.1 seconds
+Generated: 2025-06-16 16:21:37
+========================
+
+
+FOLKTALE STORY: 20250616_162047
+Started: 2025-06-16 16:20:54.196462
+----------------------------------------
+
+--- Opening ---
+
+阿水好奇地伸手触碰冰花，那花瓣竟化作一群透明的小鱼游向天空，在云端架起一座彩虹桥。桥的那头，春神正骑着青牛缓缓而来，她衣袖拂过之处，枯黄的草地立刻冒出嫩绿的新芽，冬眠的小动物们也揉着眼睛从地洞里探出了头。老和尚笑呵呵地指着彩虹桥说："看啊，这就是天地间最神奇的画笔，把冬天的素白染成了春天的五彩。"
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250616_162047
+   Turn: 0/3
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: story_ending
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+
+彩虹桥下传来微弱的啜泣声，原来土地公公正捧着干裂的泥土发愁："冬雪消融得太快，大地都渴得张开了嘴。"这时一只朱红色的小雀儿衔来清泉，在枯枝上唱起了欢快的歌谣，每滴音符落进泥土都化作晶莹的水珠。阿水连忙捧起河边的落叶，和小动物们一起清理堵塞的小溪，看着清澈的溪水重新滋润大地，土地公公的白胡子都笑成了弯月亮。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250616_162047
+   Turn: 1/3
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   intervention: 书本精灵传授知识
+
+阿水发现溪边躺着一卷发光的竹简，轻轻展开时跳出了个穿青衣的小精灵："我是春木之灵，让我教你如何听懂大地的语言。"小精灵挥动柳枝般的魔杖，溪水突然映出千万片嫩叶的倒影，每片叶子上都写着大地的秘密。土地公公惊喜地发现，那些清理溪流时堆起的落叶堆里，竟冒出了点点青芽，像大地睁开的小眼睛。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250616_162047
+   Turn: 1/3
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: story_ending
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+
+溪水欢快地流淌时，岸边突然冒出许多嫩绿的竹笋，它们像小精灵般随着鸟儿的歌声轻轻摇摆。土地公公从袖中取出青玉瓶，将收集的晨露洒向竹林，顿时每根竹笋都绽放出七彩光芒，在春风中织成了一道新的彩虹桥。阿水和小动物们惊喜地发现，只要轻轻触碰这些发光的竹子，干渴的土地就会立刻长出绒绒的青草和芬芳的野花。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250616_162047
+   Turn: 2/3
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 温柔的年轻妈妈
+   cosmic_element: earth
+
+竹简上的青芽突然轻轻颤动，一只黄羽金嗓的鸟儿落在阿水肩头，唱着古老的歌谣："大地饿得发慌，快喂它清甜的溪水汤。"年轻的妈妈挽起衣袖，带着孩子们用竹篮捞起溪中枯枝，每清理一段河道，泥土里就冒出更多嫩芽。土地公公捋着白胡子笑道："这些新芽是大地的牙齿，正等着喝干净的溪水呢。"
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250616_162047
+   Turn: 2/3
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   intervention: 月亮奶奶送下温暖的光芒
+
+彩虹桥下的小溪突然变得浑浊起来，泥土里传来咕噜咕噜的饥饿声。一只金翅雀落在竹枝上，唱着清亮的歌谣："月奶奶的银梳子，能梳开淤塞的河道哩！"孩子们跟着歌声挖开堵塞的碎石，月光像温暖的纱巾轻轻拂过溪水，顿时泥沙沉淀，溪底现出了五彩的鹅卵石。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250616_162047
+   Turn: 3/3
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 会唱歌的茶馆老板
+   cosmic_element: wood
+
+溪水清澈后，岸边茶馆里飘来阵阵歌声，那位会唱歌的老板正用青竹筒舀着新茶。他唱着："东来的春风啊，带着木的生机，让每片叶子都跳起舞来！"孩子们跟着节奏，把五彩鹅卵石排成青龙的形状，霎时间整条小溪都泛起了翡翠般的光泽。

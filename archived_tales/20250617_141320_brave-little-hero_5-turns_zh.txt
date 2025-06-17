@@ -1,0 +1,100 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: brave_little_hero
+Number of Turns: 5
+Cosmic Positions: wood → fire → metal
+Duration: 44.0 seconds
+Generated: 2025-06-17 14:14:10
+========================
+
+
+FOLKTALE STORY: 20250617_141320
+Started: 2025-06-17 14:13:26.926661
+----------------------------------------
+
+--- Opening ---
+
+清晨的阳光透过槐树叶洒在青石板上，小荷踮着脚尖数着树上的新芽，忽然发现枝头挂着半块青玉，上面刻着条盘绕的小龙。当她用柳枝轻轻拨动玉佩时，树梢传来沙沙响声，一条翠绿的木龙探出头来，衔着片会发光的桑叶放在她手心。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141320
+   Turn: 0/4
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   object: 错金银铜骰
+   object_is_central: True
+
+小荷捧着发光的桑叶正发愣，一只金丝猴从槐树上翻着跟头落下，爪子里攥着个闪闪发光的错金银铜骰。这铜骰六面刻着不同花纹，每当小荷犹豫要不要帮邻居送信时，铜骰就会自动旋转，停下的那面总会浮现出鼓励她的画面——有时是蚂蚁合力搬食，有时是春燕勇敢离巢。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141320
+   Turn: 1/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 村里慈祥的奶奶
+   cosmic_element: fire
+
+铜骰突然跳动着指向南方，浮现出村里张奶奶焦急等待药方的画面。金丝猴吱吱叫着扯了扯小荷的衣角，原来张奶奶的风湿病又犯了，急需把药方送到山南的药师那里。  
+
+小荷深吸一口气，学着铜骰上春燕展翅的模样，跟着金丝猴穿过开满石榴花的赤色小径。路边的萤火虫们纷纷聚成灯笼，知了们齐声唱着鼓励的歌谣，连灼热的夏风都变得温柔起来。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141320
+   Turn: 2/4
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: wildcard
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   character: 一个好奇的小女孩
+   cosmic_element: metal
+   object: 长信宫灯
+   object_is_central: True
+   place: 温馨的茶馆
+
+小荷和金丝猴来到山脚下的茶馆，一盏鎏金长信宫灯正散发着温暖的光芒。茶馆里的老爷爷笑眯眯地递来一碗桂花茶，茶香里飘着金秋的气息，让小荷想起了奶奶常说的"金气生勇"的道理。
+
+这时金丝猴突然跳到灯架上，宫灯投射出的光影竟化作一只展翅的仙鹤。仙鹤衔来一片银杏叶，上面写着药方的最后一位药材——原来要配上西方山上的白菊花，才能治好张奶奶的腿疼呢。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141320
+   Turn: 3/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: plot_twist
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+
+小荷捧着银杏叶正发愁，西方山路远又险，眼看太阳就要落山了。金丝猴忽然眨眨眼睛，从树梢唤来一群萤火虫，点点绿光在暮色中连成一条闪烁的小路。最年长的萤火虫爷爷笑着说："夏夜的火精最熟悉山路，让我们为你照亮前行的方向吧。"
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141320
+   Turn: 4/4
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   object: 长信宫灯
+   object_is_central: True
+
+小荷跟着萤火虫来到一座古老的石亭，发现一盏青铜宫灯静静立在石桌上，灯身上雕刻着青龙纹样。当她轻轻触碰灯身时，灯芯突然亮起温柔的青光，映照出石壁上隐藏的路线图，原来这盏长信宫灯正是西方仙境的指路明灯。

@@ -1,0 +1,32 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: festival_adventure
+Number of Turns: 4
+Cosmic Positions: metal → water → wood
+Duration: 33.5 seconds
+Generated: 2025-06-16 16:20:40
+========================
+
+
+FOLKTALE STORY: 20250616_161959
+Started: 2025-06-16 16:20:07.151858
+----------------------------------------
+
+--- Opening ---
+
+小铁匠家的阿金用铜锤敲出会唱歌的月亮风铃，叮叮当当的声音引来云间仙鹤衔着金线降落。村口的老槐树忽然开出银花，每片花瓣里都藏着去年中秋孩子们许下的心愿，在月光下像萤火虫般轻轻闪烁。最害羞的小女孩阿玉发现她去年画在河灯上的小兔子，此刻正抱着新鲜的桂花糕对她眨眼睛呢。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250616_161959
+   Turn: 0/4
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   intervention: 玉石精灵保佑孩子们平安
+
+阿金的风铃歌声惊醒了沉睡在河底的玉石精灵，它化作一条小白龙跃出水面，鳞片闪着金光。这时村里最珍贵的龙舟鼓突然不见了，眼看比赛就要开始，一只会跳舞的狮子从祠堂梁上跳下来，用鬃毛卷起片片银槐花，变出了会自己敲节奏的月光鼓。孩子们惊喜地发现每敲一下，就有玉屑般的星光洒在龙舟上，保护大家平安竞渡。

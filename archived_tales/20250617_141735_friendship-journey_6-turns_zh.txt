@@ -1,0 +1,33 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: friendship_journey
+Number of Turns: 6
+Cosmic Positions: fire → earth → water
+Duration: 52.8 seconds
+Generated: 2025-06-17 14:18:36
+========================
+
+
+FOLKTALE STORY: 20250617_141735
+Started: 2025-06-17 14:17:43.600020
+----------------------------------------
+
+--- Opening ---
+
+最小的妹妹忍不住想摘一朵睡莲，却被莲叶下窜出的火红小狐狸轻轻咬住了衣袖。这小狐浑身赤红如枫，尾巴尖却跳动着金色火苗，它眨着琥珀色的眼睛说："河神爷爷让我来帮你们，但你们得先帮迷路的朱雀宝宝找到它的火焰羽毛。"说着从莲花间飞出一只绒毛未褪的小朱雀，它每拍打一次翅膀，空中就落下几颗温暖的橘色火星。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141735
+   Turn: 0/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   object: 青釉多足砚
+   object_is_central: True
+
+小狐狸用尾巴卷起一朵睡莲，花瓣展开时露出一个青釉多足砚，砚台里盛着流动的星光。"这是河神爷爷的宝物，"它说，"只要把砚台放在蜿蜒的河水里，就能看见朱雀羽毛的去向。"最小的妹妹小心翼翼捧起砚台，青釉在阳光下泛着温柔的光芒，砚足像小爪子般轻轻颤动。

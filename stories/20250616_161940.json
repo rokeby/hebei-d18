@@ -1,0 +1,122 @@
+{
+  "id": "20250616_161940",
+  "completed_at": "2025-06-16T16:20:30.567706",
+  "final_narrative": [
+    {
+      "turn": 0,
+      "roll": null,
+      "action_type": "opening",
+      "elements": {
+        "cosmic_element": "water"
+      },
+      "narrative": "",
+      "narrative_zh": "阿水惊喜地看着那些小雪人排成一列，用晶莹的小手从溪边舀来清水浇灌麦苗。祖母的织布机声从茅屋传来，与溪水叮咚应和成曲，小雪人们便随着节奏摇摆起舞，麦苗在月光下泛起翡翠般的光泽。这时灶台上的陶罐突然飘出甜香，原来是小雪人们悄悄将几颗野梨放进了正在熬煮的粥里，整个院子都弥漫着温暖的气息。",
+      "token_usage": {
+        "prompt_tokens": 475,
+        "completion_tokens": 105,
+        "total_tokens": 580
+      }
+    },
+    {
+      "turn": 0,
+      "roll": 8,
+      "action_type": "environmental_event",
+      "elements": {
+        "cosmic_element": "water",
+        "event": "纸灯笼自己飞向天空",
+        "place": "彩色的风筝田野"
+      },
+      "narrative": "",
+      "narrative_zh": "阿水发现溪边飘来几个被丢弃的纸灯笼，便小心地将它们捞起晾干。这时一位云游的慈祥僧人路过，看到阿水的善举，便教他将灯笼重新点亮，那些灯笼竟化作五彩斑斓的蝴蝶风筝，载着冬日的谢意飞向北方天空。\n\n田野里突然飘起温柔的笛声，那些彩色风筝在空中排成北斗七星的形状，洒下晶莹的冰晶，落在枯草间便开出了朵朵腊梅花。僧人抚须微笑，原来小雪人们是受了花神的嘱托，来报答阿水平日里爱护自然的善心。",
+      "token_usage": {
+        "prompt_tokens": 645,
+        "completion_tokens": 131,
+        "total_tokens": 776
+      }
+    },
+    {
+      "turn": 1,
+      "roll": 6,
+      "action_type": "character_action",
+      "elements": {
+        "cosmic_element": "wood",
+        "character": "制作灯笼的工匠"
+      },
+      "narrative": "",
+      "narrative_zh": "那些冰晶腊梅散发出淡淡幽香，引来一位背着竹篓的白发老翁。他正是当年制作这些灯笼的工匠，看到自己丢弃的旧物竟化作如此美景，不禁老泪纵横。老翁从怀中取出一块青玉，轻轻放在阿水手心，那玉石立刻生出嫩绿的新芽，在春风中摇曳生姿。",
+      "token_usage": {
+        "prompt_tokens": 660,
+        "completion_tokens": 78,
+        "total_tokens": 738
+      }
+    },
+    {
+      "turn": 2,
+      "roll": 7,
+      "action_type": "environmental_event",
+      "elements": {
+        "cosmic_element": "earth",
+        "event": "蜜蜂忙碌地采集花蜜",
+        "place": "彩色的风筝田野"
+      },
+      "narrative": "",
+      "narrative_zh": "阿水捧着发芽的青玉来到田野，只见五彩风筝在蓝天飞舞，一群金翅蜜蜂正围着腊梅花忙碌采蜜。这时一位慈眉善目的云游僧人路过，看见阿水手中的玉芽，合十赞叹道：\"善哉，这玉芽感应到小施主感恩惜物的诚心，已与大地灵气相通。\"说着从袖中取出一包花种，轻轻撒在被游人丢弃杂物的荒地上。",
+      "token_usage": {
+        "prompt_tokens": 619,
+        "completion_tokens": 94,
+        "total_tokens": 713
+      }
+    },
+    {
+      "turn": 3,
+      "roll": 2,
+      "action_type": "character_action",
+      "elements": {
+        "cosmic_element": "wood",
+        "character": "村里慈祥的奶奶"
+      },
+      "narrative": "",
+      "narrative_zh": "阿水正惊奇地看着花种落地生根，村里最慈祥的奶奶拄着青竹杖走来，笑吟吟地说：\"好孩子，你种下的不仅是花种，更是春天的希望啊。\"忽然，那些花种破土而出，化作会跳舞的青色精灵，把荒地里的杂物都变成了滋养新芽的养分。",
+      "token_usage": {
+        "prompt_tokens": 624,
+        "completion_tokens": 72,
+        "total_tokens": 696
+      }
+    },
+    {
+      "turn": 4,
+      "roll": 18,
+      "action_type": "story_ending",
+      "elements": {
+        "cosmic_element": "water"
+      },
+      "narrative": "",
+      "narrative_zh": "那些青色精灵跳着舞，将荒地变得干干净净。这时一位慈眉善目的老和尚从北方踏雪而来，手持黑色陶钵，对阿水说：\"善心如水，润物无声。你懂得感恩自然，自然也会回馈于你。\"说着从钵中倒出一汪清泉，化作晶莹的冰花，在阳光下闪烁着七彩光芒。",
+      "token_usage": {
+        "prompt_tokens": 592,
+        "completion_tokens": 78,
+        "total_tokens": 670
+      }
+    }
+  ],
+  "cosmic_position": "water",
+  "total_turns": 5,
+  "max_turns": 7,
+  "language": "zh",
+  "story_arc": {
+    "type": "kind_deed_reward",
+    "stages": [
+      "daily_life",
+      "kind_action",
+      "unexpected_result",
+      "magical_help",
+      "happy_ending"
+    ],
+    "theme_elements": {
+      "virtue": "gratitude (谢)",
+      "transgression": "littering",
+      "moral_authority": "kind monk"
+    },
+    "current_stage": "magical_help"
+  }
+}

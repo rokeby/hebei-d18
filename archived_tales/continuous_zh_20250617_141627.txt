@@ -1,0 +1,38 @@
+FOLKTALE STORY: 20250617_141627
+Started: 2025-06-17 14:17:01.162473
+----------------------------------------
+
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141627
+   Turn: 1/3
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: wildcard
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 喜欢画画的小朋友
+   cosmic_element: fire
+   object: 铜朱雀衔环杯
+   object_is_central: True
+   place: 做月饼的糕点房
+
+妹妹捧着会讲故事的桃树苗回家时，遇见邻家爱画画的小童正用木炭在墙上涂鸦。桃树苗突然抖动枝叶，从枝头落下一只铜朱雀衔环杯，杯身刻着"敬惜字纸"四个朱砂小字。小童好奇地捧起铜杯，发现杯中盛着会发光的五彩颜料，正好够他画满整面学堂的白墙。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141627
+   Turn: 2/3
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   event: 月亮特别圆特别亮
+   place: 孩子们玩耍的公园
+
+皓月当空的秋夜，铜杯中的五彩颜料在月光下流转生辉，小童忽然听见学堂白墙传来琅琅读书声。原来他白日里用神笔画下的字句全都活了过来，在月华中翩翩起舞，引得村里教书先生提着灯笼前来观看。老先生抚须赞叹时，铜朱雀突然展翅飞起，将孩子们白日玩耍时遗落的纸屑尽数衔回杯中，化作点点金色星光。

@@ -1,0 +1,18 @@
+FOLKTALE STORY: 20250617_141652
+Started: 2025-06-17 14:17:43.922410
+----------------------------------------
+
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141652
+   Turn: 3/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: story_ending
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+
+老匠人指着陶碗里跳动的星光说："看啊，这些星星是天上火神送来的礼物，就像夏日萤火般温暖。"孩子们围坐在一起，用星光拌着桂花糕，小猴子也学着把糕饼掰成小块分给大家。夜风送来远处荷塘的清香，老匠人抚须微笑："懂得分享自然馈赠的人，心里永远住着夏天。"

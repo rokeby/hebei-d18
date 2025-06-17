@@ -61,18 +61,61 @@ def create_prompt(state: StoryState, elements: Dict, action_type: str, wuxing: W
     
     # Add elements based on language
     prompt_base += _add_story_elements(elements, lang)
+
+    # SPECIAL EMPHASIS FOR OBJECTS - Add this new section:
+    if action_type == "object_appearance" and "object" in elements:
+        prompt_base += _add_object_emphasis(elements["object"], lang)
     
     # Add style instructions with Han dynasty specific guidance
     prompt_base += _add_style_instructions(lang, current_stage)
     
     return prompt_base
 
+
+def _add_object_emphasis(object_item, lang):
+    """Add special emphasis for when objects appear to make them central to the story."""
+    if lang == Language.CHINESE:
+        return f"""
+
+        重要提示：这个物品应该是故事的核心元素！
+    - 让这个{object_item}成为推动情节发展的关键
+    - 赋予它特殊的魔法或意义，比如：
+      * 铜镜可以显现神奇的景象
+      * 玉佩能发出保护的光芒
+      * 铜钟会奏出美妙的音乐
+      * 陶俑可能会变成小朋友的朋友
+    - 让角色与这个物品产生深刻的联系
+    - 这个物品应该帮助解决问题或带来重要发现
+        """
+    elif lang == Language.ENGLISH:
+        return f"""
+        
+    IMPORTANT: Make this object the central focus of the story segment!
+    - Let this {object_item} be the key that drives the plot forward
+    - Give it special magical properties or significance, such as:
+      * Bronze mirrors showing magical reflections
+      * Jade pendants glowing with protective power
+      * Bronze bells playing enchanted melodies
+      * Pottery figurines coming to life as helpful friends
+    - Create a meaningful connection between characters and this object
+    - This object should help solve problems or lead to important discoveries
+        """
+    else:  # BILINGUAL
+        return f"""
+        
+        IMPORTANT / 重要提示: Make this object the central focus! / 让这个物品成为故事核心！
+        - This {object_item} should drive the plot forward / 这个物品应该推动情节发展
+        - Give it child-friendly magical properties while respecting its cultural significance
+        - 让角色与物品产生深刻联系 / Create meaningful character-object connections
+        - Use it to solve problems or make discoveries / 用它来解决问题或发现秘密
+        """
+
 def _create_chinese_prompt(state, element_name, element_props, action_type_text, 
                           current_stage, stage_guidance, related_texts, motifs):
     """Create the base prompt in Chinese."""
     return f"""
-        你是一位精通汉代传统的故事大师。
-        请继续以下故事，添加新的情节发展。不要重复前面的内容，只需继续故事。
+        你是一位善于为孩子们讲述温暖故事的故事老师。
+        请继续以下儿童故事，添加新的有趣情节。不要重复前面的内容，只需继续故事。
 
         故事结构: {state.story_arc.arc_data['description_zh']}
         当前阶段: {current_stage}
@@ -171,19 +214,40 @@ def _add_story_elements(elements, lang):
     
     return result
 
-def _add_style_instructions(lang, current_stage):
-    """Add style instructions to the prompt."""
+def _add_style_instructions(lang, current_stage, action_type=None):
+    """Add style instructions to the prompt with object emphasis when relevant."""
+    base_instructions = {
+        Language.CHINESE: """
+            写作要求:
+            - 以适合儿童的古代中国故事风格写作，融入五行等传统元素
+            - 使用温暖、有趣的语言，让孩子们容易理解和喜爱
+            - 只写纯粹的故事叙述(2-3句)，充满想象力和温馨感
+            - 确保内容积极向上，适合儿童阅读""",
+        
+        Language.ENGLISH: f"""Write in a gentle, child-friendly style that captures the wonder and magic of ancient China. Use simple, beautiful language that children can understand and enjoy. Incorporate traditional elements like the five elements naturally into the story. Ensure your narrative advances the current story stage ({current_stage}) in a way that brings joy and teaches positive values.""",
+        
+        Language.BILINGUAL: f"""Format your response with the Chinese paragraph first, followed by its English translation. Write in a gentle, child-friendly style that captures the wonder and magic of ancient China. Use language that children can understand and enjoy in both languages."""
+    }
+    
+    # Add object-specific instructions if this is an object appearance
+    if action_type == "object_appearance":
+        if lang == Language.CHINESE:
+            base_instructions[Language.CHINESE] += """
+            - 特别注意：让出现的汉代文物成为故事的魔法核心
+            - 用儿童能理解的方式解释文物的特殊力量
+            - 让物品帮助角色学习或成长"""
+        elif lang == Language.ENGLISH:
+            base_instructions[Language.ENGLISH] += """ When a Han dynasty artifact appears, make it magically significant in a child-appropriate way. Let the object teach lessons or help characters grow."""
+        else:  # BILINGUAL
+            base_instructions[Language.BILINGUAL] += """ Make any Han dynasty artifacts magically significant and educational for children in both language versions."""
+    
     if lang == Language.CHINESE:
         return f"""
-            写作要求:
-            - 以汉代民间故事风格写作，融入五行、阴阳等传统宇宙观念
-            - 使用古典文化知识，但避免直接引用具体书名以保持阅读流畅
-            - 只写纯粹的故事叙述(2-3句)，不要解释或评论
-            - 避免在正文中出现《书名》格式的引用
+            {base_instructions[Language.CHINESE]}
 
             现在请继续故事:
                 """
     elif lang == Language.ENGLISH:
-        return f"\n\nWrite in a style authentic to Han dynasty folklore, referencing elements from classical texts like Huainanzi, Records of the Seeking of Spirits, or Records of the Grand Historian. Incorporate the qualities and seasonal aspects of the current cosmic element. Ensure your narrative advances the current story stage ({current_stage}) appropriately. Your style should evoke the mystery, moral dimensions, and cosmological worldview characteristic of Han dynasty stories."
+        return f"\n\n{base_instructions[Language.ENGLISH]} Your style should evoke wonder, kindness, and the timeless wisdom of Chinese culture presented in an age-appropriate way."
     else:  # BILINGUAL
-        return f"\n\nFormat your response with the Chinese paragraph first, followed by its English translation. Write in a style authentic to Han dynasty folklore, referencing elements from classical texts like 《淮南子》(Huainanzi), 《搜神记》(Records of the Seeking of Spirits), or 《史记》(Records of the Grand Historian). Incorporate the qualities of the current cosmic element. Ensure your narrative advances the current story stage ({current_stage}) appropriately.\n\nVERY IMPORTANT: Your response MUST contain BOTH Chinese and English versions. First write in Chinese, then provide the English translation. Make sure both tell the same story but are culturally appropriate in each language."
+        return f"\n\n{base_instructions[Language.BILINGUAL]}\n\nVERY IMPORTANT: Your response MUST contain BOTH Chinese and English versions. First write in Chinese using child-friendly language, then provide the English translation that maintains the same gentle, wonder-filled tone."

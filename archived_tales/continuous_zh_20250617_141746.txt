@@ -1,0 +1,20 @@
+FOLKTALE STORY: 20250617_141746
+Started: 2025-06-17 14:18:36.433652
+----------------------------------------
+
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141746
+   Turn: 4/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   object: 错金银铜犀牛屏座
+   object_is_central: True
+
+金色光点指引下，兄妹俩来到竹林深处，发现一座闪着赤红光芒的错金银铜犀牛屏座。老奶奶轻抚犀牛铜眼，只见它突然活了过来，用鼻子在地上画出一道谜题："夏日炎炎何处凉？"小妹妹灵机一动，摘下竹叶放在犀牛背上，顿时整座屏座化作清凉的泉水喷涌而出。

@@ -1,0 +1,119 @@
+{
+  "id": "20250616_162218",
+  "completed_at": "2025-06-16T16:23:24.733732",
+  "final_narrative": [
+    {
+      "turn": 0,
+      "roll": null,
+      "action_type": "opening",
+      "elements": {
+        "cosmic_element": "wood"
+      },
+      "narrative": "",
+      "narrative_zh": "阿水踮着脚尖数着彩虹竹上的七彩光点，忽然听见竹林深处传来清脆的笑声。只见一个穿着柳叶裙的小女孩正用桃木簪收集竹叶上的露珠，她手腕上的青玉镯随着动作叮咚作响，每滴露珠落入她掌心时都开出一朵晶莹的小花。土地公公捋着白胡子笑道：\"这是春神的女儿木儿，她带着东方木德之气，能让万物生长呢。\"",
+      "token_usage": {
+        "prompt_tokens": 502,
+        "completion_tokens": 99,
+        "total_tokens": 601
+      }
+    },
+    {
+      "turn": 0,
+      "roll": 1,
+      "action_type": "character_action",
+      "elements": {
+        "cosmic_element": "wood",
+        "character": "会唱歌的茶馆老板"
+      },
+      "narrative": "",
+      "narrative_zh": "木儿看见阿水时害羞地躲到了竹影里，不小心把收集露珠的桃木簪掉进了蜿蜒的小溪。阿水想帮忙却踩滑了青苔，两人望着顺流而下的木簪急得直跺脚。这时溪边茶馆传来清亮的歌声：\"青瓷碗里春茶香，谁家娃娃在彷徨？\"原来那位会唱歌的茶馆老板正捧着木儿祖母传下的百花茶方子，笑吟吟地向他们招手。",
+      "token_usage": {
+        "prompt_tokens": 629,
+        "completion_tokens": 106,
+        "total_tokens": 735
+      }
+    },
+    {
+      "turn": 1,
+      "roll": 16,
+      "action_type": "plot_twist",
+      "elements": {
+        "cosmic_element": "fire"
+      },
+      "narrative": "",
+      "narrative_zh": "茶馆老板从袖中取出一个赤色锦囊，里面装着会发光的萤石：\"顺着萤火往南走，溪水会在老槐树处分岔。\"两个孩子手拉手追着点点萤光，却发现祖母的茶方被一只红嘴蓝鹊叼着，正站在湍急的河中央的礁石上。阿水突然想起夏日祭时学过的火德星君歌谣，掏出怀里的赤玉哨子吹响，河滩上的芦苇竟自动编成了金色小桥。",
+      "token_usage": {
+        "prompt_tokens": 632,
+        "completion_tokens": 110,
+        "total_tokens": 742
+      }
+    },
+    {
+      "turn": 2,
+      "roll": 1,
+      "action_type": "character_action",
+      "elements": {
+        "cosmic_element": "metal",
+        "character": "放风筝的孩子"
+      },
+      "narrative": "",
+      "narrative_zh": "两个孩子刚踏上金芦苇小桥，忽然一阵秋风卷来，把茶方从蓝鹊嘴里吹向了空中。远处传来银铃般的笑声，原来是个放白纸鹞的孩童，那风筝竟像有灵性般追着茶方飞去。阿水和小伙伴相视一笑，想起古籍有云\"金秋主收\"，便解下腰间玉带抛向空中，那玉带化作一道白虹，轻轻托着风筝把茶方送回了他们手中。",
+      "token_usage": {
+        "prompt_tokens": 644,
+        "completion_tokens": 104,
+        "total_tokens": 748
+      }
+    },
+    {
+      "turn": 3,
+      "roll": 13,
+      "action_type": "cosmic_intervention",
+      "elements": {
+        "cosmic_element": "fire",
+        "intervention": "荷花仙子赐予平静的心"
+      },
+      "narrative": "",
+      "narrative_zh": "两个孩子捧着茶方继续前行，忽见一条蜿蜒的赤色河流挡住了去路，湍急的水流中漂浮着被冲散的荷叶。正当他们发愁时，河中央升起一朵金莲，荷花仙子轻挥衣袖，水面顿时平静如镜，现出一条由荷叶铺成的小路。仙子柔声道：\"持此赤莲过河，但需记住，帮助落水的蜻蜓比赶路更重要。\"",
+      "token_usage": {
+        "prompt_tokens": 631,
+        "completion_tokens": 90,
+        "total_tokens": 721
+      }
+    },
+    {
+      "turn": 4,
+      "roll": 18,
+      "action_type": "story_ending",
+      "elements": {
+        "cosmic_element": "wood"
+      },
+      "narrative": "",
+      "narrative_zh": "两个孩子小心踏上荷叶小路，发现一只碧绿的蜻蜓正困在漩涡中挣扎。他们想起仙子的话，立即用赤莲轻轻托起蜻蜓，那蜻蜓抖落水珠后竟化作青衣童子，从怀中取出一包散发着清香的茶叶笑道：\"这是昆仑山春茶，配上奶奶的茶方，可治天下百病。\"  \n\n童子吹响柳笛，两岸桃李瞬间绽放，粉白花瓣随风飘舞形成一道花桥。孩子们捧着茶叶和茶方走过花桥，看见奶奶正在茅屋前煮水，灶火映着她慈祥的笑脸：\"好孩子，你们带回来的不仅是茶方，更是一颗金子般的心啊。\"",
+      "token_usage": {
+        "prompt_tokens": 611,
+        "completion_tokens": 146,
+        "total_tokens": 757
+      }
+    }
+  ],
+  "cosmic_position": "wood",
+  "total_turns": 5,
+  "max_turns": 5,
+  "language": "zh",
+  "story_arc": {
+    "type": "friendship_journey",
+    "stages": [
+      "meeting",
+      "misunderstanding",
+      "adventure",
+      "understanding",
+      "celebration"
+    ],
+    "theme_elements": {
+      "obstacle_type": "a winding river",
+      "virtue_tested": "helpfulness",
+      "quest_object": "grandmother's recipe"
+    },
+    "current_stage": "celebration"
+  }
+}

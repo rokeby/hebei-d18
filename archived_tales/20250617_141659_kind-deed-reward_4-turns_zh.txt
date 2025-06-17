@@ -1,0 +1,62 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: kind_deed_reward
+Number of Turns: 4
+Cosmic Positions: wood → fire → metal
+Duration: 33.6 seconds
+Generated: 2025-06-17 14:17:40
+========================
+
+
+FOLKTALE STORY: 20250617_141659
+Started: 2025-06-17 14:17:07.407895
+----------------------------------------
+
+--- Opening ---
+
+兄妹俩小心翼翼地将桃树苗种在院子的东南角，每日用晨露浇灌。第七日清晨，桃树竟开出了七色花朵，每片花瓣上都坐着个穿绿袄的小精灵，正用露珠串成的琴弦弹奏着《诗经》里的歌谣。老槐树的枝叶在风中沙沙作响，仿佛在跟着吟唱"投我以木桃，报之以琼瑶"的古调。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141659
+   Turn: 0/5
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   intervention: 树爷爷伸出粗壮的手臂
+
+七色花瓣上的小精灵们突然停下琴声，指着地上被风吹来的纸屑皱起眉头。树爷爷的枝干轻轻摇晃，从地下伸出盘根错节的手臂，将纸屑拢成小山。这时月亮门里跳出只雪白的玉兔，捧着青玉捣药杵认真地说："敬惜字纸是读书人的本分，乱丢字纸会惹文昌帝君生气的。"兄妹俩连忙用桑皮纸把字屑包好，树爷爷的每片叶子都发出了欣慰的沙沙声。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141659
+   Turn: 1/5
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 种菜的村民
+   cosmic_element: fire
+
+玉兔蹦跳着带兄妹俩来到南边的菜园，看见种菜的阿伯正顶着烈日锄草。兄妹俩想起《三字经》里"夏则凊"的教诲，连忙用荷叶盛来清冽的井水。阿伯饮下甘泉时，田埂忽然开出朵朵赤色火花，原来是藏在泥土里的火精被善心感动，纷纷举着红灯笼跳出来跳舞。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141659
+   Turn: 2/5
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   intervention: 玉石精灵保佑孩子们平安
+
+兄妹俩发现菜园边有人丢弃的果核，想起玉兔教他们要"敬天惜物"，便蹲下身仔细捡拾。月光下，那些果核竟化作晶莹的白玉籽，在掌心闪烁着柔和光芒。玉兔欢喜地竖起耳朵，原来这是西方昆仑山的玉石精灵，被孩子们的恭敬之心所感动，特意来护佑他们平安吉祥。

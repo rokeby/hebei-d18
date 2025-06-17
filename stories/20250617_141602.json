@@ -1,0 +1,105 @@
+{
+  "id": "20250617_141602",
+  "completed_at": "2025-06-17T14:16:49.959494",
+  "final_narrative": [
+    {
+      "turn": 0,
+      "roll": null,
+      "action_type": "opening",
+      "elements": {
+        "cosmic_element": "wood"
+      },
+      "narrative": "",
+      "narrative_zh": "两个孩子跟着青衣童子来到一片竹林，翠绿的竹叶在风中沙沙作响，像是在唱古老的歌谣。童子从袖中取出三片竹叶，轻轻一吹便化作三只青鸟，衔来用晨露泡好的香茶，茶香与竹香交融，引来一群彩蝶围着他们翩翩起舞。",
+      "token_usage": {
+        "prompt_tokens": 549,
+        "completion_tokens": 70,
+        "total_tokens": 619
+      }
+    },
+    {
+      "turn": 0,
+      "roll": 5,
+      "action_type": "character_action",
+      "elements": {
+        "cosmic_element": "wood",
+        "character": "村里慈祥的奶奶"
+      },
+      "narrative": "",
+      "narrative_zh": "青衣童子忽然皱起眉头，指着竹林深处说：\"奶奶的秘方竹简被黑雾困在东边的暗林里了。\"最小的青鸟落在小虎肩上，用翅膀轻拍他的脸颊，仿佛在说\"帮帮我们\"。两个孩子对视一眼，手拉手跟着三只青鸟钻进了幽暗的竹林，青翠的竹叶在他们头顶沙沙作响，像是在为他们加油打气。",
+      "token_usage": {
+        "prompt_tokens": 601,
+        "completion_tokens": 88,
+        "total_tokens": 689
+      }
+    },
+    {
+      "turn": 1,
+      "roll": 11,
+      "action_type": "object_appearance",
+      "elements": {
+        "cosmic_element": "fire",
+        "object": "福金银铜殷",
+        "object_is_central": true
+      },
+      "narrative": "",
+      "narrative_zh": "竹林深处突然闪过一道赤色光芒，小虎弯腰拨开落叶，发现一面古朴的福金银铜殷正散发着温暖的红光。青衣童子惊讶地说：\"这是南方火精祝福过的铜镜，传说能照见人心中的善意。\"当铜镜映照出两个孩子纯真的脸庞时，周围的黑暗竹林竟渐渐亮起了萤火虫般的点点星光。",
+      "token_usage": {
+        "prompt_tokens": 730,
+        "completion_tokens": 78,
+        "total_tokens": 808
+      }
+    },
+    {
+      "turn": 2,
+      "roll": 4,
+      "action_type": "character_action",
+      "elements": {
+        "cosmic_element": "metal",
+        "character": "善良的市场商人"
+      },
+      "narrative": "",
+      "narrative_zh": "萤火虫指引着两个孩子穿过幽暗的森林，忽然闻到一阵香甜的桂花香。一位白发老奶奶正在路边焦急地翻找竹篮，原来她祖传的月饼秘方被秋风卷走了。小虎举起铜镜，镜面映出远处树枝上挂着的绢布食谱，青衣童子轻轻一跃，像片竹叶般飘上去取了下来。",
+      "token_usage": {
+        "prompt_tokens": 613,
+        "completion_tokens": 80,
+        "total_tokens": 693
+      }
+    },
+    {
+      "turn": 3,
+      "roll": 18,
+      "action_type": "story_ending",
+      "elements": {
+        "cosmic_element": "fire"
+      },
+      "narrative": "",
+      "narrative_zh": "老奶奶接过绢布时，眼中闪烁着感激的泪光，从竹篮里取出三块赤色月饼分给孩子们。月饼入口即化，竟化作温暖的火光驱散了森林的黑暗，照亮了回家的路。古籍有云，真心相助者，必得天佑，正如夏日骄阳终将驱散所有阴霾。",
+      "token_usage": {
+        "prompt_tokens": 598,
+        "completion_tokens": 73,
+        "total_tokens": 671
+      }
+    }
+  ],
+  "cosmic_position": "fire",
+  "total_turns": 4,
+  "max_turns": 5,
+  "language": "zh",
+  "story_arc": {
+    "type": "friendship_journey",
+    "stages": [
+      "meeting",
+      "misunderstanding",
+      "adventure",
+      "understanding",
+      "celebration"
+    ],
+    "theme_elements": {
+      "obstacle_type": "a dark forest",
+      "virtue_tested": "helpfulness",
+      "quest_object": "grandmother's recipe"
+    },
+    "current_stage": "understanding"
+  }
+}

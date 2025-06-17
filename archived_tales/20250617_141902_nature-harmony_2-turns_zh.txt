@@ -1,0 +1,47 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: nature_harmony
+Number of Turns: 2
+Cosmic Positions: fire → earth
+Duration: 21.8 seconds
+Generated: 2025-06-17 14:19:33
+========================
+
+
+FOLKTALE STORY: 20250617_141902
+Started: 2025-06-17 14:19:11.896543
+----------------------------------------
+
+--- Opening ---
+
+最小的妹妹忍不住想摘一朵睡莲，却发现花瓣里蜷缩着只小火狐，正用蓬松的尾巴护着三颗发光的莲子。"这是夏神的火种，"火狐眨着金眼睛说，"若你们能保持手心温暖到对岸，就能让枫叶永远红得像晚霞。"哥哥姐姐们立刻握紧小手，掌心的柳叶突然化作三只翠鸟，绕着他们唱起了立夏的歌谣。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141902
+   Turn: 0/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   event: 雨后出现七色的水洼
+   place: 村里的小学校
+
+翠鸟歌声未落，村边的小河突然泛起浑浊的泡沫，惊得三颗莲子在他们手心颤动。岸边老槐树抖动着赤红树叶叹息："南方的火精被浊水困住啦，夏蝉都不愿来我枝头歌唱了。"孩子们踮脚望去，只见雨后校园里积着七彩水洼，倒映出无数无家可归的鸟影，哥哥立即捡来柳枝说："我们给鸟儿搭些南向的巢吧，用赤绳捆牢才配得上夏神的火种呀！"
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141902
+   Turn: 1/6
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: plot_twist
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+
+柳枝刚搭成鸟巢的形状，老槐树的黄叶忽然簌簌落下，在孩子们脚边拼出个土黄色的卦象。树根处钻出三只穿山甲，背甲闪着金芒说："让我们用爪子挖通地脉吧，浊水下的火精需要大地的气息才能苏醒。"最小的妹妹把莲子埋进巢边的湿土，转眼间嫩芽破土而出，叶脉里流淌着蜂蜜般的光泽。

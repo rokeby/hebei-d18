@@ -1,0 +1,228 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: festival_adventure
+Number of Turns: 5
+Cosmic Positions: fire → earth → water
+Duration: 55.7 seconds
+Generated: 2025-06-17 14:20:51
+========================
+
+
+FOLKTALE STORY: 20250617_141948
+Started: 2025-06-17 14:19:56.154222
+----------------------------------------
+
+--- Opening ---
+
+兄妹三人踩着枫叶桥来到对岸，发现每片枫叶都化作了一盏小小的红灯笼，在微风中轻轻摇晃。村里的老槐树下，乡亲们正忙着用糯米粉捏出玉兔形状的月饼，灶神爷的画像在厨房门上笑眯眯地看着他们，炉火映得每个人的脸庞都暖融融的。最小的妹妹踮起脚尖，看见月饼馅里藏着桂花蜜和红枣泥，就像天上散落的星星碎片一样闪闪发亮。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141948
+   Turn: 0/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 喜欢帮助别人的男孩
+   cosmic_element: fire
+
+村口的老柳树忽然哗啦啦摇动枝条，原来挂在树梢的丰收彩带被南风吹断了。那个总爱帮人修篱笆的男孩阿南立刻卷起衣袖，跑到河边摘来芦苇叶，和妹妹们一起编成会唱歌的绿飘带。河水悄悄送来几尾金色小鱼，在阳光下把新彩带映得流光溢彩，比原先的还要漂亮三分。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141948
+   Turn: 1/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 做月饼的糕点师
+   cosmic_element: earth
+
+糕点师黄师傅正揉着金黄色的面团，忽然发现桂花蜜罐空空如也。这时河面泛起涟漪，几尾小鱼衔着飘落的桂花游到岸边，把花瓣吐在青石板上堆成小山。孩子们欢笑着收集这些带着水珠的香花，黄师傅的月饼顿时飘出了比往年更清甜的香气。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141948
+   Turn: 1/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 制作纸花的艺人
+   cosmic_element: earth
+
+纸花艺人老周正发愁呢，他精心准备的菊花纸模被雨水浸湿了。河边的芦苇丛忽然沙沙作响，几只翠鸟衔来晒干的蒲草叶，轻轻放在老周的工作台上。老周眼睛一亮，用这些金黄色的蒲草叶折出了会随风转动的太阳花，比原先的纸花还要灵动可爱。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141948
+   Turn: 2/4
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 制作玉饰的匠人
+   cosmic_element: water
+
+村中老玉匠正在雕刻庆典用的玉龙挂饰，突然手中碧玉裂开一道细纹。河面泛起温柔的水波，送来几片闪着银光的鱼鳞，孩子们灵机一动将鱼鳞贴在玉龙身上。在冬日阳光下，这条镶着鳞片的玉龙竟比原先更加光彩夺目，随着游行队伍舞动时仿佛要腾空飞起。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141948
+   Turn: 2/4
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   object: 铜朱雀衔环杯
+   object_is_central: True
+
+村口的老槐树下，孩子们发现了一只闪着青光的铜朱雀衔环杯，杯身上的朱雀眼睛忽然眨动起来，从喙中吐出一串晶莹的水珠。这些水珠落在破损的彩旗上，竟化作了一条条游动的锦鲤图案，让整个丰收游行的装饰焕发出神奇的光彩。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141948
+   Turn: 2/4
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 做月饼的糕点师
+   cosmic_element: water
+
+糕点师阿桂正为丰收游行的装饰发愁，她精心制作的月饼塔被北风吹倒了。这时村边的小河泛起涟漪，送来几片闪着银光的荷叶，阿桂灵机一动，用荷叶垫着月饼重新垒起宝塔，还在每层放上会转动的芦苇风车。孩子们惊喜地发现，这座会转动的"水月宝塔"在阳光下折射出七彩光芒，比原先的更加神奇美丽。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141948
+   Turn: 3/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   object: 长信宫灯
+   object_is_central: True
+
+村中老陶匠从箱底取出一盏尘封已久的长信宫灯，灯身上雕刻着祥云与瑞兽。当孩子们将鱼鳞玉龙游行的火把靠近时，宫灯突然绽放出温暖的金光，照亮了整个丰收游行的道路，连田间的稻穗都在光芒中轻轻摇曳。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141948
+   Turn: 3/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   intervention: 扇子精灵送来凉爽的微风
+
+锦鲤彩旗在微风中轻轻摆动时，忽然从河面飘来一把绘着翠竹的绢扇。扇子精灵轻轻挥动间，为晒得满头大汗的村民们送来阵阵清凉的香风。河神婆婆从涟漪中现身，用慈祥的声音告诉孩子们："这把风之扇会指引你们找到修复庆典的最后一件宝物。"
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141948
+   Turn: 3/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: plot_twist
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+
+小河听见孩子们的欢笑声，悄悄送来更多礼物——几尾金色鲤鱼跃出水面，将口中含着的珍珠般水泡吐向月饼塔。这些水泡落在风车上，竟化作晶莹的露珠，随着转动洒下甘甜的雨雾。老村长抚须笑道："这定是河伯见我们齐心准备庆典，特地送来长夏的土德祝福。"
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141948
+   Turn: 4/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   object: 冬青釉葫芦瓶
+   object_is_central: True
+
+就在丰收游行的队伍即将出发时，一阵南风突然吹倒了装饰彩棚的竹竿，悬挂的彩绸纷纷飘落。孩子们正着急时，河水中浮起一个冬青釉葫芦瓶，瓶身闪烁着赤色光芒，每当有孩子触碰它，就会飘出欢快的乐曲声。老村长惊喜地说："这是上古神农氏留下的礼器，能调和五行之气，让我们用它奏乐引路，定能让游行更加喜庆！"
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141948
+   Turn: 4/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 种花的园丁
+   cosmic_element: fire
+
+园丁阿婆捧出珍藏的朱砂颜料，在孩子们额间点出石榴花印记。忽然一阵南风掠过，游行的彩绸灯笼被吹落河中，只见河水泛起温柔涟漪，将灯笼托回岸边，每盏灯芯里都跳动着小小的火焰精灵。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141948
+   Turn: 4/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   intervention: 蝴蝶使者传递好消息
+
+就在村民们欢庆丰收游行时，一阵南风调皮地吹落了挂在老槐树上的红绸灯笼。这时，一群五彩斑斓的蝴蝶忽然从河边飞来，它们翅膀上闪烁着赤色光芒，衔着河底的金色水草，将灯笼重新系好。最特别的是领头那只蓝翅蝴蝶，它轻轻落在小芳肩头，触角轻点她的耳垂，原来河伯托它告诉大家：今晚月圆时，河水会变成蜜糖般甜美。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141948
+   Turn: 3/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: story_ending
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+
+村中老木匠看到转动的月饼塔，立刻取来珍藏的檀木，雕出十二只活灵活现的生肖底座。孩子们用黄泥捏成小鼓，系在塔檐下，每当清风拂过，整座宝塔便奏响叮咚的丰收乐章。河伯在粼粼波光中微笑，将更多荷叶化作金鲤鱼，绕着宝塔跳起祝福的舞蹈。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141948
+   Turn: 4/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 做月饼的糕点师
+   cosmic_element: fire
+
+糕点师阿福正忙着将新做的月饼摆上彩车，忽然一阵南风刮来，最顶上的玉兔月饼晃了晃眼看要掉进河里。谁知河水突然卷起一朵浪花，轻轻托住月饼，河底的老龟浮出水面笑道："老朽借点水德之力，帮小友稳住这团圆之礼。"孩子们欢呼着将月饼重新放好，丰收游行的队伍又继续向前，鼓乐声惊起了稻田里成群的萤火虫。

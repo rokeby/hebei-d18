@@ -1,0 +1,33 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: kind_deed_reward
+Number of Turns: 3
+Cosmic Positions: fire → earth
+Duration: 22.8 seconds
+Generated: 2025-06-17 14:19:45
+========================
+
+
+FOLKTALE STORY: 20250617_141913
+Started: 2025-06-17 14:19:22.546608
+----------------------------------------
+
+--- Opening ---
+
+兄妹三人每日清晨都会帮村口的老陶匠拾柴生火，他们最喜欢看炉膛里跳动的火苗，像一群穿红衣的小精灵在跳舞。这天老陶匠送给他们一只小小的赤陶罐，罐底刻着古老的火焰纹，只要往里放入一颗红枣，就能熬出甜香四溢的粥来。当夕阳把云朵染成枫叶颜色时，三兄妹总围坐在陶罐旁，看炊烟袅袅升起，化作天上会讲故事的云。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141913
+   Turn: 0/5
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   object: 错银铜双翼神兽
+   object_is_central: True
+
+三兄妹发现赤陶罐底还藏着一只精巧的错银铜双翼神兽，每当月圆之夜，这只神兽就会扇动翅膀发出清脆的银铃声。老陶匠告诉他们，这是月宫玉兔送来的礼物，只有心怀敬意的孩子才能听见它讲述的古老智慧。

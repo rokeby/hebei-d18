@@ -1,0 +1,128 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: festival_adventure
+Number of Turns: 7
+Cosmic Positions: wood → fire → metal
+Duration: 58.1 seconds
+Generated: 2025-06-17 14:16:48
+========================
+
+
+FOLKTALE STORY: 20250617_141542
+Started: 2025-06-17 14:15:50.444877
+----------------------------------------
+
+--- Opening ---
+
+奶奶从樟木箱里取出珍藏的红绸，孩子们踮着脚尖帮忙裁剪，只见那红绸在阳光下泛着温暖的光晕，像极了春日里最早绽放的山茶花。村里的老木匠正用新伐的香樟木雕刻龙头，木屑飞舞间飘出阵阵清香，引得几只黄鹂停在窗棂上啾啾鸣唱，仿佛在为即将到来的灯笼节提前奏乐。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141542
+   Turn: 0/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   event: 花朵突然盛开满园
+   place: 满是花朵的花园
+
+就在孩子们忙着缝制龙鳞时，村口传来"咔嚓"一声脆响——那棵百年老桃树上挂着的七彩灯笼突然被春风吹落，碎成了满地星子。这时花园里的牡丹突然同时绽放，花瓣间爬出一只背甲闪着青光的千年老龟，慢悠悠地说："东方木气旺盛，老朽知道山涧有株会发光的灵竹，可做新灯笼骨架。"
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141542
+   Turn: 1/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: plot_twist
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+
+孩子们跟着老龟来到山涧，发现灵竹正随着溪流轻轻摇摆，竹节间流淌着金色的光芒。正当他们准备砍竹时，溪水突然翻涌起来，一群五彩鲤鱼跃出水面，用尾巴拍打出欢快的节奏，仿佛在说："取竹可以，但要先和我们赛一场龙舟！"
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141542
+   Turn: 2/6
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+   intervention: 善良的云朵遮挡烈日
+
+孩子们望着欢腾的鲤鱼们正发愁，忽然一片白云飘来，化作一把巨大的遮阳伞。老龟笑眯眯地说："这是西王母派来的云姑娘，她最见不得孩子们被烈日晒伤。"鲤鱼们见状高兴地跃出水面，在云影下排成金色龙舟的形状，邀请孩子们登上它们闪亮的背脊。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141542
+   Turn: 3/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: wildcard
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 快乐的村里孩子
+   cosmic_element: fire
+   object: 唐罗汉立像
+   object_is_central: True
+   place: 月光下的池塘
+
+孩子们乘着金色鲤鱼来到月光池塘边，发现唐罗汉立像的彩绘脱落了，节日龙舟赛的装饰无法完成。老龟慢悠悠地浮出水面，吐出珍藏的赤色珍珠粉："用这南方火德之宝调颜料，罗汉像会比晚霞还鲜艳。"孩子们欢笑着将珍珠粉与池水调和，月光下立像渐渐绽放出七彩光芒，照亮了整个池塘。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141542
+   Turn: 4/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   object: 错金银铜骰
+   object_is_central: True
+
+正当孩子们为修复好的罗汉像欢呼时，池塘水面突然泛起金色涟漪，一枚镶嵌着银线的青铜骰子浮出水面。老龟伸长脖子惊叹道："这是河伯的错金银铜骰，掷出东方木德之数时，能让柳枝化作龙舟的彩绸！"小玲小心翼翼地捧起骰子，只见六个面上分别刻着梅、兰、竹、菊、松、柳六种青木花纹。
+
+--- Turn 6 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141542
+   Turn: 5/6
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   event: 夕阳把天空染成金黄色
+   place: 编织篮子的作坊
+
+夕阳把天空染成金黄色时，孩子们捧着青铜骰子跑进编织篮子的作坊，只见老竹匠正用青翠的柳条编织龙舟骨架。小玲轻轻掷出骰子，刻着柳纹的那面朝上时，作坊里所有竹篾突然泛起莹莹青光，自动交织成一条活灵活现的青龙模样。老龟笑眯眯地捋着胡须说："青龙既成，明日赛舟时它自会带着你们的祝福游弋水面。"
+
+--- Turn 7 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141542
+   Turn: 6/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   event: 清晨的露珠像珍珠一样闪亮
+   place: 月光下的池塘
+
+清晨的露珠像珍珠一样闪亮时，孩子们发现连夜赶制的青龙装饰被夜风吹断了龙须。正当他们着急时，老龟慢悠悠从月光下的池塘爬出，衔来一根会发光的红丝线："这是南方火精织就的丝线，系上它，青龙就能在赛舟时喷出七彩祥云。"

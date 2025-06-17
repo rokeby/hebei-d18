@@ -1,0 +1,92 @@
+{
+  "id": "20250617_141935",
+  "completed_at": "2025-06-17T14:20:19.397495",
+  "final_narrative": [
+    {
+      "turn": 0,
+      "roll": null,
+      "action_type": "opening",
+      "elements": {
+        "cosmic_element": "fire"
+      },
+      "narrative": "",
+      "narrative_zh": "最小的妹妹忍不住想摘一朵睡莲，却被莲蕊中跳出的火精童子拦住，那童子发髻上簪着石榴花，手持青铜小鼓笑道：\"别贪玩啦，前面灯市正热闹，我带你们去看火龙舞可好？\"三兄妹惊喜地发现鲤鱼们不知何时已化作提着红纱灯笼的小童，枫叶在他们脚下变成会发光的朱砂路，远处传来糖葫芦的叫卖声和孩子们银铃般的欢笑。",
+      "token_usage": {
+        "prompt_tokens": 511,
+        "completion_tokens": 100,
+        "total_tokens": 611
+      }
+    },
+    {
+      "turn": 0,
+      "roll": 17,
+      "action_type": "wildcard",
+      "elements": {
+        "cosmic_element": "fire",
+        "character": "制作灯笼的工匠",
+        "object": "冬青釉葫芦瓶",
+        "place": "收集药草的山坡",
+        "object_is_central": true
+      },
+      "narrative": "",
+      "narrative_zh": "火精童子带着三兄妹穿过灯市时，忽然一阵山雾涌来，把最小的妹妹和她手中提着的红纱灯笼卷走了。工匠老伯从冬青釉葫芦瓶里倒出萤火虫，照亮了通往云雾山的石阶：\"莫急，这灯笼里装着夏至日的火种，我们得耐心寻回它。\"山坡上的药草在月光下闪着微光，像在为他们指路。",
+      "token_usage": {
+        "prompt_tokens": 660,
+        "completion_tokens": 92,
+        "total_tokens": 752
+      }
+    },
+    {
+      "turn": 1,
+      "roll": 11,
+      "action_type": "object_appearance",
+      "elements": {
+        "cosmic_element": "earth",
+        "object": "铜人",
+        "object_is_central": true
+      },
+      "narrative": "",
+      "narrative_zh": "云雾中突然现出一尊青铜人像，通体泛着温润的黄光，手中捧着一面铜镜。当火精童子好奇地触碰铜镜时，镜面竟映出了小妹的身影——她正坐在山腰的桂花树下，而那盏红纱灯笼就挂在她头顶的枝头，散发着柔和的光芒。青铜人像发出低沉的嗡鸣，指引着他们沿着山间小径前行，每走一步，脚下的泥土就泛起金色的涟漪。",
+      "token_usage": {
+        "prompt_tokens": 730,
+        "completion_tokens": 101,
+        "total_tokens": 831
+      }
+    },
+    {
+      "turn": 2,
+      "roll": 18,
+      "action_type": "story_ending",
+      "elements": {
+        "cosmic_element": "water"
+      },
+      "narrative": "",
+      "narrative_zh": "雾气渐渐笼罩山路，火精童子和小妹手拉着手，跟着青铜人像指引的金色涟漪前行。突然一阵北风卷来，吹散了小妹的红纱灯笼，那温暖的光芒在迷雾中忽明忽暗，像只调皮的萤火虫越飞越远。青铜人像发出沉稳的嗡鸣，提醒孩子们静心等待，果然片刻后雾气渐散，露出山路边一株挂满冰晶的老梅树，而那盏红灯笼正安然挂在最高的枝头，映得冰晶如同繁星般闪烁。",
+      "token_usage": {
+        "prompt_tokens": 628,
+        "completion_tokens": 116,
+        "total_tokens": 744
+      }
+    }
+  ],
+  "cosmic_position": "water",
+  "total_turns": 3,
+  "max_turns": 5,
+  "language": "zh",
+  "story_arc": {
+    "type": "friendship_journey",
+    "stages": [
+      "meeting",
+      "misunderstanding",
+      "adventure",
+      "understanding",
+      "celebration"
+    ],
+    "theme_elements": {
+      "obstacle_type": "a misty mountain",
+      "virtue_tested": "patience",
+      "quest_object": "a lost lantern"
+    },
+    "current_stage": "adventure"
+  }
+}

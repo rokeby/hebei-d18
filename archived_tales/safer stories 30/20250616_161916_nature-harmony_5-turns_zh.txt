@@ -1,0 +1,128 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: nature_harmony
+Number of Turns: 5
+Cosmic Positions: water → wood → earth
+Duration: 37.9 seconds
+Generated: 2025-06-16 16:20:00
+========================
+
+
+FOLKTALE STORY: 20250616_161916
+Started: 2025-06-16 16:19:22.908153
+----------------------------------------
+
+--- Opening ---
+
+阿水惊讶地看着那些小雪人，它们的小手像清晨的露珠般晶莹剔透，正忙着把枯枝落叶排成整齐的图案。这时一只从昆仑山飞来的青鸟落在她肩头，衔来一粒会发光的种子，小雪人们立刻欢呼着把它种在新翻的黑土里，转眼间长出一株会唱歌的梨树，每一片花瓣都映着四季的故事。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250616_161916
+   Turn: 0/4
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   object: 发亮的鹅卵石
+
+会唱歌的梨树突然垂下枝条，轻轻拂过阿水的脸颊，用沙沙的声音说："北边的河水生病了，黑乎乎的像墨汁一样。"阿水跟着青鸟来到河边，发现河底躺着几颗发亮的鹅卵石，它们正用微弱的光芒呼唤着岸边的芦苇。聪明的芦苇立刻弯下腰，教阿水用枯枝编织鸟巢，说这样就能请来会治水的神鸟帮忙。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250616_161916
+   Turn: 1/4
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 会唱歌的茶馆老板
+   cosmic_element: wood
+
+阿水抱着编好的鸟巢往回走时，听见路边茶馆传来清亮的歌声。茶馆老板正用青瓷碗舀着泉水，碗里的水珠跳起舞来，变成一只只透明的小鸟。"这是东方青龙赐予的净水诀，"老板眨眨眼说，"把这些水鸟放进巢里，它们就会飞去净化生病的河流。"
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250616_161916
+   Turn: 2/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 做月饼的糕点师
+   cosmic_element: earth
+
+阿水刚把水鸟放进鸟巢，路边一棵老槐树突然抖动着金黄的叶子开口说话："孩子，我见过那位做月饼的糕点师，他的蜜糖能引来百鸟，让净水鸟们更有力气。"树根下冒出几朵小蘑菇，排成箭头指向山脚下冒着炊烟的小屋。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250616_161916
+   Turn: 3/4
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   cosmic_element: wood
+   intervention: 墨水精灵让画作栩栩如生
+
+孩子们顺着蘑菇箭头来到小屋前，发现糕点师正在用青竹筒熬制百花蜜。忽然，砚台里的墨汁跳出一位穿黑衣的小精灵，用尾巴蘸着蜜糖在纸上画出了会唱歌的净水鸟。这些画中鸟扑棱棱飞向河岸，衔来柳枝和春泥，在槐树爷爷的指导下开始建造发光的青玉鸟巢。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250616_161916
+   Turn: 3/4
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 温柔的年轻妈妈
+   cosmic_element: wood
+
+小蘑菇指引的方向上，一位穿着青色布裙的年轻妈妈正在院子里熬制桂花蜜，甜香随着春风飘到孩子们鼻尖。她笑着将蜜糖分给孩子们："这是东方青龙祝福过的春蜜，能让鸟儿们筑出最结实的巢。"  
+
+孩子们捧着晶莹的蜜糖回到河边，发现老槐树的枝条自动弯成摇篮状，净水鸟们衔来芦苇与柳絮，在蜜糖的芬芳中编织出会发光的青绿色鸟巢。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250616_161916
+   Turn: 4/4
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   event: 花朵突然盛开满园
+   place: 山间的小路
+
+孩子们惊喜地发现，随着净水鸟们筑巢的欢快鸣叫，河边的冰层下突然涌出清澈的泉水，冲刷着污浊的河床。老槐树抖动着银白的枝条，用沙沙的声音说道："看啊，北方玄武的使者带来了净水之力。"
+
+山间小路上，原本被霜雪覆盖的野花突然竞相绽放，五色花瓣在风中跳起了欢快的舞蹈。一只雪白的玉兔从花丛中探出头来，衔着一枝会发光的灵芝，蹦蹦跳跳地加入了庆祝的队伍。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250616_161916
+   Turn: 4/4
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: plot_twist
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+
+净水鸟们欢快的鸣叫声唤醒了沉睡的河神，浑浊的河水渐渐变得清澈见底。老槐树抖动着银白的胡须，对孩子们低语："看啊，北方玄武正用黑玉般的河水为鸟儿们洗净羽毛呢。"  
+
+孩子们惊喜地发现，每完成一个发光的鸟巢，河底就会冒出一朵晶莹的冰莲花，将残留的污浊都化作滋养水草的营养。冬去春来的微风中，整条河流开始闪烁起星星点点的蓝光。

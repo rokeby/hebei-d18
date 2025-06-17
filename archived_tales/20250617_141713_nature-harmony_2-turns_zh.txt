@@ -1,0 +1,51 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: nature_harmony
+Number of Turns: 2
+Cosmic Positions: wood → fire
+Duration: 21.1 seconds
+Generated: 2025-06-17 14:17:41
+========================
+
+
+FOLKTALE STORY: 20250617_141713
+Started: 2025-06-17 14:17:20.600687
+----------------------------------------
+
+--- Opening ---
+
+桃树苗在春风中轻轻摇曳，每片叶子都闪烁着翡翠般的光芒，讲述着四季的故事。兄妹俩发现每当一片叶子飘落，就会化作一只五彩斑斓的蝴蝶，带着他们飞过田野，看见麦穗在夏阳下低语，听见秋蝉在枫叶间歌唱。最神奇的是，冬天来临时，桃树会开出温暖的粉色花朵，为雪地里的麻雀们搭建起避寒的小屋。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141713
+   Turn: 0/3
+   Cosmic Position: wood
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: wood
+🎴 ELEMENTS SELECTED:
+   character: 制作玉饰的匠人
+   cosmic_element: wood
+
+兄妹俩发现桃树下的泥土开始干裂发黄，像饿着肚子的小动物般发出微弱的呜咽。这时溪水中跃出一条闪着青光的鲤鱼，鳞片上刻着古老的木纹，它告诉孩子们："大地需要你们的善意滋养。"  
+
+附近有位白发苍苍的玉匠正在雕刻春神句芒的玉佩，看见这情景便取出珍藏的甘露玉粉。孩子们学着玉匠的样子，将清晨收集的露珠与桃树分享，干渴的泥土立刻冒出嫩绿的新芽，像无数小手捧着晶莹的水珠跳舞。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250617_141713
+   Turn: 1/3
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 照顾蚕的阿姨
+   cosmic_element: fire
+
+照顾蚕的阿姨从桑树林中走来，手里捧着刚摘的嫩叶，看见兄妹俩便笑着说："蚕宝宝告诉我，你们的心像夏日的阳光一样温暖。"她从腰间解下一个赤色丝囊，里面装着会发光的蚕茧，"把这些茧埋在桃树下，它们会变成连接天地的彩虹丝线。"
+
+兄妹俩小心地将蚕茧埋入泥土，忽然一阵南风拂过，茧中飞出七只火红的蝴蝶，翅膀上跳动着露珠般的光点。它们绕着干裂的土地飞舞，所过之处开出朵朵赤色小花，像给大地披上了霞光织就的锦衣。

@@ -71,41 +71,75 @@ class StoryEngine:
         else:  # BILINGUAL
             return {"zh": item.get("zh", ""), "en": item.get("en", "")}
     
-    def select_elements(self, action_type: str, current_element: str, lang=Language.ENGLISH) -> Dict:
-        """Select appropriate elements based on action type and cosmic position in specified language.
+    # def select_elements(self, action_type: str, current_element: str, lang=Language.ENGLISH) -> Dict:
+    #     """Select appropriate elements based on action type and cosmic position in specified language.
         
-        Args:
-            action_type: The type of action for this turn.
-            current_element: The current cosmic element.
-            lang: Language to return elements in.
+    #     Args:
+    #         action_type: The type of action for this turn.
+    #         current_element: The current cosmic element.
+    #         lang: Language to return elements in.
             
-        Returns:
-            Dictionary of selected story elements.
-        """
+    #     Returns:
+    #         Dictionary of selected story elements.
+    #     """
+    #     selected = {"cosmic_element": current_element}
+        
+    #     if action_type == "character_action":
+    #         character = self.select_random_element(self.characters, lang)
+    #         selected["character"] = character or "a wandering scholar"
+    #     elif action_type == "environmental_event":
+    #         event = self.select_random_element(self.events, lang)
+    #         place = self.select_random_element(self.places, lang)
+    #         selected["event"] = event or "a sudden storm"
+    #         selected["place"] = place or "a misty mountain"
+    #     elif action_type == "object_appearance":
+    #         object_item = self.select_random_element(self.objects, lang)
+    #         selected["object"] = object_item or "an ancient bronze mirror"
+    #     elif action_type == "cosmic_intervention":
+    #         intervention = self.select_random_element(self.interventions, lang)
+    #         selected["intervention"] = intervention or "the heavens rumble"
+    #     elif action_type == "wildcard":
+    #         # Combine multiple elements for wildcard
+    #         character = self.select_random_element(self.characters, lang)
+    #         object_item = self.select_random_element(self.objects, lang)
+    #         place = self.select_random_element(self.places, lang)
+    #         selected["character"] = character or "a mysterious figure"
+    #         selected["object"] = object_item or "a glowing artifact"
+    #         selected["place"] = place or "a forgotten temple"
+        
+    #     return selected
+
+
+    def select_elements(self, action_type: str, current_element: str, lang=Language.ENGLISH) -> Dict:
+        """Select appropriate elements with special handling for central objects."""
         selected = {"cosmic_element": current_element}
         
         if action_type == "character_action":
             character = self.select_random_element(self.characters, lang)
-            selected["character"] = character or "a wandering scholar"
+            selected["character"] = character or "a curious child"
         elif action_type == "environmental_event":
             event = self.select_random_element(self.events, lang)
             place = self.select_random_element(self.places, lang)
-            selected["event"] = event or "a sudden storm"
-            selected["place"] = place or "a misty mountain"
+            selected["event"] = event or "a gentle breeze"
+            selected["place"] = place or "a beautiful garden"
         elif action_type == "object_appearance":
+            # For object appearance, always use the Han dynasty artifacts
             object_item = self.select_random_element(self.objects, lang)
-            selected["object"] = object_item or "an ancient bronze mirror"
+            selected["object"] = object_item or "a magical Han dynasty artifact"
+            # Add a flag to indicate this object should be central
+            selected["object_is_central"] = True
         elif action_type == "cosmic_intervention":
             intervention = self.select_random_element(self.interventions, lang)
-            selected["intervention"] = intervention or "the heavens rumble"
+            selected["intervention"] = intervention or "a friendly spirit appears"
         elif action_type == "wildcard":
-            # Combine multiple elements for wildcard
+            # In wildcard, if an object appears, make it central too
             character = self.select_random_element(self.characters, lang)
             object_item = self.select_random_element(self.objects, lang)
             place = self.select_random_element(self.places, lang)
-            selected["character"] = character or "a mysterious figure"
-            selected["object"] = object_item or "a glowing artifact"
-            selected["place"] = place or "a forgotten temple"
+            selected["character"] = character or "a helpful friend"
+            selected["object"] = object_item or "a magical toy"
+            selected["place"] = place or "a peaceful temple"
+            selected["object_is_central"] = True  # Objects in wildcard should also be central
         
         return selected
     
@@ -202,7 +236,7 @@ class StoryEngine:
         lang = state.language
         
         if lang == Language.CHINESE:
-            return f"""以这个开头创作一个新的中国汉代民间故事: "{state.previous_sentence_zh}"
+            return f"""为孩子们创作一个温暖的中国古代故事，以这个开头开始: "{state.previous_sentence_zh}"
 
             故事结构: {state.story_arc.arc_data['description_zh']}
             当前阶段: {state.story_arc.get_current_stage(lang)}
@@ -210,16 +244,16 @@ class StoryEngine:
             {state.story_arc.get_related_literature(lang)}
             {state.story_arc.get_motifs(lang)}
 
-            故事发生在汉代，应包含中国传统宇宙观的元素。
+            这是一个发生在古代中国的儿童故事，应该包含传统文化元素但要适合孩子们理解。
             
             要求:
-            - 只写一个叙述段落(2-3句话)，不要章节标题或结构说明
-            - 直接开始故事情节，不要前言或设定介绍  
-            - 体现{self.wuxing.get_element_text(state.cosmic_position, Language.CHINESE)}元素的特质
-            - 使用汉代文化背景，但避免直接引用书名
-            - 营造神秘古韵的氛围
+            - 只写一个温暖的叙述段落(2-3句话)，充满童趣和想象力
+            - 直接开始故事情节，让孩子们感受到古代中国的美好
+            - 体现{self.wuxing.get_element_text(state.cosmic_position, Language.CHINESE)}元素的美好特质
+            - 使用古代中国文化背景，但要让现代儿童也能理解和喜爱
+            - 营造温馨、神奇的氛围
 
-            现在请直接开始故事:"""
+            现在请开始这个美好的故事:"""
         elif lang == Language.ENGLISH:
             return f"""Begin a new Han dynasty Chinese folktale based on this opening: "{state.previous_sentence}"
 
@@ -264,10 +298,11 @@ class StoryEngine:
         lang = state.language
         
         if lang == Language.CHINESE:
-            return f"""用一个恰当的结局完成这个中国民间故事。
-            故事一直围绕着{self.wuxing.get_element_text(current_element, Language.CHINESE)}元素展开。
+            return f"""为这个温暖的儿童故事写一个美好的结局。
+            故事围绕着{self.wuxing.get_element_text(current_element, Language.CHINESE)}元素展开。
             前一段落: {state.previous_sentence_zh}
-            请写一个令人满意的结局，将引入的主题和元素联系起来。"""
+            请写一个让孩子们感到快乐和满足的结局，将故事中的美好主题联系起来。
+            结局应该充满温暖、智慧和正能量，让小朋友们感受到故事的美好寓意。"""
         elif lang == Language.ENGLISH:
             return f"""Complete this Chinese folktale with a fitting conclusion. 
             The story has taken place in the cosmic element of {current_element}. 

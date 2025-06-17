@@ -1,0 +1,66 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: festival_adventure
+Number of Turns: 4
+Cosmic Positions: metal → water → fire
+Duration: 38.5 seconds
+Generated: 2025-06-16 16:18:47
+========================
+
+
+FOLKTALE STORY: 20250616_161801
+Started: 2025-06-16 16:18:09.422258
+----------------------------------------
+
+--- Opening ---
+
+阿水和小伙伴们惊喜地发现，那些由垃圾变成的金山在月光下渐渐融化，化作无数金色的小铃铛挂在村口的老槐树上。村里的老木匠张爷爷捋着白胡子笑道："这是西王母赐给勤快孩子的礼物啊，只要摇响这些金铃铛，舞龙的鳞片就会闪闪发亮。"孩子们连忙踮起脚尖，轻轻摇晃那些会唱歌的金铃铛，果然看见仓库里沉睡的龙灯开始泛起温暖的金光，仿佛要活过来一般。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250616_161801
+   Turn: 0/5
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: wildcard
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   character: 会说话的小鸟
+   cosmic_element: metal
+   object: 幸运的硬币
+   place: 山间的小路
+
+第二天清晨，一只羽毛雪白的画眉鸟落在金铃铛上，清脆地叫道："西山小路有块会发光的铜钱，是去年丰收游行时土地公落下的吉祥物！"孩子们跟着小鸟来到山间小径，果然在枫树下发现了一枚刻着五谷图案的古铜钱。这时，背着龟壳的老龟仙从溪边慢悠悠爬来，笑眯眯地说："这枚幸运币能唤醒沉睡的秋收舞步，但要记住——真正的丰收来自勤劳的双手和团结的心。"
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250616_161801
+   Turn: 1/5
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   event: 孩子们的笑声在山谷中回响
+   place: 种植竹笋的竹林
+
+孩子们捧着铜钱跑向竹林时，忽然发现竹笋都蔫蔫地垂着头。老龟仙用爪子轻点地面，溪水便化作晶莹的冰晶挂在竹叶上："北方的水气太盛，需要木德之气来调和——快用铜钱敲击最老的竹子，唤醒地底的春意。"随着清脆的叮当声，竹林里飘起带着甘甜气息的绿雾，冻僵的竹笋们立刻挺直了腰杆。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250616_161801
+   Turn: 2/5
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   event: 小鱼在清澈的水中快乐游泳
+   place: 做月饼的糕点房
+
+孩子们捧着翠绿的竹叶来到糕点房，发现做月饼的蜜糖全都不见了。老龟仙慢悠悠地爬进门槛，龟壳上闪烁着赤色光芒："南方火气太旺，蜜糖都化作了溪里的小鱼——快把竹叶浸入水中，让木生火，火生土。"当竹叶轻触水面，那些金色小鱼立刻跃出溪流，变成了香喷喷的枣泥馅儿。

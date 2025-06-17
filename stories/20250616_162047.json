@@ -1,0 +1,71 @@
+{
+  "id": "20250616_162047",
+  "completed_at": "2025-06-16T16:21:22.417302",
+  "final_narrative": [
+    {
+      "turn": 0,
+      "roll": null,
+      "action_type": "opening",
+      "elements": {
+        "cosmic_element": "water"
+      },
+      "narrative": "",
+      "narrative_zh": "阿水好奇地伸手触碰冰花，那花瓣竟化作一群透明的小鱼游向天空，在云端架起一座彩虹桥。桥的那头，春神正骑着青牛缓缓而来，她衣袖拂过之处，枯黄的草地立刻冒出嫩绿的新芽，冬眠的小动物们也揉着眼睛从地洞里探出了头。老和尚笑呵呵地指着彩虹桥说：\"看啊，这就是天地间最神奇的画笔，把冬天的素白染成了春天的五彩。\"",
+      "token_usage": {
+        "prompt_tokens": 471,
+        "completion_tokens": 101,
+        "total_tokens": 572
+      }
+    },
+    {
+      "turn": 0,
+      "roll": 18,
+      "action_type": "story_ending",
+      "elements": {
+        "cosmic_element": "water"
+      },
+      "narrative": "",
+      "narrative_zh": "彩虹桥下传来微弱的啜泣声，原来土地公公正捧着干裂的泥土发愁：\"冬雪消融得太快，大地都渴得张开了嘴。\"这时一只朱红色的小雀儿衔来清泉，在枯枝上唱起了欢快的歌谣，每滴音符落进泥土都化作晶莹的水珠。阿水连忙捧起河边的落叶，和小动物们一起清理堵塞的小溪，看着清澈的溪水重新滋润大地，土地公公的白胡子都笑成了弯月亮。",
+      "token_usage": {
+        "prompt_tokens": 616,
+        "completion_tokens": 110,
+        "total_tokens": 726
+      }
+    },
+    {
+      "turn": 1,
+      "roll": 18,
+      "action_type": "story_ending",
+      "elements": {
+        "cosmic_element": "wood"
+      },
+      "narrative": "",
+      "narrative_zh": "溪水欢快地流淌时，岸边突然冒出许多嫩绿的竹笋，它们像小精灵般随着鸟儿的歌声轻轻摇摆。土地公公从袖中取出青玉瓶，将收集的晨露洒向竹林，顿时每根竹笋都绽放出七彩光芒，在春风中织成了一道新的彩虹桥。阿水和小动物们惊喜地发现，只要轻轻触碰这些发光的竹子，干渴的土地就会立刻长出绒绒的青草和芬芳的野花。",
+      "token_usage": {
+        "prompt_tokens": 621,
+        "completion_tokens": 101,
+        "total_tokens": 722
+      }
+    }
+  ],
+  "cosmic_position": "wood",
+  "total_turns": 2,
+  "max_turns": 4,
+  "language": "zh",
+  "story_arc": {
+    "type": "nature_harmony",
+    "stages": [
+      "discovery",
+      "imbalance",
+      "understanding",
+      "cooperation",
+      "restoration"
+    ],
+    "theme_elements": {
+      "nature_problem": "hungry earth",
+      "nature_helper": "singing bird",
+      "restoration_action": "cleaning a stream"
+    },
+    "current_stage": "understanding"
+  }
+}
