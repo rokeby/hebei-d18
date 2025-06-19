@@ -1,0 +1,34 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: kind_deed_reward
+Number of Turns: 2
+Cosmic Positions: fire → earth
+Duration: 20.0 seconds
+Generated: 2025-06-18 11:59:32
+========================
+
+
+FOLKTALE STORY: 20250618_115904
+Started: 2025-06-18 11:59:12.051513
+----------------------------------------
+
+--- Opening ---
+
+那孩子捧着柳叶笛，看见溪边有只受伤的小红雀，便用母亲织布剩下的丝线为它包扎。谁知那丝线竟在月光下化作流动的火焰，温暖着雀儿的翅膀，而雀儿忽然开口说起了人话："好孩子，明早灶神爷会在你家灶台留下金黄的粟米糕。"
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250618_115904
+   Turn: 0/3
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   intervention: 善良的云朵遮挡烈日
+
+次日清晨，孩子发现灶台上果然摆着三块金灿灿的粟米糕，香气飘满了整个草屋。正当他准备独自享用这美味时，院中老槐树上的知了突然齐声唱道："独食难肥，分享得福"，惊得孩子手中的糕点差点掉落。  
+
+这时一朵赤色祥云飘来，为晒得发烫的院子投下清凉阴影，灶台边纳凉的祖母慈祥地说："南方的火德星君最喜见孩童分甘同味，你瞧连烈日都让云儿来劝你呢。"孩子红着脸将糕点分成小块，送给村里每位老人。

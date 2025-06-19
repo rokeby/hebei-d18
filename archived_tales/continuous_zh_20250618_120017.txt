@@ -1,0 +1,20 @@
+FOLKTALE STORY: 20250618_120017
+Started: 2025-06-18 12:01:10.431552
+----------------------------------------
+
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250618_120017
+   Turn: 4/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   event: 花朵突然盛开满园
+   place: 山间的小路
+
+石径尽头突然绽放出千百朵金色小花，将整条山路映照得如同铺满星辰。小土龙惊喜地用尾巴轻触花瓣，发现每朵花蕊里都藏着一粒晶莹的米粒，小兔子嗅了嗅叫道："这是奶奶秘方里的五色米！"两个小伙伴赶紧摘下草帽，合作收集这些发光的米粒，山风送来远处炊烟的气息，仿佛在指引他们回家的方向。

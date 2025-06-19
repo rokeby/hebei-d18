@@ -7,6 +7,8 @@ import argparse
 import time
 import re
 from datetime import datetime
+import post_processor
+
 
 SERVER_URL = "http://localhost:5555"
 AUTO_SAVE_TURNS = True  # Default value
@@ -982,9 +984,7 @@ def roll_die():
         print(f"❌ Error rolling die: {e}")
 
 def display_main_menu():
-    """Display the main menu options with auto-save toggle"""
-    auto_save_status = "enabled" if AUTO_SAVE_TURNS else "disabled"
-    
+    """Display the main menu options with automatic modes"""
     print_header("FOLKTALE GENERATOR")
     print("What would you like to do?\n")
     print("  1. Start a new story")
@@ -992,12 +992,15 @@ def display_main_menu():
     print("  3. Check story status")
     print("  4. List available story arcs")
     print("  5. Change story language")
-    print("  6. Toggle auto-save (currently: {})".format(auto_save_status))
-    print("  7. Save current turn directly")  
-    print("  8. Manual copy-paste save")
-    print("  9. Export all stories")
+    print("  6. Save story to file (standard)")
+    print("  7. EMERGENCY: Generate and save directly")
+    print("  8. EMERGENCY: Save last turn")
+    print("  9. EMERGENCY: Manual copy-paste save")
+    print("  10. 🤖 FULLY AUTOMATIC MODE (single story, select arc)")
+    print("  11. 🚀 BATCH AUTOMATIC MODE (multiple stories, same arc)")
+    print("  12. 📝 POST-PROCESS STORIES (editorial improvement)")  # NEW OPTION
     print("  0. Exit\n")
-    return input("Enter your choice (0-9): ").strip()
+    return input("Enter your choice (0-12): ").strip()  # Updated range
 
 def display_command_help(command):
     """Display detailed help for a specific command"""
@@ -1412,28 +1415,7 @@ def guided_save_story():
         # For non-bilingual stories, use the regular save function
         return save_story_to_file(story_data, filename)
 
-# Modified display_main_menu function to clarify arc selection
-def display_main_menu():
-    """Display the main menu options with automatic modes"""
-    print_header("FOLKTALE GENERATOR")
-    print("What would you like to do?\n")
-    print("  1. Start a new story")
-    print("  2. Continue active story (next turn)")
-    print("  3. Check story status")
-    print("  4. List available story arcs")
-    print("  5. Change story language")
-    print("  6. Save story to file (standard)")
-    print("  7. EMERGENCY: Generate and save directly")
-    print("  8. EMERGENCY: Save last turn")
-    print("  9. EMERGENCY: Manual copy-paste save")
-    print("  10. 🤖 FULLY AUTOMATIC MODE (single story, select arc)")
-    print("  11. 🚀 BATCH AUTOMATIC MODE (multiple stories, same arc)")  # Updated description
-    print("  0. Exit\n")
-    return input("Enter your choice (0-11): ").strip()
 
-
-
-# Modified interactive_mode function to handle the new option
 def interactive_mode():
     """Run an interactive storytelling session with auto-save option"""
     os.system('cls' if os.name == 'nt' else 'clear')  # Clear the screen
@@ -1483,11 +1465,13 @@ def interactive_mode():
             fully_automatic_mode()
         elif choice == "11":  # Batch automatic mode
             batch_automatic_mode()
+        elif choice == "12":  # NEW: Post-processing
+            post_process_stories()
         elif choice == "0":
             print("\nGoodbye! 👋")
             break
         else:
-            print("❌ Invalid choice. Please enter a number between 0 and 11.")
+            print("❌ Invalid choice. Please enter a number between 0 and 12.")  # Updated range
         
         # Pause before returning to the main menu
         input("\nPress Enter to continue...")
@@ -2196,6 +2180,94 @@ def manual_copy_paste_save():
     
     return saved_files
 
+
+
+def post_process_stories():
+    """Interface for post-processing completed stories"""
+    print_header("STORY POST-PROCESSING")
+    
+    print("This feature will editorially improve your completed Chinese stories.")
+    print("Stories from 'archived_tales' will be rewritten and saved to 'completed_tales'.")
+    print()
+    
+    # Check if archived_tales exists
+    if not os.path.exists("./archived_tales"):
+        print("❌ No 'archived_tales' directory found.")
+        print("   Generate some stories first using the automatic modes!")
+        return
+    
+    # Scan for available stories
+    story_files = post_processor.scan_archived_tales()
+    if not story_files:
+        print("❌ No completed story files found in 'archived_tales'.")
+        print("   Make sure you have generated some Chinese stories first!")
+        return
+    
+    print(f"📚 Found {len(story_files)} completed stories ready for post-processing.")
+    print()
+    
+    print("Choose an option:")
+    print("  1. Process all stories automatically")
+    print("  2. Select a specific story to process")
+    print("  3. Preview available stories")
+    print("  0. Return to main menu")
+    
+    choice = input("Enter choice (0-3): ").strip()
+    
+    if choice == "1":
+        print("\n🤖 Starting automatic post-processing of all stories...")
+        confirm = input("This may take several minutes. Continue? (Y/n): ").strip().lower()
+        
+        if confirm in ["", "y", "yes"]:
+            results = post_processor.process_all_stories()
+            post_processor.display_processing_summary(results)
+        else:
+            print("Post-processing cancelled.")
+    
+    elif choice == "2":
+        print(f"\nAvailable stories:")
+        for i, filepath in enumerate(story_files, 1):
+            filename = os.path.basename(filepath)
+            print(f"  {i}. {filename}")
+        
+        try:
+            selection = int(input(f"\nSelect story to process (1-{len(story_files)}): ")) - 1
+            if 0 <= selection < len(story_files):
+                print(f"\n📝 Processing selected story...")
+                success = post_processor.process_single_story(story_files[selection])
+                if success:
+                    print("\n✅ Story successfully processed and saved to 'completed_tales'!")
+                else:
+                    print("\n❌ Failed to process the selected story.")
+            else:
+                print("❌ Invalid selection.")
+        except ValueError:
+            print("❌ Please enter a valid number.")
+    
+    elif choice == "3":
+        print(f"\n📚 Available stories for post-processing:")
+        for i, filepath in enumerate(story_files, 1):
+            filename = os.path.basename(filepath)
+            # Try to extract basic info
+            try:
+                story_data = post_processor.extract_story_data(filepath)
+                if story_data:
+                    print(f"  {i}. {filename}")
+                    print(f"     Arc: {story_data['arc_type']}, "
+                          f"Turns: {story_data['turns']}, "
+                          f"Words: {story_data['word_count']}")
+                else:
+                    print(f"  {i}. {filename} (could not read)")
+            except:
+                print(f"  {i}. {filename} (error reading)")
+    
+    elif choice == "0":
+        return
+    
+    else:
+        print("❌ Invalid choice.")
+
+
 def main():
     """Main function parsing command line arguments"""
     parser = argparse.ArgumentParser(description="Folktale Generator Client")
@@ -2237,6 +2309,7 @@ def main():
     else:
         # Start in command line mode
         command_line_mode()
+
 
 if __name__ == "__main__":
     try:

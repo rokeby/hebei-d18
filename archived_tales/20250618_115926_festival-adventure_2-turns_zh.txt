@@ -1,0 +1,50 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: festival_adventure
+Number of Turns: 2
+Cosmic Positions: fire → earth
+Duration: 14.7 seconds
+Generated: 2025-06-18 11:59:49
+========================
+
+
+FOLKTALE STORY: 20250618_115926
+Started: 2025-06-18 11:59:35.274068
+----------------------------------------
+
+--- Opening ---
+
+老槐树下的石磨旁，阿婆正用朱砂在糯米团上点出火焰纹，每点一下就有细小的火星从指尖跃出。孩子们踮着脚将红绸系在竹骨上，那绸子竟自己扭动起来，像条刚睡醒的小火龙般打着哈欠。远处传来糖葫芦小贩的铜铃声，每响一声，屋檐下的冰凌就融化一滴，落在地上开出一朵晶莹的迎春花。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250618_115926
+   Turn: 0/5
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   event: 云朵变成有趣的形状
+   place: 村里的小学校
+
+小学校前的空地上，孩子们正给舞狮缝补掉落的金鳞，忽然天上飘来一朵鲤鱼状的云，张嘴吐出一串银闪闪的月光粉。补好的狮子头突然眨眨眼睛，用鼻子拱着孩子们往祠堂跑——原来供桌上的月饼模子裂成了两半，里面的桂花馅正像小星星般一颗颗往外蹦呢。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250618_115926
+   Turn: 0/6
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 村里慈祥的奶奶
+   cosmic_element: fire
+
+赤玉灯笼的光芒照亮了孩子们惊讶的脸庞，他们发现远处的桃林正在悄悄枯萎，树叶无精打采地耷拉着脑袋。这时，村里最慈祥的奶奶拄着青竹杖走来，她银发间别着的木梳突然化作一只翠鸟，衔来五色丝线在枝头编织起温暖的小巢。
+
+一阵带着桂花香的清风轻轻拂过，原来是位穿着云纹纱衣的风精灵，她将孩子们吹落的发丝收集起来，与桃胶一起黏合成最柔软的鸟窝内衬。奶奶笑着说："看啊，当每只鸟儿都有家时，伤心的树林就会重新唱起歌来。"

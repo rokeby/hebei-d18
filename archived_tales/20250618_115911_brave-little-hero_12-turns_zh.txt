@@ -1,0 +1,79 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: brave_little_hero
+Number of Turns: 12
+Cosmic Positions: fire → earth → water → metal → wood
+Duration: 111.3 seconds
+Generated: 2025-06-18 12:01:10
+========================
+
+
+FOLKTALE STORY: 20250618_115911
+Started: 2025-06-18 11:59:19.096077
+----------------------------------------
+
+--- Opening ---
+
+小石头蹲在灶台边，看着爷爷用火钳拨弄柴火，跳动的火苗映红了老人胸前的赤玉。那玉佩突然闪烁起来，灶膛里的火焰竟化作一只小火雀，衔着块烧红的炭块在小石头脚边排出一行发光的字迹："勇气藏在最温暖的地方"。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250618_115911
+   Turn: 0/3
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   object: 熊足铜鼎
+   object_is_central: True
+
+小石头正疑惑地望着那行火字，奶奶端着盛满桑葚的熊足铜鼎走进灶房，鼎足上的青铜熊眼睛突然闪过金光。"好孩子，"奶奶轻抚铜鼎说，"这祖传的宝鼎能煮出勇气的甜汤，但需要你解开鼎腹上刻着的谜语。"小石头凑近一看，三只青铜熊环绕的鼎身上浮现出云纹谜题："夏日南风起时，什么比火焰更温暖？"
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250618_115911
+   Turn: 1/3
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 会说话的小鸟
+   cosmic_element: earth
+
+小石头正苦思冥想时，窗外飞来一只黄羽小鸟，落在铜鼎边缘轻啄桑葚。"我知道答案，"小鸟啾啾地说，"但你要先帮我把卡在槐树上的风筝取下来。"小石头望着高高的树枝有些害怕，奶奶却将温暖的黄手帕系在他腰间："土德居中，心正则稳。"
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250618_115911
+   Turn: 2/3
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 温柔的年轻妈妈
+   cosmic_element: water
+
+小石头深吸一口气，想起妈妈常说的"水善利万物而不争"，便像溪流般灵活地爬上老槐树。当他取下五彩风筝时，发现树枝间闪烁着奶奶的玉佩，正散发着柔和的蓝光。温柔的年轻妈妈在树下张开双臂："看啊，智慧就像冬天的溪水，看似安静却蕴藏着力量。"
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250618_115911
+   Turn: 3/3
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   object: 错银铜双翼神兽
+   object_is_central: True
+
+小石头捧着发光的玉佩，突然发现树下泥土里露出一个闪着银光的兽角。他小心挖出来，竟是一只精美的错银铜双翼神兽，翅膀上刻着古老的云纹。这时玉佩蓝光更盛，神兽眼中突然亮起金光，传来奶奶慈祥的声音："勇敢的孩子，解开神兽背上的谜题，你就能找到真正的智慧。"

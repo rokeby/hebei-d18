@@ -1,0 +1,88 @@
+{
+  "id": "20250617_151759",
+  "completed_at": "2025-06-17T15:18:43.210155",
+  "final_narrative": [
+    {
+      "turn": 0,
+      "roll": null,
+      "action_type": "opening",
+      "elements": {
+        "cosmic_element": "metal"
+      },
+      "narrative": "",
+      "narrative_zh": "阿土踮起脚尖，看见白鹿角上挂着的金桂枝正滴落点点金光，每滴金光落地就化作一只会唱歌的金蝉。金蝉们排成队列，用清脆的歌声唤醒了沉睡的枫树爷爷，枫叶立刻披上了金红色的新衣，在晚风中沙沙地讲述着秋天的秘密。",
+      "token_usage": {
+        "prompt_tokens": 479,
+        "completion_tokens": 74,
+        "total_tokens": 553
+      }
+    },
+    {
+      "turn": 0,
+      "roll": 14,
+      "action_type": "cosmic_intervention",
+      "elements": {
+        "cosmic_element": "metal",
+        "intervention": "墨水精灵让画作栩栩如生"
+      },
+      "narrative": "",
+      "narrative_zh": "金蝉的歌声忽然变得忧伤，原来山脚下的小溪被黑乎乎的墨水染脏了，鱼儿们躲在石头缝里不敢出来。这时飘来一阵带着桂花香的风精灵，它轻轻吹动枫叶，落下几片金红的叶子变成小船，载着小动物们去溪水源头寻找捣乱的墨水精灵。  \n\n墨水精灵正蹲在青石上哭泣，它不小心打翻了画仙子的颜料瓶，把溪水染黑了。阿土用金桂枝蘸着墨水，在枫叶小船上画出会发光的鸟巢图案，墨水精灵破涕为笑，这些画立刻变成真正的萤火鸟巢挂在溪边柳树上。",
+      "token_usage": {
+        "prompt_tokens": 603,
+        "completion_tokens": 141,
+        "total_tokens": 744
+      }
+    },
+    {
+      "turn": 1,
+      "roll": 1,
+      "action_type": "character_action",
+      "elements": {
+        "cosmic_element": "water",
+        "character": "制作纸花的艺人"
+      },
+      "narrative": "",
+      "narrative_zh": "溪水重新清澈后，柳树下走来一位扎着蓝头巾的纸花艺人，他手中的剪刀剪出会跳舞的蝴蝶形状。墨水精灵将剩余的墨汁点在蝴蝶翅膀上，这些纸蝶立刻活了过来，衔着柳枝在溪边筑起会唱歌的鸟巢。\n\n北风送来细雪时，纸花艺人教孩子们用冬青叶折成小船，载着发光鸟巢顺流而下。黑水龟从深潭中浮出，驮着这些温暖的小船游向每一条结冰的溪流，让冬眠的鱼儿也能梦见春天的歌声。",
+      "token_usage": {
+        "prompt_tokens": 662,
+        "completion_tokens": 130,
+        "total_tokens": 792
+      }
+    },
+    {
+      "turn": 2,
+      "roll": 18,
+      "action_type": "story_ending",
+      "elements": {
+        "cosmic_element": "fire"
+      },
+      "narrative": "",
+      "narrative_zh": "赤色蝴蝶衔来南方的暖风，轻轻拂过浑浊的溪水。那位蓝头巾艺人将最后一片柳叶折成翠笛，交给最年幼的孩子吹响，笛声所到之处，污浊的河水便泛起粼粼金光。风精灵在每道波纹里撒下星屑，指引纸蝴蝶们用彩虹丝线编织成会发光的鸟巢，挂在两岸的桃枝上轻轻摇晃。",
+      "token_usage": {
+        "prompt_tokens": 643,
+        "completion_tokens": 93,
+        "total_tokens": 736
+      }
+    }
+  ],
+  "cosmic_position": "fire",
+  "total_turns": 3,
+  "max_turns": 4,
+  "language": "zh",
+  "story_arc": {
+    "type": "nature_harmony",
+    "stages": [
+      "discovery",
+      "imbalance",
+      "understanding",
+      "cooperation",
+      "restoration"
+    ],
+    "theme_elements": {
+      "nature_problem": "dirty river",
+      "nature_helper": "gentle wind spirit",
+      "restoration_action": "building bird nests"
+    },
+    "current_stage": "understanding"
+  }
+}

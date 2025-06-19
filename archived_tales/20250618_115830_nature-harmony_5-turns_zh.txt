@@ -1,0 +1,142 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: nature_harmony
+Number of Turns: 5
+Cosmic Positions: fire → earth → water
+Duration: 44.4 seconds
+Generated: 2025-06-18 11:59:24
+========================
+
+
+FOLKTALE STORY: 20250618_115830
+Started: 2025-06-18 11:58:39.823723
+----------------------------------------
+
+--- Opening ---
+
+最小的孩子踮起脚尖，看见每只纸蝴蝶翅膀上都跳动着温暖的火苗，却不会灼伤任何一片花瓣。这些火焰随着笛声轻轻摇曳，将桃枝上的积雪融化成晶莹的露珠，滴落在冬眠的青蛙背上。古籍有云，这是南方朱雀派来的使者，用温柔的火唤醒沉睡的大地，让泥土里钻出嫩芽与虫儿共舞。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250618_115830
+   Turn: 0/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   event: 清晨的露珠像珍珠一样闪亮
+   place: 种满蔬菜的田地
+
+孩子们顺着小溪走，发现河水变得浑浊不清，连小鱼都躲进了石头缝里。月亮婆婆悄悄把银色的倒影投在水面，指引他们找到卡在河底的破陶罐——原来就是它堵住了清流的去路。  
+
+当最小的孩子踮着脚把陶罐捞起来时，田埂上的露珠突然叮咚落入溪中，洗得菜畦里的萝卜缨子都开心地摇晃起来。传说记载，这是水神共工留下的考验，要懂得珍惜每滴清水，大地才会继续长出甜滋滋的瓜果。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250618_115830
+   Turn: 1/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 放风筝的孩子
+   cosmic_element: earth
+
+放风筝的孩子顺着银线望去，发现风筝尾巴上缠着片片枯黄的梧桐叶。古籍有云，这是土精在提醒人们：当秋风吹落第一片叶子时，要记得为过冬的蚂蚁留下谷粒。孩子们连忙捧来金黄的粟米，撒在老槐树下的蚁穴旁。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250618_115830
+   Turn: 2/4
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   intervention: 丝绸精灵编织彩色的梦
+
+孩子们发现小溪的水变得浑浊不清，连月亮的倒影都皱起了眉头。这时水面泛起银光，丝绸精灵用月光织成网兜，教孩子们捞起水中的枯枝落叶。随着溪水重新变得清澈，月亮在水中的倒影露出了甜甜的微笑，就像一块晶莹的黑玉。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250618_115830
+   Turn: 2/4
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   object: 错金银铜版兆域图
+   object_is_central: True
+
+孩子们发现蚁穴旁的粟米堆里埋着一块闪着幽光的铜版，上面错金银的纹路勾勒出附近山川河流的模样。当冬夜的月光照在铜版上时，水面倒影突然显现出一条被淤泥堵塞的小溪，溪底躺着许多喘不过气的银色小鱼。最大的那条鱼儿突然对孩子们眨了眨眼，铜版上的金银纹路便像活过来般，指引他们找到了溪水的源头。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250618_115830
+   Turn: 3/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 友善的小龙
+   cosmic_element: earth
+
+溪水清澈后，一条金色小龙从水中探出头来，它的鳞片像秋天的稻穗般闪闪发亮。小龙告诉孩子们，它是守护这片土地的土灵，因为人们乱扔杂物，它的力量被污染困住了。  
+
+孩子们和小龙一起用黄泥捏成小碗，盛满清水放在岸边，小龙吹出一口温暖的气息，碗中清水化作甘霖滋润了干渴的野花。转眼间，整片河岸开满了金黄色的野菊，像给大地铺上了星辰织就的毯子。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250618_115830
+   Turn: 3/4
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: plot_twist
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+
+月光在水面轻轻跳跃，铜版上的金银纹路突然化作一群会发光的小蚂蚁，它们排着队爬进溪水，用细小的爪子清理淤泥。最大的银鱼吐出串串泡泡，泡泡里飘出清甜的歌声，孩子们跟着歌声把堵住溪水的枯枝落叶都搬开，溪水顿时欢快地唱起歌来。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250618_115830
+   Turn: 4/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 种菜的村民
+   cosmic_element: fire
+
+溪水清亮后，种菜的村民挑着竹篮走来，篮里装着红艳艳的夏桃。他笑眯眯地将桃子分给孩子们，说这是南方的火德果实，吃了能让心里也升起暖阳。忽然溪边芦苇丛中飞出七只朱红色的小鸟，衔着桃核在溪岸排成北斗形状，种下新的希望。
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250618_115830
+   Turn: 4/4
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 喜欢帮助别人的男孩
+   cosmic_element: fire
+
+溪水清澈后，那个总爱帮人的男孩发现水中映出的月亮变成了金色小舟，载着萤火虫仙子向南飘去。仙子洒下赤色花瓣，落在水面就化作会跳舞的火苗，把最后一点污浊都烧成了晶莹的露珠。孩子们手拉手围着溪流转圈，他们的影子在火光里长出了凤凰的羽翼，惊醒了睡莲中打盹的夏夜精灵。

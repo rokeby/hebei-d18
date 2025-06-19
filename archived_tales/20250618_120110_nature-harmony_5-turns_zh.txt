@@ -1,0 +1,46 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: nature_harmony
+Number of Turns: 5
+Cosmic Positions: earth → metal → wood
+Duration: 46.6 seconds
+Generated: 2025-06-18 12:02:04
+========================
+
+
+FOLKTALE STORY: 20250618_120110
+Started: 2025-06-18 12:01:18.248003
+----------------------------------------
+
+--- Opening ---
+
+青玉路碑上的云纹突然泛起微光，一只穿着蓑衣的小地龙从土里探出头来，它头顶的灵芝伞还沾着晨露。火凤凰的羽尖掠过泥土时，周围的野草竟开出了五色小花，随着地龙哼唱的古老节令歌谣轻轻摇摆。阿炎捧起一抔温热的黄土，里面沉睡的种子立刻苏醒，在他掌心绽放出一个小小的春天。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250618_120110
+   Turn: 0/5
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   character: 收集花瓣的孩子
+   cosmic_element: earth
+
+阿炎跟着地龙来到一片忧伤的树林，枯黄的落叶像眼泪般飘落。溪水中游来一条闪着金鳞的智慧鱼，它吐出的泡泡里映着鸟儿们无家可归的模样。孩子们收集起掉落的花瓣和柳枝，在智慧鱼的指导下开始编织温暖的鸟巢，每编好一个巢穴，就有嫩绿的新芽从枝头冒出来。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250618_120110
+   Turn: 1/5
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: plot_twist
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   cosmic_element: metal
+
+金色的夕阳下，智慧鱼突然跃出水面，它的鳞片化作点点金光洒在孩子们手中。阿炎发现每编完一个鸟巢，就会有一片白羽从西方飘来，轻轻落在枯枝上变成新芽。地龙欢快地在落叶堆里打滚，它滚过的地方，泥土里钻出了许多圆滚滚的蘑菇小屋。

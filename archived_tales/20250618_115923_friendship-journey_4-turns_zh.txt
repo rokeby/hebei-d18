@@ -1,0 +1,78 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: friendship_journey
+Number of Turns: 4
+Cosmic Positions: fire → earth → water
+Duration: 44.6 seconds
+Generated: 2025-06-18 12:00:15
+========================
+
+
+FOLKTALE STORY: 20250618_115923
+Started: 2025-06-18 11:59:30.770896
+----------------------------------------
+
+--- Opening ---
+
+小牧童阿炎在溪边发现一只受伤的火凤凰，它的羽毛黯淡无光，像快要熄灭的炭火。他想起奶奶说过，立夏时节要用艾草煮蛋，便从怀里掏出还温热的红蛋，轻轻放在凤凰面前。蛋壳突然裂开，里面跳出一簇金色小火苗，欢快地跃上凤凰的尾羽，顿时整条小溪都映满了流动的霞光。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250618_115923
+   Turn: 0/3
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   character: 和蔼的村庄老师
+   cosmic_element: fire
+
+火凤凰的尾羽刚恢复光彩，突然惊慌地拍打翅膀，原来它发现指引回家路的红灯笼不见了。这时村里最和蔼的老先生拄着青竹杖路过，他告诉阿炎在南山小径曾见过一盏飘浮的朱砂灯笼，但那条路早已被野草掩埋。阿炎立刻卷起衣袖，和火凤凰一起用温暖的火焰为老先生照亮前路，三人的影子在夏夜拉得很长很长。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250618_115923
+   Turn: 1/3
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: story_ending
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+
+阿炎和火凤凰沿着老先生指点的方向，发现一条被野草覆盖的土黄色小径，草丛中闪烁着点点萤火。火凤凰用翅膀轻轻拂过，野草便如礼让君子般向两旁分开，露出泥土下埋着的半块青玉路碑。就在他们弯腰查看时，那盏失踪的朱砂灯笼突然从碑后飘出，灯笼穗子欢快地打着旋儿，原来它一直在等待善良的旅人帮它拂去尘埃。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250618_115923
+   Turn: 2/3
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   cosmic_element: water
+   event: 蜜蜂忙碌地采集花蜜
+   place: 节日装饰的街道
+
+青玉路碑忽然泛起水波般的幽光，指引他们来到一条铺满霜花的古道。几只冬蜜蜂嗡嗡飞舞，翅膀上沾着晶莹的冰晶，原来它们正忙着采集寒梅上凝结的晨露。朱砂灯笼突然欢快地跃起，用温暖的红光融化了前方树枝上垂挂的冰凌，露出被冰雪覆盖的元宵彩灯——这条被遗忘的小径，竟通向节日里最热闹的北街。
+
+--- Turn 4 ---
+
+📖 STORY STATUS:
+   ID: 20250618_115923
+   Turn: 3/3
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: environmental_event
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   event: 荷花在池塘里悄悄开放
+   place: 村里的图书馆
+
+古道尽头的荷花池突然绽放，金黄莲蕊中浮出一盏青玉灯笼，正是村里丢失的元宵灯。冬蜜蜂们立刻围成圆圈，用翅膀扇动温暖的土气，托着灯笼缓缓飞向村中藏书楼。小竹和灯笼精追着光芒跑去，发现楼前的老槐树下，全村人正等着他们回来点亮这盏象征团圆的神灯。

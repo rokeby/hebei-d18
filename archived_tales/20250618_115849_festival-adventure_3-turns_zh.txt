@@ -1,0 +1,63 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: festival_adventure
+Number of Turns: 3
+Cosmic Positions: fire → earth → water
+Duration: 25.8 seconds
+Generated: 2025-06-18 11:59:24
+========================
+
+
+FOLKTALE STORY: 20250618_115849
+Started: 2025-06-18 11:58:58.664775
+----------------------------------------
+
+--- Opening ---
+
+老槐树下的石臼旁，三个孩子正踮着脚往糯米粉里掺桂花蜜，他们的小手沾满金粉似的花粉，每当木槌落下就惊起一阵甜香。隔壁灶房里，老婆婆用桃木筷子搅动着铜锅里的赤豆沙，那翻滚的泡泡里不时蹦出几颗会跳舞的芝麻，引得窗台上的陶猫竖起耳朵。最调皮的阿毛举着刚扎好的小龙灯跑过晒场，竹篾骨架上的红纱被夕阳点燃，在风中拖出一条流动的火尾巴。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250618_115849
+   Turn: 0/3
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: cosmic_intervention
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   intervention: 雨滴精灵滋润干渴的土地
+
+阿毛突然发现龙舟赛的铜锣不见了，急得直跺脚时，屋檐滴落的雨珠里跳出个透明小人儿，哼着"叮咚叮咚"的歌谣。会说话的月亮从云后探出头，把银光洒在晒场的稻草堆上，原来调皮的铜锣正躺在那里打盹，被月光照得泛起红彤彤的光晕。
+
+--- Turn 2 ---
+
+📖 STORY STATUS:
+   ID: 20250618_115849
+   Turn: 1/3
+   Cosmic Position: earth
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: earth
+🎴 ELEMENTS SELECTED:
+   cosmic_element: earth
+   object: 铜人
+   object_is_central: True
+
+铜锣刚回到阿毛手中，突然发出"嗡"的一声，从锣面跳下个巴掌大的铜人儿，浑身泛着金灿灿的土德之光。小铜人蹦蹦跳跳地爬上稻草堆，用清脆的声音唱道："铜锣响，龙舟忙，我来教你们新花样！"说着从怀里掏出个小小的五彩香囊，往空中一抛就变成了七只会发光的小龙舟。
+
+--- Turn 3 ---
+
+📖 STORY STATUS:
+   ID: 20250618_115849
+   Turn: 2/3
+   Cosmic Position: water
+   Language: unknown
+🎲 ACTION TYPE: character_action
+🌟 Cosmic position: water
+🎴 ELEMENTS SELECTED:
+   character: 温和的小兔子
+   cosmic_element: water
+
+小铜人儿刚唱完歌谣，天上忽然飘来一片银白色的云朵，化作一只会说话的月亮兔。它怀里抱着支遗失的玉笛，温和地说："我在月宫捡到这乐器，想必是龙舟赛要用的吧？"七只小龙舟立刻发出欢快的鸣叫，绕着玉笛跳起了水波舞。

@@ -1,0 +1,56 @@
+{
+  "id": "20250618_120414",
+  "completed_at": "2025-06-18T12:04:35.105982",
+  "final_narrative": [
+    {
+      "turn": 0,
+      "roll": null,
+      "action_type": "opening",
+      "elements": {
+        "cosmic_element": "metal"
+      },
+      "narrative": "",
+      "narrative_zh": "小竹林的晨雾还未散尽，十岁的阿宝就发现溪边躺着一枚温润的白玉佩，上面刻着精巧的云纹。当他小心翼翼拾起玉坠时，竹叶间突然洒落细碎的金光，玉佩竟发出清脆的鸣响，像是远方传来的编钟乐声。",
+      "token_usage": {
+        "prompt_tokens": 476,
+        "completion_tokens": 68,
+        "total_tokens": 544
+      }
+    },
+    {
+      "turn": 0,
+      "roll": 18,
+      "action_type": "story_ending",
+      "elements": {
+        "cosmic_element": "metal"
+      },
+      "narrative": "",
+      "narrative_zh": "阿宝正捧着玉佩发呆，竹林深处突然窜出一只金毛小猴，尾巴尖上还缠着片发光的竹叶。小猴眨着亮晶晶的眼睛说：\"西王母让我来考考你——什么东西早晨四条腿，中午两条腿，晚上三条腿？\"阿宝咬着手指想了想，突然举起玉佩对着晨光，玉上映出的影子给了他灵感。",
+      "token_usage": {
+        "prompt_tokens": 585,
+        "completion_tokens": 82,
+        "total_tokens": 667
+      }
+    }
+  ],
+  "cosmic_position": "metal",
+  "total_turns": 1,
+  "max_turns": 6,
+  "language": "zh",
+  "story_arc": {
+    "type": "brave_little_hero",
+    "stages": [
+      "ordinary_day",
+      "small_challenge",
+      "finding_courage",
+      "clever_solution",
+      "growing_up"
+    ],
+    "theme_elements": {
+      "child_challenge": "confusing riddle",
+      "helper_character": "playful monkey spirit",
+      "solution_tool": "clever idea"
+    },
+    "current_stage": "ordinary_day"
+  }
+}

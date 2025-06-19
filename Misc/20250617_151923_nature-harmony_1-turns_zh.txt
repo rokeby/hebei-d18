@@ -1,0 +1,33 @@
+
+=== STORY COMPLETED ===
+Story Arc Type: nature_harmony
+Number of Turns: 1
+Cosmic Positions: fire
+Duration: 8.6 seconds
+Generated: 2025-06-17 15:19:39
+========================
+
+
+FOLKTALE STORY: 20250617_151923
+Started: 2025-06-17 15:19:30.760520
+----------------------------------------
+
+--- Opening ---
+
+最小的孩子踮起脚尖，发现每片发光的桃叶背面都藏着一粒朱砂种子，轻轻一碰就会绽放出温暖的火花。这些火花化作会跳舞的小灯笼，照亮了溪水里沉睡的莲花，让它们舒展花瓣时带出七色彩虹，架在两岸桃树之间成了会唱歌的桥梁。蓝头巾艺人笑着告诉孩子们，这是南方朱雀神鸟送来的礼物，只要心怀善意，就能让四季的精灵都来帮忙装点人间。
+
+--- Turn 1 ---
+
+📖 STORY STATUS:
+   ID: 20250617_151923
+   Turn: 0/5
+   Cosmic Position: fire
+   Language: unknown
+🎲 ACTION TYPE: object_appearance
+🌟 Cosmic position: fire
+🎴 ELEMENTS SELECTED:
+   cosmic_element: fire
+   object: 错金银铜说唱俑
+   object_is_central: True
+
+彩虹桥上突然传来细碎的啜泣声，孩子们发现一只错金银铜说唱俑正抱着膝盖坐在桥中央，它胸前的铜镜映出月光下惊慌失措的鸟群。说唱俑轻轻敲击腰间的玉佩，流淌出清凉如泉水的旋律，月光在水面聚成银色的阶梯，引导受惊的鸟儿们飞向桃树枝头新编织的温暖巢穴。

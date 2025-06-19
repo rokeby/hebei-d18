@@ -1,0 +1,22 @@
+FOLKTALE STORY: 20250618_120320
+Started: 2025-06-18 12:04:12.274105
+----------------------------------------
+
+
+--- Turn 5 ---
+
+📖 STORY STATUS:
+   ID: 20250618_120320
+   Turn: 4/4
+   Cosmic Position: metal
+   Language: unknown
+🎲 ACTION TYPE: wildcard
+🌟 Cosmic position: metal
+🎴 ELEMENTS SELECTED:
+   character: 友善的小龙
+   cosmic_element: metal
+   object: 冬青釉葫芦瓶
+   object_is_central: True
+   place: 收集药草的山坡
+
+孩子们发现山坡上有一株蔫头耷脑的冬青树，它的叶子正在慢慢变黄。这时，一只鳞片闪着银光的小龙从冬青釉葫芦瓶里探出头来，瓶身上雕刻的月亮花纹突然亮了起来。小龙衔着葫芦瓶收集月光，将发亮的露水滴在冬青根上，孩子们跟着把冰晶花的种子埋在周围，转眼间整片山坡都开出了星星般的白色小花。
